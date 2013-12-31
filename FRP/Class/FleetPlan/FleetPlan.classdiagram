@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d2e0052a-def0-44d2-9dda-e60d3a001053" name="FleetPlan" linkedPackageId="c9af9648-bdcd-45ca-a2fc-fef1e5645fbf" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="23697fdb-c1f5-444b-b0b4-199dc06fa463">
+      <profileInstance Id="631d1748-26b7-4fd7-a48f-4bab4d5fb963" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1e5edbde-69e4-4993-81ca-e4a7eee91006">
+      <profileInstance Id="f60f3778-bb2c-4132-a1c8-3eae817855c4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <package Id="f54e9dba-6f4b-49ad-9438-0c25cae5e93d" name="Main">
+    <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1eec09c2-a2e2-43bf-8777-580c54adb0a4">
+        <profileInstance Id="c33fbb21-467a-404e-ae0b-1f700ce8dbbf" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ae4fc4d9-3628-423b-a46e-0ccf9134110f">
+        <profileInstance Id="fc7e15e1-b57d-4ffc-ab76-7e92e33632d6" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+  <package Id="c9af9648-bdcd-45ca-a2fc-fef1e5645fbf" name="FleetPlan">
+    <elementDefinition Id="9f0f2d27-f02f-4b06-9c26-3ff0fb8d1c81" />
+  </package>
+</logicalClassDesignerModel>

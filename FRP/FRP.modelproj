@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36d7347c-85bd-4fdb-91f8-bdd1bd9bfe0d}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>FRP</Name>
+    <RootNamespace>FRP</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Activity\AircraftConfig\AircraftConfig.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\AircraftConfig\AircraftConfig.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\AircraftConfig\AircraftConfig.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\BaseManagement\BaseManagement.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\BaseManagement\BaseManagement.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\BaseManagement\BaseManagement.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\CommonService\CommonService.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\CommonService\CommonService.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\CommonService\CommonService.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\FleetPlan\FleetPlan.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\FleetPlan\FleetPlan.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\FleetPlan\FleetPlan.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\FlightLog\FlightLog.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\FlightLog\FlightLog.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\FlightLog\FlightLog.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\Payment\Payment.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\Payment\Payment.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\Payment\Payment.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\Portal\Portal.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\Portal\Portal.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\Portal\Portal.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\Project\Project.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\Project\Project.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\Project\Project.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\Purchase\Purchase.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\Purchase\Purchase.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\Purchase\Purchase.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\AircraftConfig\AircraftConfig.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\AircraftConfig\AircraftConfig.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\AircraftConfig\AircraftConfig.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\BaseManagement\BaseManagement.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\BaseManagement\BaseManagement.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\BaseManagement\BaseManagement.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\CommonService\CommonService.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\CommonService\CommonService.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\CommonService\CommonService.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Common\Common.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Common\Common.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Common\Common.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\FleetPlan\FleetPlan.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\FleetPlan\FleetPlan.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\FleetPlan\FleetPlan.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\FlightLog\FlightLog.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\FlightLog\FlightLog.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\FlightLog\FlightLog.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Payment\Payment.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Payment\Payment.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Payment\Payment.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Portal\Portal.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Portal\Portal.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Portal\Portal.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Project\Project.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Project\Project.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Project\Project.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Purchase\Purchase.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Purchase\Purchase.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Purchase\Purchase.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\AircraftConfig.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\BaseManagement.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\FleetPlan.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Common.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Project.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Purchase.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Portal.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\CommonService.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\FlightLog.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Payment.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\AircraftConfig\AircraftConfig.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\AircraftConfig\AircraftConfig.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\AircraftConfig\AircraftConfig.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\BaseManagement\BaseManagement.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\BaseManagement\BaseManagement.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\BaseManagement\BaseManagement.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\CommonService\CommonService.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\CommonService\CommonService.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\CommonService\CommonService.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\FleetPlan\FleetPlan.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\FleetPlan\FleetPlan.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\FleetPlan\FleetPlan.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\FlightLog\FlightLog.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\FlightLog\FlightLog.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\FlightLog\FlightLog.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\Payment\Payment.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\Payment\Payment.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\Payment\Payment.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\Portal\Portal.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\Portal\Portal.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\Portal\Portal.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\Project\Project.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\Project\Project.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\Project\Project.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\Purchase\Purchase.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\Purchase\Purchase.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\Purchase\Purchase.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="Activity\AircraftConfig\" />
+    <Folder Include="Activity\BaseManagement\" />
+    <Folder Include="Activity\CommonService\" />
+    <Folder Include="Activity\FleetPlan\" />
+    <Folder Include="Activity\FlightLog\" />
+    <Folder Include="Activity\Payment\" />
+    <Folder Include="Activity\Portal\" />
+    <Folder Include="Activity\Project\" />
+    <Folder Include="Activity\Purchase\" />
+    <Folder Include="Class\AircraftConfig\" />
+    <Folder Include="Class\BaseManagement\" />
+    <Folder Include="Class\CommonService\" />
+    <Folder Include="Class\Common\" />
+    <Folder Include="Class\FleetPlan\" />
+    <Folder Include="Class\FlightLog\" />
+    <Folder Include="Class\Payment\" />
+    <Folder Include="Class\Portal\" />
+    <Folder Include="Class\Project\" />
+    <Folder Include="Class\Purchase\" />
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Main.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Activity" />
+    <Folder Include="Class" />
+    <Folder Include="UseCase" />
+    <Folder Include="UseCase\AircraftConfig" />
+    <Folder Include="UseCase\BaseManagement" />
+    <Folder Include="UseCase\CommonService" />
+    <Folder Include="UseCase\FleetPlan" />
+    <Folder Include="UseCase\FlightLog" />
+    <Folder Include="UseCase\Payment" />
+    <Folder Include="UseCase\Portal\" />
+    <Folder Include="UseCase\Project\" />
+    <Folder Include="UseCase\Purchase\" />
+  </ItemGroup>
+</Project>

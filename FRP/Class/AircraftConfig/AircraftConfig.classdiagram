@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="24846e1f-cc22-43a6-95dd-b9f16f20ffc2" name="AircraftConfig" linkedPackageId="408ff978-c2f2-4b48-8df1-b4c00dd64eac" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3b6006cb-8e9c-49dc-aa39-9badb37bf6fe">
+      <profileInstance Id="190c4226-c3c3-4dc1-bb63-6c2af5f8ff29" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="807a9cfe-390b-4bf4-8602-f14818232149">
+      <profileInstance Id="d03e668c-d0a3-4cec-8ca1-b835393d6ce2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <package Id="a8c496de-1050-480c-8ec6-58a3cdaa1639" name="Main">
+    <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d3d31d65-c042-4b9d-a130-5575514c9a2a">
+        <profileInstance Id="ed1a04bb-3910-41f5-a5af-ce04021c78b0" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f7a862a7-2dee-4bef-8b44-18ef5de4ef08">
+        <profileInstance Id="a7d4ab4f-de4d-4e84-88d2-11515bc91fe8" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+  <package Id="408ff978-c2f2-4b48-8df1-b4c00dd64eac" name="AircraftConfig">
+    <elementDefinition Id="e49b2617-b8aa-4689-ab2b-1ad768ce4f4b" />
+  </package>
+</logicalClassDesignerModel>
