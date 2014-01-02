@@ -185,6 +185,13 @@
     <Content Include="ModelDefinition\Payment.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UseCase\Actors.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\Actors.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\Actors.usecasediagram</DependentUpon>
+    </Content>
     <Content Include="UseCase\AircraftConfig\AircraftConfig.usecasediagram">
       <SubType>Content</SubType>
     </Content>
@@ -247,6 +254,13 @@
     <Content Include="UseCase\Purchase\Purchase.usecasediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>UseCase\Purchase\Purchase.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\Value.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\Value.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\Value.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="Activity\AircraftConfig\" />
     <Folder Include="Activity\BaseManagement\" />

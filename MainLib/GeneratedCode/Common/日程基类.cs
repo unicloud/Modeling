@@ -13,43 +13,43 @@ namespace Common
 
 	public abstract class 日程基类
 	{
-		public virtual string 主题
+		public virtual object 主题
 		{
 			get;
 			set;
 		}
 
-		public virtual string 内容
+		public virtual object 内容
 		{
 			get;
 			set;
 		}
 
-		public virtual string 重要性
+		public virtual object 重要性
 		{
 			get;
 			set;
 		}
 
-		public virtual string 进度
+		public virtual object 进度
 		{
 			get;
 			set;
 		}
 
-		public virtual DateTime 开始时间
+		public virtual object 开始时间
 		{
 			get;
 			set;
 		}
 
-		public virtual DateTime 结束时间
+		public virtual object 结束时间
 		{
 			get;
 			set;
 		}
 
-		public virtual bool 是否全天事件
+		public virtual object 是否全天事件
 		{
 			get;
 			set;

@@ -42,7 +42,7 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="d120eaa0-2115-47e7-bc00-0d2429fc860b" />
         <ownedAttributesInternal>
-          <property Id="19dc48cc-4896-4265-b019-e756d5dd40db" name="主题" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="19dc48cc-4896-4265-b019-e756d5dd40db" name="1-主题" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="531781aa-f948-41a8-ba3b-54efed284ae2" name="property" profile="CSharpProfile">
                 <elementDefinition Id="9f406a9e-3a99-4225-8a08-73aedbabbc68" />
@@ -93,11 +93,8 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="6ab302f7-b86c-401f-b044-0a5d12165a65" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="6a964dfa-ed6f-441c-b685-9daff5e3f8bb" LastKnownName="String" />
-            </type_NamedElement>
           </property>
-          <property Id="5b03407c-c093-4b46-9c77-1934f59cf631" name="内容" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="5b03407c-c093-4b46-9c77-1934f59cf631" name="2-内容" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="1f69ad5c-d7a8-447d-ac23-5080cd6cd662" name="property" profile="CSharpProfile">
                 <elementDefinition Id="a0adc427-1afc-4327-8acd-dc4ee1f7c9dc" />
@@ -148,11 +145,8 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="02067232-81a7-4dbe-80ba-3202bc430d6b" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="41373368-6d79-4baf-96c8-727a7b1e39d2" LastKnownName="String" />
-            </type_NamedElement>
           </property>
-          <property Id="589c3ddf-ade5-488b-a1b4-b1b0b142f10a" name="重要性" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="589c3ddf-ade5-488b-a1b4-b1b0b142f10a" name="5-重要性" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="ba638574-e3f8-4731-a88d-f1d0d1e193e0" name="property" profile="CSharpProfile">
                 <elementDefinition Id="cf7a46bc-eb02-48bc-bca6-2d26a85b2ede" />
@@ -203,11 +197,8 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="a5060d2a-4738-4f72-bf81-98788d9ee510" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="6adb9fea-c162-4aa9-8c1e-7fd84a0499a0" LastKnownName="String" />
-            </type_NamedElement>
           </property>
-          <property Id="d33d78bc-93a5-4b22-9054-ec01baf5977f" name="进度" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="d33d78bc-93a5-4b22-9054-ec01baf5977f" name="6-进度" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="fe9e110a-d4f4-4cc6-bbe5-8b93ad16992b" name="property" profile="CSharpProfile">
                 <elementDefinition Id="d1a6baf6-2847-4385-837f-f7a0fc9993bb" />
@@ -258,11 +249,8 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="e8bf3e43-c74d-42fc-96c5-074541873937" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="a52478df-cb21-486f-8a84-a2733988a39d" LastKnownName="String" />
-            </type_NamedElement>
           </property>
-          <property Id="a716d2df-87a0-4888-8fc7-933fd67ff60e" name="开始时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="a716d2df-87a0-4888-8fc7-933fd67ff60e" name="3-开始时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="3b50ad4e-61da-4a26-9941-a6cd6ade8d8f" name="property" profile="CSharpProfile">
                 <elementDefinition Id="60ec0d59-bd4c-41b6-bc87-d6920a3c70f6" />
@@ -313,11 +301,8 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="6d5755bb-9530-4d1e-a6d8-caa6864c3af6" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="0cb6aa7c-e2d2-45b6-843b-cc203ce7f77d" LastKnownName="DateTime" />
-            </type_NamedElement>
           </property>
-          <property Id="4c3a59c3-2aba-4834-a8c7-f51a003bb3e0" name="结束时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="4c3a59c3-2aba-4834-a8c7-f51a003bb3e0" name="4-结束时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="e37cc52f-5140-4ed3-9ac7-cc07de3ec72b" name="property" profile="CSharpProfile">
                 <elementDefinition Id="9a3b74fb-34df-4197-94f6-f2d4ff6aed96" />
@@ -368,11 +353,8 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="cb066b48-869a-4910-9b61-62da34bff6b5" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="47f6f5c6-dc35-42cc-8e01-2f8977644770" LastKnownName="DateTime" />
-            </type_NamedElement>
           </property>
-          <property Id="611b5ca9-372f-48b1-a2bc-0b2965be22f7" name="是否全天事件" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="611b5ca9-372f-48b1-a2bc-0b2965be22f7" name="7-是否全天事件" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="5402c45e-5627-4909-95fc-a1cc59ddb053" name="property" profile="CSharpProfile">
                 <elementDefinition Id="0c9ad78e-e096-4706-b8f6-016f60fbdfd0" />
@@ -423,9 +405,6 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="fbdac259-d5ce-459c-9878-9c37519e936e" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="48565c1d-5ab0-4501-a56d-df6768e11d70" LastKnownName="Boolean" />
-            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -478,41 +457,6 @@
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="41373368-6d79-4baf-96c8-727a7b1e39d2" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="47f6f5c6-dc35-42cc-8e01-2f8977644770" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
-        <elementDefinition Id="4301019e-8fbd-438d-a143-cd7c4ff98a01" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="6adb9fea-c162-4aa9-8c1e-7fd84a0499a0" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="48565c1d-5ab0-4501-a56d-df6768e11d70" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
-        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="0cb6aa7c-e2d2-45b6-843b-cc203ce7f77d" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
-        <elementDefinition Id="4301019e-8fbd-438d-a143-cd7c4ff98a01" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="6a964dfa-ed6f-441c-b685-9daff5e3f8bb" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="a52478df-cb21-486f-8a84-a2733988a39d" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
       <class Id="0caa1301-557f-4018-a62c-ebf312433da1" name="地址值对象" isAbstract="false" isLeaf="false" isActiveClass="false">
         <appliedStereotypesInternal>
@@ -554,7 +498,7 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="1df13b94-e0d3-4846-80fc-d93949681feb" />
         <ownedAttributesInternal>
-          <property Id="6ed6421a-dbbd-4df5-bf7d-38e1e8b835ff" name="城市" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="6ed6421a-dbbd-4df5-bf7d-38e1e8b835ff" name="1-城市" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="6c1476b5-5311-405d-8d24-5d233668c02a" name="property" profile="CSharpProfile">
                 <elementDefinition Id="b4ab6b9b-2311-4063-88a7-37b338ea5303" />
@@ -605,11 +549,8 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="0c88c522-ff5e-4d07-bba0-b591d5da89f0" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="c5e0453a-f5da-4125-8d67-5348c1e04533" LastKnownName="String" />
-            </type_NamedElement>
           </property>
-          <property Id="42a84ad0-1d83-4d04-a37d-573376c21b8c" name="邮编" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="42a84ad0-1d83-4d04-a37d-573376c21b8c" name="2-邮编" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="e3916524-673f-4b43-be6d-e12f14cc520c" name="property" profile="CSharpProfile">
                 <elementDefinition Id="cce2c95c-e52b-482d-9c2a-6e74b9a08645" />
@@ -660,11 +601,8 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="61e2930b-a6ef-4a01-baa0-7a26bb1d5797" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="663954a5-e9d9-45fc-a785-7583f8ef39e0" LastKnownName="String" />
-            </type_NamedElement>
           </property>
-          <property Id="ab6afeb2-30b9-412e-8fad-ee540079a293" name="地址一" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="ab6afeb2-30b9-412e-8fad-ee540079a293" name="3-地址一" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="31beb9ac-d133-4abb-a09c-e4dd0f885f70" name="property" profile="CSharpProfile">
                 <elementDefinition Id="b5b5d52b-68ba-4bbb-a1e5-19374b3c27ab" />
@@ -715,11 +653,8 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="c6ecd20f-e0a2-4d1d-9ae6-0000440ae9bd" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="4edf1b73-3c8b-4877-aad1-fb0bda2a561c" LastKnownName="String" />
-            </type_NamedElement>
           </property>
-          <property Id="a21f8df6-5b7d-4664-8098-de54d9908c2d" name="地址二" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="a21f8df6-5b7d-4664-8098-de54d9908c2d" name="4-地址二" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <appliedStereotypesInternal>
               <stereotypeInstance Id="eecabdb8-b52e-42aa-982c-92663a23ff51" name="property" profile="CSharpProfile">
                 <elementDefinition Id="81426d73-f282-4a36-b62b-e5e3f8c3b77a" />
@@ -770,33 +705,10 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <elementDefinition Id="53db8987-2afc-49f9-915c-06389b373713" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="b1a70388-e1c2-4952-a9c3-0ad8847a5b27" LastKnownName="String" />
-            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="4edf1b73-3c8b-4877-aad1-fb0bda2a561c" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="b1a70388-e1c2-4952-a9c3-0ad8847a5b27" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="c5e0453a-f5da-4125-8d67-5348c1e04533" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="663954a5-e9d9-45fc-a785-7583f8ef39e0" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
-        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
-      </referencedType>
-    </packageHasNamedElement>
   </packagedElements>
   <package Id="fb4c068b-e9fc-45a5-b5d1-00d02d8cc803" name="Main">
     <appliedStereotypesInternal>

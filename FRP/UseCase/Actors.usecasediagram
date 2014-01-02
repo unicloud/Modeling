@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b790161b-eaf4-40ed-98cc-e9bf73eb22d1" name="Actors" linkedPackageId="21e68b3d-8a9b-4ef1-b814-a3bc38d36459" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="3d43bf2e-44e9-420c-bd40-629d9c59f9c9" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="63f34954-8f3c-436d-9fb7-74e6e38af081" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="b4487967-60de-4e36-bae8-59c1f703492d">
+          <propertyInstance Id="bcd59533-cca4-4932-82f8-ac0bbd76f7d3" name="BaseName">
+            <elementDefinition Id="0c5912a5-462a-418f-a06e-68dc35e9152a" />
+          </propertyInstance>
+          <elementDefinition Id="df19720b-3986-4eed-9c5a-22c959467590" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="dae4f93a-2419-4e5d-a4a8-d6b57f0c4e99">
+          <propertyInstance Id="4a587d13-aefd-4131-9f3b-209cd386d8cd" name="ClrAttributes">
+            <elementDefinition Id="1f1a54e0-00f5-4f9d-b1c8-80e2106215f8" />
+          </propertyInstance>
+          <elementDefinition Id="57cdc6c9-1e92-43de-8399-ec56861e6dfd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e3f5b444-f370-471f-b20b-6c64d0a1e0eb">
+          <propertyInstance Id="0b3fb691-3c64-48e5-bc03-907d9260ea81" name="Usings">
+            <elementDefinition Id="78de931e-faa8-4e84-a8da-24c1bdc1b9e7" />
+          </propertyInstance>
+          <elementDefinition Id="9cf171cf-9fbf-41a3-ab1c-84bb9000f9bb" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="0f9a1042-74d2-4cf5-8d78-4306eb1bec00" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="c5c1f24a-f503-4b5a-b5a4-03d0462f64b9" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="33c21e76-885c-4764-af64-76ed5c68de5e">
+          <propertyInstance Id="ffa7ec78-5db7-4ade-a87a-fa5a6f4007b8" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="8d1843b4-1702-47e5-aeb0-1b3bacd8ab19" />
+          </propertyInstance>
+          <elementDefinition Id="4044633d-fc9b-4659-b049-3324553a4247" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="07d6e36f-d55e-4756-96b0-17bc7538aa47">
+          <propertyInstance Id="a92d8fbb-fe2d-4b74-89b3-fa25693bf648" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="286ed6b7-d0b6-4899-8369-e3599a389f38" />
+          </propertyInstance>
+          <elementDefinition Id="405f0fa0-7561-457f-9f11-5dc6fefbc806" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="7c445ca2-7386-408e-b745-20d4f56a72d4">
+          <propertyInstance Id="51072e88-a030-4cd6-81dc-384abb138758" name="ProjectPath" value="ClassTemplate=..\MainLib\MainLib.csproj|EnumTemplate=..\MainLib\MainLib.csproj|InterfaceTemplate=..\MainLib\MainLib.csproj|StructTemplate=..\MainLib\MainLib.csproj">
+            <elementDefinition Id="13c73fe1-7c4f-444d-8abc-d1a612da41cb" />
+          </propertyInstance>
+          <elementDefinition Id="2c9b41c3-9b30-47b0-9de0-49f0e078def3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d3c65e4c-998f-42bf-9234-ad0d61a6cdee">
+          <propertyInstance Id="ce5fabee-00f9-4db7-8ae9-3737560dc2a1" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="80e3db6a-7bb3-41b5-aed6-e000279a7f4b" />
+          </propertyInstance>
+          <elementDefinition Id="c1696e18-c505-4006-8e67-30807363f617" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e9c5b5e3-017b-4e61-b996-f6c5a94963d0">
+          <propertyInstance Id="52eb90c4-6076-4874-84ea-35caa5086729" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="42924065-45a7-4c94-a620-aeb549b5b85f" />
+          </propertyInstance>
+          <elementDefinition Id="bbd4db7e-f0eb-4859-8de5-17a2bba3741f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="1a89a7c8-8cf1-4243-8cd4-8405af288a73">
+          <propertyInstance Id="8a41a193-1176-4df7-8483-cccaff8c169b" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="265348aa-6c71-440b-869b-58b25de4f305" />
+          </propertyInstance>
+          <elementDefinition Id="de15bf80-f0dd-4fde-ba6b-6a9d61c02ff1" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f33cd776-5d19-42a2-8ef2-f5bd8d8d746f">
+          <propertyInstance Id="66c49867-07b2-4b96-b2b1-f320d121c5d8" name="Parameters">
+            <elementDefinition Id="240e3a6c-a880-4298-9bac-5bc99d1f7b73" />
+          </propertyInstance>
+          <elementDefinition Id="add18b66-0507-4ca3-8a32-dd1a4af39631" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="c00eb25a-2ad4-4349-aa8c-cdf93f3ab92c">
+      <profileInstance Id="fe39b034-5701-4fb4-9bb9-40231b457d82" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="963cc324-6cda-437c-aa72-b38e8b75aa95">
+      <profileInstance Id="9c68b500-da04-45cb-9c05-a1da986829d5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="da8c183f-b578-480b-9196-50ea854778ed">
+      <profileInstance Id="834b7d7e-c3ee-49da-aa96-f5bc58566429" name="CSharpProfile">
+        <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
+      </profileInstance>
+      <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3cb6b44c-63bb-4254-9497-93dabaa88298">
+      <profileInstance Id="cfd84df4-5a6b-4757-8116-8c7b58a71c0a" name="TextTemplateBindings">
+        <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
+      </profileInstance>
+      <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="6ff719c0-b864-45a6-b664-0931cc04984f" name="公司领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b81b348c-02ec-474e-b9f8-f1200d589b59" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="97997355-dd54-4c5e-a7a6-718721ac1301" name="财务领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="31f29782-dd15-4cca-bfd0-de588038aece" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4c031391-1c68-4fb7-9872-b17b1d1dc5b6" name="规划领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e687bdd-c2dc-4a98-90c8-84cbc3131a48" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2f4f44cd-c971-4fdc-9c05-f587dc1939a2" name="机务领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="75e89b79-2f6e-4fc0-800c-ab15f183e23c" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="bfafedb4-f404-4303-8864-755e686f4ea6" name="资产室领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6d4cad5c-8bd7-4dc0-932c-0f4b7862a407" />
+        <generalsInternal>
+          <generalization Id="5584491f-6e82-42b5-a29a-49ca13466b8c" isSubstitutable="false">
+            <actorMoniker Id="e806539e-6a09-45c5-8cd2-d05a6ecdd5f6" LastKnownName="工作组领导" />
+            <elementDefinition Id="3e02f1eb-26b4-4de6-b838-acc95534e1db" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ca4a0406-eedb-4a99-9807-d316b53c1075" name="资金室领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="610febb8-01a3-43ca-a6d0-4e027d317404" />
+        <generalsInternal>
+          <generalization Id="6068792e-6024-42ec-b963-44bb1f5c8eb8" isSubstitutable="false">
+            <actorMoniker Id="e806539e-6a09-45c5-8cd2-d05a6ecdd5f6" LastKnownName="工作组领导" />
+            <elementDefinition Id="2c91af6a-580f-41ac-8d68-576d785e23b2" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6e6cd5d0-42a5-4878-bcb5-fc513600dced" name="资产室成员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="249858c5-e669-42b0-ad21-2eb3979a21ff" />
+        <generalsInternal>
+          <generalization Id="abbc1901-1eeb-4e2e-acf3-498aa45aafa9" isSubstitutable="false">
+            <actorMoniker Id="06a075ec-6a0e-4d98-ac8a-9f6914f89b62" LastKnownName="工作组成员" />
+            <elementDefinition Id="2078a4ab-9228-4fdb-bf98-6bbbd3ec25ac" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0878b933-dae1-4e19-bc62-9a01c6ad1adb" name="资金室成员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dad0f72f-a484-4b33-90cf-4c4c0240e1a2" />
+        <generalsInternal>
+          <generalization Id="da1e1213-ebb0-44c5-9981-ca853ee898a6" isSubstitutable="false">
+            <actorMoniker Id="06a075ec-6a0e-4d98-ac8a-9f6914f89b62" LastKnownName="工作组成员" />
+            <elementDefinition Id="4cb78a46-48bc-46fc-9a47-7f0b248a82e4" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="ef94e1fb-7d50-4fad-8078-11c779788b16" name="机队管理领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e169eef9-d610-495a-8275-9a00fb8da469" />
+        <generalsInternal>
+          <generalization Id="f4b84cef-12e0-4354-a53f-179231ce1b42" isSubstitutable="false">
+            <actorMoniker Id="e806539e-6a09-45c5-8cd2-d05a6ecdd5f6" LastKnownName="工作组领导" />
+            <elementDefinition Id="5fb65009-4268-4236-81d6-50ccbf5e0d20" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="562f10a1-e2ae-4990-bfd7-1467063dbf56" name="机队管理成员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9b196208-a1b2-4ac0-ac5b-3491715a1d53" />
+        <generalsInternal>
+          <generalization Id="02392026-5bae-41f1-8330-1f22d3661ce6" isSubstitutable="false">
+            <actorMoniker Id="06a075ec-6a0e-4d98-ac8a-9f6914f89b62" LastKnownName="工作组成员" />
+            <elementDefinition Id="6d464020-733f-4e65-bfbf-07499b09486f" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="4b30c0dc-2df3-4035-b4a2-307145dc992e" name="发管中心成员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14024b80-f588-42f3-b936-01702208aacb" />
+        <generalsInternal>
+          <generalization Id="73c3319a-7ff7-4fc2-a9e3-5becfc1b3df7" isSubstitutable="false">
+            <actorMoniker Id="06a075ec-6a0e-4d98-ac8a-9f6914f89b62" LastKnownName="工作组成员" />
+            <elementDefinition Id="75968539-16d0-4c58-a4be-67582d427f37" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e4875d26-b0b9-448c-ae48-b9f373f62c5a" name="技术标准成员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c9d2b40c-8aea-489e-a095-e8daf63f9d29" />
+        <generalsInternal>
+          <generalization Id="7f597ce4-f726-4c6c-9411-154d8030aec1" isSubstitutable="false">
+            <actorMoniker Id="06a075ec-6a0e-4d98-ac8a-9f6914f89b62" LastKnownName="工作组成员" />
+            <elementDefinition Id="4f7541ab-42d1-4c23-b84e-d595d9814579" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="312dd942-cac6-427c-aece-3d6b31e2a903" name="发管中心领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a253a931-4ad4-4aa7-a637-e566535e478f" />
+        <generalsInternal>
+          <generalization Id="6e02d148-a50e-486b-a41f-31668d3a81ae" isSubstitutable="false">
+            <actorMoniker Id="e806539e-6a09-45c5-8cd2-d05a6ecdd5f6" LastKnownName="工作组领导" />
+            <elementDefinition Id="e51ced56-f6ec-40ff-80c7-64139ff2fff0" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="2f008acf-dac9-4f41-8d4d-01b058c9154f" name="技术标准领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c6fbebf-fcca-4f09-a5c3-62d880b5c76f" />
+        <generalsInternal>
+          <generalization Id="9499065e-c86f-44e3-bf4d-d8f7426826c4" isSubstitutable="false">
+            <actorMoniker Id="e806539e-6a09-45c5-8cd2-d05a6ecdd5f6" LastKnownName="工作组领导" />
+            <elementDefinition Id="4101052b-3ab2-4d83-8fa9-c9c7481fd4ee" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="5c369569-8105-4aa9-a59e-532825dd9b9e" name="航材送修领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="79530c9d-f3b2-4608-844a-30e212322364" />
+        <generalsInternal>
+          <generalization Id="df9fdcca-a8fa-4b0e-af78-02f407d8554f" isSubstitutable="false">
+            <actorMoniker Id="e806539e-6a09-45c5-8cd2-d05a6ecdd5f6" LastKnownName="工作组领导" />
+            <elementDefinition Id="8df92f0c-ecc9-40c3-9b90-13d01fa614f1" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="d4673cab-ea98-453b-8818-39d8b559aa67" name="航材送修成员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="965eef6a-5636-4d76-b303-6725a8778683" />
+        <generalsInternal>
+          <generalization Id="0bd8f031-537c-4af5-8b69-9d644ddc0be1" isSubstitutable="false">
+            <actorMoniker Id="06a075ec-6a0e-4d98-ac8a-9f6914f89b62" LastKnownName="工作组成员" />
+            <elementDefinition Id="2c21738f-637d-4c22-9f49-a8c1c270f61d" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="502fdc91-2a1d-47d1-8ac5-d20f92dec40a" name="航材管理领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2e49d091-4554-4a5f-b42b-2b241b4588f5" />
+        <generalsInternal>
+          <generalization Id="3c4b952f-8441-4d96-9444-79d6bcf5b0ef" isSubstitutable="false">
+            <actorMoniker Id="e806539e-6a09-45c5-8cd2-d05a6ecdd5f6" LastKnownName="工作组领导" />
+            <elementDefinition Id="b4158efd-73eb-4b2e-b54d-f6cfa6891c32" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c8341c3c-7e96-4279-a0c7-0033139506df" name="航材管理成员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e59c4788-db09-4407-9281-7244d7759830" />
+        <generalsInternal>
+          <generalization Id="ca022c0f-f021-40c9-81d9-414c88d9fb9c" isSubstitutable="false">
+            <actorMoniker Id="06a075ec-6a0e-4d98-ac8a-9f6914f89b62" LastKnownName="工作组成员" />
+            <elementDefinition Id="c9e03202-4b6f-409f-a4e2-7439194cca9e" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e806539e-6a09-45c5-8cd2-d05a6ecdd5f6" name="工作组领导" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf9cb67e-927c-4773-a215-57a81b6364d1" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="06a075ec-6a0e-4d98-ac8a-9f6914f89b62" name="工作组成员" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ba8030bd-422a-4ce2-bb4d-51a865b66622" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="21e68b3d-8a9b-4ef1-b814-a3bc38d36459" name="Main">
+    <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+  </package>
+</useCaseModelRoot>

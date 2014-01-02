@@ -1,8 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="764e42fd-9b2e-46fe-b7c9-5effcda408c1"
   name="Project" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="016a9e5d-895a-48d5-b645-e54e7cc5ad6a">
+      <body>1.工作组ID处理任务分派问题。
+2.标准任务ID解决查看案例、关联文档的需求。
+3.通过任务类型和实际任务ID导航到实际任务。
+4.工期、期限不变，记录实际开始日期和进度，用以计算风险。</body>
+      <annotatedElements>
+        <classMoniker
+          Id="0e28c9f2-320a-4c44-9026-e0adea9df1d7"
+          LastKnownName="任务"
+          LastKnownLocation="Project.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="a6c2d3e5-4db2-4194-b06e-6708a6ff508c">
+      <body>根据任务类型，选择不同类添加任务案例，并检索任务案例。</body>
+      <annotatedElements>
+        <classMoniker
+          Id="eece4998-5bb4-4427-b93e-f900af2b64aa"
+          LastKnownName="任务标准"
+          LastKnownLocation="Project.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <class
@@ -54,13 +79,91 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="b7de92b1-b3df-480e-91b6-f03f75cf212d"
+            isDerived="false"
+            sourceEndRoleName="项目模板"
+            targetEndRoleName="任务模板"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ff6201ba-0ec7-4f00-a97d-5dcbe3fc27cb"
+              LastKnownName="任务模板"
+              LastKnownLocation="Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9899f161-09f1-478c-9441-1ecc0a4a42aa"
+                  name="项目模板"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c4fb52e5-53e0-48d3-b66b-c5a84ab72507"
+                  name="任务模板"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="92520de5-b1fc-4780-800a-194079aad294"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ebf952ce-70c5-4649-a867-6c5b95344bf0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="15ee92bd-de94-43a2-b8e9-2d6a15b2411c"
+            name="名称"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e762d0c8-92b6-4a35-8d9e-c4bf672609f7"
+            name="描述"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="0e28c9f2-320a-4c44-9026-e0adea9df1d7"
-        name="任务基类"
-        isAbstract="true"
+        name="任务"
+        isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <appliedStereotypesInternal>
@@ -126,7 +229,7 @@
             isAbstract="false">
             <classMoniker
               Id="0e28c9f2-320a-4c44-9026-e0adea9df1d7"
-              LastKnownName="任务基类"
+              LastKnownName="任务"
               LastKnownLocation="Project.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -251,12 +354,6 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="4301019e-8fbd-438d-a143-cd7c4ff98a01"
-                LastKnownName="DateTime"
-                LastKnownLocation="Common.uml" />
-            </type_NamedElement>
           </property>
           <property
             Id="c324b5d8-581c-4959-9b39-f566f7a1154e"
@@ -326,12 +423,6 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="e646dc42-fb94-4806-b9b2-2ca979ff14e8"
-                LastKnownName="TimeSpan"
-                LastKnownLocation="Project.uml" />
-            </type_NamedElement>
           </property>
           <property
             Id="4d349dca-e4fb-4b82-adf1-38e7e2b59d8b"
@@ -401,12 +492,6 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
           </property>
           <property
             Id="e242c8cf-872a-42ba-a36a-62411cf63c6b"
@@ -476,12 +561,6 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
           </property>
           <property
             Id="3190e4e8-38b3-4d75-a1ac-f2a51a0c9eb9"
@@ -551,12 +630,6 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
           </property>
           <property
             Id="512360cf-c091-45b8-ba2c-fb68ef65b43d"
@@ -626,16 +699,10 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
           </property>
           <property
-            Id="5e6a4a75-f072-49f2-ba4c-ae45651459f3"
-            name="可分派资源集合"
+            Id="317a4e89-2b87-4baa-a900-aeacaf15761c"
+            name="任务标准ID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -643,65 +710,51 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="99c4574f-8216-4f4c-93a7-a7789a06e417"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2cfc916f-549c-46e8-a23d-8e2cf938e560">
-                    <propertyInstance
-                      Id="e878e433-4ecd-4f91-b071-f8e539587a4b"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f340528c-25a4-4277-b1be-910bfc52a3ad">
-                    <propertyInstance
-                      Id="0666e63c-b023-48d5-82a4-17848da16d9b"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="12168bff-2a2f-46dc-bcfd-d7f0ede1f4d9">
-                    <propertyInstance
-                      Id="ad3753b6-da77-4492-ac20-397647d65a31"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6720e9e6-cd4e-4103-80a8-eb051732e077">
-                    <propertyInstance
-                      Id="901a1dd3-13a2-4da0-b119-2f43ac5ab579"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2877fdd3-51f4-4d2f-a9c4-ed0ac1c6db4b">
-                    <propertyInstance
-                      Id="ed6f94b5-13ed-42c5-a165-b2b5fe842dfc"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="784a110d-0407-4056-b741-b923fdbb3985">
-                    <propertyInstance
-                      Id="c07a30f1-bf04-49e7-ac19-b3129879e5ad"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a5dc43ad-bc44-413c-8a55-207fd4f3bb91">
-                    <propertyInstance
-                      Id="b122ac13-9dae-4fb9-b4bb-72ef922693e3"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
+            isComposite="false" />
+          <property
+            Id="944c6d3f-2dc3-4ff5-bb13-47da2c688f7f"
+            name="实际任务ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="825fccaf-78f8-4852-9ee5-7e51fdedb382"
+            name="是否有风险"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b3e242e1-1654-4908-a821-e7d638dfed75"
+            name="任务跟踪记录"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4c6e2c51-10bd-454f-ab56-09cf9db71552"
+            name="项目ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -763,6 +816,14 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
           </operation>
+          <operation
+            Id="c47dedf9-b5a1-4d64-9db7-29f4a544c6a5"
+            name="完成任务"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -775,6 +836,826 @@
       <undefinedType
         Id="91cf0b56-0ef9-49fc-9e5d-962a3f11e38f"
         name="List&lt;EmployeeResource&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eece4998-5bb4-4427-b93e-f900af2b64aa"
+        name="任务标准"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="916bb0c6-d017-4570-bfb7-2b6697ee43a0"
+            isDerived="false"
+            sourceEndRoleName="任务标准"
+            targetEndRoleName="任务案例集"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d2bba234-6e3a-409b-bf8a-de4bdc93d044"
+              LastKnownName="任务案例"
+              LastKnownLocation="Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0b4b535-8717-4e97-8776-8c89f0aaad4c"
+                  name="任务标准"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4c2e1560-351e-440a-87ae-e5d178482f6e"
+                  name="任务案例集"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a2db70d0-dd08-451b-81bd-12bb2a3611f1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="90a0a39d-5831-4dfc-a8f1-bd58cf86ec63"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7959f903-88f7-433d-96bf-a8ffc23849a7"
+            isDerived="false"
+            sourceEndRoleName="任务标准"
+            targetEndRoleName="任务模板"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ff6201ba-0ec7-4f00-a97d-5dcbe3fc27cb"
+              LastKnownName="任务模板"
+              LastKnownLocation="Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d4aa56a1-a163-405f-b7a0-3418a9090e4e"
+                  name="任务标准"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="35e7e281-efb8-445c-b04c-a09c99afb558"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f49604f3-9f32-412a-8734-b2c78954715a"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="86dbd0fb-1a29-4715-81a0-4bebabbe29ba"
+                  name="任务模板"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="768364f3-3b83-4753-bfc6-c54d10960ea8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d1494d2e-d2aa-436f-94f1-584b58580e1e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="b71d2011-5da6-4d60-9f01-3e6b8ce6af3d"
+            name="3-乐观时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="307dc364-2c44-4d6c-b316-0d390587d234"
+            name="4-悲观时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5f9bd4f0-02fc-41cd-8190-ad2a7757c78e"
+            name="5-正常时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cb8f71ce-ab40-43b3-9ba5-5fe4889c630a"
+            name="1-名称"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dfda7bd4-cdd1-47bb-b756-5ce45d7fd122"
+            name="2-描述"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6ad5bbee-735a-4110-af97-2632df2d1a59"
+            name="7-案例集合"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4a258c93-25f2-48e4-958b-547097397f09"
+            name="8-文档源ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="76f5529b-6531-4ae6-980e-fb8d8f26ba74"
+            name="6-工作组ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="36df5864-7bef-434f-8579-63c02b3f30ce"
+            name="9-任务类型"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d2bba234-6e3a-409b-bf8a-de4bdc93d044"
+        name="任务案例"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="ce7a6900-f3ca-40af-8a29-17ab50537e85"
+            name="1-任务模板ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="559c4f71-de15-4d0a-9c0f-cf0f2398b469"
+            name="2-案例ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4b5e076c-d2be-4ac3-aaec-d83cca021a5f"
+        name="创建项目"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="75f335ee-5433-4c27-9d05-717f31a2c831"
+        name="分派任务"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="69114824-f893-49cc-a1da-be1e688ebca9"
+        name="反馈执行"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="daf82752-355c-46a7-9b40-a5c5cf4110d0"
+        name="管理项目模板"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7a14fe22-33f9-4a87-b16a-2090b1388871"
+        name="管理案例"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="381fb1a3-9aae-4171-85ba-998eeaefc54a"
+        name="关联文档"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="fa2598a1-c9de-45bd-afaa-919e9d5793d9"
+            name="2-文档ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8de1ca01-6eab-443d-b4a4-96614c48ac4e"
+            name="1-源ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="448d8de9-06b7-442c-98af-e6dd9bc123fe"
+            name="3-文件名"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="40987604-fb90-4d54-b3e1-9db446799277"
+        name="工作组"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ccfe3bdd-9bb2-4324-8636-92874f4d509b"
+            isDerived="false"
+            sourceEndRoleName="工作组"
+            targetEndRoleName="成员集"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7a9610cd-48bd-4091-9c0b-9f73f8c61ecf"
+              LastKnownName="成员"
+              LastKnownLocation="Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8fab0b4-b5ff-416b-819f-914600550f6e"
+                  name="工作组"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="694d51d4-9b8e-4d37-838c-e42d9446d9a4"
+                  name="成员集"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5872e897-1929-4e23-b05d-ed8c36697b6d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8d79c8d0-bac9-44a9-87a1-8d4c1a014547"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="04997d9f-3440-405a-8c41-331d695b0747"
+            isDerived="false"
+            sourceEndRoleName="工作组"
+            targetEndRoleName="任务标准集"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="eece4998-5bb4-4427-b93e-f900af2b64aa"
+              LastKnownName="任务标准"
+              LastKnownLocation="Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56274dbc-77a5-409a-85f1-a8c77863deba"
+                  name="工作组"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb81e0e2-887b-4789-b6fb-24c39bf59fc4"
+                  name="任务标准集"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="78eeed0a-e0ca-431f-be6b-0ee2cee3db46"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="36d0df1b-01d8-4ffd-bcc9-48a135bcf100"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="668dcf60-62c7-4552-a068-f2394389c760"
+            name="1-负责人用户ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b7f67b46-c0bd-4d4c-bf7b-5ba3d1763291"
+            name="2-负责人工号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="de0921b5-c2c7-4c6e-9ddc-d611deffa768"
+            name="3-成员集合"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7a9610cd-48bd-4091-9c0b-9f73f8c61ecf"
+        name="成员"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="a243612f-8fc1-435b-a815-3aa7a2253b58"
+            name="1-成员用户ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="02bdda90-1c4c-4aea-8b04-97330deaea41"
+            name="2-成员工号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="50e722cf-a994-40b3-9c19-ca370412bd16"
+            name="3-工作组ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9bf18b6a-dd17-4390-ae24-2e28c2c549bb"
+        name="用户"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="aefe7e31-0ba4-4f33-9613-7f56c5bfec84"
+            name="1-用户ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d9ecca51-4b79-4e84-b29c-cb456265078b"
+            name="2-工号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9555931e-2dd7-4fe4-80f8-323bfbe20c14"
+            name="3-姓"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="465e6bab-2321-4ab7-9111-5542c8f696a8"
+            name="4-名"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8527ec9d-1352-4e8b-a71f-43c125cddff7"
+            name="5-表示为"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ff6201ba-0ec7-4f00-a97d-5dcbe3fc27cb"
+        name="任务模板"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="af9ae6e1-2876-4eae-bc54-852eab77120f"
+            name="任务标准ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f0362a50-c079-4315-804d-6c905d14c413"
+            name="项目模板ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="08f2b17d-695b-4063-a575-75db922d0a06"
+            name="主题"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d7dac3d9-8054-4e7f-9ac6-7e4831e08097"
+            name="开始偏移量"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0156fcfd-dbf5-4030-b5d6-08cfd8ecfe64"
+            name="结束偏移量"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="73e0dd57-8373-4984-af8b-e1635025fdfd"
+            name="是否里程碑"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="70fe6b3e-59d1-4488-b82d-e7db8d7596c7"
+            name="是否摘要任务"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="403e5f7c-10f9-4472-8e1f-c2cf9a3a8468"
+            name="父项ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="38a13e0a-fcdd-40fc-97fa-5c24a79a6058"
+        name="项目"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e940b8ad-9945-4964-94e5-562ca55c62ef"
+            isDerived="false"
+            sourceEndRoleName="项目"
+            targetEndRoleName="任务"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0e28c9f2-320a-4c44-9026-e0adea9df1d7"
+              LastKnownName="任务"
+              LastKnownLocation="Project.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fe05ae69-fe7c-4cb8-9967-88eee6029e73"
+                  name="项目"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="549b61e3-3dd7-4be1-95ec-dd78f0d48773"
+                  name="任务"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3d02aafd-3c34-4194-b36d-ae3418a495b3"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="626f09bc-abed-4ec1-bb80-774b8f0dcf80"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d3a35fc0-0022-428b-980b-8da58555c0f3"
+            name="名称"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="965df052-1d71-43ba-a798-c3454e242bf9"
+            name="描述"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0edcd778-6ac5-4a1f-b10e-d3ea8b382f36"
+            name="计划开始"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="70c4f3a2-8e57-43d1-9b9e-647ed424b736"
+            name="计划结束"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0116e49a-8584-4a01-861d-ddf7326dd9d4"
+            name="项目状态"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

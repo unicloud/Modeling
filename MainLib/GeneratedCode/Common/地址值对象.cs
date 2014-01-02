@@ -13,25 +13,25 @@ namespace Common
 
 	public class 地址值对象
 	{
-		public virtual string 城市
+		public virtual object 城市
 		{
 			get;
 			set;
 		}
 
-		public virtual string 邮编
+		public virtual object 邮编
 		{
 			get;
 			set;
 		}
 
-		public virtual string 地址一
+		public virtual object 地址一
 		{
 			get;
 			set;
 		}
 
-		public virtual string 地址二
+		public virtual object 地址二
 		{
 			get;
 			set;
