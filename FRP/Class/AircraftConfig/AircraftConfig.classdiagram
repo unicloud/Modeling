@@ -1630,7 +1630,7 @@
               <referencedTypeMoniker Id="24084420-995f-4781-80a5-a1f808ac172b" LastKnownName="string" />
             </type_NamedElement>
           </property>
-          <property Id="0d6ef23b-5312-421c-901e-af5925e98b4d" name="CopyFile" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="0d6ef23b-5312-421c-901e-af5925e98b4d" name="LicenseFile" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <description>证照扫描件</description>
             <elementDefinition Id="09758049-2393-4dea-9a30-cd337b634a92" />
           </property>

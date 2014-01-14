@@ -3107,7 +3107,7 @@
           </property>
           <property
             Id="09758049-2393-4dea-9a30-cd337b634a92"
-            name="CopyFile"
+            name="LicenseFile"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
