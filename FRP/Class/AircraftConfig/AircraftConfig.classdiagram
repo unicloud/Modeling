@@ -143,7 +143,7 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="61bb7c88-103f-4193-975e-33828298d784" />
         <targetEnds>
-          <association Id="f81f54a9-3054-4f6d-a74b-249eeb8ffabd" isDerived="false" sourceEndRoleName="Actype" targetEndRoleName="Acmodel" isLeaf="false" isAbstract="false">
+          <association Id="f81f54a9-3054-4f6d-a74b-249eeb8ffabd" isDerived="false" sourceEndRoleName="Actype" targetEndRoleName="AcModel" isLeaf="false" isAbstract="false">
             <classMoniker Id="ac77e159-6cef-48fe-a124-7e4309ee73fc" LastKnownName="AcModel" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -152,7 +152,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="ec5cdcbe-3ebd-443d-9e7e-3be3b9b6b152" name="Acmodel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                <memberEnd Id="ec5cdcbe-3ebd-443d-9e7e-3be3b9b6b152" name="AcModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
                   <lowerValueInternal>
                     <literalString Id="12293085-aa54-484e-8af1-89273c73110d" name="Lower" value="*">
                       <elementDefinition Id="09de44db-0609-4d2a-8b6e-b1210bba1e5a" />
@@ -169,11 +169,11 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="d87b50f4-ec05-43c2-a7ac-60f73df64e55" />
           </association>
-          <association Id="39b7f956-3ec9-4d4f-8377-b95fa2765b20" isDerived="false" sourceEndRoleName="Actype" targetEndRoleName="Accategory" isLeaf="false" isAbstract="false">
+          <association Id="39b7f956-3ec9-4d4f-8377-b95fa2765b20" isDerived="false" sourceEndRoleName="AcType" targetEndRoleName="AcCategory" isLeaf="false" isAbstract="false">
             <classMoniker Id="5971a47a-81fe-4902-b7b6-7840cb20a54c" LastKnownName="AcCategory" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="c6073abb-6dad-4eac-8c25-7f223a861ed2" name="Actype" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="c6073abb-6dad-4eac-8c25-7f223a861ed2" name="AcType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString Id="8621b7ae-08cb-4745-ac78-cd48b3efceee" name="Lower" value="*">
                       <elementDefinition Id="7183f1e6-b522-4ac5-9158-7b7e43df4af4" />
@@ -188,7 +188,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="32997048-36c3-4543-85cf-39dfdf9b33f3" name="Accategory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="32997048-36c3-4543-85cf-39dfdf9b33f3" name="AcCategory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="e2a72afa-bb9c-4cb3-b153-40d4f5fd815f" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -855,7 +855,7 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="9721769f-e18c-45c5-8e2c-51133003f33d" />
         <targetEnds>
-          <association Id="86e7c7a1-da67-4d4f-9ba7-512b7d227534" isDerived="false" sourceEndRoleName="Acreg" targetEndRoleName="AcregLicense" isLeaf="false" isAbstract="false">
+          <association Id="86e7c7a1-da67-4d4f-9ba7-512b7d227534" isDerived="false" sourceEndRoleName="Acreg" targetEndRoleName="AcLicense" isLeaf="false" isAbstract="false">
             <classMoniker Id="90543c2a-6d40-4ae9-939e-64e5754c8a02" LastKnownName="AcLicense" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -864,7 +864,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="bb9cd142-39ca-426e-9280-5cf72d8ea40b" name="AcregLicense" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                <memberEnd Id="bb9cd142-39ca-426e-9280-5cf72d8ea40b" name="AcLicense" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
                   <lowerValueInternal>
                     <literalString Id="bcd3f571-af86-4dfa-9333-5aff3c0d73bd" name="Lower" value="*">
                       <elementDefinition Id="d8ddd364-fd45-48c9-ba03-c696b2d01624" />
@@ -1649,7 +1649,7 @@
         <description>飞机证照</description>
         <elementDefinition Id="3a7dd382-fb8e-40a1-bd62-fa16258bd99a" />
         <targetEnds>
-          <association Id="8aea8a00-5d88-4dca-a885-4039ac3450ef" isDerived="false" sourceEndRoleName="LicenseType" targetEndRoleName="AcregLicense" isLeaf="false" isAbstract="false">
+          <association Id="8aea8a00-5d88-4dca-a885-4039ac3450ef" isDerived="false" sourceEndRoleName="LicenseType" targetEndRoleName="AcLicense" isLeaf="false" isAbstract="false">
             <classMoniker Id="90543c2a-6d40-4ae9-939e-64e5754c8a02" LastKnownName="AcLicense" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -1658,7 +1658,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="b58e1927-4d45-4575-9178-9792ed62c411" name="AcregLicense" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                <memberEnd Id="b58e1927-4d45-4575-9178-9792ed62c411" name="AcLicense" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
                   <lowerValueInternal>
                     <literalString Id="5c3ab7b0-cc6c-4f44-b2b7-5d3783a8adfd" name="Lower" value="*">
                       <elementDefinition Id="937c5e69-679f-4521-b78b-8fb64403af6b" />

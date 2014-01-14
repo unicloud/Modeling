@@ -635,7 +635,7 @@
             Id="d87b50f4-ec05-43c2-a7ac-60f73df64e55"
             isDerived="false"
             sourceEndRoleName="Actype"
-            targetEndRoleName="Acmodel"
+            targetEndRoleName="AcModel"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -658,7 +658,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="1c633800-a3a6-4979-b2bd-21ba26b5ee2b"
-                  name="Acmodel"
+                  name="AcModel"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -685,8 +685,8 @@
           <association
             Id="7423710c-bcf2-4a5e-90d8-3d68eb0a1207"
             isDerived="false"
-            sourceEndRoleName="Actype"
-            targetEndRoleName="Accategory"
+            sourceEndRoleName="AcType"
+            targetEndRoleName="AcCategory"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -697,7 +697,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="8192c18b-2755-4058-a3a6-4190f62db3a8"
-                  name="Actype"
+                  name="AcType"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -723,7 +723,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="e2a72afa-bb9c-4cb3-b153-40d4f5fd815f"
-                  name="Accategory"
+                  name="AcCategory"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1950,7 +1950,7 @@
             Id="cb8c8b36-a6f9-4e04-92b4-deafbf7a9077"
             isDerived="false"
             sourceEndRoleName="Acreg"
-            targetEndRoleName="AcregLicense"
+            targetEndRoleName="AcLicense"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -1973,7 +1973,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="8427ee66-6066-42e2-aac8-4e55285ed080"
-                  name="AcregLicense"
+                  name="AcLicense"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -3488,7 +3488,7 @@
             Id="c0090dc6-2843-47ec-b0b3-f4cea4a80e11"
             isDerived="false"
             sourceEndRoleName="LicenseType"
-            targetEndRoleName="AcregLicense"
+            targetEndRoleName="AcLicense"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -3511,7 +3511,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="44146065-b165-4ec1-8e71-b3b6e7f993d8"
-                  name="AcregLicense"
+                  name="AcLicense"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
