@@ -195,7 +195,7 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="7423710c-bcf2-4a5e-90d8-3d68eb0a1207" />
           </association>
-          <association Id="15984741-db4f-4730-ab38-88920a51adeb" isDerived="false" sourceEndRoleName="AcType" targetEndRoleName="AcReg" isLeaf="false" isAbstract="false">
+          <association Id="15984741-db4f-4730-ab38-88920a51adeb" isDerived="false" sourceEndRoleName="AcType" targetEndRoleName="Aircraft" isLeaf="false" isAbstract="false">
             <classMoniker Id="435df413-ff9f-48cd-aeed-2aeef9b6ed0e" LastKnownName="Aircraft" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -204,7 +204,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="311781ad-f10f-44c5-bf7b-e60120a09938" name="AcReg" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="311781ad-f10f-44c5-bf7b-e60120a09938" name="Aircraft" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="e09b8275-8f68-411f-82f2-f3ad146943cb" name="Lower" value="*">
                       <elementDefinition Id="94d5fba1-3b3b-4032-83ad-0a1bc8868f8d" />
@@ -457,7 +457,7 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="cbed839e-071f-4b7e-983c-6f0ca2b789b4" />
         <targetEnds>
-          <association Id="83a0a2ff-1994-4334-b48f-b6f0ee72b9b5" isDerived="false" sourceEndRoleName="AcModel" targetEndRoleName="AcReg" isLeaf="false" isAbstract="false">
+          <association Id="83a0a2ff-1994-4334-b48f-b6f0ee72b9b5" isDerived="false" sourceEndRoleName="AcModel" targetEndRoleName="Aircraft" isLeaf="false" isAbstract="false">
             <classMoniker Id="435df413-ff9f-48cd-aeed-2aeef9b6ed0e" LastKnownName="Aircraft" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -466,7 +466,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="9d3ec5bc-c0b3-492f-90c3-4c0142facb94" name="AcReg" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="9d3ec5bc-c0b3-492f-90c3-4c0142facb94" name="Aircraft" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="e020b5b4-6b1b-4555-b807-d8865b608a9a" name="Lower" value="*">
                       <elementDefinition Id="fa382d01-9a4a-4b44-ac94-2058a61ae0b4" />
@@ -855,11 +855,11 @@
         </appliedStereotypesInternal>
         <elementDefinition Id="9721769f-e18c-45c5-8e2c-51133003f33d" />
         <targetEnds>
-          <association Id="86e7c7a1-da67-4d4f-9ba7-512b7d227534" isDerived="false" sourceEndRoleName="Acreg" targetEndRoleName="AcLicense" isLeaf="false" isAbstract="false">
+          <association Id="86e7c7a1-da67-4d4f-9ba7-512b7d227534" isDerived="false" sourceEndRoleName="Aircraft" targetEndRoleName="AcLicense" isLeaf="false" isAbstract="false">
             <classMoniker Id="90543c2a-6d40-4ae9-939e-64e5754c8a02" LastKnownName="AcLicense" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="2735a3b9-4092-48c4-b73c-2c76e5d002a8" name="Acreg" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false">
+                <memberEnd Id="2735a3b9-4092-48c4-b73c-2c76e5d002a8" name="Aircraft" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false">
                   <elementDefinition Id="b5d23bd0-b2d7-4e6a-8386-26ce94d96a79" />
                 </memberEnd>
               </associationHasOwnedEnds>

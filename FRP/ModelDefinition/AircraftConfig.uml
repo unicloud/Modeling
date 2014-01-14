@@ -738,7 +738,7 @@
             Id="65e95f7b-b3e7-4978-a879-67b167c1979d"
             isDerived="false"
             sourceEndRoleName="AcType"
-            targetEndRoleName="AcReg"
+            targetEndRoleName="Aircraft"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -761,7 +761,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="f26e3461-6781-4bfc-aa0d-7cd273ce48dd"
-                  name="AcReg"
+                  name="Aircraft"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1407,7 +1407,7 @@
             Id="c84dc488-cae4-411f-912a-44e4fba0172d"
             isDerived="false"
             sourceEndRoleName="AcModel"
-            targetEndRoleName="AcReg"
+            targetEndRoleName="Aircraft"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -1430,7 +1430,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="d9920e5b-ec53-45fc-81a7-0e47fb28bbfd"
-                  name="AcReg"
+                  name="Aircraft"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1949,7 +1949,7 @@
           <association
             Id="cb8c8b36-a6f9-4e04-92b4-deafbf7a9077"
             isDerived="false"
-            sourceEndRoleName="Acreg"
+            sourceEndRoleName="Aircraft"
             targetEndRoleName="AcLicense"
             isLeaf="false"
             isAbstract="false">
@@ -1961,7 +1961,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="b5d23bd0-b2d7-4e6a-8386-26ce94d96a79"
-                  name="Acreg"
+                  name="Aircraft"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
