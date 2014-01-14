@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="e49b2617-b8aa-4689-ab2b-1ad768ce4f4b"
   name="AircraftConfig" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -531,7 +531,7 @@
     <packageHasNamedElement>
       <class
         Id="61bb7c88-103f-4193-975e-33828298d784"
-        name="AcType"
+        name="AircraftSeries"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -634,19 +634,19 @@
           <association
             Id="d87b50f4-ec05-43c2-a7ac-60f73df64e55"
             isDerived="false"
-            sourceEndRoleName="Actype"
-            targetEndRoleName="AcModel"
+            sourceEndRoleName="AircraftSeries"
+            targetEndRoleName="AircraftType"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="cbed839e-071f-4b7e-983c-6f0ca2b789b4"
-              LastKnownName="AcModel"
+              LastKnownName="AircraftType"
               LastKnownLocation="AircraftConfig.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="0fe858a9-cd1f-46af-8c62-197a175a04e9"
-                  name="Actype"
+                  name="AircraftSeries"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -658,7 +658,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="1c633800-a3a6-4979-b2bd-21ba26b5ee2b"
-                  name="AcModel"
+                  name="AircraftType"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -682,114 +682,11 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="7423710c-bcf2-4a5e-90d8-3d68eb0a1207"
-            isDerived="false"
-            sourceEndRoleName="AcType"
-            targetEndRoleName="AcCategory"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="f59aee9a-99c3-45e4-a8a9-6a433f4a5414"
-              LastKnownName="AcCategory"
-              LastKnownLocation="AircraftConfig.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="8192c18b-2755-4058-a3a6-4190f62db3a8"
-                  name="AcType"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="7183f1e6-b522-4ac5-9158-7b7e43df4af4"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="43db9fee-beb9-41e8-9e8e-2d7edf80dadf"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e2a72afa-bb9c-4cb3-b153-40d4f5fd815f"
-                  name="AcCategory"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="65e95f7b-b3e7-4978-a879-67b167c1979d"
-            isDerived="false"
-            sourceEndRoleName="AcType"
-            targetEndRoleName="Aircraft"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="9721769f-e18c-45c5-8e2c-51133003f33d"
-              LastKnownName="Aircraft"
-              LastKnownLocation="AircraftConfig.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2bb8980e-5392-43a5-bac3-d07c98195186"
-                  name="AcType"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f26e3461-6781-4bfc-aa0d-7cd273ce48dd"
-                  name="Aircraft"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="94d5fba1-3b3b-4032-83ad-0a1bc8868f8d"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="053414c9-f4d1-4025-b889-17a712dc22a8"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="424f9f6c-b5b9-4953-8810-8900439cad63"
-            name="Name"
+            name="系列名称"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -865,7 +762,7 @@
           </property>
           <property
             Id="3fc38f36-f3be-4163-afd5-f33a460d36e3"
-            name="Note"
+            name="描述"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -941,7 +838,7 @@
           </property>
           <property
             Id="bbe12455-4922-4855-aa9f-87450d8f2c24"
-            name="ManufacturerID"
+            name="制造商"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1016,27 +913,9 @@
             </type_NamedElement>
           </property>
           <property
-            Id="5fb1867b-ef08-4df1-924e-14b784757d86"
-            name="AcCategoryID"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>座级等级编号</description>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="8576bb7c-0de1-49ec-a677-b8fd0ff32b66"
-                LastKnownName="Guid"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="c9db12fc-efce-46c9-a35d-f135fc53d728"
-            name="CreateDate"
+            name="创建日期"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1054,8 +933,8 @@
             </type_NamedElement>
           </property>
           <property
-            Id="4d413817-cdb6-45fa-91cf-ec1e4b47b6f0"
-            name="ShortName"
+            Id="27710aa2-a1f0-4d0f-aeb3-55ccb124f899"
+            name="座级"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1063,11 +942,10 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false">
-            <description>简称</description>
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
+              <undefinedTypeMoniker
+                Id="8576bb7c-0de1-49ec-a677-b8fd0ff32b66"
+                LastKnownName="Guid"
                 LastKnownLocation="Main.uml" />
             </type_NamedElement>
           </property>
@@ -1303,7 +1181,7 @@
     <packageHasNamedElement>
       <class
         Id="cbed839e-071f-4b7e-983c-6f0ca2b789b4"
-        name="AcModel"
+        name="AircraftType"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1406,7 +1284,7 @@
           <association
             Id="c84dc488-cae4-411f-912a-44e4fba0172d"
             isDerived="false"
-            sourceEndRoleName="AcModel"
+            sourceEndRoleName="AircraftType"
             targetEndRoleName="Aircraft"
             isLeaf="false"
             isAbstract="false">
@@ -1418,7 +1296,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="8560e06f-5a90-46b5-a8f6-4828fef054c6"
-                  name="AcModel"
+                  name="AircraftType"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1454,11 +1332,63 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="dc761ab9-4d55-4415-bcea-8a8e9b4d02ab"
+            isDerived="false"
+            sourceEndRoleName="AircraftType"
+            targetEndRoleName="AircraftCategory"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f59aee9a-99c3-45e4-a8a9-6a433f4a5414"
+              LastKnownName="AircraftCategory"
+              LastKnownLocation="AircraftConfig.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ff73e74-041c-434f-8338-6237c9843b49"
+                  name="AircraftType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="cb5fe428-52aa-4c31-9da3-078274f003b1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c6c0bf41-7c2c-4ce6-a59d-359f6318e236"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="05fe7cb4-38f3-4a2b-8ee8-57c87b613268"
+                  name="AircraftCategory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="29b9dea4-77a2-4308-a303-862e2a3bbb99"
-            name="Name"
+            name="名称"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1534,7 +1464,7 @@
           </property>
           <property
             Id="79fd5624-4993-4b93-aae2-fbbeb3294954"
-            name="AcTypeID"
+            name="系列"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1610,7 +1540,7 @@
           </property>
           <property
             Id="41c10006-46a9-4703-91ea-c1c59040e3cf"
-            name="Note"
+            name="描述"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1684,13 +1614,30 @@
                 LastKnownLocation="Main.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="0d7b895d-41e8-46be-bb24-273e7ecf024c"
+            name="座级"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="8576bb7c-0de1-49ec-a677-b8fd0ff32b66"
+                LastKnownName="Guid"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="f59aee9a-99c3-45e4-a8a9-6a433f4a5414"
-        name="AcCategory"
+        name="AircraftCategory"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1741,7 +1688,7 @@
         <ownedAttributesInternal>
           <property
             Id="cea2daed-cbd5-4cf9-9c20-768708f3b3fb"
-            name="Level"
+            name="类型"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1817,7 +1764,7 @@
           </property>
           <property
             Id="d09eb280-4d4a-4202-b93b-53f09c77e843"
-            name="Regional"
+            name="座级"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1950,12 +1897,12 @@
             Id="cb8c8b36-a6f9-4e04-92b4-deafbf7a9077"
             isDerived="false"
             sourceEndRoleName="Aircraft"
-            targetEndRoleName="AcLicense"
+            targetEndRoleName="AircraftLicense"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="ceb95e7f-66dc-4c42-98e5-4513b7b25fd9"
-              LastKnownName="AcLicense"
+              LastKnownName="AircraftLicense"
               LastKnownLocation="AircraftConfig.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -1973,7 +1920,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="8427ee66-6066-42e2-aac8-4e55285ed080"
-                  name="AcLicense"
+                  name="AircraftLicense"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -2001,7 +1948,7 @@
         <ownedAttributesInternal>
           <property
             Id="374f06b1-cc3e-4d5d-b2bd-7986beda3df5"
-            name="Supplier"
+            name="所有权人"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2076,84 +2023,8 @@
             </type_NamedElement>
           </property>
           <property
-            Id="0cf25038-d2d3-413b-b3cf-2564109191a8"
-            name="AcTypeID"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>系列外键</description>
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="14ae98b4-b789-4869-b622-ee42dc184f09"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="771365e5-59b2-4a23-9e66-e6ed5e99966b">
-                    <propertyInstance
-                      Id="45a41336-2cb6-4289-8100-0e658736cea0"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e79d1621-73d5-4eb4-8039-1c2debb25612">
-                    <propertyInstance
-                      Id="3f690147-960c-4b06-a0d2-65def89716ec"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b1ae9994-324b-4589-a683-7429db6f26f6">
-                    <propertyInstance
-                      Id="de65beab-402e-4b4e-a75e-5cfd0b6ce941"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7295d40c-9199-4b55-a4aa-6e74325406a9">
-                    <propertyInstance
-                      Id="f061c2e6-51c5-4a10-8796-8abec4fdc893"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c0a19c4b-8337-4240-84a0-0c17d23a7cd7">
-                    <propertyInstance
-                      Id="9edef5bf-a4c3-4669-a9ae-1a85f727be05"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="90d847d1-f4b6-434c-9fe9-0bc0f1ba5a51">
-                    <propertyInstance
-                      Id="0c2ec302-6160-4250-bfce-07d7922aca20"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e33255eb-67b6-456a-b276-1f7fb8a328e2">
-                    <propertyInstance
-                      Id="59b87a18-7039-434b-b0ab-104ed617c2fb"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="8576bb7c-0de1-49ec-a677-b8fd0ff32b66"
-                LastKnownName="Guid"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="42b645f2-cd79-49f2-9cd6-9b61a0db758a"
-            name="ImportCategory"
+            name="引进方式"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2221,15 +2092,15 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
+              <undefinedTypeMoniker
+                Id="8576bb7c-0de1-49ec-a677-b8fd0ff32b66"
+                LastKnownName="Guid"
                 LastKnownLocation="Main.uml" />
             </type_NamedElement>
           </property>
           <property
             Id="fc8e57e9-5887-436d-8537-c2cf47a99578"
-            name="RegNumber"
+            name="注册号"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2305,7 +2176,7 @@
           </property>
           <property
             Id="12057a57-a351-482a-b78f-349aac84928f"
-            name="SN"
+            name="序列号"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2381,7 +2252,7 @@
           </property>
           <property
             Id="7c842a9c-5770-495f-8f7a-57d7c8403f09"
-            name="IsOperation"
+            name="运营状态"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2457,7 +2328,7 @@
           </property>
           <property
             Id="b927ce4c-b174-49cc-af93-45e2bf1e5b8b"
-            name="CreateDate"
+            name="创建日期"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2533,7 +2404,7 @@
           </property>
           <property
             Id="f24bbdf4-a984-4b8c-a929-12f15f97baff"
-            name="FactoryDate"
+            name="出厂日期"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2609,7 +2480,7 @@
           </property>
           <property
             Id="aec7261b-9dd9-4e0c-a957-2531a45fa13d"
-            name="ImportDate"
+            name="引进日期"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2685,7 +2556,7 @@
           </property>
           <property
             Id="51ff5e31-910c-4296-9bb9-6375bb15d201"
-            name="ExportDate"
+            name="注销日期"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2761,7 +2632,7 @@
           </property>
           <property
             Id="2828fd9a-819e-4cd9-ae88-43016707482d"
-            name="SeatingCapacity"
+            name="座位数"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2837,7 +2708,7 @@
           </property>
           <property
             Id="0793ec9f-bbf0-4bc2-87cd-b748e82149dd"
-            name="CarryingCapacity"
+            name="商载量"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2913,7 +2784,7 @@
           </property>
           <property
             Id="7a8e5431-9618-4e0a-a13f-360a77ea5771"
-            name="AcModel"
+            name="机型"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2931,26 +2802,8 @@
             </type_NamedElement>
           </property>
           <property
-            Id="931458ff-994c-4546-b93c-f44e5b0a42ab"
-            name="ManufacturerID"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>制造商</description>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="1734b49c-dde8-48b1-bda9-9eb200bf6244"
-                LastKnownName="int"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="99f7f5bb-b619-4dac-a4d4-eae9e658eccb"
-            name="ExportCategory"
+            name="退出方式"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2960,9 +2813,27 @@
             isComposite="false">
             <description>退出方式</description>
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
+              <undefinedTypeMoniker
+                Id="8576bb7c-0de1-49ec-a677-b8fd0ff32b66"
+                LastKnownName="Guid"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5dfb4205-a947-4eb9-9ab5-114e601ff082"
+            name="运营权人"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="8576bb7c-0de1-49ec-a677-b8fd0ff32b66"
+                LastKnownName="Guid"
                 LastKnownLocation="Main.uml" />
             </type_NamedElement>
           </property>
@@ -2972,7 +2843,7 @@
     <packageHasNamedElement>
       <class
         Id="ceb95e7f-66dc-4c42-98e5-4513b7b25fd9"
-        name="AcLicense"
+        name="AircraftLicense"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2980,7 +2851,7 @@
         <ownedAttributesInternal>
           <property
             Id="1ddbbd05-4c49-4b16-8536-514a240ce205"
-            name="LicenseTypeID"
+            name="证照类型"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2999,7 +2870,7 @@
           </property>
           <property
             Id="0e72e3d1-7fa3-47bf-a0e7-b30b049045f3"
-            name="Note"
+            name="描述"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3018,7 +2889,7 @@
           </property>
           <property
             Id="c3849019-8e74-487d-8c55-dcc946d8a8b8"
-            name="IssuedUnit"
+            name="发证单位"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3037,7 +2908,7 @@
           </property>
           <property
             Id="c8871b3d-91f5-4649-a559-1c4e76e64040"
-            name="IssuedDate"
+            name="发证日期"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3056,7 +2927,7 @@
           </property>
           <property
             Id="1c7a5ed9-b6e2-428d-956d-0ce19aa5fd0d"
-            name="ValidMonths"
+            name="有效期"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3069,7 +2940,7 @@
           </property>
           <property
             Id="645645de-cd47-492c-a166-96dda347cfa2"
-            name="ExpireDate"
+            name="证照到期日"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3088,7 +2959,7 @@
           </property>
           <property
             Id="a9588c53-8686-4605-a760-ba3e67f0a335"
-            name="State"
+            name="状态"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3107,7 +2978,7 @@
           </property>
           <property
             Id="09758049-2393-4dea-9a30-cd337b634a92"
-            name="LicenseFile"
+            name="证照扫描件"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3120,7 +2991,7 @@
           </property>
           <property
             Id="498ffee6-1eb3-4826-9525-8d355e0288a0"
-            name="Name"
+            name="名称"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3488,12 +3359,12 @@
             Id="c0090dc6-2843-47ec-b0b3-f4cea4a80e11"
             isDerived="false"
             sourceEndRoleName="LicenseType"
-            targetEndRoleName="AcLicense"
+            targetEndRoleName="AircraftLicense"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="ceb95e7f-66dc-4c42-98e5-4513b7b25fd9"
-              LastKnownName="AcLicense"
+              LastKnownName="AircraftLicense"
               LastKnownLocation="AircraftConfig.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -3511,7 +3382,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="44146065-b165-4ec1-8e71-b3b6e7f993d8"
-                  name="AcLicense"
+                  name="AircraftLicense"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -3539,7 +3410,7 @@
         <ownedAttributesInternal>
           <property
             Id="ee957e68-c08a-47f6-b91c-bf360c9ca9f0"
-            name="Type"
+            name="名称"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3557,7 +3428,7 @@
           </property>
           <property
             Id="fcac04ed-0b47-44dd-be44-e6c6016c9e16"
-            name="Description"
+            name="描述"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3575,7 +3446,7 @@
           </property>
           <property
             Id="b75be625-2098-4b06-8c9c-04c156670806"
-            name="HasFile"
+            name="是否有文件"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3891,6 +3762,816 @@
             LastKnownLocation="AircraftConfig.uml" />
         </subjects>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="8592c77a-bd15-408d-9092-37627dc2e1f1"
+        name="创建日期" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bb7267b9-bc0b-4345-9d68-e61a67cedfcc"
+        name="AircraftATA"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>章节</description>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="7acc7537-c997-4eb4-a161-108b61ebe318"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="28297da1-cf79-4c00-bb06-124a9d8aec8b">
+                <propertyInstance
+                  Id="60ca182f-a98b-47fb-b77e-9a3265cc72da"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2d64f63d-0c11-4ca3-8954-7c14f59d8991">
+                <propertyInstance
+                  Id="b737f134-7f7e-49d6-aab7-fccef21c6632"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b445be0f-f834-491a-8889-18e209c6b288">
+                <propertyInstance
+                  Id="cd0c8f66-873b-4fe8-8e5b-d8a8ffc876ed"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31d74a26-47f7-4fca-b51d-88489aa31cab">
+                <propertyInstance
+                  Id="8cd1998a-6943-45b4-a038-eec0e736ef0a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="61aeea5e-055b-4f0b-bd09-093beaa61d39">
+                <propertyInstance
+                  Id="b19b3c92-6854-44a7-9812-7b6b1920518f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="88fa1155-3c3e-4995-ac36-9f958766001d"
+            isDerived="false"
+            sourceEndRoleName="AircraftATA"
+            targetEndRoleName="AircraftSeries"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="61bb7c88-103f-4193-975e-33828298d784"
+              LastKnownName="AircraftSeries"
+              LastKnownLocation="AircraftConfig.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33f78e5a-9ecd-44c3-b945-e5917606f93b"
+                  name="AircraftATA"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6c673448-b21c-49dc-93c2-6f253e88464b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3d2c7189-e13f-48d4-aede-cae7f66246fa"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ab47eaf-013b-4550-a632-a9eff2cedc59"
+                  name="AircraftSeries"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="29d94ac3-b4ee-4140-b1e7-36ddf5866201"
+            name="系列"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>系列主键</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="60c194eb-df27-4282-b5ab-c33b383f3d95"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60a35703-cfd2-40bd-9c6e-570595c7df8c">
+                    <propertyInstance
+                      Id="0d6f7e49-25ce-4d90-9084-b940b60e32ab"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d0e9a82-857b-4f3e-aaa0-915d61c5b2c7">
+                    <propertyInstance
+                      Id="efdf602b-f584-40ce-ab74-858031349624"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0f808c2-a05b-4152-ba5b-c68ddb76647b">
+                    <propertyInstance
+                      Id="cb1656f2-7a77-4828-90f8-5183175244b4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38957dc0-12f9-42d6-a64d-698c9c9fa2ae">
+                    <propertyInstance
+                      Id="e35cf4bd-4906-45ba-945e-c45275017a9b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="551b5d27-3255-4bfa-80d1-b02ec559a0ef">
+                    <propertyInstance
+                      Id="3f46499c-0453-450d-ab3f-90e0d10fc51e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cbac78d-b0fd-4703-a5ad-baa1c4478ea3">
+                    <propertyInstance
+                      Id="c443d14a-f9fa-4064-84eb-62bb434130a3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a2973d9-7f5d-4e59-a858-95a90f7cb532">
+                    <propertyInstance
+                      Id="a92e4710-1168-4251-8ee4-5a1f31bb102b"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="8576bb7c-0de1-49ec-a677-b8fd0ff32b66"
+                LastKnownName="Guid"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9e087399-420d-416e-8bde-e24a77d39ca7"
+            name="章节名"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>章节</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="69c88ef7-b317-47cd-9f1d-8eaac900ae15"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb354af2-ce83-4735-9bac-88dadefd9ddb">
+                    <propertyInstance
+                      Id="21a7f4a6-9301-4426-ba56-828a9ef70926"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec956514-5422-4af8-87c9-bd6b48b138ea">
+                    <propertyInstance
+                      Id="75db1eef-d4ec-4e31-a99f-8bad246b2d5a"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1714b2c5-c584-4fd0-966b-e21f71b2df56">
+                    <propertyInstance
+                      Id="1934611a-dfcb-4995-8cab-5a97125f64e8"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cb36bc0-d8a8-4454-b28b-932e19e73bc6">
+                    <propertyInstance
+                      Id="290ab666-283c-4f9c-a33d-944e92cd4923"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04552e02-7398-4ae8-9cfa-4ed27f89931c">
+                    <propertyInstance
+                      Id="b578fa3d-df1b-4ff9-a9b3-5229f2215b48"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="363d7701-fa26-4186-8f31-d340730c9c62">
+                    <propertyInstance
+                      Id="d3839a74-ec41-41e8-ae06-a6c622d5832e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f29807af-38a5-4b33-931a-ff9b74739cfc">
+                    <propertyInstance
+                      Id="6b69eee3-8045-426f-a7da-1053e30e904d"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c9873164-5770-4844-b133-9b5ffa2f7d14"
+            name="描述"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>描述</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5b7e5449-27a5-4a91-8430-9793e2bbe34b"
+        name="AircraftConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <description>飞机配置</description>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c03fd5f7-87ea-4f2b-b5de-9ea7ee07730a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2e2fc21e-95c0-4952-af1d-7fe66d223b92">
+                <propertyInstance
+                  Id="14df8fce-0410-423a-bdd3-3bd3f3ff4daa"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="457e95c4-8c65-495c-9edf-22a76a3112cf">
+                <propertyInstance
+                  Id="b4d2fb95-5571-41b4-812e-d68141a0b7c0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2875ec02-0203-4264-8180-a3efa00d6b77">
+                <propertyInstance
+                  Id="787b474f-6fc7-4ad8-840e-5d1f0c1beb76"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15be04fb-ce38-4cfa-a0b7-64efc27ffee7">
+                <propertyInstance
+                  Id="d71730cf-4230-4da3-b5ea-f93baea5d8ac"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aac93b73-5ad6-41d0-9483-1157cf395eb8">
+                <propertyInstance
+                  Id="e87a02dc-0e4e-419d-88fe-3fef11569ed4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="010587a6-cc8d-4f0a-87a3-c05967e698aa"
+            isDerived="false"
+            sourceEndRoleName="AircraftConfig"
+            targetEndRoleName="AircraftType"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cbed839e-071f-4b7e-983c-6f0ca2b789b4"
+              LastKnownName="AircraftType"
+              LastKnownLocation="AircraftConfig.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83c5dc40-8d2e-4e83-a4e9-886afd884cf0"
+                  name="AircraftConfig"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6190d92a-d909-43b0-956c-bc50046a324e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="10189e34-c9bf-4da2-948a-fd70c2b4b772"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="975c65f4-9c32-48e3-a20b-821ae10d9db4"
+                  name="AircraftType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="79368b19-25e1-40de-b583-9bf8886dd92c"
+            name="机型名称"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>机型名称</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="77a43ea7-e448-416b-8f1a-693fcacd83ea"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dddeb31-c6dc-4569-837f-337b2c7a386d">
+                    <propertyInstance
+                      Id="97c0c430-2fb7-43b9-92f9-80372aa0dbc7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c05cacfc-3b3a-4ba4-8ede-bf1a70c0ebbf">
+                    <propertyInstance
+                      Id="d21f133c-4382-4d33-827a-3eb2219ec6ff"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="808c215d-e21d-46cd-8ffa-d8d936681e34">
+                    <propertyInstance
+                      Id="51f349ca-b464-4e99-9b59-889f0591b2aa"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad03dab2-f9c3-4cc2-8084-5aaf55dd573d">
+                    <propertyInstance
+                      Id="b46c40b2-ee87-4203-a59b-41c3e5a24f48"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7329ffb2-e5e7-46a4-b41d-5c50d16eed17">
+                    <propertyInstance
+                      Id="71fa4c54-34ce-4f65-b6e6-cedf6ae608f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e190db0-0ceb-458c-88db-5925580c459c">
+                    <propertyInstance
+                      Id="0e29e3d4-f459-4178-b7ee-ff0b46f45fe5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf13eb9f-53c5-4a99-a163-305961f6019b">
+                    <propertyInstance
+                      Id="80c18b94-a30c-46a3-affd-1691e6827b5e"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="62a9e642-d2ee-415b-85c2-1654c741dd54"
+            name="机型"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>机型关键字</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5a1b4005-91c6-41f4-a3d7-a5f9201177b1"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="932e4f1f-b006-426b-8b66-94a26871560f">
+                    <propertyInstance
+                      Id="2e8bc073-049f-4243-8a9f-75bab5a8a70f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa5068e3-43a5-418c-9be0-fc651f07a6fc">
+                    <propertyInstance
+                      Id="f3831c12-fb9d-4324-9e68-cd894c207823"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d37da07b-c64e-4d42-b5d0-82117785557e">
+                    <propertyInstance
+                      Id="4d247feb-8a20-41fb-9ea1-e25a6d5f2fb9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff298a0a-c701-4975-b8fe-31e299d3bbf5">
+                    <propertyInstance
+                      Id="ffe7e66c-fabc-4ecb-9f56-4116a8dd1572"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a6d04f7-52ed-4ee2-8483-87fc78602652">
+                    <propertyInstance
+                      Id="49b81e04-ef8c-4406-8c95-c0e378a1f6fa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b3eb9f7-1de2-463d-bae8-7ed8be32f12c">
+                    <propertyInstance
+                      Id="d3a6ffbf-dd62-4162-bf38-c2f139c104e8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af9b525d-61ef-4d92-9fef-a5720736f016">
+                    <propertyInstance
+                      Id="f354045c-013a-45ed-86a4-dd33a3e42600"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="1734b49c-dde8-48b1-bda9-9eb200bf6244"
+                LastKnownName="int"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b99ad911-8967-4fcf-ac8d-ad588804c227"
+            name="描述"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>描述</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="42730523-f206-49a6-b332-3b8ed1bcf5ac"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="722f510c-3918-4a06-8dbd-a9ba13f6fdbe">
+                    <propertyInstance
+                      Id="d04ff61a-59a8-4f7e-9bae-6e9824e0c35a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9283e303-3ca3-49a4-b4b7-731d0f95f41b">
+                    <propertyInstance
+                      Id="2413d997-01c3-458b-b784-6114618e499e"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93351efc-5d60-4fd3-9a5f-eac7cc5fce9d">
+                    <propertyInstance
+                      Id="8df70835-114a-4670-9122-e844929a48df"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd975c9e-cd25-42a5-ab82-00397a73be04">
+                    <propertyInstance
+                      Id="e92a8b72-bdc7-42b4-92a5-cc13532e3469"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2de97e06-155c-4c08-ac57-184ef5d344ca">
+                    <propertyInstance
+                      Id="792d29d4-54dd-4028-8083-523486a8890e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c212a74-18bb-41df-a478-fbde58804d9b">
+                    <propertyInstance
+                      Id="ed66102a-1a0b-4e09-945f-12ff25ef1a4f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41641f50-1e2c-4255-a4d1-d0577603d33a">
+                    <propertyInstance
+                      Id="f7af7284-126a-4bb0-8285-9500d1597445"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cfc1a961-4355-4f93-a406-68cf187bef51"
+            name="飞机最大滑行重量MTW"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>飞机最大滑行重量</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="44337242-8ab9-4601-827b-2700023ed023"
+            name="基本空重"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="abe9b028-24fa-4b43-b8f2-a341803656e0"
+            name="基本重量重心"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>基本重量重心</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="155de879-260a-4800-961c-826a2c1599a4"
+            name="基本重量"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>基本重量</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dd65aee2-9455-48db-952a-856e59044932"
+            name="基本重量指数"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bf354b00-d8b7-4aee-88be-de6fbf3544f0"
+            name="飞机最起飞重量MTOW"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>飞机最大起飞重量</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="36f11ece-ecb6-4168-a882-f0e22a03b388"
+            name="飞机最大着陆重量MLW"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>飞机最大着陆重量</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2cd10a04-e1ae-48bd-a525-173c1ba4fa9f"
+            name="飞机最大零燃油重量MZFW"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>飞机最大零燃油重量</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2812a8c6-e539-4252-af6b-ac75248c7e57"
+            name="飞机最大可用燃油"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>飞机最大可用燃油</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="23b26cb9-19fb-410d-b51b-5a0bb9cb948f"
+            name="飞机最大商载"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>飞机最大商载</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d864562a-0bb8-439b-90e3-f4c67c19d8be"
+                LastKnownName="decimal"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>
