@@ -127,6 +127,34 @@
       <SubType>Content</SubType>
       <DependentUpon>Class\FlightLog\FlightLog.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Class\Part\Adsb.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Part\Adsb.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Part\Adsb.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Part\OilManage.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Part\OilManage.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Part\OilManage.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Part\Part.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Part\Part.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Part\Part.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Part\Scn.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Part\Scn.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Part\Scn.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Class\Payment\Payment.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -165,6 +193,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Common.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Part.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Project.uml">
@@ -277,6 +308,7 @@
     <Folder Include="Class\Common\" />
     <Folder Include="Class\FleetPlan\" />
     <Folder Include="Class\FlightLog\" />
+    <Folder Include="Class\Part\" />
     <Folder Include="Class\Payment\" />
     <Folder Include="Class\Portal\" />
     <Folder Include="Class\Project\" />
