@@ -41,6 +41,9 @@
   <ItemGroup>
     <Compile Include="GeneratedCode\Common\地址值对象.cs" />
     <Compile Include="GeneratedCode\Common\日程基类.cs" />
+    <Compile Include="GeneratedCode\Part\ContractAircraft.cs" />
+    <Compile Include="GeneratedCode\Part\Scn.cs" />
+    <Compile Include="GeneratedCode\Part\ScnLine.cs" />
     <Compile Include="GeneratedCode\Project\任务基类.cs" />
     <Compile Include="GeneratedCode\Project\项目模板.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

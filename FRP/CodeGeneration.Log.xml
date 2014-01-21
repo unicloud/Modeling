@@ -6,26 +6,31 @@
   <MessageClass Name="Error" Label="错误" Option="显示错误" />
   <MessageClass Name="Property" Label="属性" Option="显示元数据" />
   <MessageClass Name="Diagnostic" Label="消息" Option="显示诊断消息" />
-  <Message Timestamp="2013-12-31T17:54:04" Importance="High" Text="已启动代码生成或文本转换。" />
-  <Message Timestamp="2013-12-31T17:54:04" Importance="Diagnostic" Text="名称 = ClassTemplate" />
-  <Message Timestamp="2013-12-31T17:54:04" Importance="Diagnostic" Text="覆盖 = True" />
-  <Message Timestamp="2013-12-31T17:54:04" Importance="Diagnostic" Text="ProjectPath = ..\MainLib\MainLib.csproj" />
-  <Message Timestamp="2013-12-31T17:54:04" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2013-12-31T17:54:04" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2013-12-31T17:54:04" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2013-12-31T17:54:04" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2013-12-31T17:54:04" Importance="Medium" Text="Main 的文本模板绑定: “ClassTemplate”会将 ClassTemplate.t4 应用于: “Main::Common::地址值对象”-  (Class), “Main::Common::日程基类”-  (Class) " />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Medium" Text="“Main::Common::地址值对象”-  (Class) : 成功(已替换文件) - C:\UniCloud\Modeling\MainLib\GeneratedCode\Common\地址值对象.cs" />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Medium" Text="“Main::Common::日程基类”-  (Class) : 成功(已替换文件) - C:\UniCloud\Modeling\MainLib\GeneratedCode\Common\日程基类.cs" />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Diagnostic" Text="名称 = StructTemplate" />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Diagnostic" Text="覆盖 = True" />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Diagnostic" Text="ProjectPath = ..\MainLib\MainLib.csproj" />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Medium" Text="Main 的文本模板绑定: “StructTemplate”会将 StructTemplate.t4 应用于: “Main::Common::地址值对象”-  (Class), “Main::Common::日程基类”-  (Class) " />
-  <Message Timestamp="2013-12-31T17:54:05" Importance="Diagnostic" Text="“Main::Common::地址值对象”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
-  <Message Timestamp="2013-12-31T17:54:06" Importance="Diagnostic" Text="“Main::Common::日程基类”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
-  <Message Timestamp="2013-12-31T17:54:06" Importance="High" Text="代码生成完成。错误:  0。警告:  0。" />
+  <Message Timestamp="2014-01-21T09:23:40" Importance="High" Text="已启动代码生成或文本转换。" />
+  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="名称 = ClassTemplate" />
+  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="ProjectPath = ..\MainLib\MainLib.csproj" />
+  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-01-21T09:23:41" Importance="Medium" Text="Main 的文本模板绑定: “ClassTemplate”会将 ClassTemplate.t4 应用于: “Main::Part::Scn”-  (Class), “Main::Part::ContractAircraft”-  (Class), “Main::Part::ScnLine”-  (Class) " />
+  <Message Timestamp="2014-01-21T09:23:54" Importance="Medium" Text="“Main::Part::Scn”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\Scn.cs" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Medium" Text="“Main::Part::ContractAircraft”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\ContractAircraft.cs" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Medium" Text="“Main::Part::ScnLine”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\ScnLine.cs" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="名称 = StructTemplate" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="ProjectPath = ..\MainLib\MainLib.csproj" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-01-21T09:23:56" Importance="Medium" Text="Main 的文本模板绑定: “StructTemplate”会将 StructTemplate.t4 应用于: “Main::Part::Scn”-  (Class), “Main::Part::ContractAircraft”-  (Class), “Main::Part::ScnLine”-  (Class) " />
+  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::Scn”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::ContractAircraft”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::ScnLine”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="选定内容包含未绑定到模板的 2 元素。" />
+  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-21T09:23:57" Importance="High" Text="代码生成完成。错误:  0。警告:  0。" />
 </Log>
