@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="ad3f3b10-7633-4693-b9bf-622607454980"
   name="CommonService" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -7,28 +7,28 @@
     <packageHasNamedElement>
       <class
         Id="32e01f8c-15c5-4e54-90da-ab366c30bdef"
-        name="FunctionItem"
+        name="Function"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <description>菜单</description>
         <targetEnds>
           <association
-            Id="147732a1-99fc-4230-8d99-55aa2d73fc7a"
+            Id="ce921243-0573-4c0f-90d9-a9ad62278400"
             isDerived="false"
-            sourceEndRoleName="FunctionItem"
-            targetEndRoleName="FunctionsInRoles"
+            sourceEndRoleName="Function"
+            targetEndRoleName="RoleFunctions"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="e7a19f53-675f-438e-b51a-0ba86f5b58f1"
-              LastKnownName="FunctionsInRole"
+              LastKnownName="RoleFunction"
               LastKnownLocation="CommonService.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="80a2ff06-292a-4355-b836-1205339e4cd2"
-                  name="FunctionItem"
+                  Id="c5c37df8-0d47-40b1-8ca5-696d2fe5f876"
+                  name="Function"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -40,8 +40,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="091762be-9e18-4499-8954-9c2b16edd841"
-                  name="FunctionsInRoles"
+                  Id="8a1745fe-4813-4744-aba4-1cecbff7a238"
+                  name="RoleFunctions"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -51,65 +51,13 @@
                   isComposite="true">
                   <lowerValueInternal>
                     <literalString
-                      Id="6baa2a3f-6571-41a1-99a6-291cb93136d9"
+                      Id="92a37758-0364-4470-8d69-07771ff8fee9"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="002370be-d895-403b-b399-7cfe22a15cfd"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="f6af5a7e-1ae4-4c1f-aa74-19049f9c960d"
-            isDerived="false"
-            sourceEndRoleName="FunctionItem"
-            targetEndRoleName="FunctionItems"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="32e01f8c-15c5-4e54-90da-ab366c30bdef"
-              LastKnownName="FunctionItem"
-              LastKnownLocation="CommonService.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e71f6ae6-fa33-417d-a6f6-02b94c88ce91"
-                  name="FunctionItem"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0f7838a3-b62a-418b-adfd-3a95a4696542"
-                  name="FunctionItems"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="4c33a94a-3ddf-420f-93c5-75ff43df3219"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="c49c62c9-5149-4ecd-893a-fcb687ef9e5a"
+                      Id="5c4b689e-9c30-4b6c-80c5-7b44542e1711"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -158,27 +106,8 @@
             </type_NamedElement>
           </property>
           <property
-            Id="f52ec09d-2058-4868-82b4-7229fdacdc0d"
-            name="IsButton"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>是否是按钮</description>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="957f6a09-cec0-4b12-a184-baf91b3aef13"
-            name="LevelCode"
+            name="Sort"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -187,11 +116,11 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false">
-            <description>节点级别</description>
+            <description>排序</description>
             <type_NamedElement>
               <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
                 LastKnownLocation="Main.uml" />
             </type_NamedElement>
           </property>
@@ -234,25 +163,6 @@
             </type_NamedElement>
           </property>
           <property
-            Id="48fa4f1e-923b-4ad3-9c82-a24eb58522f1"
-            name="ImageUrl"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>图形Url</description>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="da96b03b-b9c3-4a32-8b37-7438feb139f4"
             name="NaviUrl"
             isLeaf="false"
@@ -271,6 +181,93 @@
                 LastKnownLocation="Main.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="b9942b37-aae1-48dd-9afa-e2305943d524"
+            name="IsValid"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>是否启用</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f1eda09a-4f0f-4362-bd90-4c85518f1653"
+            name="CreateDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>创建时间</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="fdb6c6e7-d93d-4d60-9605-2118dd8acb67"
+                LastKnownName="DateTime?"
+                LastKnownLocation="CommonService.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="94a91eab-72a4-4aef-85e6-1a8463c9a5ae"
+            name="ImageUrl"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>图片地址</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2134e7a4-6eed-4966-9851-aaae99e31ef3"
+            name="LevelCode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>授权编码</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="238c1b4e-ee45-4bdd-8712-9fd1a701838d"
+            name="IsButton"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -289,67 +286,15 @@
         <description>角色</description>
         <targetEnds>
           <association
-            Id="f71e0424-654d-4a58-949c-e8fbd1cf26e2"
-            isDerived="false"
-            sourceEndRoleName="Role"
-            targetEndRoleName="FunctionsInRoles"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="e7a19f53-675f-438e-b51a-0ba86f5b58f1"
-              LastKnownName="FunctionsInRole"
-              LastKnownLocation="CommonService.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="791102e4-c328-40de-afe0-b316f99310a6"
-                  name="Role"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="7a8a2a98-1e6b-4c24-a068-90e31b81db5d"
-                  name="FunctionsInRoles"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="fd3d847f-f69b-4d2a-958e-133d076355df"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="206a6d04-e391-4bfb-83eb-01551077efd2"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="be3252fd-1ecb-42c0-a784-da7d701c513b"
             isDerived="false"
             sourceEndRoleName="Role"
-            targetEndRoleName="UserInRoles"
+            targetEndRoleName="UserRoles"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="824fb030-eb39-4ac5-ac38-a71989d1b74a"
-              LastKnownName="UserInRole"
+              LastKnownName="UserRole"
               LastKnownLocation="CommonService.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -368,7 +313,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="a9c52ded-c7ab-4813-a5c6-2aa9db8dd338"
-                  name="UserInRoles"
+                  name="UserRoles"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -385,6 +330,110 @@
                   <upperValueInternal>
                     <literalString
                       Id="f3b31b36-627b-4bcf-891a-1b237d2cbae6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="86f84016-51f0-4b6f-bab7-cfe7b479d990"
+            isDerived="false"
+            sourceEndRoleName="Role"
+            targetEndRoleName="OrganizationRoles"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8b46351e-4808-46ae-b93d-8a5e05026378"
+              LastKnownName="OrganizationRole"
+              LastKnownLocation="CommonService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47653cfd-58ca-4d4f-9721-d61460105978"
+                  name="Role"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="191dd835-f3c8-481d-9923-cf3fd9030a4c"
+                  name="OrganizationRoles"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="29324210-50b3-4adf-ac21-dc12cbd5abe2"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="72e01713-5560-4822-b635-11a44b769d99"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d671b12e-a123-47d9-ab4d-d582f979b503"
+            isDerived="false"
+            sourceEndRoleName="Role"
+            targetEndRoleName="RoleFunction"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e7a19f53-675f-438e-b51a-0ba86f5b58f1"
+              LastKnownName="RoleFunction"
+              LastKnownLocation="CommonService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11992d81-819e-43ff-84a5-0029bc7ada65"
+                  name="Role"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e468c5b-f5ac-41ab-8272-bcf7d449f935"
+                  name="RoleFunction"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5ab645ae-79a7-4d92-8113-86d251b26659"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="865610dd-a5a2-4cbf-82fa-349a71f962f6"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -414,8 +463,8 @@
             </type_NamedElement>
           </property>
           <property
-            Id="ee7bd841-c214-4cc4-a911-5de708c8325b"
-            name="LoweredRoleName"
+            Id="aad2c007-cb8f-40dc-98e4-926f705ffee3"
+            name="Description"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -424,7 +473,64 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false">
-            <description>角色名称小写</description>
+            <description>描述</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4b33c7d3-531c-4695-bed6-738f09bc46ab"
+            name="CreateDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>创建日期</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4301019e-8fbd-438d-a143-cd7c4ff98a01"
+                LastKnownName="DateTime"
+                LastKnownLocation="Common.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="830392f5-2245-4bdf-9a4f-39cefb716045"
+            name="LevelCode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>顺序</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7e6e92a5-882b-4d90-b649-69e17ad28fc6"
+            name="Code"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>角色编码</description>
             <type_NamedElement>
               <primitiveTypeMoniker
                 Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
@@ -438,7 +544,7 @@
     <packageHasNamedElement>
       <class
         Id="e7a19f53-675f-438e-b51a-0ba86f5b58f1"
-        name="FunctionsInRole"
+        name="RoleFunction"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -493,54 +599,15 @@
         <description>用户</description>
         <targetEnds>
           <association
-            Id="de30e889-276a-4a1f-ba80-ba1195be4e7c"
-            isDerived="false"
-            sourceEndRoleName="User"
-            targetEndRoleName="OrganizationCode"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="cc114601-7451-4041-885c-4a09b8732a99"
-              LastKnownName="OrganizationCode"
-              LastKnownLocation="CommonService.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1bbacf19-4002-4252-b525-67774ec076fe"
-                  name="User"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="c04dff57-f383-4cbc-ae71-0ed8799a3590"
-                  name="OrganizationCode"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="90742be7-b594-43c4-bef1-f9ffd26ca349"
             isDerived="false"
             sourceEndRoleName="User"
-            targetEndRoleName="UserInRoles"
+            targetEndRoleName="UserRoles"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="824fb030-eb39-4ac5-ac38-a71989d1b74a"
-              LastKnownName="UserInRole"
+              LastKnownName="UserRole"
               LastKnownLocation="CommonService.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -559,7 +626,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="b75300db-209b-4e45-be9b-3be9479cb79c"
-                  name="UserInRoles"
+                  name="UserRoles"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -576,6 +643,58 @@
                   <upperValueInternal>
                     <literalString
                       Id="199b2093-acd3-46e3-9400-a9449b402bb5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0cc1ef60-2488-429c-beab-aaf6364011c8"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="OrganizationUser"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4d8c4faf-7fea-40f7-a918-813b7a52230f"
+              LastKnownName="OrganizationUser"
+              LastKnownLocation="CommonService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f16acd1f-c231-41fb-ad01-d278995ba0b8"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="944242af-8b78-4911-9613-0d6a3685226c"
+                  name="OrganizationUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ba6c64f1-1bb9-467d-927d-7ffbb08335c7"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5f23f5b2-d99b-41c4-a512-0fbe7e42ace0"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -800,28 +919,28 @@
     <packageHasNamedElement>
       <class
         Id="cc114601-7451-4041-885c-4a09b8732a99"
-        name="OrganizationCode"
+        name="Organization"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <description>组织机构代码</description>
         <targetEnds>
           <association
-            Id="6534e7c9-f335-4750-aa4e-2cdb49b1c651"
+            Id="5086deda-b122-4d6d-8f28-ea46269dfa29"
             isDerived="false"
-            sourceEndRoleName="OrganizationCode"
-            targetEndRoleName="OrganizationCodes"
+            sourceEndRoleName="Organization"
+            targetEndRoleName="Organizations"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="cc114601-7451-4041-885c-4a09b8732a99"
-              LastKnownName="OrganizationCode"
+              LastKnownName="Organization"
               LastKnownLocation="CommonService.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="c9716610-a755-470b-bb78-ec533aaca7df"
-                  name="OrganizationCode"
+                  Id="0ea109de-5956-41a6-aca9-9deaf78730a6"
+                  name="Organization"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -833,8 +952,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="0f32523f-8dd8-42fe-a575-599561dcbfd1"
-                  name="OrganizationCodes"
+                  Id="1ea0734f-7b71-495e-8ca8-52424de22333"
+                  name="Organizations"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -844,13 +963,117 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="bb91bc9e-0eab-43fa-ac5d-091922dc35df"
+                      Id="1a2265d7-032f-47a6-b1ee-8ab9d52aa367"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="2f13341d-2828-46d0-9e3f-0ed41c7df964"
+                      Id="1f66625f-391a-4468-9cb1-b9291945c2dd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2ad1411d-3a59-4e7a-8e51-9cd8782f0e57"
+            isDerived="false"
+            sourceEndRoleName="Organization"
+            targetEndRoleName="OrganizationUsers"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4d8c4faf-7fea-40f7-a918-813b7a52230f"
+              LastKnownName="OrganizationUser"
+              LastKnownLocation="CommonService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e8c0997-33f4-4f59-af69-4be6011ce94d"
+                  name="Organization"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9e35a741-50c7-41ff-aec4-02a81ddf49bd"
+                  name="OrganizationUsers"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="50b24dd4-1bf6-496e-955e-2fecdda134a1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c149afa4-52b3-4aec-91f3-630b3c0f34ac"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fcaccae4-a278-4ea5-a9c3-690d78b4eb7b"
+            isDerived="false"
+            sourceEndRoleName="Organization"
+            targetEndRoleName="OrganizationRoles"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8b46351e-4808-46ae-b93d-8a5e05026378"
+              LastKnownName="OrganizationRole"
+              LastKnownLocation="CommonService.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8a7268b5-bf60-447b-95fe-9b9201b79943"
+                  name="Organization"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="43639878-7b4c-4fc2-a8a0-88747029f6fe"
+                  name="OrganizationRoles"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="02727ce9-032b-4759-93b6-b37f150c5a94"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f9894e5f-01bf-4c1a-8ea8-eb9667f633d5"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -862,7 +1085,7 @@
         <ownedAttributesInternal>
           <property
             Id="4bdcebdb-d2a7-4d22-b63b-172e841b2f44"
-            name="Number"
+            name="Code"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -877,25 +1100,6 @@
                 Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                 LastKnownName="String"
                 LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="e7c18f3b-ad44-43ad-9750-270d410c3032"
-            name="ParentNumber"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>父亲节点</description>
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="6d055abc-c1ea-4191-abd9-f432c2fcf3b4"
-                LastKnownName="int？"
-                LastKnownLocation="CommonService.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -974,6 +1178,61 @@
                 LastKnownLocation="Main.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="4db391dc-dd79-47bb-a56b-83392f4525ed"
+            name="parentCode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0d39db19-ef02-4d93-84af-8789042563d7"
+                LastKnownName="int?"
+                LastKnownLocation="CommonService.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="888d8af5-b4b3-4254-b09d-224f394040fc"
+            name="Sort"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="570060d5-9008-4e08-914c-9b51ebf858dd"
+            name="CreateDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>创建日期</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4301019e-8fbd-438d-a143-cd7c4ff98a01"
+                LastKnownName="DateTime"
+                LastKnownLocation="Common.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -995,7 +1254,7 @@
     <packageHasNamedElement>
       <class
         Id="824fb030-eb39-4ac5-ac38-a71989d1b74a"
-        name="UserInRole"
+        name="UserRole"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1037,9 +1296,25 @@
                 LastKnownLocation="Main.uml" />
             </type_NamedElement>
           </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="447dc10c-a14c-49c6-8a1e-85029be580b2"
+        name="Int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4d8c4faf-7fea-40f7-a918-813b7a52230f"
+        name="OrganizationUser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
           <property
-            Id="ad7d108b-a764-4609-b18c-3629a56d6df8"
-            name="IsValid"
+            Id="0eb7434c-23cc-45f8-a5af-c724c1e4c98e"
+            name="OrganizationId"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1048,11 +1323,84 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false">
-            <description>是否有效</description>
+            <description>机构外键</description>
             <type_NamedElement>
               <primitiveTypeMoniker
-                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                LastKnownName="Boolean"
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="86a41008-2642-4f08-8e60-ee7f860524e4"
+            name="UserId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>用户外键</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bbc11455-41f7-4095-ba50-b343c4654fe3"
+                LastKnownName="Integar"
+                LastKnownLocation="CommonService.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="bbc11455-41f7-4095-ba50-b343c4654fe3"
+        name="Integar" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8b46351e-4808-46ae-b93d-8a5e05026378"
+        name="OrganizationRole"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="dfc2b92f-47bf-4dfe-a222-cae32652ed3d"
+            name="OrganizationId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>组织机构Id</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="1734b49c-dde8-48b1-bda9-9eb200bf6244"
+                LastKnownName="int"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="51f702b8-0024-4496-a81e-24fd486a8493"
+            name="RoleId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>角色Id</description>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="1734b49c-dde8-48b1-bda9-9eb200bf6244"
+                LastKnownName="int"
                 LastKnownLocation="Main.uml" />
             </type_NamedElement>
           </property>
