@@ -3,6 +3,12 @@
   dslVersion="1.0.0.0"
   Id="adc93848-f310-4f9a-9ad2-7f1187a3d886"
   name="Part" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="b59901d5-cc2a-4e3b-ba5c-7921392aeb06">
+      <body>飞机和SCN为多对多的关系，具体关系还得修改</body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <class
@@ -101,59 +107,6 @@
                   <upperValueInternal>
                     <literalString
                       Id="24bd9127-651e-4a01-acca-1ca4b59286d3"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="9e2ddd1d-d32d-4a5a-bd48-16e9334e2339"
-            isDerived="false"
-            sourceEndRoleName="Scn"
-            targetEndRoleName="ContractAircrafts"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="88d09597-737c-42aa-aa27-cd75ecd5164d"
-              LastKnownName="ContractAircraft"
-              LastKnownLocation="Part.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2120dc1c-f1a7-40b6-8305-b420e2ed2363"
-                  name="Scn"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="4a036f17-3aba-4e5b-a79d-7126e5b9812b"
-                  name="ContractAircrafts"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="8f58d914-08f5-4c78-b4d2-b5d37e043dec"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="04f13c5c-bb5b-4fad-a1aa-2ccf9f194946"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -786,58 +739,57 @@
     <packageHasNamedElement>
       <class
         Id="08dc4aed-4161-41c6-8054-cadf90c9829a"
-        name="Pn"
+        name="附件"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <description>件号</description>
         <targetEnds>
           <association
-            Id="bf2a6656-35b6-4cb4-8166-9290edf6a19f"
+            Id="abc15004-2e67-45f0-809a-a64fff0ae69f"
             isDerived="false"
-            sourceEndRoleName="Pn"
-            targetEndRoleName="Pn"
+            sourceEndRoleName="附件"
+            targetEndRoleName="附件项件号"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="08dc4aed-4161-41c6-8054-cadf90c9829a"
-              LastKnownName="Pn"
+              Id="d06febd8-a67e-4f0b-88ad-56cb8e5cf119"
+              LastKnownName="附件项件号"
               LastKnownLocation="Part.uml" />
-            <description>互换性</description>
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="e3f7a2fb-6da9-4a64-be9f-870add7cf3c9"
-                  name="Pn"
+                  Id="91ce64c1-5bed-48a2-8e0a-e541ba9dae83"
+                  name="附件"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="d3b9cca1-a8b8-463a-82f4-3f50f2c7fbbd"
-                  name="Pn"
+                  Id="a230ed35-37f1-4ecf-97d0-df2a5ea1ad61"
+                  name="附件项件号"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
-                      Id="ec4967e9-279e-40e9-b0a6-8c9ed4075632"
+                      Id="9eff3509-613b-4117-b6f4-55721f4a0e78"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="2a6249da-ac11-4984-9e8f-a6a7221be894"
+                      Id="3f1f4142-39f5-4132-8400-e939f7204100"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -846,81 +798,106 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="1c958890-12bd-4175-bf82-31d5c0a07f70"
+            Id="efb99315-e1b2-4799-ad47-e7af6cc604aa"
             isDerived="false"
-            sourceEndRoleName="Pn"
-            targetEndRoleName="附件控制单位"
+            sourceEndRoleName="附件"
+            targetEndRoleName="序号件"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="2469bd0d-5ab2-495b-88bd-d76a34eac089"
-              LastKnownName="附件控制单位"
+              Id="15509e36-d684-49f2-87de-5681f6fbe93d"
+              LastKnownName="序号件"
               LastKnownLocation="Part.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="a9f30513-12f0-44c0-9d09-338e751ae852"
-                  name="Pn"
+                  Id="14163c28-c560-4399-8f80-504e506ca2cc"
+                  name="附件"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="7ba44ea4-e778-4332-a38e-35283bdc6a3b"
-                  name="附件控制单位"
+                  Id="5340e8cc-975e-4b4f-97c8-c06d4441b971"
+                  name="序号件"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="52cbae4d-7ab9-46a8-9f59-d4b86daea46c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="337b29a6-4661-43e7-a1c4-9d7131a7a567"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="1f968e70-d2e5-483d-aeaa-3f841656bad0"
+            Id="2d34c1bc-e98f-4b31-ad42-870d666bbb89"
             isDerived="false"
-            sourceEndRoleName="Pn"
-            targetEndRoleName="附件时限"
+            sourceEndRoleName="附件"
+            targetEndRoleName="附件维修间隔"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="1101f0fd-65fe-4c1f-b51d-3a6b9095e745"
-              LastKnownName="附件时限"
+              LastKnownName="附件维修间隔"
               LastKnownLocation="Part.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="e682eb05-1b76-45fe-b4fe-f54501f3a7c4"
-                  name="Pn"
+                  Id="10521558-085a-4ba6-9b76-5c8f0b0d1e51"
+                  name="附件"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="e430c97b-af76-480f-b714-5c317bda6471"
-                  name="附件时限"
+                  Id="27168af9-9999-407d-ac66-c19b3fe8f2fc"
+                  name="附件维修间隔"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e8f08dd1-eefa-48b3-b0b1-300ee97f807f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f1b59457-66c9-4eb0-855e-19ddc8943ef5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -973,8 +950,8 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="727a0079-95fa-49e9-9701-d5e6577de415"
-            name="控制单位"
+            Id="44dca4c1-56b2-4f44-85ce-a40e33c2fdff"
+            name="件号"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -984,8 +961,30 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="44dca4c1-56b2-4f44-85ce-a40e33c2fdff"
-            name="件号"
+            Id="3af499bb-63d3-497a-a90d-e1671b8619a5"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ff8d77bf-e25c-458e-8d99-7d9837cdef39"
+            name="件号类型"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3ba8a59c-538b-48b4-8a7a-7aac057c881c"
+            name="推力等级"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1007,50 +1006,50 @@
         <description>附件项</description>
         <targetEnds>
           <association
-            Id="813bf1e4-7cd3-426d-aaf0-4dd443121157"
+            Id="aadd3e1a-5f5a-42c8-acd9-1b7bccc073b4"
             isDerived="false"
             sourceEndRoleName="附件项"
-            targetEndRoleName="Pn"
+            targetEndRoleName="附件项件号"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="08dc4aed-4161-41c6-8054-cadf90c9829a"
-              LastKnownName="Pn"
+              Id="d06febd8-a67e-4f0b-88ad-56cb8e5cf119"
+              LastKnownName="附件项件号"
               LastKnownLocation="Part.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="df0dae50-126f-45f0-8fc7-ac7146f95d3f"
+                  Id="1e27e3a7-de79-4b6b-8a44-1964e85b6fc3"
                   name="附件项"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Shared"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="13395ed7-b2c0-49c5-b972-a5c948a1f595"
-                  name="Pn"
+                  Id="bd0667ae-1683-4d2c-8e48-89ac9547c0a8"
+                  name="附件项件号"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
-                      Id="a5eabc4d-058b-4ef1-a4b0-6540a980aa35"
+                      Id="9ce18600-3f8e-407c-9787-24e3d3c7826c"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="ac53812b-2ece-417f-973e-2cb4ba8f1982"
+                      Id="d71bc1b0-97ce-47e5-b15b-1b14dc4be7df"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -1059,7 +1058,7 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="a74b405b-e937-4311-8e14-77bd8101bdbe"
+            Id="d564bc1f-fd58-4128-9d33-36a89d432935"
             isDerived="false"
             sourceEndRoleName="附件项"
             targetEndRoleName="附件项"
@@ -1069,11 +1068,11 @@
               Id="a2820fcc-8277-4038-9cb6-6ce490239b34"
               LastKnownName="附件项"
               LastKnownLocation="Part.uml" />
-            <description>层级关系自相关</description>
+            <description>自相关（项号定义有层级）</description>
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="34c9532f-476f-4afc-acf3-0d20af52c7ff"
+                  Id="b6648784-2625-4443-8999-6a116131d4fe"
                   name="附件项"
                   isLeaf="false"
                   isStatic="false"
@@ -1086,7 +1085,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="d9a1f31c-0812-4222-8154-dd3c9113dfc5"
+                  Id="0128194c-e55f-4333-a4dd-a643609808ba"
                   name="附件项"
                   isLeaf="false"
                   isStatic="false"
@@ -1101,8 +1100,8 @@
         </targetEnds>
         <ownedAttributesInternal>
           <property
-            Id="f629c2d1-d660-4b6b-8b07-c1d7c91bd289"
-            name="项号"
+            Id="def6978b-e462-4a16-984c-9416af0f1a56"
+            name="机型外键"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1110,9 +1109,68 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <description>机型组件</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5adddd0c-8aad-4950-b16c-a4d06a4237a3"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad6fa8be-8a2e-4f14-ba45-9ee440d8a0a9">
+                    <propertyInstance
+                      Id="3514d786-b52b-4204-a6ad-0203c078c1ce"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5386404-f3de-4d6a-8859-361a298f30ad">
+                    <propertyInstance
+                      Id="3280f6f3-4a96-4b2c-bfe2-626bf71f2f9b"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="acd17ecd-2b66-4ef1-8aff-8c0416c3ac11">
+                    <propertyInstance
+                      Id="a2cae064-8051-4f86-9b14-f0e87a2bf4a9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0da6efeb-8aa5-4d50-b9da-88b61aaa0946">
+                    <propertyInstance
+                      Id="e4d2a326-4a77-441c-8b0d-4af681e18086"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f60f82bc-f782-48c6-989c-64469ba61614">
+                    <propertyInstance
+                      Id="e169d606-cd8a-43ff-9391-2bc15b8535ab"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="796e9e52-752f-443b-b5c9-ab7d63c39912">
+                    <propertyInstance
+                      Id="07371017-306e-4e01-8289-d1ee2cf50021"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2b99bf1-6595-405c-9d52-c05342f62846">
+                    <propertyInstance
+                      Id="b0f5d564-f4d4-45e3-ba7a-8914a120a8d5"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
           <property
-            Id="0b6b44aa-def5-4517-8daa-dff2f09cdd2e"
+            Id="d9f9308b-ed74-4102-9798-3b195bd0c270"
             name="描述"
             isLeaf="false"
             isStatic="false"
@@ -1121,23 +1179,221 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2215f4ff-a5f2-47a1-b2a9-fd735c5d86c8"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59fd1e51-7295-4dc3-af9c-8497d362fdcc">
+                    <propertyInstance
+                      Id="e23dc4cf-8603-4876-b651-1120f866fce5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="993c6c91-3415-42c5-b458-1f89118c3d4b">
+                    <propertyInstance
+                      Id="9e93b9f5-69e0-49f5-9833-9f2bf36d16e7"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="463a5203-76dd-491b-9cca-005f3c63595f">
+                    <propertyInstance
+                      Id="1ff8db11-8667-4961-a987-14743dbb6b42"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bd97174-526c-477a-ae65-d5f973be2836">
+                    <propertyInstance
+                      Id="2c701354-c26b-49b2-a2f5-6de8a17e651b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f51d4191-8548-4ee3-ba0e-a36551ea5c55">
+                    <propertyInstance
+                      Id="0f9c3ada-f2d9-4ab5-b457-e3851eb2745f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5ea1e0a-1aa3-48ce-b782-65a782346f1c">
+                    <propertyInstance
+                      Id="5f08bb67-20af-4158-b0b1-58d80b6135b1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41327d11-184b-41cf-b966-c7f39dcaaf0a">
+                    <propertyInstance
+                      Id="f5be40d3-b2fa-4c7c-a4d2-d181e668fe36"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="4a87b9ed-b0ea-411a-a954-29d94cd1965f"
+            name="附件项号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>附件项号</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ab9a881c-64a8-47f6-b1b1-0c414c3f7dd0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="919b2558-9746-48d1-b86e-5e0ab4c3563c">
+                    <propertyInstance
+                      Id="629c3f82-53de-463d-a70e-c9c895a30300"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="554a6480-44be-46da-a2e0-e776beaf4d29">
+                    <propertyInstance
+                      Id="b2ab4d2d-de51-4f10-b9a7-cc437b2fdc90"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb322299-387e-46f8-8e5c-9638711c325f">
+                    <propertyInstance
+                      Id="f57b1061-95cb-4b70-ba6e-a7622fdded6f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04f1fada-eca7-43d1-bec0-04fa7323faa0">
+                    <propertyInstance
+                      Id="5a59d340-f162-49e5-aba2-8963e63b1f1d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cddfdbda-0f28-43dd-8b1d-9f926041cbf9">
+                    <propertyInstance
+                      Id="272d3768-0ac5-49ff-a387-f96c9904c24b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bab2ee9d-ee00-4959-b9b4-ff632eed6b45">
+                    <propertyInstance
+                      Id="67920562-c3ac-421a-9eb8-526af1ced9c1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8ea3172-0f5f-4408-a891-519a524f8a8c">
+                    <propertyInstance
+                      Id="78e873a5-ce73-476c-88e8-16bc7ceae41c"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="0d77c634-3900-4514-95bb-578a6fc437b9"
+            name="范围（string）"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>范围</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="725fad59-f14d-4619-acc4-c7e41df8f3a6"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a13ff09-fafb-4bed-bdc2-a2c90a1e7ec8">
+                    <propertyInstance
+                      Id="de186c0a-b30f-41bb-804c-2f4592064a7a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="702ba7fc-6717-4e87-a1e8-7575f19dbb36">
+                    <propertyInstance
+                      Id="c21eb0c0-46f6-42ef-9248-1f4444f02b82"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7476d61c-f789-4d9e-973c-71b0cccb1c6d">
+                    <propertyInstance
+                      Id="8f8c862b-e677-4e5f-a8d5-d5efa073125e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7356e7ee-d14a-4b27-a2c0-a2315a3efacf">
+                    <propertyInstance
+                      Id="112d7526-0861-42a1-aa0e-67151df61576"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ad1ea45-7522-4f05-8065-f25b8cbb4139">
+                    <propertyInstance
+                      Id="7b1777d9-f75a-4c4c-bb09-ac88c50c6552"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb2b7ad3-3d48-4b71-b76d-db4495c24040">
+                    <propertyInstance
+                      Id="1fbdd2f3-9282-4040-beca-d6a6d4bcde8d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea9f1e31-5adc-4d4c-b8fc-23d1ce4644b1">
+                    <propertyInstance
+                      Id="7e71b8e6-909a-4809-a265-d64145d309c6"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="15509e36-d684-49f2-87de-5681f6fbe93d"
-        name="Sn"
+        name="序号件"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <description>序号</description>
         <targetEnds>
           <association
-            Id="51855153-a839-4eed-8902-5a75782f5294"
+            Id="6e858991-75f5-4b0a-990d-378dd5f7f34c"
             isDerived="false"
-            sourceEndRoleName="Sn"
+            sourceEndRoleName="序号件"
             targetEndRoleName="拆换记录"
             isLeaf="false"
             isAbstract="false">
@@ -1148,60 +1404,8 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="773ee0f2-d7f9-4e04-8ebb-a59f75681bce"
-                  name="Sn"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5df20f9a-5e20-4235-8d67-6d4ea3ca3eff"
-                  name="拆换记录"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="6fd46f44-5e0b-4957-9032-b3353674f8f9"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="f29b70f6-66c4-492d-a581-bfeab12ea623"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="00432fc9-f62b-48a9-8c58-4574a06a2cb0"
-            isDerived="false"
-            sourceEndRoleName="Sn"
-            targetEndRoleName="到寿日期监控历史"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="580895a2-4cfd-45d3-8a4c-9fdb3ea7f43c"
-              LastKnownName="到寿日期监控历史"
-              LastKnownLocation="Part.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="69390eb6-fc84-4a3a-a17b-acaa018a708f"
-                  name="Sn"
+                  Id="8f75a66b-0dd2-4bee-81e7-48d80bde9a46"
+                  name="序号件"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1213,7 +1417,59 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="9d460fae-13f4-45fe-88c2-eda90b794463"
+                  Id="72165c84-6920-4c32-90b3-7de0de18a8ea"
+                  name="拆换记录"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6e244695-ea19-446b-b42a-8bcd4980b994"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="17c7e695-860c-4947-8667-91cfeda4e6e2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ed2ee8c1-5767-4131-81f4-aee8f7f4c24b"
+            isDerived="false"
+            sourceEndRoleName="序号件"
+            targetEndRoleName="到寿日期监控历史"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="580895a2-4cfd-45d3-8a4c-9fdb3ea7f43c"
+              LastKnownName="到寿日期监控历史"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d3c8d4c-01fa-4248-a014-29ce7269fe07"
+                  name="序号件"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2fa7ce6-01ca-46df-963f-2f0904311875"
                   name="到寿日期监控历史"
                   isLeaf="false"
                   isStatic="false"
@@ -1224,13 +1480,13 @@
                   isComposite="true">
                   <lowerValueInternal>
                     <literalString
-                      Id="f229e75e-0128-489b-8113-3e9e5dd79f8a"
+                      Id="013d0b20-33d0-4380-a847-dd3daa4d7b82"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="6011a1c4-d38a-4088-9c62-ef46779b40ff"
+                      Id="fe5aee7b-3e5d-4f5f-a60f-a2d94def6bd6"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -1239,6 +1495,644 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="49f07775-dc94-4ff8-9def-9b11357ab62c"
+            name="飞机外键（可空）"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>飞机ID</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="be56f759-6aec-4466-802b-05b4918a0aaf"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9677c4bb-46df-4b8f-af3e-313773f5b682">
+                    <propertyInstance
+                      Id="ce7405ce-b58c-44c5-aaa6-9266141d3f20"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e05d653a-f055-483b-b7af-467bba24f655">
+                    <propertyInstance
+                      Id="8438f052-ea0d-4a6e-b8a3-de74bd4d9434"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d3d1578-36b6-4807-a3fa-89392e66fa6b">
+                    <propertyInstance
+                      Id="008b82dd-f41d-49ce-b981-b041c4182629"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="876026ec-3bba-4758-bc95-393687469b2e">
+                    <propertyInstance
+                      Id="f0d882ad-56f7-423c-9f87-43756a1e5c94"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dced6a92-76a7-4283-8a30-0754ceab3ae3">
+                    <propertyInstance
+                      Id="def5ad67-fcea-4dcb-ba03-97cae7ca50d9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df88b671-4dea-434f-885c-8f171f27feae">
+                    <propertyInstance
+                      Id="d1023653-8aa1-47af-bd4c-1f0df772f61f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f0c12d6-914e-465b-bb33-bd54a028b706">
+                    <propertyInstance
+                      Id="4d654aac-87f0-4a66-9aed-a0e31798dc5e"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="5679493c-f37a-48ec-84e6-3e9cfb0f4f24"
+            name="AtaID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>ATAID</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="40889eba-a4c9-4cb0-a79d-e1fd4533570a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6dc35b4f-7f45-4f18-b76d-ec7963f0c86a">
+                    <propertyInstance
+                      Id="072250e1-762e-468c-bdd8-4ad9e6f7bd70"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d986a9cf-a270-4472-8f71-78d4647ea667">
+                    <propertyInstance
+                      Id="6395edcf-2c24-419a-bdb6-ef6ae8eec3d2"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3adbb80-8bbe-4748-8546-bb3694bf0546">
+                    <propertyInstance
+                      Id="3df75baa-7223-407c-a93e-91886fc11e00"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fe95e2c-be24-4dcb-9e3f-6317b10c7735">
+                    <propertyInstance
+                      Id="65287f29-fb1f-4e11-99ff-1647ee21a06e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb408271-c822-41c7-a4e6-2a080a960253">
+                    <propertyInstance
+                      Id="97706bb0-cab4-4c02-b939-76c4174298a9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fcdfe64-186f-4e31-9c39-717fa02eb15f">
+                    <propertyInstance
+                      Id="7d2f7df3-bc1d-4aa5-a40e-4b15dcd621e0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ca81ad0-1ffd-4bfc-9191-2892e7a6583b">
+                    <propertyInstance
+                      Id="280b9894-d6d8-4362-878a-ccd788347c3f"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0d39db19-ef02-4d93-84af-8789042563d7"
+                LastKnownName="int?"
+                LastKnownLocation="CommonService.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a85ea499-cb53-4f9f-91e5-96dcfad52805"
+            name="安装日期"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>安装日期</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b57d0163-6bc6-4b71-8d52-97488ffa1ea6"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="992ff2e9-5f20-4efb-a5dd-016072bc010a">
+                    <propertyInstance
+                      Id="5336989c-0de6-40cc-b551-0679c0f32fbe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01484032-7bd3-4c9b-a335-54d2eecacf66">
+                    <propertyInstance
+                      Id="e0e5ea9c-c690-4301-b5bb-a32e82b8ee18"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="672aadc7-2d82-479d-a040-cd435aaef89a">
+                    <propertyInstance
+                      Id="923272fd-b683-49ec-80f1-15a56df84912"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c49994e8-acc7-4b0c-8620-460b3b562644">
+                    <propertyInstance
+                      Id="9593fb55-f998-4181-b6f4-5c4c859fb7ac"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7c9b1e5-75a0-43d6-9758-9896fcdec7dc">
+                    <propertyInstance
+                      Id="9b64c78b-5f89-4ae2-b0fa-411050f33a10"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1037007c-b799-4a7f-a53f-bdc7b61eafaf">
+                    <propertyInstance
+                      Id="556063e2-e863-481e-bbd4-6295bae35094"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d170696-4600-43a5-a835-5030f32306ec">
+                    <propertyInstance
+                      Id="266f31c9-9850-47ee-a491-9cdcb41f61d4"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="c6eb4146-9541-4286-9f32-233e1c6abc1d"
+            name="是否停用"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>是否停用</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="53a9d0b3-6a96-491e-a93e-0df5a2aaf975"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d33bb63-5b14-4d7e-91fc-d88df6d20ebc">
+                    <propertyInstance
+                      Id="6baee7ca-dc25-4d7a-9847-fa5328fc5d13"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d91c3a4b-8c88-4c2a-95f5-6d259b24fb84">
+                    <propertyInstance
+                      Id="51be68a8-b51b-4608-b5bf-068166c46d58"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d05a0d7d-49df-4701-bab6-e5f63f711ff7">
+                    <propertyInstance
+                      Id="6ac61bd6-befe-46e5-808a-68e187d57b83"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cfd5fec-e151-4f26-adc3-77e04dfb11a9">
+                    <propertyInstance
+                      Id="e75616cb-f202-424c-8168-a465ea1dcde3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c29b3c84-87a9-4804-a605-80520c2c38bf">
+                    <propertyInstance
+                      Id="62ba34e6-1e9f-4344-bf32-17c487f4d1e7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f211e400-6d7a-4ec3-8d7c-69968eb60a3a">
+                    <propertyInstance
+                      Id="7d36162f-b5ed-41ca-8319-db938c41d8de"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="370c6642-b5c3-4184-a2da-52d8d4bc30e1">
+                    <propertyInstance
+                      Id="0371e2c5-95bc-4b66-8a1c-b1828f310ca2"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="daaab82e-8305-40c0-a82a-05faf9ea790e"
+            name="备注"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>备注</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8f9d272e-463c-497a-a8c5-416b4c4c16e8"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2cfad37-9b3e-4c5a-8499-688eaa6a7046">
+                    <propertyInstance
+                      Id="a95c3d9e-18fb-4b8a-b80e-0cb74cba2dcd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdcbf9a4-3faf-4d50-af73-7d89d9464618">
+                    <propertyInstance
+                      Id="c91e5abf-8fd5-457e-b6e7-d33d3908e7bc"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa30cd29-52f4-4976-81c0-da09960ee761">
+                    <propertyInstance
+                      Id="58af92ff-4ad6-4531-be7b-bedb3660eac3"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="283c7505-bd00-41a0-8c98-d3bfc7ad6c76">
+                    <propertyInstance
+                      Id="d5878179-2627-4a80-812c-b91e487a323a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3399ac6-cb3c-49a2-946a-a19c90df11f8">
+                    <propertyInstance
+                      Id="fa415a62-66f9-4edf-9dba-a6061fb2c86a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="521785c0-fb73-4ddb-9b98-efe3a16575f4">
+                    <propertyInstance
+                      Id="b3ad9b79-7064-433b-821c-3fa8890e3b12"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81eb84b1-4baf-40c2-958e-24d6920e1155">
+                    <propertyInstance
+                      Id="5280a053-8d6e-4dc5-89ad-2b4c88285330"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="d5a874b5-06b5-47a4-9d81-bf3b16964376"
+            name="部件外键"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>PN ID</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="686edf02-feec-4192-a036-3255da2d02e5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d36cf14a-5e74-47ac-babe-d650f75f82f2">
+                    <propertyInstance
+                      Id="3d892bba-715b-4d61-a0c5-f4e6c910a818"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa6d735f-f041-4130-8d62-7a2174f848ab">
+                    <propertyInstance
+                      Id="7479b816-6a5d-488b-9e13-eb265dd1f3ca"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ef5fee2-ca62-4ba5-8973-6a48803d755c">
+                    <propertyInstance
+                      Id="e8706a98-1e05-469c-88fa-3da69c33a538"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39d040e9-4bac-48ce-9522-8bb14017777e">
+                    <propertyInstance
+                      Id="184588ec-608a-440d-a8be-ef17558a148c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d57e41b-616e-49cf-aa11-66033adb82a8">
+                    <propertyInstance
+                      Id="ae7d0c88-5e07-401c-acbe-60f6ca41ad42"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5928fe9-44f6-4d4b-98d0-295fb2451c51">
+                    <propertyInstance
+                      Id="1067ab0e-b1c6-46a6-a932-3d2470d0fc6a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12612116-96f0-4520-8780-7647e65f613a">
+                    <propertyInstance
+                      Id="169a978f-cc97-4cab-9612-7a2224bf6baf"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="f48d0933-ecaf-4740-8048-0fa7e6461103"
+            name="装机位置"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>安装位置描述</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="81c21a3e-5cb2-4e0e-a86d-f1c0d95acc69"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05cc97d7-66cd-42b1-bb14-ec5d87a8ccc2">
+                    <propertyInstance
+                      Id="50dac73b-27c7-4ee6-8be3-e19d8458c842"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8c2fb66-1d77-44a1-87c1-d80f3cc77195">
+                    <propertyInstance
+                      Id="14653e59-f7ac-43ee-8e68-cb060e11abc8"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="320f80d7-9b42-4ff7-ae30-52c20295aa17">
+                    <propertyInstance
+                      Id="2f344275-5a93-49db-afaf-2be3c4ebf608"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30bcf492-6cd5-46d3-bd0f-0f0e1df1c82c">
+                    <propertyInstance
+                      Id="b930c0a1-8dd3-4046-80b9-ab15ce8d5377"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad5f37ec-49ef-48ac-951d-670c107d64b4">
+                    <propertyInstance
+                      Id="43b3c4b1-4237-41a9-b8af-aeb5859e08c3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b736409-bd94-4fb8-8111-c61d58fa7773">
+                    <propertyInstance
+                      Id="352abae6-69d5-4f76-aa8d-62ee1d6bdf9f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaff6be2-afe9-43e0-8bf0-9d7372753412">
+                    <propertyInstance
+                      Id="3fd18917-3dce-4b58-9262-880a5c66e088"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="17dc110a-e960-46f0-afb8-cb20b66ba171"
+            name="序号件"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>序号</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9863171b-ba6b-4336-8311-7e5382bd2ba5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34540ff2-438f-40b5-a1ca-17334fffd98a">
+                    <propertyInstance
+                      Id="2ed8c178-3c0e-433b-9c3b-c1d1c1e4e8f3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="563d7083-cd45-4ce9-8711-bb6d809bdc85">
+                    <propertyInstance
+                      Id="e50bb2f3-3eeb-4dc7-93fb-7d75bd027e08"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d85ed49a-4aec-4750-affb-4f95073c2fff">
+                    <propertyInstance
+                      Id="0234fc07-a678-431c-8d96-c6e546df8856"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7ccbac7-abd0-4862-a514-a7e20e618377">
+                    <propertyInstance
+                      Id="fc8263c8-b7d6-42c9-941a-00a90d4a3216"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fbe45b9-2825-4c76-82b4-2abdc28c493a">
+                    <propertyInstance
+                      Id="aeea28f5-6114-4ac8-b187-85cb09a6f982"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f614b16-6e5a-48fd-9d5f-fa3d09301ceb">
+                    <propertyInstance
+                      Id="f5fd012e-a21a-425b-9409-a437cc571c62"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bb53ba6-965b-420f-864c-07bc416bb1ba">
+                    <propertyInstance
+                      Id="1d2f0d50-da8a-4213-a21e-21c2cdb95868"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="78ceb9e0-7fab-440f-8661-c9273c6fb3c1"
+            name="是否寿控件"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>是否寿控</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="692931a8-00cc-49bb-a5aa-0ed402fabd51"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ededc0e-ab1b-4459-8bb7-a1796cd1bb76">
+                    <propertyInstance
+                      Id="40bff24a-5fdb-432b-85d9-5008a273620d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ef0fca6-5360-4737-abc0-cf0493223552">
+                    <propertyInstance
+                      Id="319f509e-e73f-4827-89c9-1157d277e824"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c75a3966-1167-4460-9269-27ce81e6397b">
+                    <propertyInstance
+                      Id="59453afa-715f-4f09-ba38-ae9bc5bf160f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7a3dea5-b3a3-4556-a993-163e7ad75e8d">
+                    <propertyInstance
+                      Id="2a7492f9-f321-4c82-a201-8cf146f95616"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1072aca-56ce-4e34-89ec-d70f44217ad9">
+                    <propertyInstance
+                      Id="49e7b7ab-2967-44d1-994d-9c89d37838c6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03045601-b399-4b8b-94cd-fc94ff9222da">
+                    <propertyInstance
+                      Id="98d43b66-6cd6-4cee-af9f-118eb8b04b1a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fe46476-19a0-4d43-9419-bc0a84e10f31">
+                    <propertyInstance
+                      Id="d6b3fca6-3bed-42f3-901e-a85f9575dcad"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1249,101 +2143,214 @@
         isLeaf="false"
         isActiveClass="false">
         <description>附件项件号</description>
-        <targetEnds>
-          <association
-            Id="df96bc95-b10b-4404-a336-dec6a474dcab"
-            isDerived="false"
-            sourceEndRoleName="附件项件号"
-            targetEndRoleName="附件项"
+        <ownedAttributesInternal>
+          <property
+            Id="3c2bb32f-cd32-4698-ae23-a6a123d21bab"
+            name="附件外键"
             isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="a2820fcc-8277-4038-9cb6-6ce490239b34"
-              LastKnownName="附件项"
-              LastKnownLocation="Part.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="c2db0a79-5efe-4bd4-b7cf-eedab9065eac"
-                  name="附件项件号"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="89ba61b7-546c-4789-ab98-a99b2ea8647e"
-                  name="附件项"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="e2b63235-a7e4-4d6c-8206-771ac4ff7de0"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
             isDerived="false"
-            sourceEndRoleName="附件项件号"
-            targetEndRoleName="Pn"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4bf94793-aabb-431b-8d41-0266ed9a7674"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3683fcfc-8588-4565-af39-bf4752822d54">
+                    <propertyInstance
+                      Id="766a3952-171d-496a-934b-d2fe8e40d0b0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17238e07-3f06-468b-93c9-b87618c3e8b6">
+                    <propertyInstance
+                      Id="a278e7b3-a0e4-4032-a5cf-e7c8c9a7acb1"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="430125be-4d2f-4899-9fcd-1962c6473130">
+                    <propertyInstance
+                      Id="83e7a16c-2cea-47ae-a1d9-717d30cfd0c8"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="862c7834-bfcc-4845-82d6-34d91e3226ef">
+                    <propertyInstance
+                      Id="92b8bf08-1ebb-4da5-92f5-2f02b85c991e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0ee85b1-054b-4e49-9bbb-77e3d6d0504c">
+                    <propertyInstance
+                      Id="c9530578-ed54-43ef-80e1-0568764c2937"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="101a924e-8499-4c73-9e16-fd2c6178374f">
+                    <propertyInstance
+                      Id="c6b3a177-518e-44df-9c03-2ba132373d37"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87ef889f-fc8b-4bc4-9a53-055ed2c30354">
+                    <propertyInstance
+                      Id="e7fd470c-734b-4d48-87e9-86b26a52360a"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="17ccac19-1ef4-4ae3-a986-97833016126b"
+            name="附件项外键"
             isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="08dc4aed-4161-41c6-8054-cadf90c9829a"
-              LastKnownName="Pn"
-              LastKnownLocation="Part.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f841c274-d799-49bf-baff-641b9d20767e"
-                  name="附件项件号"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5cb4a033-ace7-4f3b-9d80-1fa349787690"
-                  name="Pn"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="40898091-af64-42f4-8ac1-661faefa198f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9089d491-978f-43b5-bc63-76b3000ec720">
+                    <propertyInstance
+                      Id="37d5e873-6e49-49e3-91cd-4aa3d15d680d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="264c453f-c7a8-4cf9-87c3-b15e221e4856">
+                    <propertyInstance
+                      Id="258a355c-24e9-4bfa-b92c-467f710e2813"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09db145b-4fc8-4cbd-9402-e1b54de112f1">
+                    <propertyInstance
+                      Id="dd765288-6d5c-46f9-9b20-664a57d244ab"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6719d72-aabb-4ee8-98ca-df2637476896">
+                    <propertyInstance
+                      Id="9a3757d0-2d7b-4c1c-b4d2-4159701b4de9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="653fd8dc-33cf-4201-8700-d7305aa03dc5">
+                    <propertyInstance
+                      Id="2c7467f1-5f15-4376-999c-cbbbc7f97801"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a86656c-f9bd-43cc-b2c3-44f368a29e36">
+                    <propertyInstance
+                      Id="41ba84c9-6106-41f1-9301-08a122bc01db"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efd56a48-d28a-427b-a84b-f800d5c74670">
+                    <propertyInstance
+                      Id="43b1b23b-fd95-4035-9c32-f599930b126d"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="e73a2a94-03e4-4d0a-ac35-c111f3c5662b"
-        name="AircraftType"
+        name="机型"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <description>机型</description>
         <targetEnds>
           <association
-            Id="04defbe3-7b3f-4f19-a3ee-e26d1dd8ec36"
+            Id="cf16050f-16db-4f6e-9de1-c982733da0f0"
             isDerived="false"
-            sourceEndRoleName="AircraftType"
+            sourceEndRoleName="机型"
+            targetEndRoleName="运营飞机"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2dc1b60d-1cff-4d77-a0aa-af379673d618"
+              LastKnownName="运营飞机"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="634cce43-929f-467b-a2b9-a0f73f18d2f1"
+                  name="机型"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18e18cdf-6dbc-48bb-ba81-5522050da78a"
+                  name="运营飞机"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="80e7f18f-2046-4b0e-93b6-ae48bf42cad3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7f5467d8-1131-460f-872d-4f11180bd630"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="87570369-5aa2-4f9f-af69-e1409f1fcc2c"
+            isDerived="false"
+            sourceEndRoleName="机型"
             targetEndRoleName="附件项"
             isLeaf="false"
             isAbstract="false">
@@ -1354,8 +2361,8 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="eff4c257-09d3-4fad-bd0e-da00374ca222"
-                  name="AircraftType"
+                  Id="2fa2f286-ab5a-4c9c-9854-b9aab0ba7de3"
+                  name="机型"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1367,7 +2374,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="49259ef1-98a6-4a83-b6de-7c00accac92a"
+                  Id="350c9f46-075a-4d61-8acd-45e82975d627"
                   name="附件项"
                   isLeaf="false"
                   isStatic="false"
@@ -1375,20 +2382,8 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="e0ce7775-2341-4ada-a359-be47fc8d5426"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="42f632bb-f4db-4e53-b23d-08737cab4fcb"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
+                  isComposite="false"
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -1398,68 +2393,28 @@
     <packageHasNamedElement>
       <class
         Id="2dc1b60d-1cff-4d77-a0aa-af379673d618"
-        name="ContractAircraft"
+        name="运营飞机"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <description>合同飞机</description>
         <targetEnds>
           <association
-            Id="ecf72261-dbac-4092-9643-fb5456ee36ce"
+            Id="7cd8b9af-ba6e-4772-ab7a-7e723848734a"
             isDerived="false"
-            sourceEndRoleName="ContractAircraft"
-            targetEndRoleName="AircraftType"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="e73a2a94-03e4-4d0a-ac35-c111f3c5662b"
-              LastKnownName="AircraftType"
-              LastKnownLocation="Part.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="513a5f92-4c39-43fd-8fb2-46d394a6a842"
-                  name="ContractAircraft"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="db42877d-ca3b-4279-bc79-75f9d1df5f07"
-                  name="AircraftType"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="e8fb3468-0b89-4aa3-840d-f6a98a889036"
-            isDerived="false"
-            sourceEndRoleName="ContractAircraft"
-            targetEndRoleName="Sn"
+            sourceEndRoleName="运营飞机"
+            targetEndRoleName="序号件"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="15509e36-d684-49f2-87de-5681f6fbe93d"
-              LastKnownName="Sn"
+              LastKnownName="序号件"
               LastKnownLocation="Part.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="219101bf-99a7-4f43-9c93-144181b1b30c"
-                  name="ContractAircraft"
+                  Id="9e6f15b4-e814-4317-996c-97be2953fdd2"
+                  name="运营飞机"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1471,8 +2426,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="a78a9f55-a9e4-40aa-bed1-09f1f2a6acf3"
-                  name="Sn"
+                  Id="5ad140df-d42f-4f7d-bc10-96fb1f0ab8fe"
+                  name="序号件"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1482,13 +2437,13 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="bbaf854e-d277-42c2-9d33-94805fef88f1"
+                      Id="3e6d2c21-b1d2-4761-b6dc-75d27d59b4b3"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="f79b7eb3-4f78-4049-abb3-442d3ffd5e73"
+                      Id="c8c1a0a8-471d-427a-a9c0-e0d52900cab6"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -1502,14 +2457,68 @@
     <packageHasNamedElement>
       <class
         Id="2469bd0d-5ab2-495b-88bd-d76a34eac089"
-        name="附件控制单位"
+        name="控制单位"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="a6e77f88-d367-4952-b93f-3e122522523f"
+            isDerived="false"
+            sourceEndRoleName="控制单位"
+            targetEndRoleName="附件维修间隔"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1101f0fd-65fe-4c1f-b51d-3a6b9095e745"
+              LastKnownName="附件维修间隔"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="658a2eb7-64d3-47e5-a9f3-f2f266023477"
+                  name="控制单位"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f874ec5f-fe95-4802-aab0-b56d3384b08e"
+                  name="附件维修间隔"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="892fcc2b-36cf-4a93-b163-335354169ce2"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a149e931-883c-4010-9d7e-a782e06c939e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="8c2c4c8e-ff24-4dfc-80de-1838adafb629"
-            name="Name"
+            name="控制单位名称"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1520,7 +2529,391 @@
             isComposite="false" />
           <property
             Id="b815ca30-c4f0-4160-a8bb-10a6a5d6f00d"
-            name="Description"
+            name="描述"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e9686338-14b9-4c2f-85fb-c2f6460f872d"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>控制单位ID</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b60f13d8-ad06-4998-a325-46c61095fa14"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2f4b80e-fe4a-4cbb-9691-2cc3f0d43cad">
+                    <propertyInstance
+                      Id="11598018-9eee-415a-9914-c66dc77330bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d59e0ff0-0b4e-49ae-8f24-c90e6baf8083">
+                    <propertyInstance
+                      Id="b1f0810c-cb34-476e-9b71-31653ab13460"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7374d317-9d2b-41ae-a95f-a8e6ea0831d8">
+                    <propertyInstance
+                      Id="12f6da6d-64ec-4f39-aa11-131763d0307a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce38c673-0ca8-4bb2-886a-1c28b9d4aca7">
+                    <propertyInstance
+                      Id="eec8a7a1-bc2c-4fe2-8b28-ca40c3947f8d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c11b1007-adf5-4a4f-8acb-d6c92bdaee8f">
+                    <propertyInstance
+                      Id="8dacfb1c-c31a-494e-91ca-98f20888a4fb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fe57d57-342d-4f69-bae9-2f902fbb8bf6">
+                    <propertyInstance
+                      Id="e87f4f9a-a731-4e75-b6e5-6157b84c483f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a901d5e-817f-4c0c-8463-e133e5b30386">
+                    <propertyInstance
+                      Id="3109bfa8-073f-4919-b4de-78dab8a1943b"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="2e4c0f0f-dbda-4a63-873b-c4ad0eed0e7c"
+            name="创建时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>创建时间</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ff620b04-b6d0-49b2-af14-cb511318b1df"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8f1e32c-2790-4b36-a290-b87b7d7ee6ba">
+                    <propertyInstance
+                      Id="e150fb6f-d302-4d96-b4e9-7c35740e5481"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="227d272d-138e-42e9-94fe-6100c3bcadf8">
+                    <propertyInstance
+                      Id="6ceacdb4-fd25-4d54-b3a4-0f2bddb4aba8"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5b09585-970a-4487-9609-e27d0f0f9118">
+                    <propertyInstance
+                      Id="bfae6862-867f-45f8-a964-6161414f53c3"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05284e4a-72cd-4929-9b66-155c6ee99eee">
+                    <propertyInstance
+                      Id="28377e03-c663-475b-92ec-9ddd38c92ac2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dafbe762-359a-42c2-bc90-7cdedfecfe98">
+                    <propertyInstance
+                      Id="205500a9-f699-4ef6-ae21-5cded26d18a9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8820524a-48e5-4f51-8524-e9beef18bed3">
+                    <propertyInstance
+                      Id="d838bebe-e8a6-4388-ad35-fd4ff71703c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="012ddfb1-bfa2-4be7-9f81-68af1c361e64">
+                    <propertyInstance
+                      Id="f5018db1-6518-4786-ba9a-ceb5f803aeba"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="e4e5e28a-9002-491a-a132-c7b91232440f"
+            name="是否时间单位"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>是否时间单位</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4b59c59d-556a-4df1-b771-ab1c43a05fca"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a11cf2f-49ab-4cc8-9258-8a228f73cbc0">
+                    <propertyInstance
+                      Id="7ab2966c-ff09-4bda-9c70-6326f2a7ecd9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="925fdce1-0a3c-412c-9997-484f5c64f164">
+                    <propertyInstance
+                      Id="a40b1647-20c3-497b-9822-866b44fdb02e"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7aa2e221-d4b1-435d-b2b8-773362f0275a">
+                    <propertyInstance
+                      Id="2d103bdd-27af-4a33-a574-a22081c06602"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15d1bb55-6148-4d95-af01-9ccae2b7bc2d">
+                    <propertyInstance
+                      Id="14f00a4c-e3f2-4943-ad26-b0b54ef849f7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e596bec2-92c1-4938-a5fe-19ea28255901">
+                    <propertyInstance
+                      Id="30375f69-76a9-4b08-8ab0-5ce889d45d43"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68828a8c-f93f-4176-8547-8d4e74c6ab45">
+                    <propertyInstance
+                      Id="e71e96ab-2e8f-4725-81dc-c5dc00870b21"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d8dfab0-c3ac-4357-bc04-3dfb1e91636b">
+                    <propertyInstance
+                      Id="fb3f6af6-bdda-45c1-85dc-996a4f0e4786"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="a537398a-d409-4268-9f8b-4801e748469b"
+            name="LogUnitID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>飞行时间数据ID</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="61acfc4e-f785-4064-a945-d11306671508"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8b27a22-1ac8-4d7f-86ce-aa5fda3be3bd">
+                    <propertyInstance
+                      Id="9b293857-bf34-4d56-b3bc-38c337f77a88"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4b9486b-4392-4679-844a-e080c0769326">
+                    <propertyInstance
+                      Id="a171c29b-4736-403a-9003-fe3f1f97f3ca"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="089d1071-cc27-479b-92fc-397dc258fc5d">
+                    <propertyInstance
+                      Id="cea1bc59-fc2b-4e39-a9cf-a6cfae145661"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="669def03-9814-4029-857c-195ec1d53904">
+                    <propertyInstance
+                      Id="ab86f42d-53a6-427d-b2c1-0bc2ec6e5c21"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82fad361-d9fa-46ea-b5cd-40ed751fa4b1">
+                    <propertyInstance
+                      Id="a066af84-a6b0-4bf9-bfc2-016236eaa9c9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51e4d810-7ed0-4342-b184-4c87a5e3b4d0">
+                    <propertyInstance
+                      Id="52f8f7d9-2bd8-49e6-adc2-e42f652a7d86"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95091fc8-5c64-4de2-a57b-297018ebe893">
+                    <propertyInstance
+                      Id="78d746db-913f-4c49-aaf2-a8507ee8000d"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="1734b49c-dde8-48b1-bda9-9eb200bf6244"
+                LastKnownName="int"
+                LastKnownLocation="Main.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9a24fd85-b8f6-4694-92eb-fe808472f8b3"
+        name="拆换记录"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="4e05ab3a-e1f9-4750-b12d-8a6cb3498d33"
+            name="飞机外键"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8ba20958-8679-4005-83fc-b93e625fa3af"
+            name="装上时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3413a756-8a04-457a-9a79-78bdd8a04f92"
+            name="拆下时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8ea953e8-9d7d-4a61-bc74-4f32619c63a1"
+            name="上次装机飞机"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="49636b36-8203-4329-ad3b-6f2d38722b68"
+            name="序号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="16e89e62-e4de-4804-8f60-627534a71538"
+            name="是否拆换"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f9f4204c-8c18-4239-829c-129e164e8e9e"
+            name="对换件的序号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0c43fa2e-90be-4d39-80fb-331ea24c0b80"
+            name="拆下事由"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1534,19 +2927,165 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="9a24fd85-b8f6-4694-92eb-fe808472f8b3"
-        name="拆换记录"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="1101f0fd-65fe-4c1f-b51d-3a6b9095e745"
-        name="附件时限"
+        name="附件维修间隔"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="ec84a8da-e65c-490d-b069-f7915e7ad9bd"
+            name="控制单位外键"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>控制单位ID</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="991f924a-2cbd-4428-9c38-48823ff5df42"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa6a4ebf-d391-4b66-ac9c-9e127bf03ce9">
+                    <propertyInstance
+                      Id="e293dc32-5c6d-4f58-9d03-b052cb253e08"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b52504d-3cf6-4bc9-b25c-56ff268bed12">
+                    <propertyInstance
+                      Id="f854a2b9-36b6-4be3-a8f5-49309bf0fca9"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb0c0cb3-5c92-4866-b6df-16688898979f">
+                    <propertyInstance
+                      Id="5d9cdd88-50be-4f56-8d3e-c2e1376f372d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89ff6530-666f-493d-a035-1f2e7a64d27e">
+                    <propertyInstance
+                      Id="c27bf9ac-5a5a-4062-8a16-4ee3fd47068f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa03532f-044a-4420-9be9-f225fd62dbcd">
+                    <propertyInstance
+                      Id="4b9ab782-d7fb-4992-b2c9-e3a97554c524"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bbada7d-e081-453f-a5ae-5adedf7f0875">
+                    <propertyInstance
+                      Id="121dfab5-9c90-41b0-9d11-0150b7082c44"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65f3b33f-9b87-44a2-a669-472e198ce1fa">
+                    <propertyInstance
+                      Id="44d6c8d5-2d20-498c-9a54-d715ecb22775"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="04096b29-180d-4f9a-9b1c-8649b734484e"
+            name="附件外键"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>PN ID</description>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="136755a4-dcbc-4a8a-9fe7-2e160cc89752"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0759d27-e0c7-4f49-a575-7bd58faa26ba">
+                    <propertyInstance
+                      Id="c6accb4d-9190-46f7-ae00-0a6be8a889b6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="119769dd-30be-4c95-8386-398299838eb9">
+                    <propertyInstance
+                      Id="83ae5dc7-988f-4e1c-947b-abcf6fd60944"
+                      name="Get"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afff6bdf-7008-47b8-8cb3-757180112270">
+                    <propertyInstance
+                      Id="391247fb-d78a-4437-920b-7e84b14873c9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8e5a7aa-a7d7-486a-9a20-92122b1784b0">
+                    <propertyInstance
+                      Id="386db2b9-56ab-4180-8cb2-e4e552604810"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a8a4dc2-269e-4c5c-88d9-4154b0e4ecac">
+                    <propertyInstance
+                      Id="81ee6086-85c5-48a6-98b7-8999790a8e2e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="020c3cef-ab7a-4247-9a2b-0080ceef75a8">
+                    <propertyInstance
+                      Id="a5292e7f-4a18-4c22-bc57-ee2b93363cc6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56795ffc-a34f-4782-a039-1523deee3300">
+                    <propertyInstance
+                      Id="46108d11-6e00-4b43-972a-7a78541b9bf5"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </property>
+          <property
+            Id="0e12369a-326b-4e71-a810-822c61f7338b"
+            name="值"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -1555,6 +3094,60 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="aa4816fa-8aa9-4b81-852b-971bf503451c"
+            isDerived="false"
+            sourceEndRoleName="到寿日期监控历史"
+            targetEndRoleName="控制单位"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2469bd0d-5ab2-495b-88bd-d76a34eac089"
+              LastKnownName="控制单位"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b56f13ec-a3e2-4752-866d-41e5911aa866"
+                  name="到寿日期监控历史"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b2332ec1-944a-4779-b3c4-b24dcd2238d4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="56e964f6-5a1b-46c7-bf8d-4b8593357392"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4aaf6b5a-3ad1-45e3-88de-37dd51fed160"
+                  name="控制单位"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="4e79322b-de93-47a7-8a61-67a0518e7ce2"
@@ -1602,7 +3195,7 @@
             isComposite="false" />
           <property
             Id="f078b563-0c53-4805-8dce-d0b2a32fa9e2"
-            name="Pn"
+            name="附件外键"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1613,7 +3206,7 @@
             isComposite="false" />
           <property
             Id="57863867-444c-41c7-8df9-15841376baf3"
-            name="Sn"
+            name="序号件外键"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1624,7 +3217,7 @@
             isComposite="false" />
           <property
             Id="74365f9f-483f-4066-81e8-139a56f1f6f8"
-            name="已经使用时间"
+            name="已经使用时限"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1635,7 +3228,144 @@
             isComposite="false" />
           <property
             Id="52e2a1aa-2dac-4378-9e91-207aed8331e4"
-            name="剩余使用时间"
+            name="剩余时限"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c5737d7c-59da-440e-958e-687e71ce9de5"
+            name="变更事由"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bb76ca7b-ac97-4565-a849-d156796c9c5e"
+            name="总计"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="325bd42c-f70a-428d-b87e-fe29ca32e32e"
+        name="Mscn"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b9d3c7ba-6045-44e2-9189-9392d42a127e"
+            isDerived="false"
+            sourceEndRoleName="Mscn"
+            targetEndRoleName="MscnLine"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="650b5e35-374e-42d6-9d8a-670e17917020"
+              LastKnownName="MscnLine"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="48a6ea8c-9669-4f6f-a4ff-b615699e305a"
+                  name="Mscn"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a5001764-52a9-4949-b513-215d098410b1"
+                  name="MscnLine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8ae2ce57-5f64-4767-aa0d-7ba1487b4aa6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f1c99ab4-03fa-430e-b142-f69780c97d13"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="650b5e35-374e-42d6-9d8a-670e17917020"
+        name="MscnLine"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="40952e94-5061-407b-872e-c8e4a4354fd5"
+        name="互换性"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="9af3983a-ff29-40b3-ac3a-491437eacc8f"
+            name="是否双向互换"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3aeb9ac5-d8c6-4397-8de2-53f342600ffa"
+            name="Pn1外键"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="360a3a62-dee5-4ce6-abf6-fdbe6d44d820"
+            name="Pn2外键"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
