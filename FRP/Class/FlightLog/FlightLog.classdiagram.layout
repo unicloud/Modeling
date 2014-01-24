@@ -1,4 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="FlightLog">
   <logicalClassDesignerModelMoniker Id="3c45a0fc-9186-42aa-912b-7f66277eec15" />
+  <nestedChildShapes>
+    <classShape Id="bf92a1ca-f8ea-4d1a-a4ae-00f91e089c1a" absoluteBounds="5.125, 1, 1.5, 5.7294921874999991" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="680cb920-d936-4772-a60c-ae73e5591d37" LastKnownName="FlightLog" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="22193bb4-5161-46fb-86c0-823a35ad4af1" absoluteBounds="5.14, 1.3900000000000001, 1.4700000000000002, 5.003173828125" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="f33270b9-6ae8-4ff9-955b-36f7a5ab6617" absoluteBounds="5.14, 6.4031738281249995, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
 </logicalClassDesignerDiagram>

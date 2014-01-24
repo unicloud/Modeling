@@ -1,21 +1,207 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="3c45a0fc-9186-42aa-912b-7f66277eec15" name="FlightLog" linkedPackageId="4a68aded-20ab-4737-b07d-1fa0fe1e4de8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="2512914f-6a2f-4260-a833-ddcfc0924136">
-      <profileInstance Id="7c11f517-87ac-4da4-bb95-da79d2b2854c" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="75f7bfda-4495-41bd-a78e-e4764cdf4e35">
-      <profileInstance Id="29dcad45-b901-45ef-94b7-b16f40a61a18" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="680cb920-d936-4772-a60c-ae73e5591d37" name="FlightLog" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="181a8104-828c-42ed-9271-dfdf3bb6ebb8" />
+        <ownedAttributesInternal>
+          <property Id="a5b3211c-2f00-41cd-a098-de4b85513556" name="飞行类别" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="609c5b2c-5214-4d72-ba3b-d2a86eadabaf" />
+          </property>
+          <property Id="4c92ca9d-a100-42ac-a45d-15cb9171251a" name="航班号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8e83a495-ab42-4da4-8252-656812a42709" />
+          </property>
+          <property Id="5c309395-4c2a-4319-8663-68a8415e6183" name="累计飞行时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5ec8b151-9c8b-4e39-8e7c-90f553db8b47" />
+          </property>
+          <property Id="1971c933-de6c-4d41-99cd-611cabd469ef" name="累计开车时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f31364de-f97e-4a1d-a554-e004cafb0be4" />
+          </property>
+          <property Id="dd94d8e3-f6ce-4997-a5e3-b87712f69925" name="飞行时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a462ca65-016e-4ead-8311-89ae8170b365" />
+          </property>
+          <property Id="694e23fe-24df-4235-b2eb-8758d5bc38ce" name="开车时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="865bd256-f13d-40c1-893a-f41b07f0cd71" />
+          </property>
+          <property Id="02cf94a3-18f9-42c3-9907-c83c2a28e94b" name="累计循环数" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="17e768e0-82ee-48af-b54c-56c07eea90d2" />
+          </property>
+          <property Id="66e95546-99a5-4bc8-a8f5-7d8d2e0659df" name="飞机注册号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0559a67c-82bb-4219-b607-548d3892f6fb" />
+          </property>
+          <property Id="774c7eb7-0ade-4e74-8bce-c1132fa8f1bc" name="飞机序列号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4aa0b594-b886-475d-b00a-c846d43026fa" />
+          </property>
+          <property Id="041fcf9a-6463-485f-9f32-715806c097d0" name="航班日期" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="009230d3-19f8-4a91-afea-d9d9348b2ecd" />
+          </property>
+          <property Id="97b7879d-c991-4041-9b46-bd53979d36e9" name="开车时间段" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="777734b6-5815-4d4b-92b1-05623f369bdf" />
+          </property>
+          <property Id="ca8e9635-8763-4b71-97e0-c197bce58cce" name="实际起飞时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c1c546a-902e-48fd-b7fd-98a1510195b5" />
+          </property>
+          <property Id="08199a34-641f-43fe-8dfd-b6d5a1f2a1ea" name="着陆时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a15b62eb-8813-4e9b-b932-0515a775bb08" />
+          </property>
+          <property Id="d0fbd6e3-cdeb-4d9e-a21f-4661c8fa5e93" name="关车时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="94b75f9c-98b5-4c5a-8481-c256b24a62f5" />
+          </property>
+          <property Id="4c4df27e-f391-45cf-b01a-2094a3f4171d" name="起始机场" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34a884dd-27c3-4034-a62c-8c2c9fad0417" />
+          </property>
+          <property Id="6138102f-3410-408f-b241-0df2cdfccf0c" name="目的机场" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7adb6c6f-21dc-45e7-8208-39e397e78815" />
+          </property>
+          <property Id="a1f5963c-e376-49c4-90d9-60430a2209a5" name="飞行循环" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3bab0644-2454-427c-8830-6fa01f7db385" />
+          </property>
+          <property Id="2f1bac0e-ebe1-4b3b-86af-54a0db3f6335" name="训练循环数" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e466e798-ab13-4838-8d02-57a5ecad0e51" />
+          </property>
+          <property Id="e24c3f80-70b2-4a14-af7b-6fd651e4f3a1" name="APU累计使用次数" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98f8473d-2aa4-4702-a5cf-314501b91b5b" />
+          </property>
+          <property Id="9a4a43ad-00a1-4ffe-9bc8-4d527286147a" name="APU累计使用分钟数" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7e29db63-1e1b-419e-96c9-6a7488dda35b" />
+          </property>
+          <property Id="e8c84e41-6b50-47b6-bbde-e24c41d721b2" name="航前发动机1滑油添加量" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3d62a796-9d6f-4a6b-857c-515cd0f01ee6" />
+          </property>
+          <property Id="9efc4cd9-5f43-4910-bd5e-2ad7dbfce82e" name="航后发动机1滑油添加量" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cd20c8a9-567c-489f-9615-4956bec6a232" />
+          </property>
+          <property Id="d132623a-5978-4bd5-8efd-732ead49489b" name="航前发动机2滑油添加量" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d20a0859-d5cc-4ede-9391-db890ee49901" />
+          </property>
+          <property Id="cef2784e-977b-41b7-b177-57f057dec58e" name="航后发动机2滑油添加量" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3014ebf6-0837-4f6c-819b-b19c5f4d7d07" />
+          </property>
+          <property Id="9e04c031-ed55-4e04-894e-6dde0d00a5be" name="航前APU滑油添加量" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e6c23fd9-2b61-4784-835d-86975a82b953" />
+          </property>
+          <property Id="78d2593f-cf0a-41f7-b12c-595dfbc5f00c" name="航后APU滑油添加量" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3b716fc4-96d2-4f3d-9784-bc2d9101a745" />
+          </property>
+          <property Id="6b63abbf-9f5d-4c7e-875e-b388ef75a6e4" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="af7ef902-20df-4ca4-8964-d3465f8c6a05" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
   <package Id="81bda3c4-d189-4fda-a8bd-4342b889e99c" name="Main">
+    <appliedStereotypesInternal>
+      <stereotypeInstance Id="d1b828ea-0fab-46ba-adfe-1a4a79e6904f" name="namespace" profile="CSharpProfile">
+        <elementDefinition Id="63f34954-8f3c-436d-9fb7-74e6e38af081" />
+        <propertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="e48cc99d-2ab7-44e0-b162-8841db568d46">
+            <propertyInstance Id="08d90b56-f5b3-46a8-92cb-bd19136fb1d3" name="BaseName">
+              <elementDefinition Id="0c5912a5-462a-418f-a06e-68dc35e9152a" />
+            </propertyInstance>
+            <elementDefinition Id="df19720b-3986-4eed-9c5a-22c959467590" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="dfb9eefa-ab48-467f-a2ed-60e93ca6d6b6">
+            <propertyInstance Id="2de8147c-197e-485f-bb86-17f7720c4715" name="ClrAttributes">
+              <elementDefinition Id="1f1a54e0-00f5-4f9d-b1c8-80e2106215f8" />
+            </propertyInstance>
+            <elementDefinition Id="57cdc6c9-1e92-43de-8399-ec56861e6dfd" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="30696c81-67bc-4430-aa2f-bf8aeb30ca3c">
+            <propertyInstance Id="b5dae4ac-2a92-4009-bc5b-81eb1e49c050" name="Usings">
+              <elementDefinition Id="78de931e-faa8-4e84-a8da-24c1bdc1b9e7" />
+            </propertyInstance>
+            <elementDefinition Id="9cf171cf-9fbf-41a3-ab1c-84bb9000f9bb" />
+          </stereotypeInstanceHasPropertyInstances>
+        </propertyInstances>
+      </stereotypeInstance>
+      <stereotypeInstance Id="7174fc82-243b-4421-a48e-9dfb1df59d7f" name="TextTemplateBindings" profile="TextTemplateBindings">
+        <elementDefinition Id="c5c1f24a-f503-4b5a-b5a4-03d0462f64b9" />
+        <propertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="715d7e5c-c99b-47ff-a3cf-339fea7a18b5">
+            <propertyInstance Id="3fd9b290-d3f3-4134-ad4a-ce820f681a36" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+              <elementDefinition Id="8d1843b4-1702-47e5-aeb0-1b3bacd8ab19" />
+            </propertyInstance>
+            <elementDefinition Id="4044633d-fc9b-4659-b049-3324553a4247" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="0b470d9d-78de-4a8c-b499-1fd4dc54a1f4">
+            <propertyInstance Id="d48c265c-0e24-49ce-a546-85c0141a9bef" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+              <elementDefinition Id="286ed6b7-d0b6-4899-8369-e3599a389f38" />
+            </propertyInstance>
+            <elementDefinition Id="405f0fa0-7561-457f-9f11-5dc6fefbc806" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="5bd5e36c-5ba3-4a81-924f-07cd426086e3">
+            <propertyInstance Id="22ef240c-99dc-4e0f-b6c9-079fb0cbe633" name="ProjectPath" value="ClassTemplate=..\MainLib\MainLib.csproj|EnumTemplate=..\MainLib\MainLib.csproj|InterfaceTemplate=..\MainLib\MainLib.csproj|StructTemplate=..\MainLib\MainLib.csproj">
+              <elementDefinition Id="13c73fe1-7c4f-444d-8abc-d1a612da41cb" />
+            </propertyInstance>
+            <elementDefinition Id="2c9b41c3-9b30-47b0-9de0-49f0e078def3" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="bc2fa466-88f3-4450-bf91-7c7b336b94a1">
+            <propertyInstance Id="451b22e4-805f-45e8-ad0c-3ea1ad19df87" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+              <elementDefinition Id="80e3db6a-7bb3-41b5-aed6-e000279a7f4b" />
+            </propertyInstance>
+            <elementDefinition Id="c1696e18-c505-4006-8e67-30807363f617" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="89ee1891-c2ba-4f35-9614-287f5aabaeff">
+            <propertyInstance Id="22fd08d1-71ae-4a81-bbee-5bacbcabe686" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+              <elementDefinition Id="42924065-45a7-4c94-a620-aeb549b5b85f" />
+            </propertyInstance>
+            <elementDefinition Id="bbd4db7e-f0eb-4859-8de5-17a2bba3741f" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="cb82f5f8-b2a8-4dfe-8e7b-0c5fa3c88631">
+            <propertyInstance Id="25792170-c069-4912-ac4f-b4c6d6b655c6" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+              <elementDefinition Id="265348aa-6c71-440b-869b-58b25de4f305" />
+            </propertyInstance>
+            <elementDefinition Id="de15bf80-f0dd-4fde-ba6b-6a9d61c02ff1" />
+          </stereotypeInstanceHasPropertyInstances>
+          <stereotypeInstanceHasPropertyInstances Id="9e0b919b-303d-4110-92f6-eb50418c38e2">
+            <propertyInstance Id="f3d08e01-e147-49e4-bb04-d6ba97b14be7" name="Parameters">
+              <elementDefinition Id="240e3a6c-a880-4298-9bac-5bc99d1f7b73" />
+            </propertyInstance>
+            <elementDefinition Id="add18b66-0507-4ca3-8a32-dd1a4af39631" />
+          </stereotypeInstanceHasPropertyInstances>
+        </propertyInstances>
+      </stereotypeInstance>
+    </appliedStereotypesInternal>
     <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="563a4fcb-1e2d-4fb1-8ff3-2ebc2d1cad43">
+        <profileInstance Id="4fe66d2e-ce54-453d-a7b6-6a4545fdd562" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b50fceb8-2ef0-4de2-8097-b7c221ffb451">
+        <profileInstance Id="a8b8d203-efbb-488f-b6df-248bd436eff6" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="613a06c2-52de-48b4-96ae-30147b69cba9">
+        <profileInstance Id="d5072bd9-5af3-4562-a226-584e3003df2d" name="CSharpProfile">
+          <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
+        </profileInstance>
+        <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dc308194-cd35-416c-a928-4a82010ca887">
+        <profileInstance Id="95ca555f-8ec8-4c9d-966f-9c8bb19d639e" name="TextTemplateBindings">
+          <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
+        </profileInstance>
+        <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2512914f-6a2f-4260-a833-ddcfc0924136">
+        <profileInstance Id="7c11f517-87ac-4da4-bb95-da79d2b2854c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="75f7bfda-4495-41bd-a78e-e4764cdf4e35">
+        <profileInstance Id="29dcad45-b901-45ef-94b7-b16f40a61a18" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
   <package Id="4a68aded-20ab-4737-b07d-1fa0fe1e4de8" name="FlightLog">
     <elementDefinition Id="1804ec7d-687b-4f19-9fb3-d5318e1132aa" />

@@ -6,31 +6,72 @@
   <MessageClass Name="Error" Label="错误" Option="显示错误" />
   <MessageClass Name="Property" Label="属性" Option="显示元数据" />
   <MessageClass Name="Diagnostic" Label="消息" Option="显示诊断消息" />
-  <Message Timestamp="2014-01-21T09:23:40" Importance="High" Text="已启动代码生成或文本转换。" />
-  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="名称 = ClassTemplate" />
-  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="覆盖 = True" />
-  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="ProjectPath = ..\MainLib\MainLib.csproj" />
-  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2014-01-21T09:23:41" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
-  <Message Timestamp="2014-01-21T09:23:41" Importance="Medium" Text="Main 的文本模板绑定: “ClassTemplate”会将 ClassTemplate.t4 应用于: “Main::Part::Scn”-  (Class), “Main::Part::ContractAircraft”-  (Class), “Main::Part::ScnLine”-  (Class) " />
-  <Message Timestamp="2014-01-21T09:23:54" Importance="Medium" Text="“Main::Part::Scn”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\Scn.cs" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Medium" Text="“Main::Part::ContractAircraft”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\ContractAircraft.cs" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Medium" Text="“Main::Part::ScnLine”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\ScnLine.cs" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="名称 = StructTemplate" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="覆盖 = True" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="ProjectPath = ..\MainLib\MainLib.csproj" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="TargetName = {Name}" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
-  <Message Timestamp="2014-01-21T09:23:56" Importance="Medium" Text="Main 的文本模板绑定: “StructTemplate”会将 StructTemplate.t4 应用于: “Main::Part::Scn”-  (Class), “Main::Part::ContractAircraft”-  (Class), “Main::Part::ScnLine”-  (Class) " />
-  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::Scn”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
-  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::ContractAircraft”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
-  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::ScnLine”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
-  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="选定内容包含未绑定到模板的 2 元素。" />
-  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
-  <Message Timestamp="2014-01-21T09:23:57" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
-  <Message Timestamp="2014-01-21T09:23:57" Importance="High" Text="代码生成完成。错误:  0。警告:  0。" />
+  <Message Timestamp="2014-01-24T10:58:52" Importance="High" Text="已启动代码生成或文本转换。" />
+  <Message Timestamp="2014-01-24T10:58:52" Importance="Diagnostic" Text="名称 = ClassTemplate" />
+  <Message Timestamp="2014-01-24T10:58:52" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2014-01-24T10:58:52" Importance="Diagnostic" Text="ProjectPath = ..\MainLib\MainLib.csproj" />
+  <Message Timestamp="2014-01-24T10:58:52" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2014-01-24T10:58:52" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-01-24T10:58:52" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-01-24T10:58:52" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-01-24T10:58:52" Importance="Medium" Text="Main 的文本模板绑定: “ClassTemplate”会将 ClassTemplate.t4 应用于: “Main::Part::机型”-  (Class), “Main::Part::附件项”-  (Class), “Main::Part::附件项维修间隔”-  (Class), “Main::Part::附件”-  (Class), “Main::Part::附件项件号”-  (Class), “Main::Part::附件维修间隔”-  (Class), “Main::Part::维修间隔”-  (Class), “Main::Part::控制单位”-  (Class), “Main::Part::维修策略”-  (Class), “Main::Part::运营飞机”-  (Class), “Main::Part::序号件”-  (Class), “Main::Part::序号件维修间隔”-  (Class), “Main::Part::拆换记录”-  (Class), “Main::Part::互换性”-  (Class), “Main::Part::到寿日期监控历史”-  (Class) " />
+  <Message Timestamp="2014-01-24T10:59:09" Importance="Medium" Text="“Main::Part::机型”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\机型.cs" />
+  <Message Timestamp="2014-01-24T10:59:11" Importance="Medium" Text="“Main::Part::附件项”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\附件项.cs" />
+  <Message Timestamp="2014-01-24T10:59:12" Importance="Medium" Text="“Main::Part::附件项维修间隔”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\附件项维修间隔.cs" />
+  <Message Timestamp="2014-01-24T10:59:13" Importance="Medium" Text="“Main::Part::附件”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\附件.cs" />
+  <Message Timestamp="2014-01-24T10:59:13" Importance="Medium" Text="“Main::Part::附件项件号”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\附件项件号.cs" />
+  <Message Timestamp="2014-01-24T10:59:14" Importance="Medium" Text="“Main::Part::附件维修间隔”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\附件维修间隔.cs" />
+  <Message Timestamp="2014-01-24T10:59:14" Importance="Medium" Text="“Main::Part::维修间隔”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\维修间隔.cs" />
+  <Message Timestamp="2014-01-24T10:59:15" Importance="Medium" Text="“Main::Part::控制单位”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\控制单位.cs" />
+  <Message Timestamp="2014-01-24T10:59:15" Importance="Medium" Text="“Main::Part::维修策略”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\维修策略.cs" />
+  <Message Timestamp="2014-01-24T10:59:15" Importance="Medium" Text="“Main::Part::运营飞机”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\运营飞机.cs" />
+  <Message Timestamp="2014-01-24T10:59:16" Importance="Medium" Text="“Main::Part::序号件”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\序号件.cs" />
+  <Message Timestamp="2014-01-24T10:59:16" Importance="Medium" Text="“Main::Part::序号件维修间隔”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\序号件维修间隔.cs" />
+  <Message Timestamp="2014-01-24T10:59:17" Importance="Medium" Text="“Main::Part::拆换记录”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\拆换记录.cs" />
+  <Message Timestamp="2014-01-24T10:59:17" Importance="Medium" Text="“Main::Part::互换性”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\互换性.cs" />
+  <Message Timestamp="2014-01-24T10:59:18" Importance="Medium" Text="“Main::Part::到寿日期监控历史”-  (Class) : 成功(已创建文件) - D:\GitCode\Modeling\MainLib\GeneratedCode\Part\到寿日期监控历史.cs" />
+  <Message Timestamp="2014-01-24T10:59:18" Importance="Diagnostic" Text="名称 = StructTemplate" />
+  <Message Timestamp="2014-01-24T10:59:18" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2014-01-24T10:59:18" Importance="Diagnostic" Text="ProjectPath = ..\MainLib\MainLib.csproj" />
+  <Message Timestamp="2014-01-24T10:59:18" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2014-01-24T10:59:18" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-01-24T10:59:18" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-01-24T10:59:18" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-01-24T10:59:18" Importance="Medium" Text="Main 的文本模板绑定: “StructTemplate”会将 StructTemplate.t4 应用于: “Main::Part::机型”-  (Class), “Main::Part::附件项”-  (Class), “Main::Part::附件项维修间隔”-  (Class), “Main::Part::附件”-  (Class), “Main::Part::附件项件号”-  (Class), “Main::Part::附件维修间隔”-  (Class), “Main::Part::维修间隔”-  (Class), “Main::Part::控制单位”-  (Class), “Main::Part::维修策略”-  (Class), “Main::Part::运营飞机”-  (Class), “Main::Part::序号件”-  (Class), “Main::Part::序号件维修间隔”-  (Class), “Main::Part::拆换记录”-  (Class), “Main::Part::互换性”-  (Class), “Main::Part::到寿日期监控历史”-  (Class) " />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::机型”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::附件项”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::附件项维修间隔”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::附件”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::附件项件号”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::附件维修间隔”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::维修间隔”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::控制单位”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::维修策略”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::运营飞机”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::序号件”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::序号件维修间隔”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:19" Importance="Diagnostic" Text="“Main::Part::拆换记录”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::互换性”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::到寿日期监控历史”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="选定内容包含未绑定到模板的 19 元素。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“815c68b0-75cf-4578-a0f8-7778b587e5e8”-  (Comment):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“6489505c-ee55-4218-ace0-be4b02c6e7f9”-  (Generalization):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“33cbfd60-754a-47b7-8f23-8b5fc5216cb2”-  (Generalization):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“5f1a8f05-0133-42ae-887c-81df9749ce0e”-  (Generalization):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="Diagnostic" Text="“Main::Part::”-  (Association):  没有绑定的模板。" />
+  <Message Timestamp="2014-01-24T10:59:20" Importance="High" Text="代码生成完成。错误:  0。警告:  0。" />
 </Log>
