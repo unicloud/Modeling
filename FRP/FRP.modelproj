@@ -134,6 +134,20 @@
       <SubType>Content</SubType>
       <DependentUpon>Class\Part\Adsb.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Class\Part\Configuration.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Part\Configuration.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Part\Configuration.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Part\MaintainControl.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Part\MaintainControl.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Part\MaintainControl.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Class\Part\OilManage.classdiagram">
       <SubType>Content</SubType>
     </Content>
