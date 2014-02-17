@@ -571,6 +571,15 @@
           <property Id="c367cb73-6aae-4840-93e9-940d5ec78dfb" name="修正日利用率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="18ce3147-e19b-4127-a049-691443012c12" />
           </property>
+          <property Id="0b62d0c1-4089-4eb5-a38c-85600b6caee7" name="是否当前" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="11307514-9fb0-4352-9340-d5954ec52780" />
+          </property>
+          <property Id="97f084a9-532b-4478-9937-eb9f19fe8eb0" name="年度" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="59f1232e-c64b-4e75-a74a-b31b7398ac8e" />
+          </property>
+          <property Id="cb3f399c-ffdd-4489-b9f3-95cc3bbbc6ac" name="月份" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="397cb279-4a94-4712-a51d-f5ba07578c57" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
