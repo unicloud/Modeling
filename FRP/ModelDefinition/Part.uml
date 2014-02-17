@@ -6782,13 +6782,13 @@ TS：技术解决方案</body>
                     <literalString
                       Id="ce623f3a-f807-4e69-832c-0af66d44b851"
                       name="Lower"
-                      value="0" />
+                      value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="3613be42-b395-4ff7-a90e-dac59b8e986e"
                       name="Upper"
-                      value="1" />
+                      value="*" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -8535,8 +8535,19 @@ TS：技术解决方案</body>
             aggregation="None"
             isComposite="false" />
           <property
-            Id="cc193374-5b50-4ed3-b339-0c7fc31cb150"
-            name="控制单位"
+            Id="825590e9-5e22-44a7-9fd6-35d95a40bc6e"
+            name="维修控制单位ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="86242d49-9410-4cd0-8247-19db6e5d1da0"
+            name="维修工作ID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -8555,6 +8566,73 @@ TS：技术解决方案</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ab9a4381-cb4a-4ee6-8380-d3277c88fad4"
+            isDerived="false"
+            sourceEndRoleName="维修控制单位"
+            targetEndRoleName="维修控制明细"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="148a1858-fa79-41f8-811c-e2d87d85a9ee"
+              LastKnownName="维修控制明细"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="75948294-8e06-48a5-bea8-12dc0d79a447"
+                  name="维修控制单位"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5190f64e-fde2-4fe4-bd85-e8c546aaa6c7"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dc97b20e-6d54-4765-862e-48407d1ea32d"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd8a400a-412e-4279-a47d-d4155cc36cd7"
+                  name="维修控制明细"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2fa2bf8c-4f8f-45c2-b4bc-42d98f6eb575"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e7bfa6f8-cfb1-4462-87bd-eacc462fae43"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="89847990-f8a6-430b-a754-ee122f5f6718"
@@ -8867,6 +8945,28 @@ TS：技术解决方案</body>
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="a7160548-48c3-4532-a2cf-9e77b2ecfa0f"
+            name="工作代码"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4a47d67f-cceb-403c-bfc6-40874ed7d34c"
+            name="维修工作ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -8947,6 +9047,146 @@ TS：技术解决方案</body>
           <property
             Id="397cb279-4a94-4712-a51d-f5ba07578c57"
             name="月份"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5d07c782-62d2-46d8-af2f-17b1cf813d24"
+        name="维修工作"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="996613f0-6f86-4243-ba24-9738d0a6c51e"
+            isDerived="false"
+            sourceEndRoleName="维修工作"
+            targetEndRoleName="维修控制明细"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="148a1858-fa79-41f8-811c-e2d87d85a9ee"
+              LastKnownName="维修控制明细"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="72b219e5-1958-4cf3-9225-7678bf5964e6"
+                  name="维修工作"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0e719d8-2de2-49f9-8013-ac3471e14528"
+                  name="维修控制明细"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5922e0fa-ce5e-4099-a6cf-f991f2acc9fc"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0a0b9d71-fdf7-4132-b1cf-499c8a33dfd6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f8f83121-19d7-466c-89f8-f76f42c1d6a5"
+            isDerived="false"
+            sourceEndRoleName="维修工作"
+            targetEndRoleName="到寿监控"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d58b9cd9-a492-428f-96c1-305e98d4ed36"
+              LastKnownName="到寿监控"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50343395-8dec-451e-94d5-eaee18c5cb4d"
+                  name="维修工作"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e89714b7-0cdd-427c-a756-f86d2b2a57a1"
+                  name="到寿监控"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="026008f6-2255-4bfe-964e-432219a2d647"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d97496eb-4849-4783-a66a-ecc4c3090532"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a5173234-a989-4e3e-a97b-75c6caf5e482"
+            name="工作代码"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e883d250-9b32-475d-9c41-fe103616dd76"
+            name="描述"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
