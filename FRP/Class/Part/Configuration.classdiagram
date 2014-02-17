@@ -127,6 +127,32 @@ TS：技术解决方案</body>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="677cfc24-74df-498d-8b1c-fd8902811d0b" />
           </association>
+          <association Id="9c4c598f-8fa4-4f38-b5f2-484087bb22b0" isDerived="false" sourceEndRoleName="方案明细" targetEndRoleName="依赖项" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2af60d8d-e700-47ce-8a13-8819c9d1e909" LastKnownName="依赖项" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92c3b9a4-f866-47a9-9b18-51487fa075ed" name="方案明细" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="febf059c-1028-44bf-a0d5-4abb40cab34f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f25c765d-5b46-4fed-94a1-86b2c44ccb7b" name="依赖项" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="2f8308e9-d0fc-4452-b736-4110b6f79711" name="Lower" value="*">
+                      <elementDefinition Id="21d03229-9853-4ba7-a42f-fd9508cd80d8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e5ffa229-dd70-4095-a065-a173518032f3" name="Upper" value="*">
+                      <elementDefinition Id="c28d1c7f-471e-4eda-a890-94e61bece27c" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="77818e3e-db00-46d2-b636-6be269a18de7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="16594352-3a6a-4c8c-bcca-bc9349cc587a" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="e79a5823-7960-4812-a255-a29d9cc395b5" name="件号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -140,6 +166,9 @@ TS：技术解决方案</body>
           </property>
           <property Id="d0e6712e-2e42-4fb3-83c2-b9afb1f2557d" name="TS号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="812c04aa-bdef-4782-a09e-794b52413e97" />
+          </property>
+          <property Id="b40490f9-5225-49ef-973c-217ccb076fc7" name="附件ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="22967974-8c67-4a75-808e-2fe49ff7aac8" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -193,6 +222,9 @@ TS：技术解决方案</body>
           </property>
           <property Id="1ced3df1-c6a9-43d4-96e3-6116d4ef865f" name="当前飞机ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="e8876367-04d4-4398-af67-77fe9a3433be" />
+          </property>
+          <property Id="fbcee150-4d07-4ce0-88d4-41c898f57342" name="是否寿控件" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e3ccda30-551b-43d9-a449-1f4e9349f4d5" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -628,6 +660,18 @@ TS：技术解决方案</body>
           <property Id="7be7de0c-e248-482f-b98d-08514bc53a81" name="FI号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="fc599e41-22b2-499a-b8a7-72809747ff7a" />
           </property>
+          <property Id="e0063ac1-177a-4e98-9795-89d888e5beb5" name="TSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2adf1df4-1acf-4dd7-a0b7-75a15eaa076d" />
+          </property>
+          <property Id="f2bbdf9f-aaaa-4c92-8b8b-6875247fff42" name="CSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7adeca59-2fd6-4380-8318-855436caf647" />
+          </property>
+          <property Id="1c71cd33-22d1-464e-a5e2-b7f7aa6612ad" name="CSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ae641f5c-9295-4a6d-a142-92f4697239b8" />
+          </property>
+          <property Id="e476aaf2-13e7-4634-baec-6647b36cc521" name="TSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f6a51e9d-5682-44f8-b078-6f961592f4ee" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -686,6 +730,32 @@ TS：技术解决方案</body>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="5c0e9b56-1806-4288-82c0-89cbfff9c828" />
+          </association>
+          <association Id="763a88d9-cfae-444a-ba3a-6318aff8ede6" isDerived="false" sourceEndRoleName="附件" targetEndRoleName="依赖项" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2af60d8d-e700-47ce-8a13-8819c9d1e909" LastKnownName="依赖项" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="44687719-0098-42d9-bd81-a572ffc08852" name="附件" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ada19cb8-1db9-4066-b0ce-300c0792091b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a9f2bd4f-71d9-42d5-add2-1b9281559c7c" name="依赖项" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="3ade6c5c-33a0-48b0-aeb3-ce3c6f9a9b78" name="Lower" value="*">
+                      <elementDefinition Id="ac02dd05-f06e-4dfb-b4d7-a4fa7515fcaf" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="865faaf0-da0e-40a3-aeb7-2665569235ef" name="Upper" value="*">
+                      <elementDefinition Id="37eee3a8-1fef-4381-b9bd-a4352d725e18" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d6764f27-e548-4a68-b9f9-f6c26ef8af6c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5acc602d-9f93-472e-a2c8-07ccd6149acf" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -818,6 +888,19 @@ TS：技术解决方案</body>
           </property>
           <property Id="f09333e4-d382-4d08-a6db-0c15aebf1b84" name="构型组ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="55c14240-184b-43a5-b2e2-5a19896131ef" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2af60d8d-e700-47ce-8a13-8819c9d1e909" name="依赖项" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="80c847a9-21ba-4174-96f5-ac756058e665" />
+        <ownedAttributesInternal>
+          <property Id="eb348758-7df1-4321-a0f1-b163f6f4295b" name="件号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2ec2399f-71c1-4688-9036-51832c5991fb" />
+          </property>
+          <property Id="a50d186c-d3aa-4604-a3d6-cf0dcfa7fab9" name="附件ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bc5b56dd-aba6-44ac-b3d9-335500d2dd1b" />
           </property>
         </ownedAttributesInternal>
       </class>
