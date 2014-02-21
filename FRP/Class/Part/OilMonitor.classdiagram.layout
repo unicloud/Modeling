@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="OilMonitor">
+  <logicalClassDesignerModelMoniker Id="715be4a7-9a8f-48a4-b664-2ca4f9aa14f2" />
+  <nestedChildShapes>
+    <classShape Id="82418067-b118-4343-8fd5-82a898ab1a45" absoluteBounds="2.5, 1, 1.5, 2.3680013020833335" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="3da7c44c-8a87-41e0-bd52-d0224b7c9abd" LastKnownName="滑油消耗率" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="09c49a7e-86f1-424f-85bd-1694f4afa1ab" absoluteBounds="2.515, 1.3900000000000001, 1.4700000000000002, 1.6416829427083333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="f994d21e-ccd8-42e5-866b-f3f64eba24d9" absoluteBounds="2.515, 3.0416829427083329, 1.4700000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="48cab106-0d58-43c5-8833-ff7fb4e45af1" absoluteBounds="1.375, 3.875, 1.5, 1.306477864583333" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="ee69a2fb-4636-4450-81f3-153e226cc8df" LastKnownName="发动机滑油" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="4ed2b4b3-1d2a-4436-9603-0fb1f854e918" absoluteBounds="1.39, 4.265, 1.4700000000000002, 0.58015950520833326" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="61593ad8-209e-49e2-bb8b-a20d2504c9c4" absoluteBounds="1.39, 4.8551595052083334, 1.4700000000000002, 0.22631835937500011" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(2.125 : 3.875); (2.125 : 3.74300130208333); (3.25 : 3.74300130208333); (3.25 : 3.36800130208333)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="658164bf-e16a-4546-a93a-032cb790bf1e" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="48cab106-0d58-43c5-8833-ff7fb4e45af1" />
+        <classShapeMoniker Id="82418067-b118-4343-8fd5-82a898ab1a45" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="672a1e93-2f5e-4d04-8b57-c61550220297" absoluteBounds="3.875, 3.875, 1.5, 1.306477864583333" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="a4d871ef-dc37-4983-b17b-cb7d710028c4" LastKnownName="APU滑油" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="16c844d9-aa48-4bf7-a4a2-577d2033babb" absoluteBounds="3.89, 4.265, 1.4700000000000002, 0.58015950520833326" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="1539aeeb-8707-45dd-a6f1-3b3b580c87c4" absoluteBounds="3.89, 4.8551595052083334, 1.4700000000000002, 0.22631835937500011" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(4.625 : 3.875); (4.625 : 3.74300130208333); (3.25 : 3.74300130208333); (3.25 : 3.36800130208333)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="ca696950-ae91-4bae-ac17-8d97db3dee0b" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="672a1e93-2f5e-4d04-8b57-c61550220297" />
+        <classShapeMoniker Id="82418067-b118-4343-8fd5-82a898ab1a45" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

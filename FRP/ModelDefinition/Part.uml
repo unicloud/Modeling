@@ -214,213 +214,6 @@ TS：技术解决方案</body>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="6d3be3f6-4458-44bd-913b-1eaf954c4609"
-        name="APU"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="6e7f51b3-dac3-41d5-acf4-e607c8dafa57"
-            isDerived="false"
-            sourceEndRoleName="APU"
-            targetEndRoleName="OilHistory"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="f8d17eff-3999-41e2-80ba-0a3fc7a9937c"
-              LastKnownName="OilHistory"
-              LastKnownLocation="Part.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0c47bc1e-30a3-4465-bc8a-a8bef345f81f"
-                  name="APU"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="b5b92131-a946-4007-aa14-594f355e7e52"
-                  name="OilHistory"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="80066d43-38a3-4698-84aa-72f4f5f39c58"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="5eb6751d-9f2a-4a09-9460-3cf0ee28f98c"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="f7694ac0-a143-426a-a0ee-bdb680f8e59c"
-            name="Pn"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>APU件号</description>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="64187b55-8bea-4346-992a-46dcf53c7945"
-            name="Sn"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>APU序号</description>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="492a25ee-3e12-46cc-a526-95713c487779"
-        name="Engine"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <description>发动机</description>
-        <targetEnds>
-          <association
-            Id="3a5f7788-919b-4657-990e-6a8bcbe37424"
-            isDerived="false"
-            sourceEndRoleName="Engine"
-            targetEndRoleName="OilHistory"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="f8d17eff-3999-41e2-80ba-0a3fc7a9937c"
-              LastKnownName="OilHistory"
-              LastKnownLocation="Part.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="58c9a1ad-d5ef-40a2-8c82-09e9fc0a82a3"
-                  name="Engine"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="4ff1630a-8302-420a-b67a-96562741ed7a"
-                  name="OilHistory"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="3daff33c-b43c-4204-8f39-c866fd64a000"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="31be28d3-ef5e-493d-a289-6408e2181769"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="812c8475-3d1a-4b84-99b4-050f2e698f67"
-            name="Pn"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>发动机件号</description>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="db13a64b-f51c-4f58-a10e-f0af8422dfdd"
-            name="Sn"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <description>发动机序号</description>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Main.uml" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="f8d17eff-3999-41e2-80ba-0a3fc7a9937c"
         name="OilHistory"
         isAbstract="false"
@@ -9187,6 +8980,191 @@ TS：技术解决方案</body>
           <property
             Id="e883d250-9b32-475d-9c41-fe103616dd76"
             name="描述"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1a91e700-8cce-4cd5-8e7a-d6a2c6207384"
+        name="滑油消耗率"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="340e4759-b874-4deb-bbb2-3ebe891f4c11"
+            name="TSN"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="80a286f8-741a-4dff-922e-65a68c091293"
+            name="TSR"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="364c379b-08d0-4509-a7dd-4a1c6f086f70"
+            name="滑油消耗率"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3617e401-8202-4ae3-ab5a-3a09003bf958"
+            name="日期"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1d386cdf-e781-4354-9d05-8888a262d110"
+            name="间隔消耗率"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a9ad36e6-7699-47d9-a008-d967b24f7331"
+            name="间隔消耗率增量"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="aa41ac08-e201-44f7-8b5b-aa3f6fa0fa07"
+            name="3天滚动平均"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2dcef8bb-047c-44f8-bf05-4e7fe555f32e"
+            name="7天滚动平均"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="98755c6e-e749-4fe1-bd1d-db584f74e4b2"
+        name="发动机滑油"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3d76653e-50c7-4cf9-a268-e360cee41391"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1a91e700-8cce-4cd5-8e7a-d6a2c6207384"
+              LastKnownName="滑油消耗率"
+              LastKnownLocation="Part.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="66d35975-7ca0-4a1b-bcbd-6ba173a18543"
+            name="序列号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e24a4ae9-e309-46dd-91be-03ad6859f496"
+            name="发动机ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="19a7de49-8708-469b-ba83-a3238059bf36"
+        name="APU滑油"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="bd8ddc72-3cfb-4a6f-a71b-eec5f2f1e24c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1a91e700-8cce-4cd5-8e7a-d6a2c6207384"
+              LastKnownName="滑油消耗率"
+              LastKnownLocation="Part.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="dd1c6678-3daf-4178-841d-3b999ed742b6"
+            name="序列号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9a0bbc06-521e-4ad1-b8a8-9b9859f1b2d7"
+            name="序号ID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"

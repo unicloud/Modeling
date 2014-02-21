@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="715be4a7-9a8f-48a4-b664-2ca4f9aa14f2" name="OilMonitor" linkedPackageId="78586f59-c0bb-4bd4-8999-915628fffae9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="7ef50ea2-8519-4c79-861e-f161d4d90cfd" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="63f34954-8f3c-436d-9fb7-74e6e38af081" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="fd6e82bf-dd4f-4211-b882-9693648d89bd">
+          <propertyInstance Id="ca6fc6e0-f2f3-4b1f-ac9e-2e891c8400a9" name="BaseName">
+            <elementDefinition Id="0c5912a5-462a-418f-a06e-68dc35e9152a" />
+          </propertyInstance>
+          <elementDefinition Id="df19720b-3986-4eed-9c5a-22c959467590" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0162dca1-3198-4748-a7f0-b8e43c400aed">
+          <propertyInstance Id="f913aa8b-899b-47b3-bdaa-70ed6ba48cba" name="ClrAttributes">
+            <elementDefinition Id="1f1a54e0-00f5-4f9d-b1c8-80e2106215f8" />
+          </propertyInstance>
+          <elementDefinition Id="57cdc6c9-1e92-43de-8399-ec56861e6dfd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="60a90889-b11f-4c19-bd27-8c4f5fff0181">
+          <propertyInstance Id="92a15284-4c6b-4fc4-9c94-7808a2137f2c" name="Usings">
+            <elementDefinition Id="78de931e-faa8-4e84-a8da-24c1bdc1b9e7" />
+          </propertyInstance>
+          <elementDefinition Id="9cf171cf-9fbf-41a3-ab1c-84bb9000f9bb" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="1dde281c-47ec-4da8-b5d1-bf6733611215" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="c5c1f24a-f503-4b5a-b5a4-03d0462f64b9" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="65601b17-c696-45b6-8f68-6f47575981fa">
+          <propertyInstance Id="d3e8222b-eabb-475d-9978-7e1248c6ad2c" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="8d1843b4-1702-47e5-aeb0-1b3bacd8ab19" />
+          </propertyInstance>
+          <elementDefinition Id="4044633d-fc9b-4659-b049-3324553a4247" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="878bd186-831f-4d80-87f1-1aaaac4b9b9f">
+          <propertyInstance Id="6d2aff82-923c-43e2-b563-a770cbcd3efb" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="286ed6b7-d0b6-4899-8369-e3599a389f38" />
+          </propertyInstance>
+          <elementDefinition Id="405f0fa0-7561-457f-9f11-5dc6fefbc806" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d6f92860-8c33-4b85-9020-8eb7ed942cd4">
+          <propertyInstance Id="bd7ba3b6-e53a-4414-9ffb-192bcac92328" name="ProjectPath" value="ClassTemplate=..\MainLib\MainLib.csproj|EnumTemplate=..\MainLib\MainLib.csproj|InterfaceTemplate=..\MainLib\MainLib.csproj|StructTemplate=..\MainLib\MainLib.csproj">
+            <elementDefinition Id="13c73fe1-7c4f-444d-8abc-d1a612da41cb" />
+          </propertyInstance>
+          <elementDefinition Id="2c9b41c3-9b30-47b0-9de0-49f0e078def3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5ab4e977-158a-4310-aca8-57c09e026676">
+          <propertyInstance Id="d9e0a977-cfcb-4c41-bdf1-a299d0861bb9" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="80e3db6a-7bb3-41b5-aed6-e000279a7f4b" />
+          </propertyInstance>
+          <elementDefinition Id="c1696e18-c505-4006-8e67-30807363f617" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="18fbe255-51c6-486f-b06e-34d5b9d4de83">
+          <propertyInstance Id="959f0c7e-eb1b-4529-9a0a-e68a53f06f57" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="42924065-45a7-4c94-a620-aeb549b5b85f" />
+          </propertyInstance>
+          <elementDefinition Id="bbd4db7e-f0eb-4859-8de5-17a2bba3741f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d46e5441-980b-4371-abae-a99b74d6563e">
+          <propertyInstance Id="72cafc4f-e869-493a-add3-fd8c016de25f" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="265348aa-6c71-440b-869b-58b25de4f305" />
+          </propertyInstance>
+          <elementDefinition Id="de15bf80-f0dd-4fde-ba6b-6a9d61c02ff1" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="bf98c459-cc57-4941-a25a-00522f775f82">
+          <propertyInstance Id="8acec843-b6de-4b23-8848-407221e31dee" name="Parameters">
+            <elementDefinition Id="240e3a6c-a880-4298-9bac-5bc99d1f7b73" />
+          </propertyInstance>
+          <elementDefinition Id="add18b66-0507-4ca3-8a32-dd1a4af39631" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="ee92fc6a-649b-4924-87f3-d4fb66e7bab6">
+      <profileInstance Id="c32efa96-50aa-48b9-88b0-308cec05889b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3b446491-ed6c-4d73-a1a7-b94722d49358">
+      <profileInstance Id="f05a2cd1-d243-47a7-bdc1-503ef262f6b7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7dc40edb-61b8-4eef-8a49-879e8ffe6487">
+      <profileInstance Id="d9e45ef2-83d6-4add-bc7c-e67eba37ea82" name="CSharpProfile">
+        <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
+      </profileInstance>
+      <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="11b47327-d5ba-4075-8401-36366d472208">
+      <profileInstance Id="d9e362b9-3905-4991-bcb3-2c13a082eb9e" name="TextTemplateBindings">
+        <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
+      </profileInstance>
+      <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3da7c44c-8a87-41e0-bd52-d0224b7c9abd" name="滑油消耗率" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1a91e700-8cce-4cd5-8e7a-d6a2c6207384" />
+        <ownedAttributesInternal>
+          <property Id="499b27e9-5096-44a8-9e4f-5c279e0136f7" name="TSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="340e4759-b874-4deb-bbb2-3ebe891f4c11" />
+          </property>
+          <property Id="ddfc4c33-2635-4924-a8e2-ba83ea87ca9e" name="TSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="80a286f8-741a-4dff-922e-65a68c091293" />
+          </property>
+          <property Id="21055251-3ee3-4dbb-9b45-25251fdd7bf1" name="滑油消耗率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="364c379b-08d0-4509-a7dd-4a1c6f086f70" />
+          </property>
+          <property Id="c39fc261-af10-455e-b1cc-7e93834edc13" name="日期" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3617e401-8202-4ae3-ab5a-3a09003bf958" />
+          </property>
+          <property Id="57092f06-9ac9-4801-bffe-3df10bf5ebfb" name="间隔消耗率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1d386cdf-e781-4354-9d05-8888a262d110" />
+          </property>
+          <property Id="d5ce4973-041b-44c1-9033-918e0c3398cc" name="间隔消耗率增量" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a9ad36e6-7699-47d9-a008-d967b24f7331" />
+          </property>
+          <property Id="1ebd0908-6e2f-4091-8383-719da8614ccc" name="3天滚动平均" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aa41ac08-e201-44f7-8b5b-aa3f6fa0fa07" />
+          </property>
+          <property Id="ad4f7446-5bd2-4a59-af75-55e99203e5bc" name="7天滚动平均" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2dcef8bb-047c-44f8-bf05-4e7fe555f32e" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ee69a2fb-4636-4450-81f3-153e226cc8df" name="发动机滑油" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="98755c6e-e749-4fe1-bd1d-db584f74e4b2" />
+        <generalsInternal>
+          <generalization Id="658164bf-e16a-4546-a93a-032cb790bf1e" isSubstitutable="false">
+            <classMoniker Id="3da7c44c-8a87-41e0-bd52-d0224b7c9abd" LastKnownName="滑油消耗率" />
+            <elementDefinition Id="3d76653e-50c7-4cf9-a268-e360cee41391" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="2a9658ba-a584-4184-99eb-8cae9e91d784" name="序列号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66d35975-7ca0-4a1b-bcbd-6ba173a18543" />
+          </property>
+          <property Id="e26ed545-be46-4658-b977-6d14cb0cf6d2" name="发动机ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e24a4ae9-e309-46dd-91be-03ad6859f496" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a4d871ef-dc37-4983-b17b-cb7d710028c4" name="APU滑油" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="19a7de49-8708-469b-ba83-a3238059bf36" />
+        <generalsInternal>
+          <generalization Id="ca696950-ae91-4bae-ac17-8d97db3dee0b" isSubstitutable="false">
+            <classMoniker Id="3da7c44c-8a87-41e0-bd52-d0224b7c9abd" LastKnownName="滑油消耗率" />
+            <elementDefinition Id="bd8ddc72-3cfb-4a6f-a71b-eec5f2f1e24c" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="d1e2e5f7-679d-432c-8ec4-000aa29a7289" name="序列号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dd1c6678-3daf-4178-841d-3b999ed742b6" />
+          </property>
+          <property Id="f7a2a330-2aee-478d-ac8c-6fb1bc989613" name="序号ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a0bbc06-521e-4ad1-b8a8-9b9859f1b2d7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="54fdbd15-8d0e-4887-b1b0-f98fc3756b55" name="Main">
+    <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+  </package>
+  <package Id="78586f59-c0bb-4bd4-8999-915628fffae9" name="Part">
+    <elementDefinition Id="adc93848-f310-4f9a-9ad2-7f1187a3d886" />
+  </package>
+</logicalClassDesignerModel>

@@ -148,12 +148,12 @@
       <SubType>Content</SubType>
       <DependentUpon>Class\Part\MaintainControl.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Class\Part\OilManage.classdiagram">
+    <Content Include="Class\Part\OilMonitor.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Class\Part\OilManage.classdiagram.layout">
+    <Content Include="Class\Part\OilMonitor.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Class\Part\OilManage.classdiagram</DependentUpon>
+      <DependentUpon>Class\Part\OilMonitor.classdiagram</DependentUpon>
     </Content>
     <Content Include="Class\Part\Part.classdiagram">
       <SubType>Content</SubType>
