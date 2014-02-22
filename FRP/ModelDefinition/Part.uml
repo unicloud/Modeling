@@ -8995,7 +8995,7 @@ TS：技术解决方案</body>
       <class
         Id="1a91e700-8cce-4cd5-8e7a-d6a2c6207384"
         name="滑油消耗率"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <ownedAttributesInternal>
@@ -9087,6 +9087,28 @@ TS：技术解决方案</body>
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="2ada3c97-9bc3-4b88-b8b4-e112dc0da7a8"
+            name="序列号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="116a8b67-660a-4265-afae-5f36ebae1c29"
+            name="序号ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -9107,30 +9129,6 @@ TS：技术解决方案</body>
               LastKnownLocation="Part.uml" />
           </generalization>
         </generalsInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="66d35975-7ca0-4a1b-bcbd-6ba173a18543"
-            name="序列号"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="e24a4ae9-e309-46dd-91be-03ad6859f496"
-            name="发动机ID"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -9150,30 +9148,6 @@ TS：技术解决方案</body>
               LastKnownLocation="Part.uml" />
           </generalization>
         </generalsInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="dd1c6678-3daf-4178-841d-3b999ed742b6"
-            name="序列号"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="9a0bbc06-521e-4ad1-b8a8-9b9859f1b2d7"
-            name="序号ID"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>
