@@ -8995,7 +8995,7 @@ TS：技术解决方案</body>
       <class
         Id="1a91e700-8cce-4cd5-8e7a-d6a2c6207384"
         name="滑油消耗率"
-        isAbstract="true"
+        isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <ownedAttributesInternal>
@@ -9087,8 +9087,111 @@ TS：技术解决方案</body>
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="98755c6e-e749-4fe1-bd1d-db584f74e4b2"
+        name="发动机"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="0b719bb4-c8a0-4de8-893f-981dbe2e51e5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e468232b-b477-4a86-bdfc-c82707abb7ff"
+              LastKnownName="滑油监控对象"
+              LastKnownLocation="Part.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="19a7de49-8708-469b-ba83-a3238059bf36"
+        name="APU"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="05c2a870-0a4f-471f-a971-bdaae99894b0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e468232b-b477-4a86-bdfc-c82707abb7ff"
+              LastKnownName="滑油监控对象"
+              LastKnownLocation="Part.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e468232b-b477-4a86-bdfc-c82707abb7ff"
+        name="滑油监控对象"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f1586507-2f0b-4daa-b1c0-cccb629b9817"
+            isDerived="false"
+            sourceEndRoleName="滑油监控对象"
+            targetEndRoleName="滑油消耗率"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1a91e700-8cce-4cd5-8e7a-d6a2c6207384"
+              LastKnownName="滑油消耗率"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bf958ac6-d939-48cb-8304-c67a59617382"
+                  name="滑油监控对象"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="935c0559-b7f8-4892-85bf-5081243dc83b"
+                  name="滑油消耗率"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2c7d86c7-e2ee-45d0-8ec6-31280c9a1a34"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="251e783e-2677-4af2-a6c8-10769617b9dd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
           <property
-            Id="2ada3c97-9bc3-4b88-b8b4-e112dc0da7a8"
+            Id="db29d8cb-cdaf-4eac-a6bc-675cceeeaf3d"
             name="序列号"
             isLeaf="false"
             isStatic="false"
@@ -9099,8 +9202,74 @@ TS：技术解决方案</body>
             aggregation="None"
             isComposite="false" />
           <property
-            Id="116a8b67-660a-4265-afae-5f36ebae1c29"
+            Id="bb440a1b-3916-43a1-bb0d-49d9fe2b9bae"
             name="序号ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3853bc0e-2385-4819-abf6-b68cc01f292b"
+            name="滑油监控状态"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="deb5c1b9-fbbc-4e53-82e2-7a428480066b"
+            name="是否需要监控"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7846d81a-cc5a-4c29-913a-d0da965738ec"
+            name="TSN"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4a51bedd-4f1e-466a-89f2-c502dd3e1523"
+            name="CSN"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f6416bac-8484-498d-ba34-895ad4a7de16"
+            name="TSR"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="711bf658-6932-4d2f-9eee-9d5c9ec258b1"
+            name="CSR"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -9113,42 +9282,23 @@ TS：技术解决方案</body>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <class
-        Id="98755c6e-e749-4fe1-bd1d-db584f74e4b2"
-        name="发动机滑油"
+      <enumeration
+        Id="5012913d-19c6-40a1-9f8d-d90778504716"
+        name="滑油监控状态"
         isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="3d76653e-50c7-4cf9-a268-e360cee41391"
-            isSubstitutable="false">
-            <classMoniker
-              Id="1a91e700-8cce-4cd5-8e7a-d6a2c6207384"
-              LastKnownName="滑油消耗率"
-              LastKnownLocation="Part.uml" />
-          </generalization>
-        </generalsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="19a7de49-8708-469b-ba83-a3238059bf36"
-        name="APU滑油"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="bd8ddc72-3cfb-4a6f-a71b-eec5f2f1e24c"
-            isSubstitutable="false">
-            <classMoniker
-              Id="1a91e700-8cce-4cd5-8e7a-d6a2c6207384"
-              LastKnownName="滑油消耗率"
-              LastKnownLocation="Part.uml" />
-          </generalization>
-        </generalsInternal>
-      </class>
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="880a6765-5684-4c5f-aed0-8e89f90505a0"
+            name="正常" />
+          <enumerationLiteral
+            Id="fa1bd238-1d91-48d3-8af6-bf79c0d0e53a"
+            name="关注" />
+          <enumerationLiteral
+            Id="43ee4c40-1ef4-4a04-a3da-c9a69e399361"
+            name="警告" />
+        </ownedLiterals>
+      </enumeration>
     </packageHasNamedElement>
   </packagedElements>
 </package>
