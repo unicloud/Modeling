@@ -9157,7 +9157,7 @@ TS：技术解决方案</body>
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
@@ -9171,7 +9171,7 @@ TS：技术解决方案</body>
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true">
+                  isComposite="false">
                   <lowerValueInternal>
                     <literalString
                       Id="2c7d86c7-e2ee-45d0-8ec6-31280c9a1a34"

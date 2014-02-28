@@ -134,12 +134,12 @@
             <classMoniker Id="3da7c44c-8a87-41e0-bd52-d0224b7c9abd" LastKnownName="滑油消耗率" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="aaba87d7-5547-4580-9fdd-9b5aec1ecbff" name="滑油监控对象" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="aaba87d7-5547-4580-9fdd-9b5aec1ecbff" name="滑油监控对象" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="bf958ac6-d939-48cb-8304-c67a59617382" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="8bfaece2-0c76-4e2e-b0dc-bb61fcc9ec8c" name="滑油消耗率" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                <memberEnd Id="8bfaece2-0c76-4e2e-b0dc-bb61fcc9ec8c" name="滑油消耗率" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="95abd192-e306-4d80-815e-f21428da2e76" name="Lower" value="1">
                       <elementDefinition Id="2c7d86c7-e2ee-45d0-8ec6-31280c9a1a34" />
