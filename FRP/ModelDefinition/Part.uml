@@ -9231,7 +9231,7 @@ TS：技术解决方案</body>
             isComposite="false" />
           <property
             Id="7b559287-d4d7-4e69-81dc-3b804672e613"
-            name="推力"
+            name="推力ID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -9359,6 +9359,82 @@ TS：技术解决方案</body>
             name="警告" />
         </ownedLiterals>
       </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e2347e78-f653-4742-a6b4-a35e4414693a"
+        name="发动机推力"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="350fce3b-0b44-4181-9bcb-3c401faab849"
+            isDerived="false"
+            sourceEndRoleName="发动机推力"
+            targetEndRoleName="发动机"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="98755c6e-e749-4fe1-bd1d-db584f74e4b2"
+              LastKnownName="发动机"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df1e1484-9309-4c0c-8e60-ca7bb10eaaa7"
+                  name="发动机推力"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a4faceb7-f750-4f2e-914e-15a9063b07a4"
+                  name="发动机"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4c495400-6aa6-42c4-be2b-2d5779d3d771"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7ba0ac61-0953-4d41-8d8a-c006b541067c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="8ddf8f37-f6a6-4435-8b7a-406d22901869"
+            name="推力"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

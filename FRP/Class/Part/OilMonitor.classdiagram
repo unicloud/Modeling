@@ -148,7 +148,7 @@
           <property Id="c3b65416-2b4e-436d-9df7-5e8cd4538d76" name="滑油监控状态" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="4d4b9976-a329-4914-b9ed-4e92202a02bd" />
           </property>
-          <property Id="d1b8a61e-8811-4b9d-80be-04e449f02278" name="推力" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="d1b8a61e-8811-4b9d-80be-04e449f02278" name="推力ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7b559287-d4d7-4e69-81dc-3b804672e613" />
           </property>
         </ownedAttributesInternal>

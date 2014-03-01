@@ -342,5 +342,20 @@
         <classShapeMoniker Id="9431a481-aba9-4bb7-bbfe-e9c237d5c47f" />
       </nodes>
     </generalizationConnector>
+    <classShape Id="fff6b042-7a39-45c9-ae3b-d16c58727092" absoluteBounds="1.375, 13.125, 1.5, 1.1295572916666661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="a4a6e92d-2f50-44a0-a7c6-96e5948d65c8" LastKnownName="发动机推力" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="5ae64f79-f5ef-4bd0-95cf-f7019db3c442" absoluteBounds="1.3900000000000001, 13.515, 1.4700000000000002, 0.40323893229166663" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="7b47e194-f807-4495-ade2-5e1f3faf109a" absoluteBounds="1.3900000000000001, 13.928238932291666, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.875 : 13.6897786458333); (4.5 : 13.6897786458333)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+      <associationMoniker Id="c5ead5c1-f322-42c2-86b7-e62be0ce6d0e" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="fff6b042-7a39-45c9-ae3b-d16c58727092" />
+        <classShapeMoniker Id="a49a3c65-4213-41f4-a045-2835e0ce3e95" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>
