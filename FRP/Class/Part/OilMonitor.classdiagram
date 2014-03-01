@@ -108,79 +108,95 @@
       <class Id="ee69a2fb-4636-4450-81f3-153e226cc8df" name="发动机" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="98755c6e-e749-4fe1-bd1d-db584f74e4b2" />
         <generalsInternal>
-          <generalization Id="72697e89-e766-4d24-8bb2-e4ebec6f84d7" isSubstitutable="false">
-            <classMoniker Id="43bb6347-fd2e-4d8a-a238-737df142dfff" LastKnownName="滑油监控对象" />
-            <elementDefinition Id="0b719bb4-c8a0-4de8-893f-981dbe2e51e5" />
+          <generalization Id="1a085074-4434-47fd-9aa1-cab3a3d749af" isSubstitutable="false">
+            <classMoniker Id="974f9de1-46e4-4ab6-9b30-874d81fefe3c" LastKnownName="序号" />
+            <elementDefinition Id="5bd68d84-e51d-4c10-91c2-0f26e9930858" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association Id="07f55669-c3f5-461b-ad3a-576aad55b551" isDerived="false" sourceEndRoleName="发动机" targetEndRoleName="滑油消耗率" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3da7c44c-8a87-41e0-bd52-d0224b7c9abd" LastKnownName="滑油消耗率" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93cb024a-ffad-4250-a275-c20d39b27b9d" name="发动机" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e9373780-53b5-4d10-91a1-f677869068ac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9f8deb1-4217-4d5b-ba3b-ad85f2cdab21" name="滑油消耗率" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="6dea4766-526b-4b99-a97d-9fb153d5e091" name="Lower" value="1">
+                      <elementDefinition Id="fa40ede5-86d0-4b6d-9bf7-307a72edd815" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="11147d49-1d92-456a-bc36-0b1281fed369" name="Upper" value="*">
+                      <elementDefinition Id="e169e132-1283-4803-b516-33c3ac808754" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="d561781e-ab9e-4195-8552-d7b359a3f4ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e35166aa-9717-44a9-baf3-15faa9f709ba" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a8bebcbb-5d59-4ec7-9453-acad8da323db" name="是否需要监控" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5e849220-06f5-4671-aa9c-3b4be97c253f" />
+          </property>
+          <property Id="c3b65416-2b4e-436d-9df7-5e8cd4538d76" name="滑油监控状态" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4d4b9976-a329-4914-b9ed-4e92202a02bd" />
+          </property>
+          <property Id="d1b8a61e-8811-4b9d-80be-04e449f02278" name="推力" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7b559287-d4d7-4e69-81dc-3b804672e613" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="a4d871ef-dc37-4983-b17b-cb7d710028c4" name="APU" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="19a7de49-8708-469b-ba83-a3238059bf36" />
         <generalsInternal>
-          <generalization Id="e4829481-e2e9-4a98-a3bb-27d518866550" isSubstitutable="false">
-            <classMoniker Id="43bb6347-fd2e-4d8a-a238-737df142dfff" LastKnownName="滑油监控对象" />
-            <elementDefinition Id="05c2a870-0a4f-471f-a971-bdaae99894b0" />
+          <generalization Id="0b556c48-b5e8-43dd-ab77-b0f8f7ec9dfe" isSubstitutable="false">
+            <classMoniker Id="974f9de1-46e4-4ab6-9b30-874d81fefe3c" LastKnownName="序号" />
+            <elementDefinition Id="4b7b364a-f7c8-48a6-b013-3a6e99a6c336" />
           </generalization>
         </generalsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="43bb6347-fd2e-4d8a-a238-737df142dfff" name="滑油监控对象" isAbstract="true" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="e468232b-b477-4a86-bdfc-c82707abb7ff" />
         <targetEnds>
-          <association Id="c05a3a1c-4b06-4f29-9866-d11c9a104176" isDerived="false" sourceEndRoleName="滑油监控对象" targetEndRoleName="滑油消耗率" isLeaf="false" isAbstract="false">
+          <association Id="904ba141-e046-4eab-9d39-ac0f853f2ce5" isDerived="false" sourceEndRoleName="APU" targetEndRoleName="滑油消耗率" isLeaf="false" isAbstract="false">
             <classMoniker Id="3da7c44c-8a87-41e0-bd52-d0224b7c9abd" LastKnownName="滑油消耗率" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="aaba87d7-5547-4580-9fdd-9b5aec1ecbff" name="滑油监控对象" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="bf958ac6-d939-48cb-8304-c67a59617382" />
+                <memberEnd Id="72ab1730-1ee7-44a9-9b7b-e6ff75ab2920" name="APU" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a9ee81c9-5220-4370-a2ad-488f2463838a" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="8bfaece2-0c76-4e2e-b0dc-bb61fcc9ec8c" name="滑油消耗率" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="513ec97b-8b44-4d72-a893-eb616a684da3" name="滑油消耗率" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <lowerValueInternal>
-                    <literalString Id="95abd192-e306-4d80-815e-f21428da2e76" name="Lower" value="1">
-                      <elementDefinition Id="2c7d86c7-e2ee-45d0-8ec6-31280c9a1a34" />
+                    <literalString Id="a79e010b-555f-4b25-9dcc-31f28f2a329e" name="Lower" value="1">
+                      <elementDefinition Id="9de74e66-72f4-4a14-8421-e07a76b0a3a9" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="316eadc7-a8d1-4540-80e0-caef9ae5eaf0" name="Upper" value="*">
-                      <elementDefinition Id="251e783e-2677-4af2-a6c8-10769617b9dd" />
+                    <literalString Id="cd604456-bb95-4779-93a5-81512f6b3f51" name="Upper" value="*">
+                      <elementDefinition Id="944c4b8c-0b88-4352-8d9d-92082763a26e" />
                     </literalString>
                   </upperValueInternal>
-                  <elementDefinition Id="935c0559-b7f8-4892-85bf-5081243dc83b" />
+                  <elementDefinition Id="3bd3247d-32e4-428f-bd10-9bf4c7d1a5c5" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="f1586507-2f0b-4daa-b1c0-cccb629b9817" />
+            <elementDefinition Id="648e6a7a-36ee-49b1-96c4-c1a5a3f0e916" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="f3d8d656-692a-4cbc-baef-d2ef336e02c5" name="序列号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="db29d8cb-cdaf-4eac-a6bc-675cceeeaf3d" />
+          <property Id="9f42e62a-8cee-4ed1-a5a6-8cbdf8b25a07" name="是否需要监控" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="00c728ad-cd92-403b-9208-c1023b7ae060" />
           </property>
-          <property Id="37bc0517-3cbe-4463-9e16-80dc546ea2ce" name="序号ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="bb440a1b-3916-43a1-bb0d-49d9fe2b9bae" />
-          </property>
-          <property Id="67fa9727-9cdc-4cba-a403-257065545b5b" name="滑油监控状态" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3853bc0e-2385-4819-abf6-b68cc01f292b" />
-          </property>
-          <property Id="1ccf20bc-d988-43db-88d9-88132ba0f887" name="是否需要监控" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="deb5c1b9-fbbc-4e53-82e2-7a428480066b" />
-          </property>
-          <property Id="a407bcd9-2802-44d4-87af-3dfd4e95dfdf" name="TSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7846d81a-cc5a-4c29-913a-d0da965738ec" />
-          </property>
-          <property Id="62890ede-3a2b-426e-9427-3177526527c5" name="CSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4a51bedd-4f1e-466a-89f2-c502dd3e1523" />
-          </property>
-          <property Id="ea3090af-c950-4600-abb3-29880b956706" name="TSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f6416bac-8484-498d-ba34-895ad4a7de16" />
-          </property>
-          <property Id="b95f1fa8-f83a-4b3b-a2fc-b224c629631a" name="CSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="711bf658-6932-4d2f-9eee-9d5c9ec258b1" />
+          <property Id="1c88474d-28cb-49e6-8ed8-6710da98bb54" name="滑油监控状态" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a79f8eae-c107-41f0-bcb1-33df374ca0e7" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -200,6 +216,46 @@
           </enumerationLiteral>
         </ownedLiterals>
       </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="974f9de1-46e4-4ab6-9b30-874d81fefe3c" name="序号" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6536212b-6c14-4293-bc69-251b4ee686f8" />
+        <ownedAttributesInternal>
+          <property Id="2ea4dbd3-b004-46b9-9524-66240a462b22" name="序号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ff8bba35-8b52-4213-b36a-61a0a0c59e67" />
+          </property>
+          <property Id="662e692c-5429-4be6-91d9-a9d941d05332" name="初始安装日期" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b7840aa9-0fb1-4aa3-8268-57affa3316ce" />
+          </property>
+          <property Id="4edcd42f-92af-4bf4-a7f8-c9d7094365fc" name="附件ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a5ae39f-b17b-4316-95c2-920fcf75aa10" />
+          </property>
+          <property Id="ed4980d7-6014-49a0-bcf3-ccb5e34f1c79" name="件号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fb693bbe-7125-4253-9583-91ecd37d71b7" />
+          </property>
+          <property Id="1fc22141-d209-48db-95c8-5399fe56b323" name="是否停用" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2f0a6ac7-0714-46da-a1f3-e9e5d7fc8dbf" />
+          </property>
+          <property Id="7d04117e-e004-45ff-b9a1-1c4ec4ee3d8c" name="当前飞机ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e8876367-04d4-4398-af67-77fe9a3433be" />
+          </property>
+          <property Id="46f89958-072e-4755-9154-d0265ceda395" name="是否寿控件" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e3ccda30-551b-43d9-a449-1f4e9349f4d5" />
+          </property>
+          <property Id="8f7b736e-4e01-4559-9a73-efb08d991abf" name="TSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64ccbe7d-057f-4b6a-b259-d755d0a61747" />
+          </property>
+          <property Id="d775c933-fc79-49e2-b0a9-e91defe1a091" name="TSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d7b74de4-1e30-4a93-98b6-aa23d5a85930" />
+          </property>
+          <property Id="4231d023-dc9b-4719-968b-dfa36b3ec2c0" name="CSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a15bc61-d870-4a4b-94a8-f792832ae374" />
+          </property>
+          <property Id="b640bd69-3505-4aec-a875-e9991d16a1fb" name="CSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c11cf235-625c-4f6b-8eb9-17169f4073a2" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="54fdbd15-8d0e-4887-b1b0-f98fc3756b55" name="Main">

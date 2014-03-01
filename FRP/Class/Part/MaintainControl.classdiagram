@@ -574,6 +574,18 @@
           <property Id="c79ab266-1f7a-4dcc-bb73-d24bea8acb48" name="是否寿控件" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="e3ccda30-551b-43d9-a449-1f4e9349f4d5" />
           </property>
+          <property Id="98ddb3df-d6c5-403e-8168-2e1d4f10a98c" name="TSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64ccbe7d-057f-4b6a-b259-d755d0a61747" />
+          </property>
+          <property Id="e0b5cdcf-dd06-4991-8ece-4c9bc44ecc06" name="TSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d7b74de4-1e30-4a93-98b6-aa23d5a85930" />
+          </property>
+          <property Id="9ed3fad8-4ab9-44c8-8206-98a20eedd9d4" name="CSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9a15bc61-d870-4a4b-94a8-f792832ae374" />
+          </property>
+          <property Id="49eb4070-b23d-44f5-8013-f8b0e25bbe31" name="CSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c11cf235-625c-4f6b-8eb9-17169f4073a2" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
