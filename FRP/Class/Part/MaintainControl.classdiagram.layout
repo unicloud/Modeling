@@ -143,7 +143,7 @@
         <classShapeMoniker Id="e197221d-720f-4947-bc59-d6a0943fd551" />
       </nodes>
     </generalizationConnector>
-    <associationConnector edgePoints="[(4.875 : 5.40625); (5.84375 : 5.40625); (5.84375 : 3.93147786458333)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="0..1">
+    <associationConnector edgePoints="[(4.875 : 5.40625); (5.84375 : 5.40625); (5.84375 : 3.93147786458333)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="0..1">
       <associationMoniker Id="ccc1c0e0-96b8-45d2-8264-c58fc10511ed" />
       <relativeChildShapes />
       <nodes>
@@ -173,7 +173,7 @@
         <OperationElementListCompartment Id="b82b29e7-af2e-46b9-bbec-06086b879d24" absoluteBounds="3.765, 10.197444661458333, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.3125 : 6.55647786458333); (4.3125 : 7.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(4.3125 : 6.55647786458333); (4.3125 : 7.625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="496041c1-eefc-441d-ae96-e342448187bb" />
       <relativeChildShapes />
       <nodes>
@@ -199,7 +199,7 @@
         <OperationElementListCompartment Id="f460d36a-9f43-493d-992c-a0c21a52f922" absoluteBounds="9.14, 9.937841796875, 1.4700000000000002, 0.22631835937500022" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.25 : 9.257080078125); (9.125 : 9.257080078125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(5.25 : 9.257080078125); (9.125 : 9.257080078125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="2711df8e-2fc4-4512-ba1c-0730c31c7484" />
       <relativeChildShapes />
       <nodes>
@@ -207,11 +207,11 @@
         <classShapeMoniker Id="14c77692-a752-4269-951a-2d0da30ded38" />
       </nodes>
     </associationConnector>
-    <classShape Id="2a113dce-5d1e-4700-8f76-a31f071ce2a5" absoluteBounds="6.5, 5.625, 1.5, 2.1910807291666661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="2a113dce-5d1e-4700-8f76-a31f071ce2a5" absoluteBounds="6.5, 5.625, 1.5, 2.544921875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="6e7bd4e2-7891-4f83-ac5d-ee4dc0c1a3ff" LastKnownName="飞机日利用率" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="7384d67a-7c3c-4837-8942-c99e86aac5b2" absoluteBounds="6.5150000000000006, 6.015, 1.4700000000000002, 1.4647623697916665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="179a8df0-4ec0-4563-8207-d9cbd5d312a4" absoluteBounds="6.5150000000000006, 7.4897623697916664, 1.4700000000000002, 0.22631835937500022" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="7384d67a-7c3c-4837-8942-c99e86aac5b2" absoluteBounds="6.5150000000000006, 6.015, 1.4700000000000002, 1.818603515625" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="179a8df0-4ec0-4563-8207-d9cbd5d312a4" absoluteBounds="6.515, 7.843603515625, 1.4700000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="09f5f65d-150b-407a-b8e9-3402b34ee2f1" absoluteBounds="9.125, 5.25, 1.5, 1.306477864583333" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">

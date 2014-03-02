@@ -624,10 +624,10 @@
           <property Id="0b1608d3-8d86-4c4b-8b73-d6ca275f3b47" name="飞机注册号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="2009d768-6e25-4b80-913a-a0c35cbfc2d5" />
           </property>
-          <property Id="c25f6d9d-7068-4bba-81e9-d6764390807a" name="计算日利用率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="c25f6d9d-7068-4bba-81e9-d6764390807a" name="计算日利用小时" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="b3c85299-a964-41c4-bf1f-61efed4334dd" />
           </property>
-          <property Id="c367cb73-6aae-4840-93e9-940d5ec78dfb" name="修正日利用率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="c367cb73-6aae-4840-93e9-940d5ec78dfb" name="修正日利用小时" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="18ce3147-e19b-4127-a049-691443012c12" />
           </property>
           <property Id="0b62d0c1-4089-4eb5-a38c-85600b6caee7" name="是否当前" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -638,6 +638,12 @@
           </property>
           <property Id="cb3f399c-ffdd-4489-b9f3-95cc3bbbc6ac" name="月份" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="397cb279-4a94-4712-a51d-f5ba07578c57" />
+          </property>
+          <property Id="1b2fb279-72ee-42ff-8315-ed3c4f130b50" name="计算日利用循环" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5ed1b74c-3dda-48dd-8777-e28790b3bc14" />
+          </property>
+          <property Id="43da1bcc-e75a-470c-88ca-ff15153a9812" name="修正日利用循环" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dce76a04-ec24-4b0c-b694-b29b889d09e7" />
           </property>
         </ownedAttributesInternal>
       </class>
