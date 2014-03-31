@@ -8748,7 +8748,7 @@ TS：技术解决方案</body>
             isComposite="false" />
           <property
             Id="b3c85299-a964-41c4-bf1f-61efed4334dd"
-            name="计算日利用率"
+            name="计算日利用小时"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -8759,7 +8759,7 @@ TS：技术解决方案</body>
             isComposite="false" />
           <property
             Id="18ce3147-e19b-4127-a049-691443012c12"
-            name="修正日利用率"
+            name="修正日利用小时"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -8793,6 +8793,28 @@ TS：技术解决方案</body>
           <property
             Id="397cb279-4a94-4712-a51d-f5ba07578c57"
             name="月份"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5ed1b74c-3dda-48dd-8777-e28790b3bc14"
+            name="计算日利用循环"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dce76a04-ec24-4b0c-b694-b29b889d09e7"
+            name="修正日利用循环"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
