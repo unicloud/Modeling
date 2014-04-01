@@ -862,14 +862,24 @@ TS：技术解决方案</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="644aaf29-cd2a-46d3-a08b-8ac89fa71d7c" name="FI" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="644aaf29-cd2a-46d3-a08b-8ac89fa71d7c" name="项" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7d30e3e3-722a-4460-be7b-52ce77025dc9" />
         <targetEnds>
-          <association Id="d4bb1d1b-814e-4d93-a22f-1138a9a845d6" isDerived="false" sourceEndRoleName="FI" targetEndRoleName="MOD" isLeaf="false" isAbstract="false">
+          <association Id="d4bb1d1b-814e-4d93-a22f-1138a9a845d6" isDerived="false" sourceEndRoleName="项" targetEndRoleName="MOD" isLeaf="false" isAbstract="false">
             <classMoniker Id="b0183e84-5975-4d22-a0be-1b6e67b762d3" LastKnownName="MOD" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="625de3a9-3085-44ff-9aa6-563336aac7bc" name="FI" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="625de3a9-3085-44ff-9aa6-563336aac7bc" name="项" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="1eefc8fb-5d1b-4c37-a842-c5c299b7f21f" name="Lower" value="0">
+                      <elementDefinition Id="1e0149f5-03ab-4d58-8d54-c34c709244d6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="66a1b18b-9ee4-4c4e-b9ce-8d63a8cead57" name="Upper" value="1">
+                      <elementDefinition Id="4ad681eb-907d-4a80-89da-5c773316b293" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="6a25b05a-e8e0-4113-875f-a385fc2fc41c" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -919,8 +929,11 @@ TS：技术解决方案</body>
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="30d53aa7-c26f-457e-91f0-3786b48e4344" name="FI号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="30d53aa7-c26f-457e-91f0-3786b48e4344" name="项号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ce4f0078-5dca-41e7-90ca-932ff85263d2" />
+          </property>
+          <property Id="094bc14c-9c57-4ee8-8e49-156d5fc901be" name="FI号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="72c3d75b-0b2d-4845-b9fa-01a111257db0" />
           </property>
         </ownedAttributesInternal>
       </class>
