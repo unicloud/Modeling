@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dd4ffa80-0004-4279-9124-b47daddc66e4" name="Budget" linkedPackageId="2ffac01c-094f-49f6-ab9f-bcb6a18991e2" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="4603fc64-7e94-490f-abbc-e92a20dacc64" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="63f34954-8f3c-436d-9fb7-74e6e38af081" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8be1a917-9d4d-4375-9d8f-94a02a462496">
+          <propertyInstance Id="669f08ba-7e67-4eed-8364-06415b4839bb" name="BaseName">
+            <elementDefinition Id="0c5912a5-462a-418f-a06e-68dc35e9152a" />
+          </propertyInstance>
+          <elementDefinition Id="df19720b-3986-4eed-9c5a-22c959467590" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="31ba866b-80da-46ce-a0ab-0d56ffc450dc">
+          <propertyInstance Id="6dae5131-64fd-4394-a3d7-88e28d3a3f13" name="ClrAttributes">
+            <elementDefinition Id="1f1a54e0-00f5-4f9d-b1c8-80e2106215f8" />
+          </propertyInstance>
+          <elementDefinition Id="57cdc6c9-1e92-43de-8399-ec56861e6dfd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="43955e42-b03d-4ab1-a56f-132ae94796b7">
+          <propertyInstance Id="7fe4ae48-87db-4286-bc25-a967a13e2ee6" name="Usings">
+            <elementDefinition Id="78de931e-faa8-4e84-a8da-24c1bdc1b9e7" />
+          </propertyInstance>
+          <elementDefinition Id="9cf171cf-9fbf-41a3-ab1c-84bb9000f9bb" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="3868c68b-f138-4401-a0a8-fb3d90d226a5" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="c5c1f24a-f503-4b5a-b5a4-03d0462f64b9" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="6e1e4eaf-c5b2-46f2-955f-7fb294793e8c">
+          <propertyInstance Id="81481440-b29b-45c4-8de6-1d2c7f4d3cfd" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="8d1843b4-1702-47e5-aeb0-1b3bacd8ab19" />
+          </propertyInstance>
+          <elementDefinition Id="4044633d-fc9b-4659-b049-3324553a4247" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="10834077-5eb9-4a9d-b274-ce997c21f29f">
+          <propertyInstance Id="980e7fc9-e30e-4c23-8965-3c7d917b2c44" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="286ed6b7-d0b6-4899-8369-e3599a389f38" />
+          </propertyInstance>
+          <elementDefinition Id="405f0fa0-7561-457f-9f11-5dc6fefbc806" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e5e8fe7e-742c-4735-a838-3e64e461e613">
+          <propertyInstance Id="9860f5a7-4e53-4e55-94fb-49d8978d8187" name="ProjectPath" value="ClassTemplate=..\MainLib\MainLib.csproj|EnumTemplate=..\MainLib\MainLib.csproj|InterfaceTemplate=..\MainLib\MainLib.csproj|StructTemplate=..\MainLib\MainLib.csproj">
+            <elementDefinition Id="13c73fe1-7c4f-444d-8abc-d1a612da41cb" />
+          </propertyInstance>
+          <elementDefinition Id="2c9b41c3-9b30-47b0-9de0-49f0e078def3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c0feecc5-6086-4799-9913-cf0543c0af15">
+          <propertyInstance Id="65a7714d-4cda-483a-a6da-ab31d62ede28" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="80e3db6a-7bb3-41b5-aed6-e000279a7f4b" />
+          </propertyInstance>
+          <elementDefinition Id="c1696e18-c505-4006-8e67-30807363f617" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="5f698fe0-b5a8-4344-9200-52a0e119ddd6">
+          <propertyInstance Id="d5d4f21f-5222-499b-9505-3e43fb47e20e" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="42924065-45a7-4c94-a620-aeb549b5b85f" />
+          </propertyInstance>
+          <elementDefinition Id="bbd4db7e-f0eb-4859-8de5-17a2bba3741f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="129bf2aa-26fd-4056-8df4-55ca40d066dd">
+          <propertyInstance Id="74490c2e-c024-49db-a6a0-e393cd06acd4" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="265348aa-6c71-440b-869b-58b25de4f305" />
+          </propertyInstance>
+          <elementDefinition Id="de15bf80-f0dd-4fde-ba6b-6a9d61c02ff1" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4cbdde15-658f-4496-a63c-fde790ecf9ee">
+          <propertyInstance Id="46957680-5086-4fef-b0fe-7aca0aa3e0d5" name="Parameters">
+            <elementDefinition Id="240e3a6c-a880-4298-9bac-5bc99d1f7b73" />
+          </propertyInstance>
+          <elementDefinition Id="add18b66-0507-4ca3-8a32-dd1a4af39631" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="fec114cf-b515-4c8d-882f-c054cec3739e">
+      <profileInstance Id="3633944a-7a9c-422e-b62c-6318baaa86f9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="25c393b2-b7b4-48f3-b2bb-a5644ec40dc8">
+      <profileInstance Id="7201ce8a-1502-4283-a7d7-0a224334dffc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6e1b523c-44cb-486c-beab-2fa220698637">
+      <profileInstance Id="60dd5bf5-3c48-446f-b57c-7f5d1f2f3743" name="CSharpProfile">
+        <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
+      </profileInstance>
+      <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="924c6d19-c8ce-4d39-8b4d-00566ad7d031">
+      <profileInstance Id="056214cd-73f1-487d-a350-c0925ec18106" name="TextTemplateBindings">
+        <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
+      </profileInstance>
+      <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8ebacd13-9a01-44c4-846d-cf61daf89139" name="定检年度预算" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b14c94f6-8597-47b5-9295-ba8d24d5bdf0" />
+        <ownedAttributesInternal>
+          <property Id="07c8e19a-ca51-49bd-944b-1aaf93dc2e17" name="飞机号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="be037b53-719b-4cdc-8b2b-29a691aa231b" />
+          </property>
+          <property Id="91cfcd71-b50d-43d4-9fda-2f9ca0e37b7f" name="类别" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f6c68f16-8b7f-4e83-8817-a98e2acc14a4" />
+          </property>
+          <property Id="737f28d9-66c5-4679-a184-035f94962197" name="性质" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9ec813cc-d684-4ec8-9d29-bb859a26fd06" />
+          </property>
+          <property Id="55715250-dbe0-4f41-9a2d-477564447fdb" name="机型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2eb49f22-0a02-4a4f-9954-3dbe6e2ae555" />
+          </property>
+          <property Id="ef4ca92a-aafb-4442-adcc-5615d8c70f53" name="定检级别" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b3999021-de55-4347-a41c-6b12e506e171" />
+          </property>
+          <property Id="b08124d2-efaa-44b1-9502-a3da5afd7c45" name="是否资本化" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="75f42a29-76e0-41fa-bab4-a5c4f0e19b6c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7b5feef7-6127-4cc7-8a74-679e0d697694" name="非FHA.超包修" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9948e6ed-3e07-4d7d-a542-31cae0c600e8" />
+        <ownedAttributesInternal>
+          <property Id="34000970-831e-4fef-9a66-4627aaf2743f" name="发动机号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1115a147-1161-4728-9709-49fda8a25683" />
+          </property>
+          <property Id="6f1aee55-f2b4-4af3-8fa2-79141aae027d" name="是否包修" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aac09e54-780e-46bf-b815-948d00a775ce" />
+          </property>
+          <property Id="7d99c309-0551-4522-806c-1b9717ebce5d" name="类别" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f87ad038-3e92-4c9a-ae56-02d090296cb2" />
+          </property>
+          <property Id="d118a070-23a8-4e1a-aea3-edc96f4b810d" name="原装机号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3146f4cd-8133-4ab2-9454-c3649d98404e" />
+          </property>
+          <property Id="c44bc30d-8288-4826-986a-0d2bc2b0feae" name="原装性质" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8383c7fd-37b3-4a8a-aa12-a8096366847a" />
+          </property>
+          <property Id="61f32102-7356-4198-976e-e830f58c2738" name="原装机型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="274be196-506f-40cb-8707-c59a265f3b0a" />
+          </property>
+          <property Id="dfb732c0-2151-456d-8a02-fa0ea2fc05b8" name="修理厂商" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="286b2733-83fe-4347-b947-67a4fd73795c" />
+          </property>
+          <property Id="b547dda3-8cf0-4dd4-b6c7-377625763a43" name="实际执行-修理级别" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="98427842-2f64-4411-a558-4a8749490c6f" />
+          </property>
+          <property Id="2c0b4e5d-bca5-43ab-b19b-5d2950a91a3e" name="实际执行-更换LLP个数" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="970cfc37-08f2-4bf5-9c2e-a32ec0901c10" />
+          </property>
+          <property Id="6101711d-684f-4664-9807-7d4af9b8fa9f" name="实际执行-TSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="746ec9be-f2fb-48a5-aefb-362a69870a68" />
+          </property>
+          <property Id="fe603e85-3d30-4f8c-8aa1-b0372a443117" name="实际执行-CSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="51670ed3-f2f5-42d5-9a1c-fb2c85d37fd8" />
+          </property>
+          <property Id="32ffd8f7-74ae-41ed-a7b0-4238732e91b3" name="修理级别" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="29e8c9c6-933b-4a45-b1ce-9e52b91fb34f" />
+          </property>
+          <property Id="eca32d9e-9b6d-4ef3-aa61-5bff9c06a02f" name="更换LLP个数" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7da3388a-d71a-4f24-8799-eb5cb3eeca2b" />
+          </property>
+          <property Id="8f0da11d-4f54-4c24-8b9a-8522da1ba6f8" name="TSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d9ecdfa8-ac5a-4d1b-8069-1c9334e2d1e3" />
+          </property>
+          <property Id="ac7e7a04-54cf-4b8f-8baf-88529f280427" name="CSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9db15898-87cb-412d-b267-d08a798c4240" />
+          </property>
+          <property Id="94599c5f-e0b6-42a2-bed3-01d960830cd1" name="非FHA大修费" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d9e56286-3e63-4f81-bd46-a954504bc378" />
+          </property>
+          <property Id="da52ee8a-a694-4f6d-9a25-475c798e4186" name="附件修理费" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a6cef74d-51f0-40a8-9dd1-bbf18eefa5de" />
+          </property>
+          <property Id="a78175d7-c9e7-4c23-92f0-f23e05587ca6" name="更换LLP件费" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="88ac9670-da98-46b9-b8e5-2b87613a85b1" />
+          </property>
+          <property Id="cc1ec842-b1a0-4a43-9949-3f8daed0daec" name="修理费小计" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="61190823-e945-48e7-9fc6-02c783cce6f8" />
+          </property>
+          <property Id="5822acfb-e026-4089-b098-ae7da07a72f3" name="汇率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3423a3ba-f29f-412c-9d4d-f28c3ab2da3d" />
+          </property>
+          <property Id="37e0e8d9-47c4-49a3-b4be-05045384a93a" name="修理费合计" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eed3b653-c57f-4ecf-aba2-964b9fd5db1c" />
+          </property>
+          <property Id="c952b3ea-923a-4f55-a822-7354c278a0bb" name="关税税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d2f2e54c-3c53-467d-b5bd-74759e3a6e47" />
+          </property>
+          <property Id="a2be04d8-fa67-4b98-b8fd-e52adfa84bff" name="关税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e416dce7-ceb5-41eb-850c-c14d509e3d14" />
+          </property>
+          <property Id="4189e88a-5c3c-4e7f-9bd8-bfb2ceddc510" name="增值税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e205027f-c032-438c-9060-22d104604040" />
+          </property>
+          <property Id="98a971c1-4736-44e0-9eb2-afc9ed7d9f4d" name="增值税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e5816a37-9a21-4c05-b7c5-65fd2e6432f4" />
+          </property>
+          <property Id="bcd04898-3fe0-4f15-9047-c7ac21a0f9fc" name="关增税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8800cccf-d96a-4ca8-bb93-5500decfd7a8" />
+          </property>
+          <property Id="00ccd2d5-b9b6-4e8a-9fa9-5feb86c4f64d" name="运费" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fe86b378-ca10-4507-ba99-717b943fbcf3" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="20e1856a-0d4d-4975-a425-71a3857b99c6" name="预算" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b8be556f-910f-4e63-aab3-289854c4c5a2" />
+        <generalsInternal>
+          <generalization Id="3f212082-4770-416c-a06b-c2698336c250" isSubstitutable="false">
+            <classMoniker Id="8ebacd13-9a01-44c4-846d-cf61daf89139" LastKnownName="定检年度预算" />
+            <elementDefinition Id="71d6ec52-daed-4825-884c-95c4e88e0946" />
+          </generalization>
+          <generalization Id="17f50feb-6df6-42aa-859c-c78225508d84" isSubstitutable="false">
+            <classMoniker Id="7b5feef7-6127-4cc7-8a74-679e0d697694" LastKnownName="非FHA.超包修" />
+            <elementDefinition Id="1fc628bc-305c-4f1a-bc3d-38f82156e26f" />
+          </generalization>
+          <generalization Id="d0ab53f1-72dc-42a7-9191-e2fdadba7914" isSubstitutable="false">
+            <classMoniker Id="a8c9bc9b-41db-44b1-ad75-0f24625aeddb" LastKnownName="起落架" />
+            <elementDefinition Id="35accbe3-04de-4b63-8f3b-a2d47818f1b6" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="ae6eec0f-812e-4f53-9435-559f14de225e" name="业务部门申报金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9d3eb6fc-f3e9-4d95-9532-204274676135" />
+          </property>
+          <property Id="610d50a3-a104-4fe4-b218-5ea7af4f0c26" name="出厂时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b60e1fb-e996-4825-b386-266783ca1a6f" />
+          </property>
+          <property Id="df04b0f7-a97a-4293-a82e-ad29255e3e67" name="实际执行-出厂时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0c946f45-a420-46dd-b29e-7137ecc787f5" />
+          </property>
+          <property Id="2eb92767-b03f-4fc0-b5a6-dd7211649471" name="实际执行-实际结算金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f7f82869-4372-4284-b86e-3bce6b8ac14a" />
+          </property>
+          <property Id="12d50384-5e5e-46d1-be44-631e32147969" name="实际执行-总周期" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="efd51c48-bf19-4304-b5ee-33b167f3bdb6" />
+          </property>
+          <property Id="8c08b8e3-d3a7-44b8-b3b6-b5cb79170e76" name="实际执行-进厂时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6e07127c-a773-44e4-a744-9ca924060b94" />
+          </property>
+          <property Id="aaed9520-069c-4c09-9587-252e8c18abe6" name="实际执行-预估金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dfa59899-44b3-48e5-a25b-6a3c82861d7f" />
+          </property>
+          <property Id="a5b75dcb-a0d0-40c1-899c-ebb05de4a686" name="总周期" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="58be677d-3c84-4cdd-9561-2a7c4368470b" />
+          </property>
+          <property Id="f9627513-f1e8-4eb2-ba6a-ef86c42194d8" name="财务批复预算金额（不含增值税）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b48f23c9-1239-4598-8bfb-cba0d415cd0d" />
+          </property>
+          <property Id="1f0e2884-35c5-4cd0-b624-5f960d5bbc9c" name="财务批复预算金额（含增值税）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4865965f-e2d3-46d9-97ff-7c093b647995" />
+          </property>
+          <property Id="a84e1ad0-a938-4063-8f19-5fa247827a5d" name="进厂时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="499f0117-9215-4f1d-8974-00440888406f" />
+          </property>
+          <property Id="2d286799-3b72-461a-9d12-242ef91ce852" name="维修发票" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9b79b6f9-13f9-47a8-8d80-935ea2c3cc2c" />
+          </property>
+          <property Id="dea6eba7-1e52-4222-8314-d284715dc89d" name="维修计划" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f815d59e-7922-4c6f-a02f-29f974ae4e63" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a8c9bc9b-41db-44b1-ad75-0f24625aeddb" name="起落架" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b368cc5c-7e88-430a-84b0-ade52ac4c754" />
+        <ownedAttributesInternal>
+          <property Id="e19e2f59-317e-4f13-ab6b-8cc129b18b4f" name="飞机号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7cf322d4-e769-4e28-a2ae-c0f9f9e90196" />
+          </property>
+          <property Id="39a3a098-7dc0-4db7-8484-24b0d264f0fe" name="类别" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="418e694f-cad0-4869-9d8a-ac40e9601b73" />
+          </property>
+          <property Id="3435b504-1ca3-4ade-8cca-e11ce03a640a" name="性质" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="36592e64-692f-4971-916f-d475d236add2" />
+          </property>
+          <property Id="a28add68-25dc-4302-9c72-3c6ffbbb4798" name="机型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3f9e3c4d-1a8d-49e8-899d-d38928976533" />
+          </property>
+          <property Id="fecc9ac6-f063-4231-854c-3792a369eec4" name="部件" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fce18580-497a-4920-ab40-255650b200f1" />
+          </property>
+          <property Id="002e5b06-4471-4b89-bdb3-5ac9a75cff70" name="修理费（欧元）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a1e4b11c-0cdd-4d0c-ab2a-ba0522e9fe5e" />
+          </property>
+          <property Id="58e1770c-6641-470f-b601-8e75e4af4be4" name="汇率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d767a666-1dc5-406e-92ec-8a56b4cb4800" />
+          </property>
+          <property Id="13934eef-8a17-4a19-b220-891774864c75" name="修理费 (人民币)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f261b1bc-950f-427d-be94-95989b5a9b8c" />
+          </property>
+          <property Id="fb08e844-db29-4bb2-914b-46105aa292ea" name="运费（人民币）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9c1f3601-661f-4801-b7c3-3b279075074f" />
+          </property>
+          <property Id="42641acc-cc5a-44f7-816f-295894dc732d" name="更换费（人民币）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6c0b5df1-99d2-41a7-ac47-0510e79e53c0" />
+          </property>
+          <property Id="6f4e402f-4c30-4b1d-a0a0-149016355c10" name="关税税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ce3351e8-e6b1-440f-8315-2ab4142c245d" />
+          </property>
+          <property Id="16f19518-06fb-45f2-af52-00b0657b552b" name="关税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c5ce29c4-cd79-41bc-816c-3f8ca1bd9a6c" />
+          </property>
+          <property Id="514e47b0-e352-4423-bed6-f0bdbc13de66" name="增值税税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="694da064-da6d-4717-b337-9e13cf19614e" />
+          </property>
+          <property Id="ee322941-e930-4245-9802-afbda19bafaa" name="增值税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a33b02f4-1e4f-4a71-bb8a-a9ea73ee0589" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c3d0b07c-31d9-428d-a74b-325cfd198051" name="特修改装" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="830f9799-a26f-4234-af4c-68dc119eef7f" />
+        <ownedAttributesInternal>
+          <property Id="cc8b010e-4d50-42b8-9e62-91ab854e642f" name="项目" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f336edeb-1cac-4842-a4e0-62b50640c9b6" />
+          </property>
+          <property Id="9aa13b0d-810b-4a99-8e4d-06d4fb00245d" name="信息" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ba50efe4-8487-436d-a663-3cde2cc51cb9" />
+          </property>
+          <property Id="047e2df5-8aa4-4db9-8a96-b41ca2642913" name="航材申报" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5e1fb7b-51e3-45e0-a28e-d7bb871d123c" />
+          </property>
+          <property Id="077aa232-190c-4321-b46f-d11d1bdaf3ec" name="财务预算含关增税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9df4b5fa-faf4-4e0c-807f-b3d7f49f6813" />
+          </property>
+          <property Id="8efc5653-676d-4696-a765-164f59e2bd21" name="财务预算扣除关增税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="442b20d2-6385-4cbf-bd58-4d6eaa174a98" />
+          </property>
+          <property Id="2cdc2e7d-254c-4d71-b822-718c808aab16" name="备注" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c5ab17f1-72e1-4c94-9acb-3faae21e2302" />
+          </property>
+          <property Id="17c607eb-5f79-4193-a466-e5844449dce5" name="预估金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e3daf602-4e24-49d1-b62d-6fcdb86af41b" />
+          </property>
+          <property Id="644c174a-63e9-4d90-b513-c0ffab8c27b5" name="实际结算金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="25927d04-fdd8-425f-a247-333606acc971" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="2ffac01c-094f-49f6-ab9f-bcb6a18991e2" name="Main">
+    <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+  </package>
+</logicalClassDesignerModel>

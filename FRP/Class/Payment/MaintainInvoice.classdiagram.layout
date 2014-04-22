@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MaintainInvoice">
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.5, 8.5" name="MaintainInvoice">
   <logicalClassDesignerModelMoniker Id="d3ad31b8-c66f-4c49-8b5f-7acb67c4ecb5" />
   <nestedChildShapes>
-    <classShape Id="efce4475-3e93-472d-93bc-7b56a2848c23" absoluteBounds="4, 0.5, 1.5, 3.7833658854166661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="efce4475-3e93-472d-93bc-7b56a2848c23" absoluteBounds="7, 0.5, 1.5, 4.13720703125" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="e5488789-e8cc-455b-88b5-04a70d59e356" LastKnownName="维修发票" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="55161ec7-a6fc-47c1-a8ab-637208e2b188" absoluteBounds="4.015, 0.89000000000000012, 1.4700000000000002, 3.0570475260416665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="2eba9037-7b65-48c1-81b6-7688fe8d30ed" absoluteBounds="4.015, 3.9570475260416664, 1.4700000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="55161ec7-a6fc-47c1-a8ab-637208e2b188" absoluteBounds="7.015, 0.89000000000000012, 1.4700000000000002, 3.410888671875" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2eba9037-7b65-48c1-81b6-7688fe8d30ed" absoluteBounds="7.015, 4.310888671875, 1.4700000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="278b08e5-99b6-4581-9e42-b87cead91e79" absoluteBounds="1, 4.875, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
@@ -16,7 +16,7 @@
         <OperationElementListCompartment Id="c1b5a199-d5c4-43f5-ac3c-d12f0f270534" absoluteBounds="1.015, 5.501318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <generalizationConnector edgePoints="[(4.75 : 4.28336588541667); (4.75 : 4.575); (1.75 : 4.575); (1.75 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(7.75 : 4.63720703125); (7.75 : 4.75212); (1.75 : 4.75212); (1.75 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="eaf3b5b0-0b8e-4696-9c12-e5d7e02cce49" />
       <relativeChildShapes />
       <nodes>
@@ -31,7 +31,7 @@
         <OperationElementListCompartment Id="515b6cf6-f2cd-4c50-9fa2-8c91154bbee7" absoluteBounds="3.14, 5.501318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <generalizationConnector edgePoints="[(4.75 : 4.28336588541667); (4.75 : 4.575); (3.875 : 4.575); (3.875 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(7.75 : 4.63720703125); (7.75 : 4.75212); (3.875 : 4.75212); (3.875 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="1df92c9b-c9da-47f6-9828-58a8a530c89c" />
       <relativeChildShapes />
       <nodes>
@@ -46,7 +46,7 @@
         <OperationElementListCompartment Id="c491faa7-8ad5-46a3-a989-876df39c1d3a" absoluteBounds="5.265, 5.501318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <generalizationConnector edgePoints="[(4.75 : 4.28336588541667); (4.75 : 4.575); (6 : 4.575); (6 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(7.75 : 4.63720703125); (7.75 : 4.75212); (6 : 4.75212); (6 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="3e551460-ec17-4cce-be55-6e9ae881ded2" />
       <relativeChildShapes />
       <nodes>
@@ -61,7 +61,7 @@
         <OperationElementListCompartment Id="72fbb1e4-6dc8-4e7d-a2a8-c38937aae3ac" absoluteBounds="7.39, 5.501318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <generalizationConnector edgePoints="[(4.75 : 4.28336588541667); (4.75 : 4.575); (8.125 : 4.575); (8.125 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(7.75 : 4.63720703125); (7.75 : 4.75212); (8.125 : 4.75212); (8.125 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="ba351f04-1dda-4e20-a226-f7f83587915e" />
       <relativeChildShapes />
       <nodes>
@@ -69,14 +69,14 @@
         <classShapeMoniker Id="da47f9e6-75a4-4701-b438-db6f8a703143" />
       </nodes>
     </generalizationConnector>
-    <classShape Id="4d927ff6-8af0-4a57-a2c7-093fe7e8bd86" absoluteBounds="7.75, 1, 1.5, 1.8372395833333335" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="4d927ff6-8af0-4a57-a2c7-093fe7e8bd86" absoluteBounds="10.625, 1, 1.5, 1.8372395833333335" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="b63e91e9-714e-47bb-856b-7832734e7d5d" LastKnownName="维修发票行" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="a66a7c07-679b-4cbf-8e94-d6e12d2a3859" absoluteBounds="7.765, 1.3900000000000001, 1.4700000000000002, 1.1109212239583333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="8625a0da-4699-4590-8923-b7f1254d49f2" absoluteBounds="7.765, 2.5109212239583334, 1.4700000000000002, 0.22631835937500022" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="a66a7c07-679b-4cbf-8e94-d6e12d2a3859" absoluteBounds="10.64, 1.3900000000000001, 1.4700000000000002, 1.1109212239583333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="8625a0da-4699-4590-8923-b7f1254d49f2" absoluteBounds="10.64, 2.5109212239583334, 1.4700000000000002, 0.22631835937500022" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.5 : 1.91861979166667); (7.75 : 1.91861979166667)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(8.5 : 1.91861979166667); (10.625 : 1.91861979166667)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="9771ee81-61ce-4344-a05e-fca92a699f5e" />
       <relativeChildShapes />
       <nodes>
@@ -84,5 +84,35 @@
         <classShapeMoniker Id="4d927ff6-8af0-4a57-a2c7-093fe7e8bd86" />
       </nodes>
     </associationConnector>
+    <classShape Id="4f9dabb2-aa68-43df-8381-1d67b6a8ab26" absoluteBounds="9.5, 4.875, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6b8d9200-9c77-476b-ba4a-f7046f1aacbf" LastKnownName="非FHA清算发票" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="1d86ae61-4b80-4fcf-b192-a89f29e9eca0" absoluteBounds="9.515, 5.265, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="f7aa064a-f28d-46ed-af37-9706d083db0b" absoluteBounds="9.515, 5.501318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(7.75 : 4.63720703125); (7.75 : 4.75212); (10.25 : 4.75212); (10.25 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="d72f0808-c57e-4e6f-9d49-52e14eb8a4e1" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="efce4475-3e93-472d-93bc-7b56a2848c23" />
+        <classShapeMoniker Id="4f9dabb2-aa68-43df-8381-1d67b6a8ab26" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="9cac671b-5320-42e5-a185-4e7fbea864ee" absoluteBounds="11.75, 4.875, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="875d5666-42ca-4feb-a5c4-2946feaecd9c" LastKnownName="杂项发票" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="92911883-d86e-49e8-8440-d3a020fe4ea4" absoluteBounds="11.765, 5.265, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="d69062ea-5ee0-4ff0-878d-2fe1c161820a" absoluteBounds="11.765, 5.501318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(7.75 : 4.63720703125); (7.75 : 4.75212); (12.5 : 4.75212); (12.5 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="a295e59e-e0cf-4475-b232-b381c539d233" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="efce4475-3e93-472d-93bc-7b56a2848c23" />
+        <classShapeMoniker Id="9cac671b-5320-42e5-a185-4e7fbea864ee" />
+      </nodes>
+    </generalizationConnector>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>

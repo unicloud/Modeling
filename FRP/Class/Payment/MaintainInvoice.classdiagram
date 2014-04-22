@@ -72,32 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="750285e8-3348-4114-9dc7-87d3433eb0db">
-      <profileInstance Id="92ecb669-8cb0-49f5-ae77-54fb75759480" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="eca005ca-4fee-47a8-a270-ed7731a7a39c">
-      <profileInstance Id="d3cfe06b-49a4-4806-bf58-c62a0784ce28" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="855464fe-e9ed-42ed-b908-e45590d293cd">
-      <profileInstance Id="89b6bce7-6d0b-4323-a851-4abda5c98a99" name="CSharpProfile">
-        <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
-      </profileInstance>
-      <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="21350179-01e8-44cc-828b-e3e4f7d842be">
-      <profileInstance Id="f7bfe57f-b49b-48ea-831f-08fe5ad12508" name="TextTemplateBindings">
-        <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
-      </profileInstance>
-      <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="e5488789-e8cc-455b-88b5-04a70d59e356" name="维修发票" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -118,6 +92,14 @@
           <generalization Id="ba351f04-1dda-4e20-a226-f7f83587915e" isSubstitutable="false">
             <classMoniker Id="184bc089-685e-48c6-805a-9c1d72da19e4" LastKnownName="起落架维修发票" />
             <elementDefinition Id="9f2759c4-e696-4d8c-8f9c-e2648ee726fd" />
+          </generalization>
+          <generalization Id="d72f0808-c57e-4e6f-9d49-52e14eb8a4e1" isSubstitutable="false">
+            <classMoniker Id="6b8d9200-9c77-476b-ba4a-f7046f1aacbf" LastKnownName="非FHA清算发票" />
+            <elementDefinition Id="384c1d79-2219-4883-ba9b-bd9035cad0e5" />
+          </generalization>
+          <generalization Id="a295e59e-e0cf-4475-b232-b381c539d233" isSubstitutable="false">
+            <classMoniker Id="875d5666-42ca-4feb-a5c4-2946feaecd9c" LastKnownName="杂项发票" />
+            <elementDefinition Id="16a02c4a-8ab7-4fde-982c-28687e9adfaf" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -197,6 +179,12 @@
           <property Id="81109c99-a7e7-4916-bea3-c14f90255158" name="币种" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="b42d2650-defa-4eaa-9be3-6c8492e657f0" />
           </property>
+          <property Id="de9a3edd-f90c-4730-a1c1-b5764ca310fd" name="进厂时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cc431400-fa1e-4695-9529-97673d38c599" />
+          </property>
+          <property Id="4ab913c5-b5a5-41a8-8f0d-c50ceb8d72e4" name="出厂时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="924f2382-dc3d-4e43-9afa-639779ed9679" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -242,8 +230,44 @@
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b8d9200-9c77-476b-ba4a-f7046f1aacbf" name="非FHA清算发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ee0ba948-f713-4a21-b0bb-e91a7ac898f0" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="875d5666-42ca-4feb-a5c4-2946feaecd9c" name="杂项发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a89d2742-ca4b-4291-8c80-2377291f0625" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="cf68f44a-aef9-47e3-b69b-cc6d95961431" name="Main">
     <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="750285e8-3348-4114-9dc7-87d3433eb0db">
+        <profileInstance Id="92ecb669-8cb0-49f5-ae77-54fb75759480" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="eca005ca-4fee-47a8-a270-ed7731a7a39c">
+        <profileInstance Id="d3cfe06b-49a4-4806-bf58-c62a0784ce28" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="855464fe-e9ed-42ed-b908-e45590d293cd">
+        <profileInstance Id="89b6bce7-6d0b-4323-a851-4abda5c98a99" name="CSharpProfile">
+          <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
+        </profileInstance>
+        <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="21350179-01e8-44cc-828b-e3e4f7d842be">
+        <profileInstance Id="f7bfe57f-b49b-48ea-831f-08fe5ad12508" name="TextTemplateBindings">
+          <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
+        </profileInstance>
+        <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

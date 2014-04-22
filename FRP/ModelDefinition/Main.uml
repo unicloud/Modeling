@@ -1272,6 +1272,22 @@
               LastKnownName="起落架维修发票"
               LastKnownLocation="Main.uml" />
           </generalization>
+          <generalization
+            Id="384c1d79-2219-4883-ba9b-bd9035cad0e5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ee0ba948-f713-4a21-b0bb-e91a7ac898f0"
+              LastKnownName="非FHA清算发票"
+              LastKnownLocation="Main.uml" />
+          </generalization>
+          <generalization
+            Id="16a02c4a-8ab7-4fde-982c-28687e9adfaf"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a89d2742-ca4b-4291-8c80-2377291f0625"
+              LastKnownName="杂项发票"
+              LastKnownLocation="Main.uml" />
+          </generalization>
         </generalsInternal>
         <targetEnds>
           <association
@@ -1496,6 +1512,28 @@
           <property
             Id="b42d2650-defa-4eaa-9be3-6c8492e657f0"
             name="币种"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cc431400-fa1e-4695-9529-97673d38c599"
+            name="进厂时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="924f2382-dc3d-4e43-9afa-639779ed9679"
+            name="出厂时间"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2408,6 +2446,851 @@
           <property
             Id="cedcfb43-1815-4dda-8c39-6b24a3f8267f"
             name="付款控制状态"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ee0ba948-f713-4a21-b0bb-e91a7ac898f0"
+        name="非FHA清算发票"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b14c94f6-8597-47b5-9295-ba8d24d5bdf0"
+        name="定检年度预算"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="be037b53-719b-4cdc-8b2b-29a691aa231b"
+            name="飞机号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f6c68f16-8b7f-4e83-8817-a98e2acc14a4"
+            name="类别"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9ec813cc-d684-4ec8-9d29-bb859a26fd06"
+            name="性质"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2eb49f22-0a02-4a4f-9954-3dbe6e2ae555"
+            name="机型"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b3999021-de55-4347-a41c-6b12e506e171"
+            name="定检级别"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="75f42a29-76e0-41fa-bab4-a5c4f0e19b6c"
+            name="是否资本化"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9948e6ed-3e07-4d7d-a542-31cae0c600e8"
+        name="非FHA.超包修"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1115a147-1161-4728-9709-49fda8a25683"
+            name="发动机号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="aac09e54-780e-46bf-b815-948d00a775ce"
+            name="是否包修"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f87ad038-3e92-4c9a-ae56-02d090296cb2"
+            name="类别"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3146f4cd-8133-4ab2-9454-c3649d98404e"
+            name="原装机号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8383c7fd-37b3-4a8a-aa12-a8096366847a"
+            name="原装性质"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="274be196-506f-40cb-8707-c59a265f3b0a"
+            name="原装机型"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="286b2733-83fe-4347-b947-67a4fd73795c"
+            name="修理厂商"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="98427842-2f64-4411-a558-4a8749490c6f"
+            name="实际执行-修理级别"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="970cfc37-08f2-4bf5-9c2e-a32ec0901c10"
+            name="实际执行-更换LLP个数"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="746ec9be-f2fb-48a5-aefb-362a69870a68"
+            name="实际执行-TSR"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="51670ed3-f2f5-42d5-9a1c-fb2c85d37fd8"
+            name="实际执行-CSR"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="29e8c9c6-933b-4a45-b1ce-9e52b91fb34f"
+            name="修理级别"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7da3388a-d71a-4f24-8799-eb5cb3eeca2b"
+            name="更换LLP个数"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d9ecdfa8-ac5a-4d1b-8069-1c9334e2d1e3"
+            name="TSR"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9db15898-87cb-412d-b267-d08a798c4240"
+            name="CSR"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d9e56286-3e63-4f81-bd46-a954504bc378"
+            name="非FHA大修费"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a6cef74d-51f0-40a8-9dd1-bbf18eefa5de"
+            name="附件修理费"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="88ac9670-da98-46b9-b8e5-2b87613a85b1"
+            name="更换LLP件费"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="61190823-e945-48e7-9fc6-02c783cce6f8"
+            name="修理费小计"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3423a3ba-f29f-412c-9d4d-f28c3ab2da3d"
+            name="汇率"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eed3b653-c57f-4ecf-aba2-964b9fd5db1c"
+            name="修理费合计"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d2f2e54c-3c53-467d-b5bd-74759e3a6e47"
+            name="关税税率"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e416dce7-ceb5-41eb-850c-c14d509e3d14"
+            name="关税"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e205027f-c032-438c-9060-22d104604040"
+            name="增值税率"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e5816a37-9a21-4c05-b7c5-65fd2e6432f4"
+            name="增值税"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8800cccf-d96a-4ca8-bb93-5500decfd7a8"
+            name="关增税"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fe86b378-ca10-4507-ba99-717b943fbcf3"
+            name="运费"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b8be556f-910f-4e63-aab3-289854c4c5a2"
+        name="预算"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="71d6ec52-daed-4825-884c-95c4e88e0946"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b14c94f6-8597-47b5-9295-ba8d24d5bdf0"
+              LastKnownName="定检年度预算"
+              LastKnownLocation="Main.uml" />
+          </generalization>
+          <generalization
+            Id="1fc628bc-305c-4f1a-bc3d-38f82156e26f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9948e6ed-3e07-4d7d-a542-31cae0c600e8"
+              LastKnownName="非FHA.超包修"
+              LastKnownLocation="Main.uml" />
+          </generalization>
+          <generalization
+            Id="35accbe3-04de-4b63-8f3b-a2d47818f1b6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b368cc5c-7e88-430a-84b0-ade52ac4c754"
+              LastKnownName="起落架"
+              LastKnownLocation="Main.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="9d3eb6fc-f3e9-4d95-9532-204274676135"
+            name="业务部门申报金额"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4b60e1fb-e996-4825-b386-266783ca1a6f"
+            name="出厂时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0c946f45-a420-46dd-b29e-7137ecc787f5"
+            name="实际执行-出厂时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f7f82869-4372-4284-b86e-3bce6b8ac14a"
+            name="实际执行-实际结算金额"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="efd51c48-bf19-4304-b5ee-33b167f3bdb6"
+            name="实际执行-总周期"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6e07127c-a773-44e4-a744-9ca924060b94"
+            name="实际执行-进厂时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dfa59899-44b3-48e5-a25b-6a3c82861d7f"
+            name="实际执行-预估金额"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="58be677d-3c84-4cdd-9561-2a7c4368470b"
+            name="总周期"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b48f23c9-1239-4598-8bfb-cba0d415cd0d"
+            name="财务批复预算金额（不含增值税）"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4865965f-e2d3-46d9-97ff-7c093b647995"
+            name="财务批复预算金额（含增值税）"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="499f0117-9215-4f1d-8974-00440888406f"
+            name="进厂时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9b79b6f9-13f9-47a8-8d80-935ea2c3cc2c"
+            name="维修发票"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f815d59e-7922-4c6f-a02f-29f974ae4e63"
+            name="维修计划"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b368cc5c-7e88-430a-84b0-ade52ac4c754"
+        name="起落架"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="7cf322d4-e769-4e28-a2ae-c0f9f9e90196"
+            name="飞机号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="418e694f-cad0-4869-9d8a-ac40e9601b73"
+            name="类别"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="36592e64-692f-4971-916f-d475d236add2"
+            name="性质"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3f9e3c4d-1a8d-49e8-899d-d38928976533"
+            name="机型"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fce18580-497a-4920-ab40-255650b200f1"
+            name="部件"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a1e4b11c-0cdd-4d0c-ab2a-ba0522e9fe5e"
+            name="修理费（欧元）"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d767a666-1dc5-406e-92ec-8a56b4cb4800"
+            name="汇率"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f261b1bc-950f-427d-be94-95989b5a9b8c"
+            name="修理费 (人民币)"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9c1f3601-661f-4801-b7c3-3b279075074f"
+            name="运费（人民币）"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6c0b5df1-99d2-41a7-ac47-0510e79e53c0"
+            name="更换费（人民币）"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ce3351e8-e6b1-440f-8315-2ab4142c245d"
+            name="关税税率"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c5ce29c4-cd79-41bc-816c-3f8ca1bd9a6c"
+            name="关税"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="694da064-da6d-4717-b337-9e13cf19614e"
+            name="增值税税率"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a33b02f4-1e4f-4a71-bb8a-a9ea73ee0589"
+            name="增值税"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a89d2742-ca4b-4291-8c80-2377291f0625"
+        name="杂项发票"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="830f9799-a26f-4234-af4c-68dc119eef7f"
+        name="特修改装"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="f336edeb-1cac-4842-a4e0-62b50640c9b6"
+            name="项目"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ba50efe4-8487-436d-a663-3cde2cc51cb9"
+            name="信息"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f5e1fb7b-51e3-45e0-a28e-d7bb871d123c"
+            name="航材申报"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9df4b5fa-faf4-4e0c-807f-b3d7f49f6813"
+            name="财务预算含关增税"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="442b20d2-6385-4cbf-bd58-4d6eaa174a98"
+            name="财务预算扣除关增税"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c5ab17f1-72e1-4c94-9acb-3faae21e2302"
+            name="备注"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e3daf602-4e24-49d1-b62d-6fcdb86af41b"
+            name="预估金额"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="25927d04-fdd8-425f-a247-333606acc971"
+            name="实际结算金额"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
