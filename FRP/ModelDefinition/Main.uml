@@ -1049,6 +1049,189 @@
         </subjects>
       </useCase>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8f720124-d223-4b1d-a836-b263a2c7cd74"
+        name="保函"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c8627774-e263-4637-8cd4-f32ac6a20633"
+            isSubstitutable="false">
+            <classMoniker
+              Id="76a262c6-49ea-4207-8f41-352d3f7fc2b2"
+              LastKnownName="租赁保证金"
+              LastKnownLocation="Main.uml" />
+          </generalization>
+          <generalization
+            Id="f5434e91-7b01-49cf-acae-7cec78388919"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b81f5b6e-a112-4b1e-aa5c-bcd8890843fe"
+              LastKnownName="大修保证金"
+              LastKnownLocation="Main.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e2d28aa8-8403-4d6c-8ee7-3a3e3f4b393a"
+            name="开始日期"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="de2febf2-2559-4d83-8dcd-8fc41eef9688"
+            name="结束日期"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1bc88246-a110-4c80-88ec-d2c773c7bd87"
+            name="支付金额"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="21b3e292-a508-44f3-b84a-c4702ec6cd1f"
+            name="供应商"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8ea10fec-e5c9-41cb-9a78-c7515e4b1958"
+            name="经办人"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d8f8776c-d6b0-4dac-bf2d-987d24ae4861"
+            name="审核人"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b32bb9cd-0523-454c-8aa5-d86d802f8614"
+            name="创建日期"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f8ba916d-2491-40a4-b8fb-8a826a868a59"
+            name="审核日期"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="88e1946e-6b43-488a-8ee5-ef198e30439a"
+            name="保函状态"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="258c3ea8-dd78-451a-8e33-d88b22056d23"
+            name="币种"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="76a262c6-49ea-4207-8f41-352d3f7fc2b2"
+        name="租赁保证金"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="822f1b4d-c132-4461-ae4a-df6a64222456"
+            name="订单"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b81f5b6e-a112-4b1e-aa5c-bcd8890843fe"
+        name="大修保证金"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="50317b90-df76-4d03-8b49-76617316d0c2"
+            name="维修合同"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

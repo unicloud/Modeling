@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Guarantee">
+  <logicalClassDesignerModelMoniker Id="b049103e-a675-4d35-af63-c75e87fdc796" />
+  <nestedChildShapes>
+    <classShape Id="25dc029d-ba6e-4d8c-bd06-cc6161d9e92f" absoluteBounds="4.5, 0.5, 1.5, 2.721842447916667" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="b0bf3dca-1715-4d0a-b53c-123f4223ce33" LastKnownName="保函" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="7585ef45-4904-42ee-bec3-b90c9103fb0c" absoluteBounds="4.515, 0.89, 1.4700000000000002, 1.9955240885416665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="75ab5434-9fbe-4eee-b9c2-b90f4da18702" absoluteBounds="4.515, 2.8955240885416664, 1.4700000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a307987d-87e6-45e2-a755-cc36dd78eee0" absoluteBounds="2.25, 3.75, 1.5, 1.1295572916666661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="78aedb29-b3bc-4b0c-b6db-44d3989987e2" LastKnownName="租赁保证金" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="431aae85-6b9e-4683-a101-12ebbc8acd09" absoluteBounds="2.2649999999999997, 4.14, 1.4700000000000002, 0.40323893229166663" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="1431e30c-9538-4489-a624-b90e4d7267ed" absoluteBounds="2.2649999999999997, 4.5532389322916664, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(5.25 : 3.22184244791667); (5.25 : 3.375); (3 : 3.375); (3 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="1e7cfbc1-b2fc-46cd-86a2-4c6a1341331d" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="25dc029d-ba6e-4d8c-bd06-cc6161d9e92f" />
+        <classShapeMoniker Id="a307987d-87e6-45e2-a755-cc36dd78eee0" />
+      </nodes>
+    </generalizationConnector>
+    <classShape Id="dd00e510-d057-45e4-b39c-cd9ff4946aa6" absoluteBounds="6.625, 3.75, 1.5, 1.1295572916666661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="12599090-1b1f-4022-8df7-f9871761da38" LastKnownName="大修保证金" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="1191d8cd-229c-4429-b426-843597a0d26a" absoluteBounds="6.64, 4.14, 1.4700000000000002, 0.40323893229166663" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="9a2a0798-0e65-420e-984d-fc7203ad1fee" absoluteBounds="6.64, 4.5532389322916664, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(5.25 : 3.22184244791667); (5.25 : 3.375); (7.375 : 3.375); (7.375 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="c2a1cd98-cd71-4434-93cc-335bc45d78fc" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="25dc029d-ba6e-4d8c-bd06-cc6161d9e92f" />
+        <classShapeMoniker Id="dd00e510-d057-45e4-b39c-cd9ff4946aa6" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
