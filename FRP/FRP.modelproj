@@ -176,6 +176,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Class\Payment\Guarantee.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Class\Payment\MaintainInvoice.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Payment\MaintainInvoice.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Payment\MaintainInvoice.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Class\Payment\Payment.classdiagram">
       <SubType>Content</SubType>
     </Content>
