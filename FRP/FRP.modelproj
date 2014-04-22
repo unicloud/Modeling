@@ -176,6 +176,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Class\Payment\Guarantee.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Class\Payment\Invoice.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Payment\Invoice.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Payment\Invoice.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Class\Payment\MaintainInvoice.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -189,6 +196,20 @@
     <Content Include="Class\Payment\Payment.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Class\Payment\Payment.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Payment\PaymentNotice.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Payment\PaymentNotice.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Payment\PaymentNotice.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Class\Payment\PaymentSchedule.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Class\Payment\PaymentSchedule.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Class\Payment\PaymentSchedule.classdiagram</DependentUpon>
     </Content>
     <Content Include="Class\Portal\Portal.classdiagram">
       <SubType>Content</SubType>

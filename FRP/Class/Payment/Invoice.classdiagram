@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="382d4fd8-3ad0-41bc-a3b1-c0b68f4752de" name="Invoice" linkedPackageId="00db9015-0a2d-44d3-9c71-c81bb1d870bb" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="da067cf8-3874-421c-be44-1c89d017090a" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="63f34954-8f3c-436d-9fb7-74e6e38af081" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="400245c3-e48e-483d-9312-6eee9e51e14f">
+          <propertyInstance Id="4d2cfb6c-4879-44f7-b083-c0d746aeb15b" name="BaseName">
+            <elementDefinition Id="0c5912a5-462a-418f-a06e-68dc35e9152a" />
+          </propertyInstance>
+          <elementDefinition Id="df19720b-3986-4eed-9c5a-22c959467590" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="84824805-abce-4b68-bbeb-d9bcb07ae9ed">
+          <propertyInstance Id="f7c0e45e-95b0-48f3-a4c8-caa85f3f7106" name="ClrAttributes">
+            <elementDefinition Id="1f1a54e0-00f5-4f9d-b1c8-80e2106215f8" />
+          </propertyInstance>
+          <elementDefinition Id="57cdc6c9-1e92-43de-8399-ec56861e6dfd" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0e9a18d6-e6af-4a01-97e5-2b71dbaada85">
+          <propertyInstance Id="1ab95f71-9738-4d5a-8b45-e155e28482fc" name="Usings">
+            <elementDefinition Id="78de931e-faa8-4e84-a8da-24c1bdc1b9e7" />
+          </propertyInstance>
+          <elementDefinition Id="9cf171cf-9fbf-41a3-ab1c-84bb9000f9bb" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="bef26b0d-252a-4e0a-975b-b9f02d029c68" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="c5c1f24a-f503-4b5a-b5a4-03d0462f64b9" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="e05b679c-8e2b-493f-a3df-df523c4358ad">
+          <propertyInstance Id="34e277cb-7fbd-443d-8ae3-84c3261526ff" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="8d1843b4-1702-47e5-aeb0-1b3bacd8ab19" />
+          </propertyInstance>
+          <elementDefinition Id="4044633d-fc9b-4659-b049-3324553a4247" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="79bdcbee-2836-4126-966b-3c4a5f7abf82">
+          <propertyInstance Id="745853cc-edde-436a-9b7d-0ab353a40f38" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="286ed6b7-d0b6-4899-8369-e3599a389f38" />
+          </propertyInstance>
+          <elementDefinition Id="405f0fa0-7561-457f-9f11-5dc6fefbc806" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4d2f024e-10a0-4dc4-bfa4-47bf87538f74">
+          <propertyInstance Id="49289417-5671-4a18-a619-296eff1a79ed" name="ProjectPath" value="ClassTemplate=..\MainLib\MainLib.csproj|EnumTemplate=..\MainLib\MainLib.csproj|InterfaceTemplate=..\MainLib\MainLib.csproj|StructTemplate=..\MainLib\MainLib.csproj">
+            <elementDefinition Id="13c73fe1-7c4f-444d-8abc-d1a612da41cb" />
+          </propertyInstance>
+          <elementDefinition Id="2c9b41c3-9b30-47b0-9de0-49f0e078def3" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a7f94e26-5daf-42f1-a7ee-ea0c3eb50bdb">
+          <propertyInstance Id="ac4b9264-9970-4382-a60c-974c0b60d5dd" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="80e3db6a-7bb3-41b5-aed6-e000279a7f4b" />
+          </propertyInstance>
+          <elementDefinition Id="c1696e18-c505-4006-8e67-30807363f617" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="61d1e38f-b6f6-4f46-b2ed-024a1dd4441d">
+          <propertyInstance Id="94965fe6-854b-4ad5-b3dd-43dc4716f285" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="42924065-45a7-4c94-a620-aeb549b5b85f" />
+          </propertyInstance>
+          <elementDefinition Id="bbd4db7e-f0eb-4859-8de5-17a2bba3741f" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a248fcd6-634d-41f5-8ea0-f622fb0e1bcb">
+          <propertyInstance Id="bd0ead70-4bcc-4a32-bf01-49c89784a4de" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="265348aa-6c71-440b-869b-58b25de4f305" />
+          </propertyInstance>
+          <elementDefinition Id="de15bf80-f0dd-4fde-ba6b-6a9d61c02ff1" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="9329ea64-7849-4727-9a38-1959c85f53db">
+          <propertyInstance Id="09073423-f9ce-46f0-b778-17a223c05061" name="Parameters">
+            <elementDefinition Id="240e3a6c-a880-4298-9bac-5bc99d1f7b73" />
+          </propertyInstance>
+          <elementDefinition Id="add18b66-0507-4ca3-8a32-dd1a4af39631" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="24f91d19-c748-48fb-9344-a305bbea249d">
+      <profileInstance Id="e97280da-bc2a-4689-a931-adc039f4c639" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ffd10582-295c-4236-a7d8-057262d5cb43">
+      <profileInstance Id="ab70b3a0-5229-4669-aa4d-544af79574bd" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c145bbf6-73f1-4580-8efb-eec0da7649e1">
+      <profileInstance Id="23975d0e-a95c-4c53-8069-190029bb9afa" name="CSharpProfile">
+        <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
+      </profileInstance>
+      <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a727b4d8-2f78-4727-804d-96a1a33efc0b">
+      <profileInstance Id="21faf596-3e9f-4a65-90df-f8b71fb6c6be" name="TextTemplateBindings">
+        <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
+      </profileInstance>
+      <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="740e24b1-bdf9-497a-94d9-449e14b92d23" name="发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6303d4dd-1455-4946-afba-79127d5df8d9" />
+        <generalsInternal>
+          <generalization Id="455c324c-e048-4951-8316-004fc5f623ac" isSubstitutable="false">
+            <classMoniker Id="4669053c-a21b-41c1-b93e-0c0ecc2f2882" LastKnownName="贷项通知单" />
+            <elementDefinition Id="2845bee9-5752-4515-93ac-544d233d5027" />
+          </generalization>
+          <generalization Id="afde4399-d0fb-4fe2-96a2-6c00152a7c19" isSubstitutable="false">
+            <classMoniker Id="a518e5e1-3572-44f7-812c-140842a03359" LastKnownName="租赁发票" />
+            <elementDefinition Id="072aeeab-4203-403d-b2e6-e001510bbf05" />
+          </generalization>
+          <generalization Id="7adff813-2fbf-4bc7-a32a-daef1a4929bb" isSubstitutable="false">
+            <classMoniker Id="7eca8b30-c193-4f56-bce0-8a8561d7e927" LastKnownName="预付款发票" />
+            <elementDefinition Id="91bb7d17-c081-4df4-8385-da59ac4ae32d" />
+          </generalization>
+          <generalization Id="61120b41-475b-4c68-b64b-175ed8a25652" isSubstitutable="false">
+            <classMoniker Id="1e84945b-1413-4867-976b-1cb8bf359d46" LastKnownName="采购发票" />
+            <elementDefinition Id="8aeb9d94-05f1-4f95-933b-dcd168e13d9e" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="1bb05dee-76ef-4a6e-b7e9-10af3202dc8d" isDerived="false" sourceEndRoleName="发票" targetEndRoleName="发票行" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d98db8db-2028-49a6-872b-9d1217ef60d5" LastKnownName="发票行" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2dc661a9-5287-45e4-be52-5ffecb5d44c6" name="发票" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a1d8ab5c-c9af-46d0-a4a9-e9ee5623f08b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3cd9b70b-95c2-4edd-9648-fb019b0786e7" name="发票行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="9d624a86-fef0-4b2e-95f1-063be876db03" name="Lower" value="*">
+                      <elementDefinition Id="c77fc433-00f4-4cd5-8fa4-e980caf63da2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="8eff77e7-d0c7-4d9b-a221-a2e54b9e4edf" name="Upper" value="*">
+                      <elementDefinition Id="6e2e34a1-3447-4e4a-b3ed-8984633fda90" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="4b35c9cf-300f-45b4-9f8f-b1cf2b0a0fcb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="82b4b236-5207-4958-94f1-54cc95775a8e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="2900a180-b097-4b65-9b0a-dac6d9f18ec6" name="发票编号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="77dff7c1-7c35-4933-b746-78fce6effccf" />
+          </property>
+          <property Id="c7aaedbb-22c9-4885-bd9f-91a4938d8d96" name="发票号码" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9baf6e9a-2e30-4117-99e9-886c2bcb80f2" />
+          </property>
+          <property Id="b75dba7a-0b9b-4dde-9b2a-47ffc7a51474" name="发票日期" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a51c4e30-09b5-430e-92b8-5bd7c9c96d5b" />
+          </property>
+          <property Id="5778bb58-778b-4239-b2c1-6c68ea0bbfc2" name="供应商" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a3be5766-cf4c-4abf-bd84-e87cc260c137" />
+          </property>
+          <property Id="4f0db524-d004-43b5-a0fb-c58bcf13a931" name="发票金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64da0552-6aaa-4132-bdf0-67ce62b8e9c2" />
+          </property>
+          <property Id="fb1eb17a-a465-4d1f-a9f2-63ea6644024c" name="已付金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9feffe2b-0bce-443e-9ec7-1f8eeb048f6e" />
+          </property>
+          <property Id="2bffbbf0-d323-49ce-a05d-07430e6fce7a" name="经办人" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="899ccc39-6d99-4d77-a3f3-c531fd8fa550" />
+          </property>
+          <property Id="17d53562-7f86-4efc-8b66-9598cf48d078" name="审核人" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="01d5fc95-6c10-44a5-940f-42e0551c9cf3" />
+          </property>
+          <property Id="4b93de23-2d8d-4f91-9694-d24cc218eec9" name="创建日期" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="139c6604-ac1f-403f-9735-df78727beaec" />
+          </property>
+          <property Id="1ff595d6-da1e-4c4c-a392-ebf25223228d" name="审核日期" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="99e1dbf5-c126-49a4-b468-9d9b543bb473" />
+          </property>
+          <property Id="a40eddb0-f8ce-462d-b3f2-2d8501bfd74f" name="是否有效" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c6295fa9-a332-40df-8b56-b1504edd184e" />
+          </property>
+          <property Id="5fd1476a-f010-4454-a64b-3cdf9b4caa00" name="是否完成" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="99048ad9-8e58-4394-9aa3-e5021371837b" />
+          </property>
+          <property Id="6deedf0d-f941-4c18-9016-6828fef94379" name="发票状态" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f88e8c02-49d9-4883-911d-b1e4649e13f1" />
+          </property>
+          <property Id="5b2efd8c-cda2-41f3-b355-80b2f8663e0f" name="订单" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="90a2d232-b33f-45f6-bbe9-d1a140ee42cf" />
+          </property>
+          <property Id="25bbfa8e-214a-45a6-9a4e-dd6b4086249b" name="币种" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="65a17137-d77f-4db3-9f06-ce1ea9e7585a" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4669053c-a21b-41c1-b93e-0c0ecc2f2882" name="贷项通知单" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cd03a678-2bcb-4314-a640-4d486bb87e60" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a518e5e1-3572-44f7-812c-140842a03359" name="租赁发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="85afd480-42c5-43a0-a204-dea9b8928006" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7eca8b30-c193-4f56-bce0-8a8561d7e927" name="预付款发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5240e8fd-026e-4067-8c38-cb295bb6f6d8" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1e84945b-1413-4867-976b-1cb8bf359d46" name="采购发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3cb5daff-4a16-4c91-979e-8cb4397fff2e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d98db8db-2028-49a6-872b-9d1217ef60d5" name="发票行" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="300063d4-7d0e-4000-aed3-437484b36745" />
+        <ownedAttributesInternal>
+          <property Id="3adbeb1d-7bdf-4208-8683-bce3ea700aee" name="项名称" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="17e73184-91a9-4bb2-b07d-afc5f930b7a0" />
+          </property>
+          <property Id="d2d8c32f-2116-448a-a4ec-d92577d384a1" name="金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a8db86a2-a83c-4fa2-821f-bdc5ff23d445" />
+          </property>
+          <property Id="e47f5191-763f-4090-8a1c-d672f0bbbd61" name="备注" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="07600bed-f218-45e0-ae21-0f1be3813506" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="00db9015-0a2d-44d3-9c71-c81bb1d870bb" name="Main">
+    <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+  </package>
+</logicalClassDesignerModel>
