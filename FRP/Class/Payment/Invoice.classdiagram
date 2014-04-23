@@ -168,6 +168,9 @@
           <property Id="25bbfa8e-214a-45a6-9a4e-dd6b4086249b" name="币种" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="65a17137-d77f-4db3-9f06-ce1ea9e7585a" />
           </property>
+          <property Id="6b894675-75ba-4d8b-98ba-65c33c2b5c07" name="付款计划行" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="51cb426a-f557-4695-825e-4c56066269dc" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>

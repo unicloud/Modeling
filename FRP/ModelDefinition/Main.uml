@@ -1542,6 +1542,17 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="5b02dca8-0b6b-493e-b2ac-2aa62c48bc84"
+            name="付款计划行"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -1895,6 +1906,17 @@
           <property
             Id="65a17137-d77f-4db3-9f06-ce1ea9e7585a"
             name="币种"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="51cb426a-f557-4695-825e-4c56066269dc"
+            name="付款计划行"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"

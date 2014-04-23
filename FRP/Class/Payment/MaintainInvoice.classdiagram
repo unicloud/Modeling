@@ -185,6 +185,9 @@
           <property Id="4ab913c5-b5a5-41a8-8f0d-c50ceb8d72e4" name="出厂时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="924f2382-dc3d-4e43-9afa-639779ed9679" />
           </property>
+          <property Id="7a48c60e-1e02-43c5-958e-02b26de52857" name="付款计划行" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5b02dca8-0b6b-493e-b2ac-2aa62c48bc84" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
