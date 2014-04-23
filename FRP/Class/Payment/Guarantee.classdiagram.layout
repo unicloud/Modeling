@@ -25,7 +25,7 @@
       </nodes>
     </generalizationConnector>
     <classShape Id="dd00e510-d057-45e4-b39c-cd9ff4946aa6" absoluteBounds="6.625, 3.75, 1.5, 1.1295572916666661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-      <classMoniker Id="12599090-1b1f-4022-8df7-f9871761da38" LastKnownName="大修保证金" />
+      <classMoniker Id="12599090-1b1f-4022-8df7-f9871761da38" LastKnownName="大修储备金" />
       <nestedChildShapes>
         <AttributeElementListCompartment Id="1191d8cd-229c-4429-b426-843597a0d26a" absoluteBounds="6.64, 4.14, 1.4700000000000002, 0.40323893229166663" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
         <OperationElementListCompartment Id="9a2a0798-0e65-420e-984d-fc7203ad1fee" absoluteBounds="6.64, 4.5532389322916664, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />

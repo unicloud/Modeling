@@ -72,32 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="24f91d19-c748-48fb-9344-a305bbea249d">
-      <profileInstance Id="e97280da-bc2a-4689-a931-adc039f4c639" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="ffd10582-295c-4236-a7d8-057262d5cb43">
-      <profileInstance Id="ab70b3a0-5229-4669-aa4d-544af79574bd" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c145bbf6-73f1-4580-8efb-eec0da7649e1">
-      <profileInstance Id="23975d0e-a95c-4c53-8069-190029bb9afa" name="CSharpProfile">
-        <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
-      </profileInstance>
-      <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="a727b4d8-2f78-4727-804d-96a1a33efc0b">
-      <profileInstance Id="21faf596-3e9f-4a65-90df-f8b71fb6c6be" name="TextTemplateBindings">
-        <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
-      </profileInstance>
-      <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="740e24b1-bdf9-497a-94d9-449e14b92d23" name="发票" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -233,8 +207,39 @@
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b0fe4d4c-c051-47c8-82f5-1b98ea757a59" name="杂项发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e5aea66e-be06-4315-a503-42488e102304" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="00db9015-0a2d-44d3-9c71-c81bb1d870bb" name="Main">
     <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="24f91d19-c748-48fb-9344-a305bbea249d">
+        <profileInstance Id="e97280da-bc2a-4689-a931-adc039f4c639" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ffd10582-295c-4236-a7d8-057262d5cb43">
+        <profileInstance Id="ab70b3a0-5229-4669-aa4d-544af79574bd" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c145bbf6-73f1-4580-8efb-eec0da7649e1">
+        <profileInstance Id="23975d0e-a95c-4c53-8069-190029bb9afa" name="CSharpProfile">
+          <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
+        </profileInstance>
+        <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a727b4d8-2f78-4727-804d-96a1a33efc0b">
+        <profileInstance Id="21faf596-3e9f-4a65-90df-f8b71fb6c6be" name="TextTemplateBindings">
+          <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
+        </profileInstance>
+        <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

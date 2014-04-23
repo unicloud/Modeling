@@ -72,32 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="c9480592-e010-492c-886c-ee9942e444a6">
-      <profileInstance Id="c014f348-dbb0-4820-9759-80d6945c83ba" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="38a57164-8fa9-4d64-9e50-5416b0490f4a">
-      <profileInstance Id="e22b4e37-8aad-4b2d-b62b-dab4c6fdea40" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="e66e692b-1a0c-439e-b4b8-e26337fcd8e9">
-      <profileInstance Id="5cd65011-4fb4-4b4b-892c-eac2b86d1e2f" name="CSharpProfile">
-        <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
-      </profileInstance>
-      <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="5d65c461-8126-4726-a203-4f497a4c74e1">
-      <profileInstance Id="6de86ea1-04a2-4950-8fe9-53b9532b6dd1" name="TextTemplateBindings">
-        <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
-      </profileInstance>
-      <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="df1eab30-81d3-493d-b0df-6fa7f507535f" name="付款计划" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -114,6 +88,10 @@
           <generalization Id="5888ac4b-7f4f-4b1e-be90-b44e3d700e58" isSubstitutable="false">
             <classMoniker Id="aa990f56-e825-45e6-9f32-55428437c70d" LastKnownName="标准付款计划" />
             <elementDefinition Id="11c5015e-33ba-4321-8505-19447030c752" />
+          </generalization>
+          <generalization Id="79c9becd-7ec7-4cc0-b1b6-6c748544a409" isSubstitutable="false">
+            <classMoniker Id="83d5d6af-86d9-4cb3-9ec3-ee530dad74b3" LastKnownName="维修的付款计划" />
+            <elementDefinition Id="d19903f1-1138-4662-b445-712aba67fbc2" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -206,8 +184,39 @@
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="83d5d6af-86d9-4cb3-9ec3-ee530dad74b3" name="维修的付款计划" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="42718a0c-1d4a-4754-bf3f-d01f586a1e93" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="e8b354aa-e2b4-4310-a955-e242e99de946" name="Main">
     <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c9480592-e010-492c-886c-ee9942e444a6">
+        <profileInstance Id="c014f348-dbb0-4820-9759-80d6945c83ba" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="38a57164-8fa9-4d64-9e50-5416b0490f4a">
+        <profileInstance Id="e22b4e37-8aad-4b2d-b62b-dab4c6fdea40" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e66e692b-1a0c-439e-b4b8-e26337fcd8e9">
+        <profileInstance Id="5cd65011-4fb4-4b4b-892c-eac2b86d1e2f" name="CSharpProfile">
+          <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
+        </profileInstance>
+        <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5d65c461-8126-4726-a203-4f497a4c74e1">
+        <profileInstance Id="6de86ea1-04a2-4950-8fe9-53b9532b6dd1" name="TextTemplateBindings">
+          <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
+        </profileInstance>
+        <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

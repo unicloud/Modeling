@@ -1070,7 +1070,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="b81f5b6e-a112-4b1e-aa5c-bcd8890843fe"
-              LastKnownName="大修保证金"
+              LastKnownName="大修储备金"
               LastKnownLocation="Main.uml" />
           </generalization>
         </generalsInternal>
@@ -1213,7 +1213,7 @@
     <packageHasNamedElement>
       <class
         Id="b81f5b6e-a112-4b1e-aa5c-bcd8890843fe"
-        name="大修保证金"
+        name="大修储备金"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1277,7 +1277,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="ee0ba948-f713-4a21-b0bb-e91a7ac898f0"
-              LastKnownName="非FHA清算发票"
+              LastKnownName="发动机非FHA清算发票"
               LastKnownLocation="Main.uml" />
           </generalization>
           <generalization
@@ -1285,7 +1285,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="a89d2742-ca4b-4291-8c80-2377291f0625"
-              LastKnownName="杂项发票"
+              LastKnownName="发动机APP发票"
               LastKnownLocation="Main.uml" />
           </generalization>
         </generalsInternal>
@@ -2244,6 +2244,14 @@
               LastKnownName="标准付款计划"
               LastKnownLocation="Main.uml" />
           </generalization>
+          <generalization
+            Id="d19903f1-1138-4662-b445-712aba67fbc2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="42718a0c-1d4a-4754-bf3f-d01f586a1e93"
+              LastKnownName="维修的付款计划"
+              LastKnownLocation="Main.uml" />
+          </generalization>
         </generalsInternal>
         <targetEnds>
           <association
@@ -2460,7 +2468,7 @@
     <packageHasNamedElement>
       <class
         Id="ee0ba948-f713-4a21-b0bb-e91a7ac898f0"
-        name="非FHA清算发票"
+        name="发动机非FHA清算发票"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -3198,7 +3206,7 @@
     <packageHasNamedElement>
       <class
         Id="a89d2742-ca4b-4291-8c80-2377291f0625"
-        name="杂项发票"
+        name="发动机APP发票"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -3301,6 +3309,30 @@
             isComposite="false" />
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="42718a0c-1d4a-4754-bf3f-d01f586a1e93"
+        name="维修的付款计划"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e5aea66e-be06-4315-a503-42488e102304"
+        name="杂项发票"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="101e3046-5ec5-42ad-b8fa-39113214fe68"
+        name="APU"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

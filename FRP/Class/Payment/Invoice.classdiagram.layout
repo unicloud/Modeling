@@ -76,7 +76,7 @@
         <OperationElementListCompartment Id="172c83fa-ab91-4755-8d51-0ecd4d6c154f" absoluteBounds="6.515, 1.9070800781250001, 1.4700000000000002, 0.22631835937500022" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.625 : 1.49169921875); (6.5 : 1.49169921875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(4.625 : 1.49169921875); (6.5 : 1.49169921875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="1bb05dee-76ef-4a6e-b7e9-10af3202dc8d" />
       <relativeChildShapes />
       <nodes>
@@ -84,5 +84,12 @@
         <classShapeMoniker Id="26d6b9d3-d7c6-49e7-8b51-aa7936770e6f" />
       </nodes>
     </associationConnector>
+    <classShape Id="32618883-e2e8-4d1f-91c0-9d579918c02e" absoluteBounds="8.875, 2.625, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="b0fe4d4c-c051-47c8-82f5-1b98ea757a59" LastKnownName="杂项发票" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="e0a35817-128a-481b-ac89-cc37fc279d72" absoluteBounds="8.89, 3.015, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="c313b44a-7575-4f00-8386-aeb13934af82" absoluteBounds="8.89, 3.251318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>

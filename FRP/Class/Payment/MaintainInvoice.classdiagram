@@ -94,11 +94,11 @@
             <elementDefinition Id="9f2759c4-e696-4d8c-8f9c-e2648ee726fd" />
           </generalization>
           <generalization Id="d72f0808-c57e-4e6f-9d49-52e14eb8a4e1" isSubstitutable="false">
-            <classMoniker Id="6b8d9200-9c77-476b-ba4a-f7046f1aacbf" LastKnownName="非FHA清算发票" />
+            <classMoniker Id="6b8d9200-9c77-476b-ba4a-f7046f1aacbf" LastKnownName="发动机非FHA清算发票" />
             <elementDefinition Id="384c1d79-2219-4883-ba9b-bd9035cad0e5" />
           </generalization>
           <generalization Id="a295e59e-e0cf-4475-b232-b381c539d233" isSubstitutable="false">
-            <classMoniker Id="875d5666-42ca-4feb-a5c4-2946feaecd9c" LastKnownName="杂项发票" />
+            <classMoniker Id="875d5666-42ca-4feb-a5c4-2946feaecd9c" LastKnownName="发动机APP发票" />
             <elementDefinition Id="16a02c4a-8ab7-4fde-982c-28687e9adfaf" />
           </generalization>
         </generalsInternal>
@@ -231,12 +231,12 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="6b8d9200-9c77-476b-ba4a-f7046f1aacbf" name="非FHA清算发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="6b8d9200-9c77-476b-ba4a-f7046f1aacbf" name="发动机非FHA清算发票" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ee0ba948-f713-4a21-b0bb-e91a7ac898f0" />
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="875d5666-42ca-4feb-a5c4-2946feaecd9c" name="杂项发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="875d5666-42ca-4feb-a5c4-2946feaecd9c" name="发动机APP发票" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a89d2742-ca4b-4291-8c80-2377291f0625" />
       </class>
     </logicalClassDesignerModelHasTypes>

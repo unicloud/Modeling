@@ -76,7 +76,7 @@
         <OperationElementListCompartment Id="8625a0da-4699-4590-8923-b7f1254d49f2" absoluteBounds="10.64, 2.5109212239583334, 1.4700000000000002, 0.22631835937500022" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(8.5 : 1.91861979166667); (10.625 : 1.91861979166667)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <associationConnector edgePoints="[(8.5 : 1.91861979166667); (10.625 : 1.91861979166667)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="9771ee81-61ce-4344-a05e-fca92a699f5e" />
       <relativeChildShapes />
       <nodes>
@@ -84,14 +84,14 @@
         <classShapeMoniker Id="4d927ff6-8af0-4a57-a2c7-093fe7e8bd86" />
       </nodes>
     </associationConnector>
-    <classShape Id="4f9dabb2-aa68-43df-8381-1d67b6a8ab26" absoluteBounds="9.5, 4.875, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-      <classMoniker Id="6b8d9200-9c77-476b-ba4a-f7046f1aacbf" LastKnownName="非FHA清算发票" />
+    <classShape Id="4f9dabb2-aa68-43df-8381-1d67b6a8ab26" absoluteBounds="9.5, 4.875, 2, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6b8d9200-9c77-476b-ba4a-f7046f1aacbf" LastKnownName="发动机非FHA清算发票" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="1d86ae61-4b80-4fcf-b192-a89f29e9eca0" absoluteBounds="9.515, 5.265, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="f7aa064a-f28d-46ed-af37-9706d083db0b" absoluteBounds="9.515, 5.501318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="1d86ae61-4b80-4fcf-b192-a89f29e9eca0" absoluteBounds="9.515, 5.265, 1.9700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="f7aa064a-f28d-46ed-af37-9706d083db0b" absoluteBounds="9.515, 5.501318359375, 1.9700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <generalizationConnector edgePoints="[(7.75 : 4.63720703125); (7.75 : 4.75212); (10.25 : 4.75212); (10.25 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(7.75 : 4.63720703125); (7.75 : 4.75212); (10.5 : 4.75212); (10.5 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="d72f0808-c57e-4e6f-9d49-52e14eb8a4e1" />
       <relativeChildShapes />
       <nodes>
@@ -100,7 +100,7 @@
       </nodes>
     </generalizationConnector>
     <classShape Id="9cac671b-5320-42e5-a185-4e7fbea864ee" absoluteBounds="11.75, 4.875, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-      <classMoniker Id="875d5666-42ca-4feb-a5c4-2946feaecd9c" LastKnownName="杂项发票" />
+      <classMoniker Id="875d5666-42ca-4feb-a5c4-2946feaecd9c" LastKnownName="发动机APP发票" />
       <nestedChildShapes>
         <AttributeElementListCompartment Id="92911883-d86e-49e8-8440-d3a020fe4ea4" absoluteBounds="11.765, 5.265, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
         <OperationElementListCompartment Id="d69062ea-5ee0-4ff0-878d-2fe1c161820a" absoluteBounds="11.765, 5.501318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />

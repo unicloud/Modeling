@@ -72,32 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="fec114cf-b515-4c8d-882f-c054cec3739e">
-      <profileInstance Id="3633944a-7a9c-422e-b62c-6318baaa86f9" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="25c393b2-b7b4-48f3-b2bb-a5644ec40dc8">
-      <profileInstance Id="7201ce8a-1502-4283-a7d7-0a224334dffc" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="6e1b523c-44cb-486c-beab-2fa220698637">
-      <profileInstance Id="60dd5bf5-3c48-446f-b57c-7f5d1f2f3743" name="CSharpProfile">
-        <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
-      </profileInstance>
-      <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="924c6d19-c8ce-4d39-8b4d-00566ad7d031">
-      <profileInstance Id="056214cd-73f1-487d-a350-c0925ec18106" name="TextTemplateBindings">
-        <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
-      </profileInstance>
-      <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="8ebacd13-9a01-44c4-846d-cf61daf89139" name="定检年度预算" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -352,8 +326,39 @@
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" name="APU" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="101e3046-5ec5-42ad-b8fa-39113214fe68" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="2ffac01c-094f-49f6-ab9f-bcb6a18991e2" name="Main">
     <elementDefinition Id="75bf3121-1e4d-469e-a640-753e902d83f2" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fec114cf-b515-4c8d-882f-c054cec3739e">
+        <profileInstance Id="3633944a-7a9c-422e-b62c-6318baaa86f9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="25c393b2-b7b4-48f3-b2bb-a5644ec40dc8">
+        <profileInstance Id="7201ce8a-1502-4283-a7d7-0a224334dffc" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6e1b523c-44cb-486c-beab-2fa220698637">
+        <profileInstance Id="60dd5bf5-3c48-446f-b57c-7f5d1f2f3743" name="CSharpProfile">
+          <elementDefinition Id="2d290f51-0984-46b1-af1f-5fe9eafc8bc0" />
+        </profileInstance>
+        <elementDefinition Id="9f63362a-f29f-4cd0-9ad6-1064e07a642a" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="924c6d19-c8ce-4d39-8b4d-00566ad7d031">
+        <profileInstance Id="056214cd-73f1-487d-a350-c0925ec18106" name="TextTemplateBindings">
+          <elementDefinition Id="b0079bd4-4485-4b6c-a80d-14e22d90e94c" />
+        </profileInstance>
+        <elementDefinition Id="f947f49f-cc1a-4af1-99f4-77e68f749f6a" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

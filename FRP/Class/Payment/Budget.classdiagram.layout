@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.125" name="Budget">
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.625, 10.125" name="Budget">
   <logicalClassDesignerModelMoniker Id="dd4ffa80-0004-4279-9124-b47daddc66e4" />
   <nestedChildShapes>
     <classShape Id="cbfb4d02-8eb5-4ffc-b652-65644520743a" absoluteBounds="0.5, 4.125, 2, 2.0141601562500009" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
@@ -59,6 +59,13 @@
       <nestedChildShapes>
         <AttributeElementListCompartment Id="4cdf0f6d-6d8b-49dd-bf0b-a5af7691149a" absoluteBounds="9.14, 1.2650000000000001, 1.4700000000000002, 1.6416829427083333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
         <OperationElementListCompartment Id="627f4432-d448-496f-ac5d-91fee84e4acb" absoluteBounds="9.14, 2.9166829427083329, 1.4700000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="120fd587-e2a6-43e6-96b7-9a8d78069a7e" absoluteBounds="11.875, 1, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" LastKnownName="APU" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="43968f05-a185-4796-b2f1-fb6e9db335f5" absoluteBounds="11.89, 1.3900000000000001, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ae802f1e-d7ba-41c0-8cf2-fcee514c342a" absoluteBounds="11.89, 1.626318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
