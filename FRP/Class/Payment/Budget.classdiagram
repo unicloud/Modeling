@@ -147,41 +147,8 @@
           <property Id="ac7e7a04-54cf-4b8f-8baf-88529f280427" name="CSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="9db15898-87cb-412d-b267-d08a798c4240" />
           </property>
-          <property Id="94599c5f-e0b6-42a2-bed3-01d960830cd1" name="非FHA大修费" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d9e56286-3e63-4f81-bd46-a954504bc378" />
-          </property>
-          <property Id="da52ee8a-a694-4f6d-9a25-475c798e4186" name="附件修理费" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a6cef74d-51f0-40a8-9dd1-bbf18eefa5de" />
-          </property>
           <property Id="a78175d7-c9e7-4c23-92f0-f23e05587ca6" name="更换LLP件费" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="88ac9670-da98-46b9-b8e5-2b87613a85b1" />
-          </property>
-          <property Id="cc1ec842-b1a0-4a43-9949-3f8daed0daec" name="修理费小计" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="61190823-e945-48e7-9fc6-02c783cce6f8" />
-          </property>
-          <property Id="5822acfb-e026-4089-b098-ae7da07a72f3" name="汇率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3423a3ba-f29f-412c-9d4d-f28c3ab2da3d" />
-          </property>
-          <property Id="37e0e8d9-47c4-49a3-b4be-05045384a93a" name="修理费合计" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="eed3b653-c57f-4ecf-aba2-964b9fd5db1c" />
-          </property>
-          <property Id="c952b3ea-923a-4f55-a822-7354c278a0bb" name="关税税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d2f2e54c-3c53-467d-b5bd-74759e3a6e47" />
-          </property>
-          <property Id="a2be04d8-fa67-4b98-b8fd-e52adfa84bff" name="关税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="e416dce7-ceb5-41eb-850c-c14d509e3d14" />
-          </property>
-          <property Id="4189e88a-5c3c-4e7f-9bd8-bfb2ceddc510" name="增值税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="e205027f-c032-438c-9060-22d104604040" />
-          </property>
-          <property Id="98a971c1-4736-44e0-9eb2-afc9ed7d9f4d" name="增值税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="e5816a37-9a21-4c05-b7c5-65fd2e6432f4" />
-          </property>
-          <property Id="bcd04898-3fe0-4f15-9047-c7ac21a0f9fc" name="关增税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="8800cccf-d96a-4ca8-bb93-5500decfd7a8" />
-          </property>
-          <property Id="00ccd2d5-b9b6-4e8a-9fa9-5feb86c4f64d" name="运费" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="fe86b378-ca10-4507-ba99-717b943fbcf3" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -264,33 +231,6 @@
           </property>
           <property Id="fecc9ac6-f063-4231-854c-3792a369eec4" name="部件" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="fce18580-497a-4920-ab40-255650b200f1" />
-          </property>
-          <property Id="002e5b06-4471-4b89-bdb3-5ac9a75cff70" name="修理费（欧元）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a1e4b11c-0cdd-4d0c-ab2a-ba0522e9fe5e" />
-          </property>
-          <property Id="58e1770c-6641-470f-b601-8e75e4af4be4" name="汇率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d767a666-1dc5-406e-92ec-8a56b4cb4800" />
-          </property>
-          <property Id="13934eef-8a17-4a19-b220-891774864c75" name="修理费 (人民币)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f261b1bc-950f-427d-be94-95989b5a9b8c" />
-          </property>
-          <property Id="fb08e844-db29-4bb2-914b-46105aa292ea" name="运费（人民币）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9c1f3601-661f-4801-b7c3-3b279075074f" />
-          </property>
-          <property Id="42641acc-cc5a-44f7-816f-295894dc732d" name="更换费（人民币）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6c0b5df1-99d2-41a7-ac47-0510e79e53c0" />
-          </property>
-          <property Id="6f4e402f-4c30-4b1d-a0a0-149016355c10" name="关税税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ce3351e8-e6b1-440f-8315-2ab4142c245d" />
-          </property>
-          <property Id="16f19518-06fb-45f2-af52-00b0657b552b" name="关税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c5ce29c4-cd79-41bc-816c-3f8ca1bd9a6c" />
-          </property>
-          <property Id="514e47b0-e352-4423-bed6-f0bdbc13de66" name="增值税税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="694da064-da6d-4717-b337-9e13cf19614e" />
-          </property>
-          <property Id="ee322941-e930-4245-9802-afbda19bafaa" name="增值税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a33b02f4-1e4f-4a71-bb8a-a9ea73ee0589" />
           </property>
         </ownedAttributesInternal>
       </class>
