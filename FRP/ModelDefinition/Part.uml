@@ -3852,6 +3852,58 @@ TS：技术解决方案</body>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="fe3cc82b-f972-442c-bd5f-cd4d69609005"
+            isDerived="false"
+            sourceEndRoleName="项"
+            targetEndRoleName="项控制组"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f9371d82-fa34-4815-af2f-2385639b5acf"
+              LastKnownName="项控制组"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3165a79f-91b5-4b24-bece-13b80f395349"
+                  name="项"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c374aca6-80ef-45cd-815c-2ffe21629aaf"
+                  name="项控制组"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bbf55fd2-3cd5-471a-b523-98c648cfd044"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d8fff9c7-ba95-4da6-b6f0-afb2690f4361"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
