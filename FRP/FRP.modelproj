@@ -155,13 +155,6 @@
       <SubType>Content</SubType>
       <DependentUpon>Class\Part\OilMonitor.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Class\Part\Part.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Class\Part\Part.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Class\Part\Part.classdiagram</DependentUpon>
-    </Content>
     <Content Include="Class\Part\Scn.classdiagram">
       <SubType>Content</SubType>
     </Content>

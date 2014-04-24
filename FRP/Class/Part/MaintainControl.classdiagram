@@ -83,60 +83,6 @@
   </appliedStereotypesInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="85b5b03f-6546-4ceb-965c-4fd8b4cc251f" name="项" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="bd20511e-2eb1-4bf0-895b-a52d170a5c49" />
-        <targetEnds>
-          <association Id="eadc288a-25da-4454-aba5-ebada47957a7" isDerived="false" sourceEndRoleName="项号" targetEndRoleName="附件" isLeaf="false" isAbstract="false">
-            <classMoniker Id="64b4c3d1-8045-4386-8ea7-fe201cefc073" LastKnownName="附件" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="1f9582c0-e600-4700-b4e8-3e8703ae1a7e" name="项号" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5bcf770b-3787-4693-80bc-a53f8751a613" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6b4fabf5-0c2e-46f9-910d-00ff2db1c45a" name="附件" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="279ac044-9c68-4a84-a0d0-84f520f06bc0" name="Lower" value="*">
-                      <elementDefinition Id="f8e23503-5657-40c6-8e1f-6268e97e4c5c" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="40c31f62-fb88-4305-b1d6-6d9827da4ac0" name="Upper" value="*">
-                      <elementDefinition Id="2be56765-3f37-4ab5-8212-b35ef32e14f0" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="efb0d081-96e4-4cc5-a516-5d595a7aad06" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="9ba11ed3-ceb0-45f1-aee8-99938a3d2b27" />
-          </association>
-          <association Id="a869fc41-a2ae-490d-a198-5addcba73402" isDerived="false" sourceEndRoleName="项" targetEndRoleName="项控制组" isLeaf="false" isAbstract="false">
-            <classMoniker Id="69948de6-85bf-48f4-8963-4e32a1acee08" LastKnownName="项控制组" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="83996fc2-5681-4b2f-80a6-6f2dcb289b78" name="项" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="302eb706-b539-4299-9041-9ad842a67b46" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="fc122942-a01a-4fc0-a7fb-c83aac13b220" name="项控制组" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="89a14890-a5b8-465d-88e5-15754f80f739" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="ac1aff07-e0ee-4b9e-9f02-9103f7dad3f9" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="892a3842-ebb6-4eac-9884-f5c21cc30303" name="项号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="5e816fab-49e5-4277-95da-060d0db1961d" />
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="64b4c3d1-8045-4386-8ea7-fe201cefc073" name="附件" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="fc07f727-db98-45da-b546-fb26ef024fc3" />
         <targetEnds>
@@ -570,6 +516,25 @@
           </property>
           <property Id="88df74c3-35a9-41eb-88a0-94e85460afc5" name="描述" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="e883d250-9b32-475d-9c41-fe103616dd76" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f53fee0c-34c9-40f1-8ae3-0e75eb4ec9d5" name="项" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7d30e3e3-722a-4460-be7b-52ce77025dc9" />
+        <ownedAttributesInternal>
+          <property Id="d38adf68-3138-4525-bed3-f552da1be97e" name="项号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ce4f0078-5dca-41e7-90ca-932ff85263d2" />
+          </property>
+          <property Id="d47e4e99-8d71-418e-b63f-3249a3b68938" name="FI号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="72c3d75b-0b2d-4845-b9fa-01a111257db0" />
+          </property>
+          <property Id="f4cd0dde-4da9-431c-9d9d-85f98699ccfe" name="描述" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4e1b57d-7c88-4d27-8c1c-b59770ebb182" />
+          </property>
+          <property Id="e36a3fc0-61df-4319-946f-74ebb9b2aa85" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1c873295-f1d2-4dc2-81cb-f9f6f7c8d29e" />
           </property>
         </ownedAttributesInternal>
       </class>
