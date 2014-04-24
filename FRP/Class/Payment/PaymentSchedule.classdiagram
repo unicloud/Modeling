@@ -198,31 +198,31 @@
       <class Id="aa990f56-e825-45e6-9f32-55428437c70d" name="标准付款计划" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6c8d06e0-bcd1-475e-8dea-739f8be1c898" />
         <targetEnds>
-          <association Id="8b4da61a-2a12-4c65-bc9f-80367258204b" isDerived="false" sourceEndRoleName="标准付款计划" targetEndRoleName="订单" isLeaf="false" isAbstract="false">
-            <classMoniker Id="9755f9b7-2645-4284-acfb-226a75eeeff5" LastKnownName="订单" />
+          <association Id="ca0c3a5d-e9ac-40c3-bbc1-d6921f39b17d" isDerived="false" sourceEndRoleName="标准付款计划" targetEndRoleName="订单" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7db5fcb4-d797-46db-8d93-58170579e71b" LastKnownName="订单" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="fe76d72d-21ec-472d-a516-0b42e1b473c7" name="标准付款计划" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="4b0f28e8-875a-42df-aa93-d7541e75826f" />
+                <memberEnd Id="9f830060-ebbd-40a5-9d6c-8ac451182032" name="标准付款计划" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c71d691c-57a3-4533-8736-f68013dae4bf" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="3c868069-23e6-407b-b8dc-fdb4a1e56562" name="订单" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="332446af-c9f6-498e-98bc-d9054ed3c055" name="订单" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
-                    <literalString Id="5d55062a-1284-4a74-9dfc-6494212149c2" name="Lower" value="*">
-                      <elementDefinition Id="acb84a1b-8d24-4851-864c-2911a1320613" />
+                    <literalString Id="ebc4cd5f-ce13-4014-83ec-0e521c8b7ed1" name="Lower" value="*">
+                      <elementDefinition Id="81d7f065-b1bb-4399-835d-a00f5ff1c3e4" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="64f9771d-988c-40fd-8898-43d72e0fa01a" name="Upper" value="*">
-                      <elementDefinition Id="61b7024b-b22e-4791-8ba6-393716d73b32" />
+                    <literalString Id="ec0694f0-1517-4fd7-a1ab-66998e683692" name="Upper" value="*">
+                      <elementDefinition Id="682481d0-9f60-4768-a11d-bf6d43e91802" />
                     </literalString>
                   </upperValueInternal>
-                  <elementDefinition Id="607b9d7b-17cd-4ac1-94a8-f41f1220a713" />
+                  <elementDefinition Id="ffc403c9-67e9-4c49-922f-50d5bf743b54" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="90494555-87a4-464e-8f30-3d3089637f11" />
+            <elementDefinition Id="0d8f7b2d-09e9-4489-b6d7-ebfb426b630f" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -264,8 +264,8 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="9755f9b7-2645-4284-acfb-226a75eeeff5" name="订单" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="e7d5ae2e-929c-481c-b6d5-6fc6ee73fdff" />
+      <class Id="7db5fcb4-d797-46db-8d93-58170579e71b" name="订单" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="319e1c37-7cfa-4ee4-8a17-ad63abfe2efd" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
