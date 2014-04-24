@@ -523,6 +523,34 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="f53fee0c-34c9-40f1-8ae3-0e75eb4ec9d5" name="项" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7d30e3e3-722a-4460-be7b-52ce77025dc9" />
+        <targetEnds>
+          <association Id="e3841fb1-8faf-4c3f-ae2c-4ed269ec2dbe" isDerived="false" sourceEndRoleName="项" targetEndRoleName="项控制组" isLeaf="false" isAbstract="false">
+            <classMoniker Id="69948de6-85bf-48f4-8963-4e32a1acee08" LastKnownName="项控制组" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86c1d03b-84a1-4e3b-96cc-667c0fd1b942" name="项" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3165a79f-91b5-4b24-bece-13b80f395349" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e965c33-b2e0-4c45-adc9-1c0e8f45fb63" name="项控制组" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="294244ec-15ac-4723-a967-f1f40cdb31fb" name="Lower" value="0">
+                      <elementDefinition Id="bbf55fd2-3cd5-471a-b523-98c648cfd044" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c40a733a-5876-4682-a7e2-ea807df978c3" name="Upper" value="1">
+                      <elementDefinition Id="d8fff9c7-ba95-4da6-b6f0-afb2690f4361" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c374aca6-80ef-45cd-815c-2ffe21629aaf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fe3cc82b-f972-442c-bd5f-cd4d69609005" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="d38adf68-3138-4525-bed3-f552da1be97e" name="项号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ce4f0078-5dca-41e7-90ca-932ff85263d2" />
