@@ -253,6 +253,9 @@
           <property Id="6b894675-75ba-4d8b-98ba-65c33c2b5c07" name="付款计划行" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="51cb426a-f557-4695-825e-4c56066269dc" />
           </property>
+          <property Id="aedd8207-fd20-4a16-9f8f-75dbe570792a" name="发票类型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cdd8c43a-b41d-4878-983f-ee6affcfc81f" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
