@@ -244,20 +244,20 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="0d8f7b2d-09e9-4489-b6d7-ebfb426b630f"
+            Id="7a30a314-25a9-4ac3-939b-40bb762404de"
             isDerived="false"
             sourceEndRoleName="标准付款计划"
             targetEndRoleName="订单"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="319e1c37-7cfa-4ee4-8a17-ad63abfe2efd"
+              Id="77a075d9-3e1c-465e-9e4e-1a58e7463f35"
               LastKnownName="订单"
               LastKnownLocation="Payment.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="c71d691c-57a3-4533-8736-f68013dae4bf"
+                  Id="8e9cfbc0-268f-4bf2-af36-67a9a78bc216"
                   name="标准付款计划"
                   isLeaf="false"
                   isStatic="false"
@@ -270,7 +270,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="ffc403c9-67e9-4c49-922f-50d5bf743b54"
+                  Id="19d503d1-9f5c-45db-836a-4c2277a1933e"
                   name="订单"
                   isLeaf="false"
                   isStatic="false"
@@ -281,13 +281,13 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="81d7f065-b1bb-4399-835d-a00f5ff1c3e4"
+                      Id="fd5394a1-c21e-48fa-9738-18c1f16e750a"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="682481d0-9f60-4768-a11d-bf6d43e91802"
+                      Id="82b859ba-f545-4ae0-b31b-35640e3ab236"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -676,20 +676,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="76ed2b34-35fb-45a8-9299-c15072cdb678"
+            Id="7ffe3216-e791-4ad9-a7ae-34afef1fe140"
             isDerived="false"
             sourceEndRoleName="发票"
             targetEndRoleName="订单"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="319e1c37-7cfa-4ee4-8a17-ad63abfe2efd"
+              Id="77a075d9-3e1c-465e-9e4e-1a58e7463f35"
               LastKnownName="订单"
               LastKnownLocation="Payment.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="76ea4d69-089e-447c-8390-3a9dd0a97813"
+                  Id="9af06ac9-06ae-43d4-964d-133c1a61a7d0"
                   name="发票"
                   isLeaf="false"
                   isStatic="false"
@@ -702,7 +702,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="7df77814-249f-41f3-91b8-3460cae7ea37"
+                  Id="d45c6b29-53d7-47ab-83b9-b1f1019a7e47"
                   name="订单"
                   isLeaf="false"
                   isStatic="false"
@@ -713,13 +713,13 @@
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="05ed7fd8-41c3-4164-83a0-b345bf9cecb8"
+                      Id="783d86fd-b512-44c6-8f1f-0d6038d9a890"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="c0a84b9e-64a6-4c0f-9c37-135cab376276"
+                      Id="98e7783a-2fd9-407e-b76a-8e509fc4ba94"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -2167,69 +2167,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="319e1c37-7cfa-4ee4-8a17-ad63abfe2efd"
-        name="订单"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="fc802bc2-681a-4b61-8c18-90e690e4a456"
-            isDerived="false"
-            sourceEndRoleName="订单"
-            targetEndRoleName="订单行"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="5e2fc2ae-4e5e-410a-9bfd-a1cb5065a77b"
-              LastKnownName="订单行"
-              LastKnownLocation="Payment.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d1dfb228-beaa-43d0-a833-27367df5f4f0"
-                  name="订单"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1ad93e02-3e59-405e-92fa-94d79b641653"
-                  name="订单行"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="dad8f33b-16cc-4098-b48a-52b7d10b434b"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="5f3da21f-99c6-4099-a401-81a20c27423b"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="5e2fc2ae-4e5e-410a-9bfd-a1cb5065a77b"
         name="订单行"
         isAbstract="false"
@@ -2309,6 +2246,69 @@
               LastKnownLocation="Payment.uml" />
           </generalization>
         </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="77a075d9-3e1c-465e-9e4e-1a58e7463f35"
+        name="订单"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="feb17215-448c-41b8-8f32-ae53ee49a37d"
+            isDerived="false"
+            sourceEndRoleName="订单"
+            targetEndRoleName="订单行"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5e2fc2ae-4e5e-410a-9bfd-a1cb5065a77b"
+              LastKnownName="订单行"
+              LastKnownLocation="Payment.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb83f91a-d80b-4f8d-ac73-a769835a1d04"
+                  name="订单"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="128e05f1-0a0e-4c1d-a407-ff71e1fa88dc"
+                  name="订单行"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a62df6e7-1f75-42fc-83cb-c11f4b0f4e8e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="06a414ba-b907-44f4-ba67-52fb9bfe53d4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </class>
     </packageHasNamedElement>
   </packagedElements>
