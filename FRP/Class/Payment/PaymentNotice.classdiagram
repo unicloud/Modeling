@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a8819d18-b29d-4c78-9799-744784a0810c" name="PaymentNotice" linkedPackageId="f581292b-1c36-4bc5-a94b-79c7fab78847" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b6ccd198-d4bf-4436-b56e-79443359b0bc">
+      <elementDefinition Id="8c23f05d-af31-410b-9c31-49ad059944e9" />
+      <body>当付款通知为“完成”时，才将实际金额回写到发票中</body>
+    </comment>
+  </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="75f4c01b-07a3-479a-9ba1-b7e6cb2ea5e2" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="63f34954-8f3c-436d-9fb7-74e6e38af081" />
@@ -135,6 +141,9 @@
           <property Id="25e04080-b0bd-45cd-8c21-8bfef1ae281a" name="银行账户" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="2f1506e7-3fb7-4de9-9883-81df83833c73" />
           </property>
+          <property Id="251cc5e7-de55-413f-80ce-dcdce202b7dc" name="是否完成" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="61191b3d-8064-4e17-abfe-3bcc71c03555" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -153,6 +162,9 @@
           </property>
           <property Id="681ea906-d309-4ea0-b499-912835b62408" name="备注" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="7c6f6e5f-1945-4ca3-83e5-8ed5b0163767" />
+          </property>
+          <property Id="c7c90cbd-9461-4e51-98c1-a451325f44e7" name="实际金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="57a0bd17-50f0-499e-937c-9641f6a7b3f2" />
           </property>
         </ownedAttributesInternal>
       </class>

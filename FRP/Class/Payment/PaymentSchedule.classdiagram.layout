@@ -84,5 +84,50 @@
         <classShapeMoniker Id="46606ac7-d425-47fb-9889-6f2f2e666864" />
       </nodes>
     </generalizationConnector>
+    <classShape Id="d416b87e-d20a-4500-b8de-0b36ab1f23e7" absoluteBounds="0.75, 5.125, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="73854d93-df68-4b64-80cc-97cf39979cf6" LastKnownName="合同飞机" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="b6a2db9a-8e7c-4649-ba20-bee2ffd9fbe5" absoluteBounds="0.7649999999999999, 5.515, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ac7af7db-f2c9-4c1d-99ae-81db891569ce" absoluteBounds="0.7649999999999999, 5.751318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.5625 : 4.25455729166667); (1.5625 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="aef34c43-ca13-4aba-8902-73fc3f447076" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="4360d124-9096-4af5-9f3d-8e81d35b41f7" />
+        <classShapeMoniker Id="d416b87e-d20a-4500-b8de-0b36ab1f23e7" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2b3f793d-2005-4897-8e41-4399add0a8f7" absoluteBounds="2.875, 5.125, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="117554af-637c-411c-8090-7c7778dc071c" LastKnownName="合同发动机" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="e733d680-bb40-4bfe-b18b-ca49069e7bf5" absoluteBounds="2.89, 5.515, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="e19b951b-9b87-4823-b746-464e30b67b14" absoluteBounds="2.89, 5.751318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 4.25455729166667); (3.625 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="46608f17-c366-438c-9794-42eddb6f3860" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="67b01692-65f1-493a-b8d7-254d9fa9bbc3" />
+        <classShapeMoniker Id="2b3f793d-2005-4897-8e41-4399add0a8f7" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5014bc68-8c78-4601-a51c-a0de365e7e61" absoluteBounds="5.125, 5.125, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="9755f9b7-2645-4284-acfb-226a75eeeff5" LastKnownName="订单" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="daa6d328-383a-40ea-8e84-e3283bed380f" absoluteBounds="5.14, 5.515, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="933553a8-60fc-4cd4-9087-a88fbc53cf2c" absoluteBounds="5.14, 5.751318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.875 : 4.25455729166667); (5.875 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+      <associationMoniker Id="8b4da61a-2a12-4c65-bc9f-80367258204b" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="0993b1bc-699a-4860-b2aa-34191f5197bb" />
+        <classShapeMoniker Id="5014bc68-8c78-4601-a51c-a0de365e7e61" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>

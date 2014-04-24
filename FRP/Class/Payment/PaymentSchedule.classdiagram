@@ -141,6 +141,24 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="d2182b96-3f57-4fe2-a4d4-489380570be3" name="飞机付款计划" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e8ff3ac1-1ac5-40b4-bf6a-bcf1669e837a" />
+        <targetEnds>
+          <association Id="aef34c43-ca13-4aba-8902-73fc3f447076" isDerived="false" sourceEndRoleName="飞机付款计划" targetEndRoleName="合同飞机" isLeaf="false" isAbstract="false">
+            <classMoniker Id="73854d93-df68-4b64-80cc-97cf39979cf6" LastKnownName="合同飞机" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ae6b8ab-9c66-4ad1-ab51-80392d0583ad" name="飞机付款计划" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0bfbdbb4-f3ce-437b-98d6-a81294fde899" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="50cf5441-08f1-4ce6-b563-e1569423d76e" name="合同飞机" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3df71cdc-b3a8-4034-aedc-87404c068591" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3bc0703a-ff13-4c8c-919f-6e759f241628" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="a014ee28-3533-4e61-83ba-0d3581a31ff4" name="合同飞机" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="b00dba27-70b6-4458-abd0-2c4113106a88" />
@@ -151,6 +169,24 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="0416187c-edf7-442a-96d9-e7c6dd5fcc6c" name="发动机付款计划" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="3e60269f-4970-4fc2-ba74-3d0973efe688" />
+        <targetEnds>
+          <association Id="46608f17-c366-438c-9794-42eddb6f3860" isDerived="false" sourceEndRoleName="发动机付款计划" targetEndRoleName="合同发动机" isLeaf="false" isAbstract="false">
+            <classMoniker Id="117554af-637c-411c-8090-7c7778dc071c" LastKnownName="合同发动机" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7aa2324-84ad-4a71-ad36-bfe824b5b412" name="发动机付款计划" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="894d3c31-a475-4ffb-a947-fd6e1edd00f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="09fb519b-b927-4885-bb7a-273045a3cb53" name="合同发动机" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8757d3d7-41bb-4526-943a-7f0e3c3d924f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fcb5772b-0c41-4a3e-b583-1fd8a24e16d8" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="c188a527-9137-4d25-b8d7-b2cc8f33e2db" name="合同发动机" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="d2a1184c-6aba-4977-8471-b590cf8fb136" />
@@ -161,6 +197,34 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="aa990f56-e825-45e6-9f32-55428437c70d" name="标准付款计划" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6c8d06e0-bcd1-475e-8dea-739f8be1c898" />
+        <targetEnds>
+          <association Id="8b4da61a-2a12-4c65-bc9f-80367258204b" isDerived="false" sourceEndRoleName="标准付款计划" targetEndRoleName="订单" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9755f9b7-2645-4284-acfb-226a75eeeff5" LastKnownName="订单" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe76d72d-21ec-472d-a516-0b42e1b473c7" name="标准付款计划" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b0f28e8-875a-42df-aa93-d7541e75826f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3c868069-23e6-407b-b8dc-fdb4a1e56562" name="订单" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="5d55062a-1284-4a74-9dfc-6494212149c2" name="Lower" value="*">
+                      <elementDefinition Id="acb84a1b-8d24-4851-864c-2911a1320613" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="64f9771d-988c-40fd-8898-43d72e0fa01a" name="Upper" value="*">
+                      <elementDefinition Id="61b7024b-b22e-4791-8ba6-393716d73b32" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="607b9d7b-17cd-4ac1-94a8-f41f1220a713" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="90494555-87a4-464e-8f30-3d3089637f11" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="a1ad6b98-e1ca-4595-a8ee-55c904f53507" name="订单" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="170fa98f-7c87-4429-89f9-d6e632347c27" />
@@ -187,6 +251,21 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="83d5d6af-86d9-4cb3-9ec3-ee530dad74b3" name="维修的付款计划" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="42718a0c-1d4a-4754-bf3f-d01f586a1e93" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="73854d93-df68-4b64-80cc-97cf39979cf6" name="合同飞机" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7dfab2bd-c0b7-43c8-9068-0ab475bbfef5" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="117554af-637c-411c-8090-7c7778dc071c" name="合同发动机" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d7806fe9-6406-4e7e-88e2-aee73e2fad2d" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9755f9b7-2645-4284-acfb-226a75eeeff5" name="订单" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e7d5ae2e-929c-481c-b6d5-6fc6ee73fdff" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

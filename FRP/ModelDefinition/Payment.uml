@@ -3,6 +3,24 @@
   dslVersion="1.0.0.0"
   Id="d6f67249-a0f0-46aa-ba1e-d2f67efefe53"
   name="Payment" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="16e92773-438b-4574-86a0-4abfca5044d3">
+      <body>采购贷项单、租赁发票、预付款发票、采购发票 需关联到付款计划行和订单</body>
+    </comment>
+    <comment
+      Id="f1751682-0b69-4761-bec3-b62c6ba984fb">
+      <body>单价、数量、维修项 属于维修发票</body>
+    </comment>
+    <comment
+      Id="cf7b9dbd-4171-4240-b8b5-dc7a75565614">
+      <body>贷项单、租赁发票、预付款发票、采购发票 需关联到订单行</body>
+    </comment>
+    <comment
+      Id="8c23f05d-af31-410b-9c31-49ad059944e9">
+      <body>当付款通知为“完成”时，才将实际金额回写到发票中</body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <class
@@ -48,6 +66,17 @@
           <property
             Id="7c6f6e5f-1945-4ca3-83e5-8ed5b0163767"
             name="备注"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="57a0bd17-50f0-499e-937c-9641f6a7b3f2"
+            name="实际金额"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -221,6 +250,60 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="90494555-87a4-464e-8f30-3d3089637f11"
+            isDerived="false"
+            sourceEndRoleName="标准付款计划"
+            targetEndRoleName="订单"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e7d5ae2e-929c-481c-b6d5-6fc6ee73fdff"
+              LastKnownName="订单"
+              LastKnownLocation="Payment.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b0f28e8-875a-42df-aa93-d7541e75826f"
+                  name="标准付款计划"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="607b9d7b-17cd-4ac1-94a8-f41f1220a713"
+                  name="订单"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="acb84a1b-8d24-4851-864c-2911a1320613"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="61b7024b-b22e-4791-8ba6-393716d73b32"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="170fa98f-7c87-4429-89f9-d6e632347c27"
@@ -269,7 +352,7 @@
     <packageHasNamedElement>
       <class
         Id="cd03a678-2bcb-4314-a640-4d486bb87e60"
-        name="贷项通知单"
+        name="采购贷项单"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -366,6 +449,47 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="fcb5772b-0c41-4a3e-b583-1fd8a24e16d8"
+            isDerived="false"
+            sourceEndRoleName="发动机付款计划"
+            targetEndRoleName="合同发动机"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d7806fe9-6406-4e7e-88e2-aee73e2fad2d"
+              LastKnownName="合同发动机"
+              LastKnownLocation="Payment.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="894d3c31-a475-4ffb-a947-fd6e1edd00f1"
+                  name="发动机付款计划"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8757d3d7-41bb-4526-943a-7f0e3c3d924f"
+                  name="合同发动机"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="d2a1184c-6aba-4977-8471-b590cf8fb136"
@@ -402,7 +526,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="cd03a678-2bcb-4314-a640-4d486bb87e60"
-              LastKnownName="贷项通知单"
+              LastKnownName="采购贷项单"
               LastKnownLocation="Payment.uml" />
           </generalization>
           <generalization
@@ -453,6 +577,14 @@
               LastKnownName="杂项发票"
               LastKnownLocation="Payment.uml" />
           </generalization>
+          <generalization
+            Id="2d097386-1845-435c-9604-6c1fe3e1ded9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="87369a0e-a3b5-4897-95b2-2c98acb3a9e9"
+              LastKnownName="维修贷项单"
+              LastKnownLocation="Payment.uml" />
+          </generalization>
         </generalsInternal>
         <targetEnds>
           <association
@@ -500,6 +632,110 @@
                   <upperValueInternal>
                     <literalString
                       Id="6e2e34a1-3447-4e4a-b3ed-8984633fda90"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="81135bda-1b31-4db1-9180-a2003a94e6ff"
+            isDerived="false"
+            sourceEndRoleName="发票"
+            targetEndRoleName="订单"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="229a8b59-aacd-4cc9-880e-f3a397fdae46"
+              LastKnownName="订单"
+              LastKnownLocation="Payment.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="89bc30c2-0c3b-4caa-a89b-919427d750fd"
+                  name="发票"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77cb0c6a-ff99-4d10-9c00-4eefc92a47d4"
+                  name="订单"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bec33e97-ec3a-4d08-8e01-95578ecb659c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9b2d81d3-1847-4c96-8ab7-af86da1a4f02"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c08c51b1-4bb1-4935-ae7f-2ea9220bf44c"
+            isDerived="false"
+            sourceEndRoleName="发票"
+            targetEndRoleName="付款计划行"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="eb68ccb2-5c5e-4899-91c8-b38cf9c0fe03"
+              LastKnownName="付款计划行"
+              LastKnownLocation="Payment.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c3166248-1e1d-4681-b791-b8c2484e7197"
+                  name="发票"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7da96117-437e-424e-ac56-7a7ac4fbc7d3"
+                  name="付款计划行"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9eefa5be-a076-40f4-bcc7-f9aeeec4d270"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="939b11fa-1039-4090-9d74-5506baf62916"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -695,6 +931,60 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d0eb7e4a-15d3-4d4e-90e7-b06e2e522da8"
+            isDerived="false"
+            sourceEndRoleName="发票行"
+            targetEndRoleName="订单行"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6523e763-df38-42b4-8e2b-2a55ecefd6c3"
+              LastKnownName="订单行"
+              LastKnownLocation="Payment.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c970a301-3287-4d20-9064-207b0c79dee6"
+                  name="发票行"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b27848bb-004d-4190-bc9e-42d01eca36d7"
+                  name="订单行"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7a425afa-1ef0-44f3-83f9-21c39df7f875"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3b37ad96-5a6e-4a45-badd-c5135bd65f75"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="17e73184-91a9-4bb2-b07d-afc5f930b7a0"
@@ -783,6 +1073,47 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3bc0703a-ff13-4c8c-919f-6e759f241628"
+            isDerived="false"
+            sourceEndRoleName="飞机付款计划"
+            targetEndRoleName="合同飞机"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7dfab2bd-c0b7-43c8-9068-0ab475bbfef5"
+              LastKnownName="合同飞机"
+              LastKnownLocation="Payment.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0bfbdbb4-f3ce-437b-98d6-a81294fde899"
+                  name="飞机付款计划"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3df71cdc-b3a8-4034-aedc-87404c068591"
+                  name="合同飞机"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="b00dba27-70b6-4458-abd0-2c4113106a88"
@@ -1336,6 +1667,17 @@
           <property
             Id="2f1506e7-3fb7-4de9-9883-81df83833c73"
             name="银行账户"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="61191b3d-8064-4e17-abfe-3bcc71c03555"
+            name="是否完成"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2296,6 +2638,62 @@
       <class
         Id="d4d0c9ab-2aa5-4e76-9932-1e97dd19937c"
         name="起落架维修发票"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7dfab2bd-c0b7-43c8-9068-0ab475bbfef5"
+        name="合同飞机"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d7806fe9-6406-4e7e-88e2-aee73e2fad2d"
+        name="合同发动机"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e7d5ae2e-929c-481c-b6d5-6fc6ee73fdff"
+        name="订单"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="229a8b59-aacd-4cc9-880e-f3a397fdae46"
+        name="订单"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eb68ccb2-5c5e-4899-91c8-b38cf9c0fe03"
+        name="付款计划行"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6523e763-df38-42b4-8e2b-2a55ecefd6c3"
+        name="订单行"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="87369a0e-a3b5-4897-95b2-2c98acb3a9e9"
+        name="维修贷项单"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
