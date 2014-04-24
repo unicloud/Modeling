@@ -428,6 +428,14 @@
             <elementDefinition Id="e9927ace-7792-4cd0-b5c7-292eaf4d36a4" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="d2aa85cd-80e1-4a5e-9443-023331d149a4" name="序列号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="834b29dd-adb2-4a48-8eff-5ad1a39fe5df" />
+          </property>
+          <property Id="8b366c1b-6433-461d-bc65-223382599812" name="维修报告文档" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5abcb90a-3e3c-4b41-befd-60ef4c54d4cf" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
