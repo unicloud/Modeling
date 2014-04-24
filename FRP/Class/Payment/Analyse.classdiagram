@@ -267,7 +267,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" name="APU" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" name="APU预算" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="101e3046-5ec5-42ad-b8fa-39113214fe68" />
       </class>
     </logicalClassDesignerModelHasTypes>

@@ -162,12 +162,12 @@
       <SubType>Content</SubType>
       <DependentUpon>Class\Part\Scn.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Class\Payment\Budget.classdiagram">
+    <Content Include="Class\Payment\Analyse.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Class\Payment\Budget.classdiagram.layout">
+    <Content Include="Class\Payment\Analyse.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Class\Payment\Budget.classdiagram</DependentUpon>
+      <DependentUpon>Class\Payment\Analyse.classdiagram</DependentUpon>
     </Content>
     <Content Include="Class\Payment\Guarantee.classdiagram">
       <SubType>Content</SubType>

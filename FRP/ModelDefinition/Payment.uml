@@ -91,7 +91,7 @@
     <packageHasNamedElement>
       <class
         Id="101e3046-5ec5-42ad-b8fa-39113214fe68"
-        name="APU"
+        name="APU预算"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
