@@ -220,6 +220,12 @@
           <property Id="b64504b8-6851-4230-9a0d-8ba5a684b922" name="维修项" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ff06dbfb-eaa2-47ed-8db9-6ec2748f1514" />
           </property>
+          <property Id="81f5ef9e-7bea-4c6e-a861-d40b2beb2e58" name="单价" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9b8816cd-41b4-40b1-a6d4-104a61ea56c5" />
+          </property>
+          <property Id="f60ec64e-aa3b-4e25-a470-bb21c6d55323" name="数量" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ea63e565-8200-4256-8066-0149f55c06d3" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
