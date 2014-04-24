@@ -99,12 +99,12 @@
             <classMoniker Id="ba3b260f-1222-4dd7-ad1d-c20e5ff5d1b5" LastKnownName="付款计划行" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="7481630a-a252-4ccf-9116-2b42a8751442" name="付款计划" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="7481630a-a252-4ccf-9116-2b42a8751442" name="付款计划" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="c9f50e89-c24f-42cf-9694-9440b89d3225" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="d513de28-e668-4852-8844-5177e1fae4b5" name="付款计划行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="d513de28-e668-4852-8844-5177e1fae4b5" name="付款计划行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
                   <lowerValueInternal>
                     <literalString Id="1eb6f68b-9425-469c-8609-c39f305720ef" name="Lower" value="*">
                       <elementDefinition Id="bbaa4073-aa0d-479b-94c8-e244ff1945fd" />

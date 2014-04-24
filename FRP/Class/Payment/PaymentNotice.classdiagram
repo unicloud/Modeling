@@ -87,12 +87,12 @@
             <classMoniker Id="0d0e441b-e118-42a7-8c6d-7e5948a8c5db" LastKnownName=" 付款通知行" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="c6e0f7e2-e04d-4907-8e97-3121e9bbef5a" name="付款通知" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="c6e0f7e2-e04d-4907-8e97-3121e9bbef5a" name="付款通知" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="73868ab1-a7ba-4543-baf2-01b3d8abe050" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="f8637db8-881e-4adc-a07c-951ca85851fb" name=" 付款通知行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="f8637db8-881e-4adc-a07c-951ca85851fb" name=" 付款通知行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
                   <lowerValueInternal>
                     <literalString Id="c4ee803e-0215-44ad-a06b-bf0254a3da6d" name="Lower" value="*">
                       <elementDefinition Id="3783bfea-e3cc-4d68-8688-8fbbff31f6c9" />

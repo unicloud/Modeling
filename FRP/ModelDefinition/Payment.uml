@@ -98,14 +98,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="1eb6ddbc-459f-46dc-8f6f-91c574ff9236"
-        name="APU维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="8f720124-d223-4b1d-a836-b263a2c7cd74"
         name="保函"
         isAbstract="false"
@@ -507,14 +499,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="17b92562-d56b-405b-a442-60033824eaa7"
-        name="发动机维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="6303d4dd-1455-4946-afba-79127d5df8d9"
         name="发票"
         isAbstract="false"
@@ -543,14 +527,6 @@
             <classMoniker
               Id="3cb5daff-4a16-4c91-979e-8cb4397fff2e"
               LastKnownName="采购发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-          <generalization
-            Id="016dcdfe-2d39-4e48-8466-9b870afbb36f"
-            isSubstitutable="false">
-            <classMoniker
-              Id="fc5717ca-4d29-47ff-8c0a-fae816a04598"
-              LastKnownName="维修发票"
               LastKnownLocation="Payment.uml" />
           </generalization>
           <generalization
@@ -585,6 +561,14 @@
               LastKnownName="维修贷项单"
               LastKnownLocation="Payment.uml" />
           </generalization>
+          <generalization
+            Id="49d30dd9-2067-40aa-bb5e-eaa556914dee"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d6c52458-dc7a-4da4-a800-648802425db5"
+              LastKnownName="维修发票"
+              LastKnownLocation="Payment.uml" />
+          </generalization>
         </generalsInternal>
         <targetEnds>
           <association
@@ -608,7 +592,7 @@
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
@@ -622,7 +606,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
                       Id="c77fc433-00f4-4cd5-8fa4-e980caf63da2"
@@ -1390,7 +1374,7 @@
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
@@ -1404,7 +1388,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
                       Id="bbaa4073-aa0d-479b-94c8-e244ff1945fd"
@@ -1543,7 +1527,7 @@
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
@@ -1557,7 +1541,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
                       Id="3783bfea-e3cc-4d68-8688-8fbbff31f6c9"
@@ -1702,14 +1686,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="6e1cb581-40d7-41a9-8af8-b6609d17af45"
-        name="机身维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="b368cc5c-7e88-430a-84b0-ade52ac4c754"
         name="起落架"
         isAbstract="false"
@@ -1773,14 +1749,6 @@
             isComposite="false" />
         </ownedAttributesInternal>
       </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="67197807-695b-485c-bd0d-45f71b6c0a46"
-        name="起落架维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -1870,387 +1838,6 @@
           <property
             Id="25927d04-fdd8-425f-a247-333606acc971"
             name="实际结算金额"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="d07e4580-cc60-4f7a-8415-17aade96db8b"
-        name="维修发票行"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <ownedAttributesInternal>
-          <property
-            Id="2e349629-6004-4686-9fd5-11d1704e2c49"
-            name="维修项"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="85feb80a-d152-4493-b242-fca113313317"
-            name="项名称"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="86575ed0-0dae-4b76-a76a-7c94ff790d72"
-            name="单价"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="928e1494-fd2f-4bee-95e2-bb0a647b8690"
-            name="数量"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="5ae2a36e-cdfa-4c80-876e-0d22b9e20c9a"
-            name="备注"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="f78fce42-f6e5-49d6-af15-c1647c8ecffd"
-        name="维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="4f2fc8ff-1d68-4b43-a7a7-d2ab81d039ef"
-            isSubstitutable="false">
-            <classMoniker
-              Id="6e1cb581-40d7-41a9-8af8-b6609d17af45"
-              LastKnownName="机身维修发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-          <generalization
-            Id="d72d4876-3964-4d6e-ae8f-309e41387690"
-            isSubstitutable="false">
-            <classMoniker
-              Id="1eb6ddbc-459f-46dc-8f6f-91c574ff9236"
-              LastKnownName="APU维修发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-          <generalization
-            Id="b5781249-2bc7-42b1-8708-2b7953e2d98f"
-            isSubstitutable="false">
-            <classMoniker
-              Id="17b92562-d56b-405b-a442-60033824eaa7"
-              LastKnownName="发动机维修发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-          <generalization
-            Id="9f2759c4-e696-4d8c-8f9c-e2648ee726fd"
-            isSubstitutable="false">
-            <classMoniker
-              Id="67197807-695b-485c-bd0d-45f71b6c0a46"
-              LastKnownName="起落架维修发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-          <generalization
-            Id="384c1d79-2219-4883-ba9b-bd9035cad0e5"
-            isSubstitutable="false">
-            <classMoniker
-              Id="ee0ba948-f713-4a21-b0bb-e91a7ac898f0"
-              LastKnownName="发动机非FHA清算发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-        </generalsInternal>
-        <targetEnds>
-          <association
-            Id="7d15da6a-3b4d-41b0-91ea-4bb9f0798996"
-            isDerived="false"
-            sourceEndRoleName="维修发票"
-            targetEndRoleName="维修发票行"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="d07e4580-cc60-4f7a-8415-17aade96db8b"
-              LastKnownName="维修发票行"
-              LastKnownLocation="Payment.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="49cb108e-b9e5-48d0-8e53-1f5fc96b1188"
-                  name="维修发票"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="4d827e90-fd46-4d2e-9785-23c685a5d9a3"
-                  name="维修发票行"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="f4ab353e-cc91-408c-ab5c-919148ffdd45"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="9f38348c-84a7-4d7b-affa-265e633824b0"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="cca3700d-adcb-4702-96e4-eec52b1a48e5"
-            name="序列号"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="6bdfb135-57cb-4377-830d-2c820a8d37d9"
-            name="发票编号"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="d99396c1-7407-4cbd-982c-6187ad54d0e2"
-            name="发票号码"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="473e4b93-8794-4de7-a513-6647a01a15cb"
-            name="发票日期"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="5e6b89ee-7e6e-4690-935f-e006f70cd6a2"
-            name="供应商"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="bab17fbc-e537-4d67-be42-4fa8094b6ae3"
-            name="发票金额"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="d7aa1322-b0d9-4908-af6d-7cb084be231a"
-            name="已付金额"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="b314150d-99a6-4980-9eac-778a19e30bf8"
-            name="经办人"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="c9927786-dff2-4e5d-af32-3cf7f85bda1a"
-            name="审核人"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="d5bcf8b4-a720-400a-a251-1e7ed3d03cd2"
-            name="创建日期"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="cc972039-ceae-42e7-806f-4e36b0ff44fc"
-            name="审核日期"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="b989bf17-6ee9-40c4-9bd2-4f494051e8d2"
-            name="是否有效"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="071fffb9-398d-4968-85a2-0485b52a498d"
-            name="是否完成"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="d33cbc55-d610-4501-a774-401a61b104f4"
-            name="发票状态"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="adc82444-ba67-40b3-8cf4-4ea40e2ff51b"
-            name="文档"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="b42d2650-defa-4eaa-9be3-6c8492e657f0"
-            name="币种"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="cc431400-fa1e-4695-9529-97673d38c599"
-            name="进厂时间"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="924f2382-dc3d-4e43-9afa-639779ed9679"
-            name="出厂时间"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="5b02dca8-0b6b-493e-b2ac-2aa62c48bc84"
-            name="付款计划行"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2556,105 +2143,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
-        Id="fc5717ca-4d29-47ff-8c0a-fae816a04598"
-        name="维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <generalsInternal>
-          <generalization
-            Id="60691176-f26a-4978-b786-a44f841c049f"
-            isSubstitutable="false">
-            <classMoniker
-              Id="3cc8147e-3868-4920-8287-fc03c2a603a6"
-              LastKnownName="机身维修发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-          <generalization
-            Id="4d02f711-54d2-4b93-95d2-852c912048f7"
-            isSubstitutable="false">
-            <classMoniker
-              Id="a84cbed8-0abe-445a-80a5-a9a72705098d"
-              LastKnownName="APU维修发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-          <generalization
-            Id="d39943c7-dbb6-42e9-9d72-08d073ce2781"
-            isSubstitutable="false">
-            <classMoniker
-              Id="0a14bb0d-c7cd-4695-bc33-3196bfc1b2e9"
-              LastKnownName="发动机维修发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-          <generalization
-            Id="9f1c72d6-80ec-4006-8b27-aa9662dce9e5"
-            isSubstitutable="false">
-            <classMoniker
-              Id="d4d0c9ab-2aa5-4e76-9932-1e97dd19937c"
-              LastKnownName="起落架维修发票"
-              LastKnownLocation="Payment.uml" />
-          </generalization>
-        </generalsInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="7aca71fb-6165-4fc4-a158-118a0ae4fb13"
-            name="序列号"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="c6194c70-c9d3-4f44-8921-d4425e71a5b8"
-            name="维修文档"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="3cc8147e-3868-4920-8287-fc03c2a603a6"
-        name="机身维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="a84cbed8-0abe-445a-80a5-a9a72705098d"
-        name="APU维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="0a14bb0d-c7cd-4695-bc33-3196bfc1b2e9"
-        name="发动机维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="d4d0c9ab-2aa5-4e76-9932-1e97dd19937c"
-        name="起落架维修发票"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
         Id="7dfab2bd-c0b7-43c8-9068-0ab475bbfef5"
         name="合同飞机"
         isAbstract="false"
@@ -2706,7 +2194,7 @@
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
@@ -2720,7 +2208,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false">
+                  isComposite="true">
                   <lowerValueInternal>
                     <literalString
                       Id="dad8f33b-16cc-4098-b48a-52b7d10b434b"
@@ -2747,6 +2235,81 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0175f0db-08ae-4115-8342-9691f83d8521"
+        name="机身维修发票"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a4fd9f1a-2419-4b0b-93e3-baa677a66f90"
+        name="起落架维修发票"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="710e8d8e-133e-435b-881c-d0c4d53fd913"
+        name="发动机维修发票"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="71f2fd13-3e82-4094-a057-13d205bff0fc"
+        name="APU维修发票"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d6c52458-dc7a-4da4-a800-648802425db5"
+        name="维修发票"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="765c24d1-6ff8-4da3-8390-0cb423e195e5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0175f0db-08ae-4115-8342-9691f83d8521"
+              LastKnownName="机身维修发票"
+              LastKnownLocation="Payment.uml" />
+          </generalization>
+          <generalization
+            Id="235f8367-af93-4179-89f1-d5a4f1c6dc96"
+            isSubstitutable="false">
+            <classMoniker
+              Id="71f2fd13-3e82-4094-a057-13d205bff0fc"
+              LastKnownName="APU维修发票"
+              LastKnownLocation="Payment.uml" />
+          </generalization>
+          <generalization
+            Id="79402f00-5b56-444a-9b81-714ae833875d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="710e8d8e-133e-435b-881c-d0c4d53fd913"
+              LastKnownName="发动机维修发票"
+              LastKnownLocation="Payment.uml" />
+          </generalization>
+          <generalization
+            Id="e9927ace-7792-4cd0-b5c7-292eaf4d36a4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a4fd9f1a-2419-4b0b-93e3-baa677a66f90"
+              LastKnownName="起落架维修发票"
+              LastKnownLocation="Payment.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>
