@@ -14,7 +14,7 @@
     </comment>
     <comment
       Id="cf7b9dbd-4171-4240-b8b5-dc7a75565614">
-      <body>贷项单、租赁发票、预付款发票、采购发票 需关联到订单行</body>
+      <body>采购贷项单、租赁发票、预付款发票、采购发票 需关联到订单行</body>
     </comment>
     <comment
       Id="8c23f05d-af31-410b-9c31-49ad059944e9">
