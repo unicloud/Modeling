@@ -20,6 +20,25 @@
       Id="8c23f05d-af31-410b-9c31-49ad059944e9">
       <body>当付款通知为“完成”时，才将实际金额回写到发票中</body>
     </comment>
+    <comment
+      Id="ff2d1b00-e665-456d-8ceb-5245e5ba82ac">
+      <body>维修项：
+包干工时费
+材料费
+非例行工时费
+附加工时费
+材料领用
+器材成本差异
+交换费
+更换费（工时、材料）
+其他（含关增税、运费等）</body>
+    </comment>
+    <comment
+      Id="0d501e04-ea55-49f2-b1ba-85d6c804d22e">
+      <body>项名称：
+结构检
+非结构检</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
