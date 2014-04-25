@@ -183,13 +183,6 @@
       <SubType>Content</SubType>
       <DependentUpon>Class\Payment\Invoice.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Class\Payment\Payment.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Class\Payment\Payment.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Class\Payment\Payment.classdiagram</DependentUpon>
-    </Content>
     <Content Include="Class\Payment\PaymentNotice.classdiagram">
       <SubType>Content</SubType>
     </Content>
