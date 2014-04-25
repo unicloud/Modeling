@@ -74,7 +74,7 @@
   </appliedStereotypesInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="8ebacd13-9a01-44c4-846d-cf61daf89139" name="定检年度预算" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="8ebacd13-9a01-44c4-846d-cf61daf89139" name="定检年度分析" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b14c94f6-8597-47b5-9295-ba8d24d5bdf0" />
         <ownedAttributesInternal>
           <property Id="07c8e19a-ca51-49bd-944b-1aaf93dc2e17" name="飞机号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -99,7 +99,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7b5feef7-6127-4cc7-8a74-679e0d697694" name="非FHA.超包修" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="7b5feef7-6127-4cc7-8a74-679e0d697694" name="非FHA.超包修分析" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="9948e6ed-3e07-4d7d-a542-31cae0c600e8" />
         <ownedAttributesInternal>
           <property Id="34000970-831e-4fef-9a66-4627aaf2743f" name="发动机号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -154,19 +154,19 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="20e1856a-0d4d-4975-a425-71a3857b99c6" name="预算" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="20e1856a-0d4d-4975-a425-71a3857b99c6" name="维修成本" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b8be556f-910f-4e63-aab3-289854c4c5a2" />
         <generalsInternal>
           <generalization Id="3f212082-4770-416c-a06b-c2698336c250" isSubstitutable="false">
-            <classMoniker Id="8ebacd13-9a01-44c4-846d-cf61daf89139" LastKnownName="定检年度预算" />
+            <classMoniker Id="8ebacd13-9a01-44c4-846d-cf61daf89139" LastKnownName="定检年度分析" />
             <elementDefinition Id="71d6ec52-daed-4825-884c-95c4e88e0946" />
           </generalization>
           <generalization Id="17f50feb-6df6-42aa-859c-c78225508d84" isSubstitutable="false">
-            <classMoniker Id="7b5feef7-6127-4cc7-8a74-679e0d697694" LastKnownName="非FHA.超包修" />
+            <classMoniker Id="7b5feef7-6127-4cc7-8a74-679e0d697694" LastKnownName="非FHA.超包修分析" />
             <elementDefinition Id="1fc628bc-305c-4f1a-bc3d-38f82156e26f" />
           </generalization>
           <generalization Id="d0ab53f1-72dc-42a7-9191-e2fdadba7914" isSubstitutable="false">
-            <classMoniker Id="a8c9bc9b-41db-44b1-ad75-0f24625aeddb" LastKnownName="起落架" />
+            <classMoniker Id="a8c9bc9b-41db-44b1-ad75-0f24625aeddb" LastKnownName="起落架分析" />
             <elementDefinition Id="35accbe3-04de-4b63-8f3b-a2d47818f1b6" />
           </generalization>
         </generalsInternal>
@@ -214,7 +214,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="a8c9bc9b-41db-44b1-ad75-0f24625aeddb" name="起落架" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="a8c9bc9b-41db-44b1-ad75-0f24625aeddb" name="起落架分析" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b368cc5c-7e88-430a-84b0-ade52ac4c754" />
         <ownedAttributesInternal>
           <property Id="e19e2f59-317e-4f13-ab6b-8cc129b18b4f" name="飞机号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -267,7 +267,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" name="APU预算" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" name="APU分析" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="101e3046-5ec5-42ad-b8fa-39113214fe68" />
       </class>
     </logicalClassDesignerModelHasTypes>
