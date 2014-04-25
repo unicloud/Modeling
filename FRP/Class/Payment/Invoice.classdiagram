@@ -435,6 +435,12 @@
           <property Id="8b366c1b-6433-461d-bc65-223382599812" name="维修报告文档" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="5abcb90a-3e3c-4b41-befd-60ef4c54d4cf" />
           </property>
+          <property Id="f16cd5ea-c6f9-4b7d-b761-cc4896cb4164" name="进厂时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="24730756-0d8d-4c89-8607-4de5ebed30d7" />
+          </property>
+          <property Id="1acde194-487c-41fc-a145-52c2b2c52897" name="出厂时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="07a6e2a8-1aa6-40ba-a3b7-842e95fa86c8" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
