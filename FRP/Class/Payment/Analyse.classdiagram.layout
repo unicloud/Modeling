@@ -3,21 +3,21 @@
   <logicalClassDesignerModelMoniker Id="dd4ffa80-0004-4279-9124-b47daddc66e4" />
   <nestedChildShapes>
     <classShape Id="cbfb4d02-8eb5-4ffc-b652-65644520743a" absoluteBounds="0.5, 4.125, 2, 2.0141601562500009" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-      <classMoniker Id="8ebacd13-9a01-44c4-846d-cf61daf89139" LastKnownName="定检年度预算" />
+      <classMoniker Id="8ebacd13-9a01-44c4-846d-cf61daf89139" LastKnownName="定检年度分析" />
       <nestedChildShapes>
         <AttributeElementListCompartment Id="d46fba5c-bb27-4812-9425-bbe97ff61e39" absoluteBounds="0.515, 4.5150000000000006, 1.9700000000000002, 1.287841796875" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
         <OperationElementListCompartment Id="25797149-3473-48f7-8218-8b5011efb1a2" absoluteBounds="0.515, 5.812841796875, 1.9700000000000002, 0.22631835937500067" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="bbcf5fc7-740c-4eaf-bdff-f2ea06c9557c" absoluteBounds="3.375, 4.125, 2, 3.7833658854166661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-      <classMoniker Id="7b5feef7-6127-4cc7-8a74-679e0d697694" LastKnownName="非FHA.超包修" />
+      <classMoniker Id="7b5feef7-6127-4cc7-8a74-679e0d697694" LastKnownName="非FHA.超包修分析" />
       <nestedChildShapes>
         <AttributeElementListCompartment Id="b3c48b1b-b1ed-49fd-9301-e8c54860a0ce" absoluteBounds="3.3900000000000006, 4.5150000000000006, 1.9700000000000002, 3.0570475260416665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
         <OperationElementListCompartment Id="cfcbb0fc-ded7-4e1b-a1e1-c0d6c9e235b7" absoluteBounds="3.39, 7.5820475260416664, 1.9700000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="19853c56-fe85-4fa8-a7ef-87bdcbbb48c8" absoluteBounds="3.125, 0.5, 2.5, 3.2526041666666665" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-      <classMoniker Id="20e1856a-0d4d-4975-a425-71a3857b99c6" LastKnownName="预算" />
+      <classMoniker Id="20e1856a-0d4d-4975-a425-71a3857b99c6" LastKnownName="维修成本" />
       <nestedChildShapes>
         <AttributeElementListCompartment Id="6ce1292c-1cee-46e7-9b1a-e47a6bc58e48" absoluteBounds="3.14, 0.89, 2.4699999999999998, 2.5262858072916665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
         <OperationElementListCompartment Id="e32701e9-2759-4521-b050-d67133bd91de" absoluteBounds="3.14, 3.4262858072916664, 2.4699999999999998, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
@@ -40,7 +40,7 @@
       </nodes>
     </generalizationConnector>
     <classShape Id="ed07515e-11fc-4a5b-9e44-5d430851b1b8" absoluteBounds="6.375, 4.125, 1.5, 1.8372395833333339" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-      <classMoniker Id="a8c9bc9b-41db-44b1-ad75-0f24625aeddb" LastKnownName="起落架" />
+      <classMoniker Id="a8c9bc9b-41db-44b1-ad75-0f24625aeddb" LastKnownName="起落架分析" />
       <nestedChildShapes>
         <AttributeElementListCompartment Id="9b320c03-1def-4d3a-978a-39e4e15448e7" absoluteBounds="6.39, 4.515, 1.4700000000000002, 1.1109212239583333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
         <OperationElementListCompartment Id="d79a9810-135e-4615-b9dc-7d499bbe9761" absoluteBounds="6.39, 5.6359212239583334, 1.4700000000000002, 0.22631835937500067" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
@@ -62,7 +62,7 @@
       </nestedChildShapes>
     </classShape>
     <classShape Id="120fd587-e2a6-43e6-96b7-9a8d78069a7e" absoluteBounds="8.75, 4.125, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
-      <classMoniker Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" LastKnownName="APU预算" />
+      <classMoniker Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" LastKnownName="APU分析" />
       <nestedChildShapes>
         <AttributeElementListCompartment Id="43968f05-a185-4796-b2f1-fb6e9db335f5" absoluteBounds="8.765, 4.5150000000000006, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
         <OperationElementListCompartment Id="ae802f1e-d7ba-41c0-8cf2-fcee514c342a" absoluteBounds="8.765, 4.751318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
