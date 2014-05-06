@@ -245,6 +245,9 @@
           <property Id="aedd8207-fd20-4a16-9f8f-75dbe570792a" name="发票类型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="cdd8c43a-b41d-4878-983f-ee6affcfc81f" />
           </property>
+          <property Id="c05444ac-5a7f-4b6d-8915-4f754a8692d6" name="发票类型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d64ba445-982a-4b3f-be99-45ca0e9882c0" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
