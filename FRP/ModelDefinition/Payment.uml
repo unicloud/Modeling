@@ -484,7 +484,7 @@
         <ownedAttributesInternal>
           <property
             Id="be037b53-719b-4cdc-8b2b-29a691aa231b"
-            name="飞机号1"
+            name="飞机号"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"

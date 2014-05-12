@@ -77,7 +77,7 @@
       <class Id="8ebacd13-9a01-44c4-846d-cf61daf89139" name="定检年度分析" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b14c94f6-8597-47b5-9295-ba8d24d5bdf0" />
         <ownedAttributesInternal>
-          <property Id="07c8e19a-ca51-49bd-944b-1aaf93dc2e17" name="飞机号1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="07c8e19a-ca51-49bd-944b-1aaf93dc2e17" name="飞机号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="be037b53-719b-4cdc-8b2b-29a691aa231b" />
           </property>
           <property Id="91cfcd71-b50d-43d4-9fda-2f9ca0e37b7f" name="类别" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
