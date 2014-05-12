@@ -1,5 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dd4ffa80-0004-4279-9124-b47daddc66e4" name="Analyse" linkedPackageId="a9f1f4b5-454c-4e13-a259-8e458404a846" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="3e9890f1-d3d0-4f36-9c3f-beffe15f02b2">
+      <elementDefinition Id="eb0ff48f-6e27-4595-ab8e-f4acb05354eb" />
+      <body>类别：退租/定检
+
+性质：租赁/购买</body>
+    </comment>
+    <comment Id="e9c5aee7-068b-41a1-a7f7-0fe27a4e8483">
+      <elementDefinition Id="baf3a2fe-e99f-4c63-9500-66240b6ef59c" />
+      <body>是否包修：包修/超包修/非FHA
+类别： 退租/当年/跨年/非计划
+原装性质： 租赁/购买</body>
+    </comment>
+    <comment Id="5e5a254c-f667-4825-9ed6-8c83729f43b5">
+      <elementDefinition Id="f3bdfea8-db32-4ad4-9385-fc6387d6c48e" />
+      <body>类别：退租/当年/跨年/非计划
+性质：租赁/购买
+部件：前起/主起/全套
+</body>
+    </comment>
+  </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="4603fc64-7e94-490f-abbc-e92a20dacc64" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="63f34954-8f3c-436d-9fb7-74e6e38af081" />

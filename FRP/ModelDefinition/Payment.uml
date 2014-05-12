@@ -35,6 +35,25 @@
 工时费
 杂项</body>
     </comment>
+    <comment
+      Id="eb0ff48f-6e27-4595-ab8e-f4acb05354eb">
+      <body>类别：退租/定检
+
+性质：租赁/购买</body>
+    </comment>
+    <comment
+      Id="baf3a2fe-e99f-4c63-9500-66240b6ef59c">
+      <body>是否包修：包修/超包修/非FHA
+类别： 退租/当年/跨年/非计划
+原装性质： 租赁/购买</body>
+    </comment>
+    <comment
+      Id="f3bdfea8-db32-4ad4-9385-fc6387d6c48e">
+      <body>类别：退租/当年/跨年/非计划
+性质：租赁/购买
+部件：前起/主起/全套
+</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
