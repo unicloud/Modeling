@@ -20,6 +20,11 @@
 部件：前起/主起/全套
 </body>
     </comment>
+    <comment Id="4056a748-9419-441e-944a-a57c528fc776">
+      <elementDefinition Id="b75e34fe-1012-4ae7-896b-84e6f376fd27" />
+      <body>类别：汉胜APU包修，空客APU普林租金，空客APU小时包修
+类别1：自有，经租321 等</body>
+    </comment>
   </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="4603fc64-7e94-490f-abbc-e92a20dacc64" name="namespace" profile="CSharpProfile">
@@ -290,6 +295,105 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" name="APU分析" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="101e3046-5ec5-42ad-b8fa-39113214fe68" />
+        <ownedAttributesInternal>
+          <property Id="c5e93692-3ae6-4b6d-b387-e5b3e1bb8acd" name="类别1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4c09562f-01c8-4c01-ae88-203be7f228e4" />
+          </property>
+          <property Id="dbe72a6f-5e79-4398-bfff-ccc4a89ba395" name="类别" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ce8369e5-b877-48fc-a326-f7f7ae2a0586" />
+          </property>
+          <property Id="3076e501-88f0-4f6f-b1b9-f5bc5a6a786f" name="汇率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="339c4fda-af06-44cc-8940-8ba3f5ba1f7e" />
+          </property>
+          <property Id="7b218448-d06e-41b4-8e08-e41dd88dfd9a" name="年预算轮档小时" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d57779bd-e759-4951-ae75-5492bd325326" />
+          </property>
+          <property Id="fc9a1492-8528-4287-9ee3-a57cab9f7bf1" name="APU小时比例" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ceed1b8e-a60f-4167-8496-2c073fa84df0" />
+          </property>
+          <property Id="eb1caf1f-1b98-4afa-b5ab-0e0b3fc79a89" name="年APU 小时" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8836e764-cbbf-4096-98bd-04a0c72a1e62" />
+          </property>
+          <property Id="c5fb1f34-8a6d-4cdc-b57f-8652bbd3be34" name="APU包修费(美元)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66d8dd20-9db5-4bb0-85cb-a77fdcd2aaab" />
+          </property>
+          <property Id="fd20a9ef-8053-4206-ba95-a128569f104f" name="APU包修费(人民币)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f15e7539-5ab1-4445-85d8-f185e65235f0" />
+          </property>
+          <property Id="2cea4299-4d3a-42d8-a292-0bd0e81b38f6" name="关税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="89928326-04bb-40b0-81e1-0cef7f68304a" />
+          </property>
+          <property Id="53b245e7-f514-4aeb-9d17-958815b64009" name="年税费合计（人民元）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="949fb2f1-d36b-4307-9585-7650069b4c99" />
+          </property>
+          <property Id="4a037a13-7b91-4589-862b-1b4507d1db6f" name="增值税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9c0374be-6645-463d-b36b-eae215223533" />
+          </property>
+          <property Id="f53d0d45-6ba5-4000-8567-dee1d05a328b" name="增值税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d192b39b-c1d9-4905-ba5a-e650d8bb9310" />
+          </property>
+          <property Id="c3b34e70-27de-4799-a1bf-60b3f2fa6ca2" name="含增值税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="90250a20-5cf7-4d90-bb8f-d7f6b00756b0" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bcf5c045-9104-4f79-b4fe-4367303c2f4c" name="FHA分析" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a661e70d-6aac-4dc3-928e-429cf33c258b" />
+        <ownedAttributesInternal>
+          <property Id="e5b19411-e24c-4c0c-9d68-791984ae25d6" name="机型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f33a986a-ad4e-41e6-b677-d7add531f284" />
+          </property>
+          <property Id="e3479cb0-50dc-41be-8a4f-346ee08f55d7" name="发动机属性" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1bd08cb1-9fca-407c-abc3-e6b9d803b32d" />
+          </property>
+          <property Id="d6b87478-6438-4852-a379-aaaf646842f7" name="性质" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6a6fe333-d632-455c-9b10-243ce8689866" />
+          </property>
+          <property Id="c57f09de-5698-4f68-a226-1dfcb17ba350" name="年预算费率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0a0ef17f-108a-4a81-94ae-f3a76c032c1f" />
+          </property>
+          <property Id="cde2ea73-27b4-4838-b17e-b1ec88dd5933" name="汇率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f9cec451-5b5e-4275-859c-fee5fce76f9b" />
+          </property>
+          <property Id="003bb6c9-802c-40a4-b80f-5dcf1146e4a7" name="年空中小时数" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c7caf204-cfd1-4682-bdb4-6ed83f3f1814" />
+          </property>
+          <property Id="96a75fe3-2391-4a0d-b665-d9190339ecb2" name="年发动机与空中小时比例" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fa65e991-7a5d-48aa-9402-6c164a746707" />
+          </property>
+          <property Id="81fab3ff-a019-43fe-a0fb-9b58d47eb0a5" name="发动机小时数" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2ffc862c-55c9-4207-9c7e-7af6a192766f" />
+          </property>
+          <property Id="dabbe3a0-6681-46ee-b36d-d3d5f118edb8" name="FHA费用(美元)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8bb216d3-13b7-4248-adda-120479ebf25c" />
+          </property>
+          <property Id="b4d59afe-d01c-405b-8cb0-93baba514180" name="FHA费用(人民币)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f24ef2ba-5e00-4663-9031-14dd8aeea70b" />
+          </property>
+          <property Id="c6a51ee7-815a-4b97-82d7-d061f41d8b2e" name="关税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2d6f0ce6-d420-40d2-add5-f23e2a115c87" />
+          </property>
+          <property Id="4b3bf7b8-eea8-4de6-b282-83cce9e6e27a" name="关增税(人民币)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="deea3604-7dd3-4dea-869b-c0d91cb8d219" />
+          </property>
+          <property Id="b8fb2d3c-222c-4231-a82a-7ec1748e5f2a" name="税费合计" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="93c07818-79e7-4b2c-b0e8-e960c1673a40" />
+          </property>
+          <property Id="4a9a7203-9185-4c93-bb33-e81b9dbb40f0" name="增值税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e671e123-e850-4d2a-86bf-3aeb5c710f9a" />
+          </property>
+          <property Id="de7be392-75dc-4fd2-8ecf-ca5bbf91e9b5" name="含增值税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4fcd5938-6dd5-450e-9fe7-1877b1ae566d" />
+          </property>
+          <property Id="7861216f-5fd1-4067-8eda-aee61769224a" name="关增税" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="50722dd3-909b-4248-b5d3-937f721cae7c" />
+          </property>
+          <property Id="6e300571-5cb7-4c9f-8012-5d2722020cb2" name="增值税率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9062c85a-55a6-4985-9283-ce0ddd9a3fcd" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

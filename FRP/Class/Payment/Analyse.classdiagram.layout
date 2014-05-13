@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.125" name="Budget">
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.375, 9.125" name="Budget">
   <logicalClassDesignerModelMoniker Id="dd4ffa80-0004-4279-9124-b47daddc66e4" />
   <nestedChildShapes>
     <classShape Id="cbfb4d02-8eb5-4ffc-b652-65644520743a" absoluteBounds="0.5, 4.125, 2, 2.0141601562500009" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
@@ -54,18 +54,18 @@
         <classShapeMoniker Id="ed07515e-11fc-4a5b-9e44-5d430851b1b8" />
       </nodes>
     </generalizationConnector>
-    <classShape Id="98ab854d-3d71-415b-b35c-4170f36640df" absoluteBounds="8.875, 0.875, 1.5, 2.3680013020833335" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="98ab854d-3d71-415b-b35c-4170f36640df" absoluteBounds="7.75, 0.625, 1.625, 2.3680013020833335" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="c3d0b07c-31d9-428d-a74b-325cfd198051" LastKnownName="特修改装" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="4cdf0f6d-6d8b-49dd-bf0b-a5af7691149a" absoluteBounds="8.89, 1.2650000000000001, 1.4700000000000002, 1.6416829427083333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="627f4432-d448-496f-ac5d-91fee84e4acb" absoluteBounds="8.89, 2.9166829427083329, 1.4700000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="4cdf0f6d-6d8b-49dd-bf0b-a5af7691149a" absoluteBounds="7.765, 1.0150000000000001, 1.5950000000000002, 1.641682942708333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="627f4432-d448-496f-ac5d-91fee84e4acb" absoluteBounds="7.765, 2.6666829427083329, 1.5950000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="120fd587-e2a6-43e6-96b7-9a8d78069a7e" absoluteBounds="8.75, 4.125, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="120fd587-e2a6-43e6-96b7-9a8d78069a7e" absoluteBounds="8.75, 3.625, 1.875, 3.2526041666666661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" LastKnownName="APU分析" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="43968f05-a185-4796-b2f1-fb6e9db335f5" absoluteBounds="8.765, 4.5150000000000006, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="ae802f1e-d7ba-41c0-8cf2-fcee514c342a" absoluteBounds="8.765, 4.751318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="43968f05-a185-4796-b2f1-fb6e9db335f5" absoluteBounds="8.765, 4.0150000000000006, 1.8450000000000002, 2.5262858072916665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ae802f1e-d7ba-41c0-8cf2-fcee514c342a" absoluteBounds="8.765, 6.5512858072916664, 1.8450000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <commentShape Id="0fbfd078-d1a6-4608-96b6-f1478f877279" absoluteBounds="0.5, 6.5, 1.25, 0.625" customColor="251, 247, 200">
@@ -78,6 +78,17 @@
     </commentShape>
     <commentShape Id="1b99ea10-79df-4894-8d26-9146d693f99c" absoluteBounds="6.375, 6.125, 1.625, 0.875" customColor="251, 247, 200">
       <commentMoniker Id="5e5a254c-f667-4825-9ed6-8c83729f43b5" />
+      <relativeChildShapes />
+    </commentShape>
+    <classShape Id="a13d0794-cb5d-4936-984c-a701ec432766" absoluteBounds="11.25, 2.75, 1.875, 3.9602864583333321" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="bcf5c045-9104-4f79-b4fe-4367303c2f4c" LastKnownName="FHA分析" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="b38e2dc4-ac03-4cb8-a037-157ee554a9ca" absoluteBounds="11.265, 3.1399999999999997, 1.8450000000000002, 3.233968098958333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="99296472-0beb-4308-9185-e484432772cc" absoluteBounds="11.265, 6.3839680989583325, 1.8450000000000002, 0.22631835937500044" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <commentShape Id="0d0e6770-c925-466e-8b1b-599c97119854" absoluteBounds="8.875, 7.25, 1.625, 1.125" customColor="251, 247, 200">
+      <commentMoniker Id="4056a748-9419-441e-944a-a57c528fc776" />
       <relativeChildShapes />
     </commentShape>
   </nestedChildShapes>
