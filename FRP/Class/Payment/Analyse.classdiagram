@@ -5,6 +5,7 @@
       <elementDefinition Id="eb0ff48f-6e27-4595-ab8e-f4acb05354eb" />
       <body>类别：退租/定检
 
+
 性质：租赁/购买</body>
     </comment>
     <comment Id="e9c5aee7-068b-41a1-a7f7-0fe27a4e8483">
@@ -23,7 +24,7 @@
     <comment Id="4056a748-9419-441e-944a-a57c528fc776">
       <elementDefinition Id="b75e34fe-1012-4ae7-896b-84e6f376fd27" />
       <body>类别：汉胜APU包修，空客APU普林租金，空客APU小时包修
-类别1：自有，经租321 等</body>
+类别1：自有，经租321，经租330 等</body>
     </comment>
   </ownedCommentsInternal>
   <appliedStereotypesInternal>
@@ -232,9 +233,6 @@
           </property>
           <property Id="2d286799-3b72-461a-9d12-242ef91ce852" name="维修发票" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="9b79b6f9-13f9-47a8-8d80-935ea2c3cc2c" />
-          </property>
-          <property Id="dea6eba7-1e52-4222-8314-d284715dc89d" name="维修计划" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f815d59e-7922-4c6f-a02f-29f974ae4e63" />
           </property>
         </ownedAttributesInternal>
       </class>
