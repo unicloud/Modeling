@@ -196,6 +196,18 @@
             <classMoniker Id="a8c9bc9b-41db-44b1-ad75-0f24625aeddb" LastKnownName="起落架分析" />
             <elementDefinition Id="35accbe3-04de-4b63-8f3b-a2d47818f1b6" />
           </generalization>
+          <generalization Id="3b532434-34d5-4b6c-aa9b-7740bd1828c2" isSubstitutable="false">
+            <classMoniker Id="c3d0b07c-31d9-428d-a74b-325cfd198051" LastKnownName="特修改装" />
+            <elementDefinition Id="08d96667-f27b-457b-bb89-dbf3aa25ba7e" />
+          </generalization>
+          <generalization Id="5d52337c-c9c2-48a3-b075-8408bd7ab38d" isSubstitutable="false">
+            <classMoniker Id="58f5f4ad-bbd4-487e-97ba-5c5406a13efb" LastKnownName="APU分析" />
+            <elementDefinition Id="cc742135-0d51-42dd-af52-19c740b204cc" />
+          </generalization>
+          <generalization Id="c2c36d02-0cc2-420c-8d96-9cae356c8396" isSubstitutable="false">
+            <classMoniker Id="bcf5c045-9104-4f79-b4fe-4367303c2f4c" LastKnownName="FHA分析" />
+            <elementDefinition Id="489d8fa5-cba4-4744-9c0d-f5e8418947c5" />
+          </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
           <property Id="ae6eec0f-812e-4f53-9435-559f14de225e" name="业务部门申报金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">

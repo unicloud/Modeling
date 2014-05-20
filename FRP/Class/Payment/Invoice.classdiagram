@@ -106,37 +106,13 @@
       <class Id="740e24b1-bdf9-497a-94d9-449e14b92d23" name="发票" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6303d4dd-1455-4946-afba-79127d5df8d9" />
         <generalsInternal>
-          <generalization Id="455c324c-e048-4951-8316-004fc5f623ac" isSubstitutable="false">
-            <classMoniker Id="4669053c-a21b-41c1-b93e-0c0ecc2f2882" LastKnownName="采购贷项单" />
-            <elementDefinition Id="2845bee9-5752-4515-93ac-544d233d5027" />
-          </generalization>
-          <generalization Id="afde4399-d0fb-4fe2-96a2-6c00152a7c19" isSubstitutable="false">
-            <classMoniker Id="a518e5e1-3572-44f7-812c-140842a03359" LastKnownName="租赁发票" />
-            <elementDefinition Id="072aeeab-4203-403d-b2e6-e001510bbf05" />
-          </generalization>
-          <generalization Id="61120b41-475b-4c68-b64b-175ed8a25652" isSubstitutable="false">
-            <classMoniker Id="1e84945b-1413-4867-976b-1cb8bf359d46" LastKnownName="采购发票" />
-            <elementDefinition Id="8aeb9d94-05f1-4f95-933b-dcd168e13d9e" />
-          </generalization>
-          <generalization Id="29d5c7b9-9a57-4aa5-b128-5149a21c37d5" isSubstitutable="false">
-            <classMoniker Id="e1a7ca6f-0e88-444e-9ef3-a99c949aa803" LastKnownName="采购预付款发票" />
-            <elementDefinition Id="1b9fd2b9-7a3f-4722-8ad3-acfb6e3f6755" />
-          </generalization>
-          <generalization Id="3a3dfd81-b05d-4f9b-86c8-913186aa8b2c" isSubstitutable="false">
-            <classMoniker Id="ca6aa823-7777-4f28-bcf0-a656e273fbfb" LastKnownName="维修预付款发票" />
-            <elementDefinition Id="01452b64-682e-4c4d-ab3e-2ca3896f51fc" />
-          </generalization>
-          <generalization Id="2053e852-5211-40f3-ad71-9e4cc4db12c3" isSubstitutable="false">
-            <classMoniker Id="b0fe4d4c-c051-47c8-82f5-1b98ea757a59" LastKnownName="杂项发票" />
-            <elementDefinition Id="17916352-6c65-43f4-ace2-7fbd5a3d0757" />
-          </generalization>
-          <generalization Id="4ddd3ba2-7819-49ee-bdee-7eaa718f437a" isSubstitutable="false">
-            <classMoniker Id="74e4ac87-43cf-4bc8-b6b9-6097f70f5b20" LastKnownName="维修贷项单" />
-            <elementDefinition Id="2d097386-1845-435c-9604-6c1fe3e1ded9" />
-          </generalization>
           <generalization Id="898f47e4-3bb6-4138-af04-5a77f631e6d4" isSubstitutable="false">
             <classMoniker Id="c4878ce8-b67d-4ada-b08a-641a67202cdb" LastKnownName="维修发票" />
             <elementDefinition Id="49d30dd9-2067-40aa-bb5e-eaa556914dee" />
+          </generalization>
+          <generalization Id="9d58c068-b474-4b08-a5e5-5c5d119ae07d" isSubstitutable="false">
+            <classMoniker Id="9f4861cc-e793-4b6d-92d8-8a6534e41cac" LastKnownName="基本采购发票" />
+            <elementDefinition Id="ae687c76-0674-4d87-8941-e9685624b523" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -254,100 +230,16 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="4669053c-a21b-41c1-b93e-0c0ecc2f2882" name="采购贷项单" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="cd03a678-2bcb-4314-a640-4d486bb87e60" />
-        <targetEnds>
-          <association Id="102ebb92-a7ea-4f8d-8c6d-63cd4c19fdad" isDerived="false" sourceEndRoleName="采购贷项单" targetEndRoleName="采购发票行" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7165751a-98c0-4514-bced-c9adb0115944" LastKnownName="采购发票行" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="91e64895-d78b-45eb-b824-ef3c428a1c42" name="采购贷项单" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="672a3e18-06b3-4e0c-aac9-88ed24fbae05" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="bcb279de-5f71-41c7-a442-3fddcd822494" name="采购发票行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <lowerValueInternal>
-                    <literalString Id="1c2c47f7-2eab-40ae-b3f5-325ef54c3510" name="Lower" value="*">
-                      <elementDefinition Id="ec3be85f-5353-43a3-ad4d-5cbdd2cbd26c" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="90d79ec2-2874-4144-a6f9-d4c7a07d2f1b" name="Upper" value="*">
-                      <elementDefinition Id="5f1c0482-ce38-4dc7-befb-c03fee1a9d8e" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="a677d103-2170-4d97-a177-bf9bf2b57f86" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="00c73422-5483-40fc-b97f-eefefc015fbc" />
-          </association>
-        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="a518e5e1-3572-44f7-812c-140842a03359" name="租赁发票" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="85afd480-42c5-43a0-a204-dea9b8928006" />
-        <targetEnds>
-          <association Id="04c8d3f4-506f-43b3-bca5-538b45492f09" isDerived="false" sourceEndRoleName="租赁发票" targetEndRoleName="采购发票行" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7165751a-98c0-4514-bced-c9adb0115944" LastKnownName="采购发票行" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="91918ca6-04b2-44fe-b645-4c451644cec1" name="租赁发票" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="fe7f2633-8130-4390-9eec-9beedbf0b521" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="70889ca2-fbcb-4779-b8ea-15a0fc65feae" name="采购发票行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <lowerValueInternal>
-                    <literalString Id="c62ac391-e2aa-4b7e-8c05-7aa5128e398a" name="Lower" value="*">
-                      <elementDefinition Id="b9412bf2-d399-4006-8b13-aafb92feddb6" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="705fbb1a-aa30-434f-8153-2109b847ce54" name="Upper" value="*">
-                      <elementDefinition Id="7a86ce3a-d6ea-48ca-b90f-0d955641db2b" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="cc0a25d1-b794-4273-81ff-21a35558e5d2" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="89f485a2-9a82-4786-bb83-5aeeb5a9c200" />
-          </association>
-        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="1e84945b-1413-4867-976b-1cb8bf359d46" name="采购发票" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="3cb5daff-4a16-4c91-979e-8cb4397fff2e" />
-        <targetEnds>
-          <association Id="4581cf61-f716-46f6-ad65-a7ae5694fd03" isDerived="false" sourceEndRoleName="采购发票" targetEndRoleName="采购发票行" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7165751a-98c0-4514-bced-c9adb0115944" LastKnownName="采购发票行" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="87040e2f-8de6-45f1-a60d-067e3a155fb8" name="采购发票" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="78b8f2df-bf87-403d-806c-e880b3412afc" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="61599be8-ddce-4d37-ba7c-b184f04f9cfc" name="采购发票行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <lowerValueInternal>
-                    <literalString Id="405753a1-4ff0-4212-a5e2-f18ff677cea2" name="Lower" value="*">
-                      <elementDefinition Id="544a3bc5-d7ec-4057-b268-5b7f968a9b06" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="6a60935b-80c2-43c3-8220-f98258fbcc85" name="Upper" value="*">
-                      <elementDefinition Id="75d8997d-1e28-46ce-89c1-fef47a589321" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="eae4e77f-bc37-46a6-9e57-cb9d97274f5c" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="b166bff3-ad6a-40bb-b1a9-04b90b490804" />
-          </association>
-        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -370,73 +262,20 @@
           <property Id="e47f5191-763f-4090-8a1c-d672f0bbbd61" name="备注" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="07600bed-f218-45e0-ae21-0f1be3813506" />
           </property>
+          <property Id="3d7ee7bb-5518-46b8-8916-49e7a42742f2" name="项名称" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0514c58c-9c72-4ba3-be24-14f88e931b1a" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="b0fe4d4c-c051-47c8-82f5-1b98ea757a59" name="杂项发票" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e5aea66e-be06-4315-a503-42488e102304" />
-        <targetEnds>
-          <association Id="623f6bbb-97d0-4c7c-ad3f-ed29ca62d45c" isDerived="false" sourceEndRoleName="杂项发票" targetEndRoleName="采购发票行" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7165751a-98c0-4514-bced-c9adb0115944" LastKnownName="采购发票行" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e6c05c9b-0651-4a0b-aba5-9dd9944aba64" name="杂项发票" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="779f9355-1666-4ae6-ba9e-37290989bafb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="46e18987-e97f-4d6a-b3f8-03db884c4ccd" name="采购发票行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <lowerValueInternal>
-                    <literalString Id="661dea69-9870-4c60-a471-314d73f90cc6" name="Lower" value="*">
-                      <elementDefinition Id="080b8e1e-f3e4-49f1-b1fe-47bacf6b50e0" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="1a99b9d5-7610-4386-81df-79002d2a64ca" name="Upper" value="*">
-                      <elementDefinition Id="dada24c5-06db-4ddc-afcf-c202a6dfbf1a" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="aa63179f-adc3-43da-8905-323b89c1f8db" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="15dbd369-ad12-4050-918e-287975492cd9" />
-          </association>
-        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="ca6aa823-7777-4f28-bcf0-a656e273fbfb" name="维修预付款发票" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ed32c498-a82a-45cd-a940-b7ce5d29dfe1" />
-        <targetEnds>
-          <association Id="5868b59f-dbad-4bca-b6b7-7113b08803f7" isDerived="false" sourceEndRoleName="维修预付款发票" targetEndRoleName="维修发票行" isLeaf="false" isAbstract="false">
-            <classMoniker Id="b6d055a1-7241-41e7-b9f9-ad1352168482" LastKnownName="维修发票行" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a790b271-4f75-4f2f-b79d-ebdf8c38b345" name="维修预付款发票" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="a8dfd4ed-2069-44d9-8e05-4aa24cfe0594" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="d4181583-b672-4a6a-a4a1-3fa4399414c3" name="维修发票行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <lowerValueInternal>
-                    <literalString Id="031f3742-0e62-4ac6-9668-39cd1e024006" name="Lower" value="*">
-                      <elementDefinition Id="2150cf33-c6f2-4efe-81b5-672f5b978eb1" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="a8cbc3b8-f340-4dc3-be6c-707a6d6750e2" name="Upper" value="*">
-                      <elementDefinition Id="84c72a7f-bd4b-40e0-b38f-33426aa2a010" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="5e0011d3-283e-4a87-b271-06aa0cc8882a" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="b3a2ce30-c9e5-4dfb-b233-1cb563f10efe" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="92c6b085-fa72-4150-9802-1d9e4cfc3fe3" name="已核销金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="02364b41-f410-435e-89c2-3437f58d6fe5" />
@@ -450,34 +289,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="e1a7ca6f-0e88-444e-9ef3-a99c949aa803" name="采购预付款发票" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2599ff85-ae34-499c-9194-f45ca2eb55b4" />
-        <targetEnds>
-          <association Id="3f93e9a8-2ebf-4e78-a84f-24ceea0d0e97" isDerived="false" sourceEndRoleName="采购预付款发票" targetEndRoleName="采购发票行" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7165751a-98c0-4514-bced-c9adb0115944" LastKnownName="采购发票行" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="7ada17f7-f1c2-4299-848d-ae00682cac10" name="采购预付款发票" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="de39b325-0a69-4ad0-83ef-a540327b4751" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="171db6b1-6830-4eae-82e7-61296dfbe08f" name="采购发票行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <lowerValueInternal>
-                    <literalString Id="053a9d2e-b0c3-4172-8eb5-11a43dbaf773" name="Lower" value="*">
-                      <elementDefinition Id="280ee038-7c99-4c26-b9c6-774f9f274b00" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="18d9c253-52de-44cf-97ea-f3efff3ffa23" name="Upper" value="*">
-                      <elementDefinition Id="ed33ece7-cd0c-462a-ac08-f533d17ddad2" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="042cda7b-0f7f-406f-a1ae-8caef89bc0cb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="e85fec87-b919-455d-bef7-37a9c25dc226" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="5a050689-699d-4a78-a333-9c521cb79f22" name="已核销金额" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1dcf9a29-ea69-4445-841c-f7c6e975ac95" />
@@ -491,34 +302,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="74e4ac87-43cf-4bc8-b6b9-6097f70f5b20" name="维修贷项单" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="87369a0e-a3b5-4897-95b2-2c98acb3a9e9" />
-        <targetEnds>
-          <association Id="99e59554-0b09-4d91-982b-4a77a8e82afd" isDerived="false" sourceEndRoleName="维修贷项单" targetEndRoleName="维修发票行" isLeaf="false" isAbstract="false">
-            <classMoniker Id="b6d055a1-7241-41e7-b9f9-ad1352168482" LastKnownName="维修发票行" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="764df5cc-1b76-4cdf-ae6b-aeac85127f8c" name="维修贷项单" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="ca54912b-0985-44f5-a16b-a79fccae98d8" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="7a7e0aaa-32c7-43bc-b53b-5125ef9278cc" name="维修发票行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <lowerValueInternal>
-                    <literalString Id="d184338a-be48-4313-80ba-c9eaa979c7e9" name="Lower" value="*">
-                      <elementDefinition Id="15a8c23f-36c1-4d83-a054-bf30a7158e52" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="a0a9c050-a4e1-494a-874f-3e358fa5bfc1" name="Upper" value="*">
-                      <elementDefinition Id="b03f0637-1edf-4c11-ac19-f9eb10881b59" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="6259b4d1-d5b1-456e-8a79-0cc7d24bf8eb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="0224afd6-070c-42b3-a264-5de47a040542" />
-          </association>
-        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -670,9 +453,6 @@
           <property Id="e691aa65-ba44-4c0f-bb30-859e1b930810" name="维修项" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="8bd8bba5-9039-4a64-8f49-073a828e0b87" />
           </property>
-          <property Id="cd8d57e7-13d7-4d66-ae21-f3d4131abb9c" name="项名称" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c5a2dff2-1199-462b-8278-78bd007dedb3" />
-          </property>
           <property Id="4da55104-51de-40ec-b46f-0f74aa663230" name="数量" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="629099a4-158c-45ae-a276-086cbc024151" />
           </property>
@@ -704,7 +484,82 @@
           <property Id="8e1f9b1b-5514-4253-b778-6e25b11e9d95" name="订单行" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="a0557f4b-53e2-434d-a5ac-fc5a8bb3f599" />
           </property>
+          <property Id="ab555138-e6d5-4b57-bbb4-7c0f60b35601" name="项名称" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e15816be-46b2-46d4-89db-9deb7911886e" />
+          </property>
         </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9f4861cc-e793-4b6d-92d8-8a6534e41cac" name="基本采购发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="df8c93f2-1699-4b9a-9fc4-e11ea5bd818d" />
+        <generalsInternal>
+          <generalization Id="dabdad7d-e637-4eff-a0f4-7ae0cfef5ccc" isSubstitutable="false">
+            <classMoniker Id="4669053c-a21b-41c1-b93e-0c0ecc2f2882" LastKnownName="采购贷项单" />
+            <elementDefinition Id="404c8d6d-a519-4669-9fb2-35e7d77ff61d" />
+          </generalization>
+          <generalization Id="c9fe7db4-f10c-45a4-b2c7-be9326ec6cd5" isSubstitutable="false">
+            <classMoniker Id="a518e5e1-3572-44f7-812c-140842a03359" LastKnownName="租赁发票" />
+            <elementDefinition Id="09fae293-5053-4f81-8355-1093f5d64d6f" />
+          </generalization>
+          <generalization Id="aef92474-77bb-484f-aecf-1b42af74cfb6" isSubstitutable="false">
+            <classMoniker Id="e1a7ca6f-0e88-444e-9ef3-a99c949aa803" LastKnownName="采购预付款发票" />
+            <elementDefinition Id="82c417cf-f905-4370-a32c-8669a079720f" />
+          </generalization>
+          <generalization Id="936904db-fcc5-450e-9998-1617ff31d813" isSubstitutable="false">
+            <classMoniker Id="1e84945b-1413-4867-976b-1cb8bf359d46" LastKnownName="采购发票" />
+            <elementDefinition Id="96af65c0-fbd6-4ae9-a578-f25bea7dc173" />
+          </generalization>
+          <generalization Id="6706bdee-1a06-4c57-a33b-4df2b04d2303" isSubstitutable="false">
+            <classMoniker Id="b0fe4d4c-c051-47c8-82f5-1b98ea757a59" LastKnownName="杂项发票" />
+            <elementDefinition Id="9986a0ce-2ede-439f-92a7-a2dbd2e62083" />
+          </generalization>
+          <generalization Id="f60c9324-1da1-401a-9cb4-b47859fb0409" isSubstitutable="false">
+            <classMoniker Id="74e4ac87-43cf-4bc8-b6b9-6097f70f5b20" LastKnownName="维修贷项单" />
+            <elementDefinition Id="f2b02932-74b7-40a9-8b9a-29e2764886b2" />
+          </generalization>
+          <generalization Id="b1953ab9-b750-4acd-aa57-c6e45ea27524" isSubstitutable="false">
+            <classMoniker Id="ca6aa823-7777-4f28-bcf0-a656e273fbfb" LastKnownName="维修预付款发票" />
+            <elementDefinition Id="07fbcfce-6c72-4a82-8fd5-273fb31d0a0d" />
+          </generalization>
+          <generalization Id="7f699621-e789-4921-ab69-72bc4306795d" isSubstitutable="false">
+            <classMoniker Id="0fe4baf5-79b0-4d26-9d75-11a88234427a" LastKnownName="特修改装发票" />
+            <elementDefinition Id="75610544-fdaf-495d-8a1c-5123fed25c52" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="76a95fcf-d179-4e32-bcf2-6ca2391ecbb5" isDerived="false" sourceEndRoleName="基本采购发票" targetEndRoleName="采购发票行" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7165751a-98c0-4514-bced-c9adb0115944" LastKnownName="采购发票行" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a2f3a28-021a-40a7-bb06-794c431404f5" name="基本采购发票" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="43cb6eb8-6dd9-4c26-99d3-622c13545066" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bfacb05f-8bdf-4efa-bfa6-f90ba12cd095" name="采购发票行" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="05c0919b-78b7-4036-ad0b-332b8e959510" name="Lower" value="*">
+                      <elementDefinition Id="1957bd88-f5df-4437-9f35-c4491f3340a6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="afc4d856-246c-49e6-9f7a-2d52d3dbcc87" name="Upper" value="*">
+                      <elementDefinition Id="eba49994-6f87-4562-8a56-2b11c465ff7f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ce600dc5-04a7-461f-a14b-d4928147a65b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c7ee6701-4b1f-4349-8071-29a8fa107b18" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0fe4baf5-79b0-4d26-9d75-11a88234427a" name="特修改装发票" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4d2be4cf-9c70-456a-aa42-9b5a94f4e8e5" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
