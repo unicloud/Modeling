@@ -220,6 +220,24 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="974f9de1-46e4-4ab6-9b30-874d81fefe3c" name="序号" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6536212b-6c14-4293-bc69-251b4ee686f8" />
+        <targetEnds>
+          <association Id="325950dd-d1f3-4394-bac5-e83325dea3d2" isDerived="false" sourceEndRoleName="序号" targetEndRoleName="附件" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5aeed79e-7727-4cbf-857d-d733b93ff1da" LastKnownName="附件" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d0a890b-90d8-4a15-9ecf-78dd5a7bfb1a" name="序号" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6286937a-debd-424b-8a9f-e653d1eb1ffe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="54db83f3-ecf1-4d70-9075-952ae54d9dff" name="附件" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b7e3185a-6799-43f1-8d8d-e5f69c45f3b3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dfcd1787-f52e-429e-998f-611eb22ea287" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="2ea4dbd3-b004-46b9-9524-66240a462b22" name="序号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ff8bba35-8b52-4213-b36a-61a0a0c59e67" />
@@ -233,7 +251,7 @@
           <property Id="ed4980d7-6014-49a0-bcf3-ccb5e34f1c79" name="件号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="fb693bbe-7125-4253-9583-91ecd37d71b7" />
           </property>
-          <property Id="1fc22141-d209-48db-95c8-5399fe56b323" name="是否停用" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="1fc22141-d209-48db-95c8-5399fe56b323" name="当前状态" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="2f0a6ac7-0714-46da-a1f3-e9e5d7fc8dbf" />
           </property>
           <property Id="7d04117e-e004-45ff-b9a1-1c4ec4ee3d8c" name="当前飞机ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -253,6 +271,71 @@
           </property>
           <property Id="b640bd69-3505-4aec-a875-e9991d16a1fb" name="CSR" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c11cf235-625c-4f6b-8eb9-17169f4073a2" />
+          </property>
+          <property Id="c2a5b20c-9c13-46c4-8feb-e28ca0569cdb" name="当前序号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="12cf382e-41ae-4295-ad1d-5a39a0776821" />
+          </property>
+          <property Id="58df64a6-c823-4ab4-8788-39c844f5ea64" name="当前件号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c59c1913-7fbc-48db-9028-cc526fad15d6" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a422777b-6473-4a35-86d4-93e705eda893" name="阀值" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4057977d-da07-4759-875f-840f9fc0909a" />
+        <targetEnds>
+          <association Id="eccd59e2-892a-47bc-84fc-09c9177cdba0" isDerived="false" sourceEndRoleName="阀值" targetEndRoleName="附件" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5aeed79e-7727-4cbf-857d-d733b93ff1da" LastKnownName="附件" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75a15827-e0e6-408d-af87-9c9df88f2273" name="阀值" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="df990d1f-3165-4e56-9570-161a31daea4e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4076839b-9f5f-4549-808e-99a5f19f5993" name="附件" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7afa1b9b-d757-4225-a966-81f348527fa4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f0c9961c-34eb-420e-a960-ed465530aa65" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="72dd02f8-7a31-4f07-8374-37340bf08fe6" name="3天滚动平均阀值" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f05469b2-671e-413f-816d-bd277efea958" />
+          </property>
+          <property Id="b2c456e7-8d8b-474a-9919-96fdae074ead" name="7天滚动平均阀值" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="47535376-5007-484b-8d5e-efb6580532c0" />
+          </property>
+          <property Id="40c43894-4c95-459e-86e4-042dd38e2aaf" name="滑油消耗率阀值" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="591e3a0f-5146-44d6-947b-75095bacafd2" />
+          </property>
+          <property Id="0321f24b-d2b8-4da2-ac18-baf620c51ffd" name="间隔消耗率阀值" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2cb30e8e-7190-4d95-b2b1-0374acfd4f24" />
+          </property>
+          <property Id="de4f9fbe-09d5-46a1-b24b-769589204ccd" name="间隔消耗率增量阀值" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bd93fa8d-5738-490d-bb80-21ce7a273c4a" />
+          </property>
+          <property Id="4a5fb42e-0547-4bb3-b0fb-6c1b07a61efe" name="件号外键" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2efe44e7-add6-4462-bba7-c2e50697555f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5aeed79e-7727-4cbf-857d-d733b93ff1da" name="附件" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fc07f727-db98-45da-b546-fb26ef024fc3" />
+        <ownedAttributesInternal>
+          <property Id="1ad3e473-d63b-4194-83e6-55918e1d3be9" name="件号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fe66eebb-989c-4985-9fd4-a75543c35b6c" />
+          </property>
+          <property Id="e6653298-b6c5-4e20-a9e4-c609e9ac0866" name="是否寿控件" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e31c65ab-7c35-430b-a9a3-ce0a8bcb706a" />
+          </property>
+          <property Id="cc3d7ba4-8350-4730-991b-db7e742b9b5c" name="项Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2e8922da-5db9-4c7c-817c-36bf9d5746b6" />
           </property>
         </ownedAttributesInternal>
       </class>

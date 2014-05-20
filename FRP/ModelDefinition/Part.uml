@@ -4231,5 +4231,123 @@ TS：技术解决方案</body>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4057977d-da07-4759-875f-840f9fc0909a"
+        name="阀值"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f0c9961c-34eb-420e-a960-ed465530aa65"
+            isDerived="false"
+            sourceEndRoleName="阀值"
+            targetEndRoleName="附件"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fc07f727-db98-45da-b546-fb26ef024fc3"
+              LastKnownName="附件"
+              LastKnownLocation="Part.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df990d1f-3165-4e56-9570-161a31daea4e"
+                  name="阀值"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7afa1b9b-d757-4225-a966-81f348527fa4"
+                  name="附件"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="f05469b2-671e-413f-816d-bd277efea958"
+            name="3天滚动平均阀值"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="47535376-5007-484b-8d5e-efb6580532c0"
+            name="7天滚动平均阀值"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="591e3a0f-5146-44d6-947b-75095bacafd2"
+            name="滑油消耗率阀值"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2cb30e8e-7190-4d95-b2b1-0374acfd4f24"
+            name="间隔消耗率阀值"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bd93fa8d-5738-490d-bb80-21ce7a273c4a"
+            name="间隔消耗率增量阀值"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2efe44e7-add6-4462-bba7-c2e50697555f"
+            name="件号外键"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
 </package>
