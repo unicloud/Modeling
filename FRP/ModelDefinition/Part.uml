@@ -2759,45 +2759,6 @@ CSD：飞机自上次D检以来的使用的循环
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="1c9eac7d-21e3-4536-a065-364cd4154fd0"
-            isDerived="false"
-            sourceEndRoleName="维修控制组"
-            targetEndRoleName="维修控制维度"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="5003962b-4bbf-4c2b-8471-16b9b79aec11"
-              LastKnownName="维修控制维度"
-              LastKnownLocation="Part.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="c67842cc-7a82-41ca-86ab-cdd20f6e0491"
-                  name="维修控制组"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3df5b7f1-ee4d-449b-b6d7-85248e082881"
-                  name="维修控制维度"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -4477,7 +4438,7 @@ CSD：飞机自上次D检以来的使用的循环
     <packageHasNamedElement>
       <class
         Id="5003962b-4bbf-4c2b-8471-16b9b79aec11"
-        name="维修控制维度"
+        name="维修控制组"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -4565,7 +4526,7 @@ CSD：飞机自上次D检以来的使用的循环
             isAbstract="false">
             <classMoniker
               Id="5003962b-4bbf-4c2b-8471-16b9b79aec11"
-              LastKnownName="维修控制维度"
+              LastKnownName="维修控制组"
               LastKnownLocation="Part.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>

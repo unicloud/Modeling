@@ -265,22 +265,6 @@ CSD：飞机自上次D检以来的使用的循环
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="ee4b7123-3264-43bd-9437-332fa709aad0" />
           </association>
-          <association Id="541963c6-62e9-4a13-84a4-b49bf94cf994" isDerived="false" sourceEndRoleName="维修控制组" targetEndRoleName="维修控制维度" isLeaf="false" isAbstract="false">
-            <classMoniker Id="a75fab3c-1922-4a8e-a825-00a39bc7e162" LastKnownName="维修控制维度" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a6167124-82d4-4f48-8baf-b86ca7524045" name="维修控制组" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="c67842cc-7a82-41ca-86ab-cdd20f6e0491" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="7e01878d-8b22-4ffa-b75a-4130e9510d4b" name="维修控制维度" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="3df5b7f1-ee4d-449b-b6d7-85248e082881" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="1c9eac7d-21e3-4536-a065-364cd4154fd0" />
-          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="29b1163d-71a8-4f1c-ac14-d410d4df3492" name="控制策略" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -633,7 +617,7 @@ CSD：飞机自上次D检以来的使用的循环
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="a75fab3c-1922-4a8e-a825-00a39bc7e162" name="维修控制维度" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="a75fab3c-1922-4a8e-a825-00a39bc7e162" name="维修控制组" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5003962b-4bbf-4c2b-8471-16b9b79aec11" />
         <targetEnds>
           <association Id="777cb0e5-e5e7-4d56-a1e8-8072c407daf6" isDerived="false" sourceEndRoleName="维修控制维度" targetEndRoleName="维修工作" isLeaf="false" isAbstract="false">
@@ -668,7 +652,7 @@ CSD：飞机自上次D检以来的使用的循环
         <elementDefinition Id="a40416e0-462e-4e32-97ea-0dc29e63a82a" />
         <targetEnds>
           <association Id="58471aa5-7c23-4c2e-ac84-59514d8f12d2" isDerived="false" sourceEndRoleName="维修控制明细" targetEndRoleName="维修控制维度" isLeaf="false" isAbstract="false">
-            <classMoniker Id="a75fab3c-1922-4a8e-a825-00a39bc7e162" LastKnownName="维修控制维度" />
+            <classMoniker Id="a75fab3c-1922-4a8e-a825-00a39bc7e162" LastKnownName="维修控制组" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="ac3d2f3d-a322-46b9-a8a4-2433dee9a563" name="维修控制明细" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
