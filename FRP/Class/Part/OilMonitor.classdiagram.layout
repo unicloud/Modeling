@@ -16,7 +16,7 @@
         <OperationElementListCompartment Id="61593ad8-209e-49e2-bb8b-a20d2504c9c4" absoluteBounds="3.2649999999999997, 3.5320800781250004, 1.4700000000000002, 0.22631835937500022" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.75 : 3.24169921875); (6.5 : 3.24169921875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1..*">
+    <associationConnector edgePoints="[(4.75 : 3.24169921875); (6.5 : 3.24169921875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1..*">
       <associationMoniker Id="07f55669-c3f5-461b-ad3a-576aad55b551" />
       <relativeChildShapes />
       <nodes>
@@ -52,7 +52,7 @@
         <OperationElementListCompartment Id="e2ae3cd8-ec7a-407b-a831-d984bc9ff990" absoluteBounds="0.515, 5.0512858072916664, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <generalizationConnector edgePoints="[(3.25 : 3.11669921875); (2 : 3.11669921875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(3.25 : 3.11669921875); (2 : 3.11669921875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="1a085074-4434-47fd-9aa1-cab3a3d749af" />
       <relativeChildShapes />
       <nodes>
@@ -60,7 +60,7 @@
         <classShapeMoniker Id="3e423f59-9e4d-4949-8216-b202e86c8892" />
       </nodes>
     </generalizationConnector>
-    <generalizationConnector edgePoints="[(3.25 : 4.87630208333333); (2 : 4.87630208333333)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(3.25 : 4.87630208333333); (2 : 4.87630208333333)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="0b556c48-b5e8-43dd-ab77-b0f8f7ec9dfe" />
       <relativeChildShapes />
       <nodes>
@@ -82,15 +82,18 @@
         <OperationElementListCompartment Id="39bd4f2e-80bf-4585-87d5-50c056901dbd" absoluteBounds="6.3900000000000006, 1.9070800781250001, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(1.25 : 2.125); (1.25 : 1.997080078125); (6 : 1.997080078125); (6 : 1.49169921875); (6.375 : 1.49169921875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+    <associationConnector edgePoints="[(1.25 : 2.125); (1.25 : 1.997080078125); (6 : 1.997080078125); (6 : 1.49169921875); (6.375 : 1.49169921875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
       <associationMoniker Id="325950dd-d1f3-4394-bac5-e83325dea3d2" />
       <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="1.1875, 1.8125, 0.125, 0.16650390625" shapeFieldName="SourceMultiplicity" />
+      </moveableDecoratorHostShapes>
       <nodes>
         <classShapeMoniker Id="3e423f59-9e4d-4949-8216-b202e86c8892" />
         <classShapeMoniker Id="eabcd180-f6f9-44ca-82bb-7f6208172f1a" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.875 : 1.49169921875); (7.875 : 1.49169921875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
+    <associationConnector edgePoints="[(8.875 : 1.49169921875); (7.875 : 1.49169921875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
       <associationMoniker Id="eccd59e2-892a-47bc-84fc-09c9177cdba0" />
       <relativeChildShapes />
       <nodes>
