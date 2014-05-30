@@ -79,6 +79,26 @@ D检、
         <classMoniker Id="5dbd9c83-b41e-4563-85be-6ddd5e6fa1f5" LastKnownName="操作记录" />
       </annotatedElements>
     </comment>
+    <comment Id="ec85ac09-c704-4d3d-8874-401e3066ae80">
+      <elementDefinition Id="37266c8f-5812-4d81-9107-83ff4a46d781" />
+      <body>备注：
+①、对于维修控制可以再细化到不同的构型；
+②、序号件控制组的“序号范围”不一定是连续的编号范围，考虑如果维护；（可以考虑范围内的每个序号件都维护相应的序号件控制组）
+③、维修控制明细的Xml格式需要完善，现在欠缺对于周期性描述控制明细的处理</body>
+    </comment>
+    <comment Id="8af8010e-9a20-4545-bbdd-e5870eadcf04">
+      <elementDefinition Id="950f5fc5-bd75-4a17-a852-f1674f27bc60" />
+      <body>最新一条操作记录：T1 C1 T1’ C1'  Time1
+再上一条操作记录：T2 C2 T2’ C2'  Time2
+假设T2 C2 T2’ C2' 都是已经知道的数据；
+另外维护最新一条记录的时候 T1 C1 已经由用户填写；
+则在当天夜里，系统自动计算T1’和C1'的值，作为序号到寿监控的计算的中间值。
+计算：T1’ 和 C1’的公式如下：
+T1'=T1+(Time1与Time2之间的使用小时数)+（T2’-T1'）
+C1'=T1+(Time1与Time2之间的使用循环数)+（C2’-C1'）
+解释①：T2'-T1'（或C2’-C1'）为历史累计的TSN’和TSN（或CSN'和CSN）之间的差异值；
+解释②：Time1与Time2之间的使用小时（循环）数：需要根据序号件是否是需要计算在库寿命，以及在这一段时间内序号件的状态来计算</body>
+    </comment>
   </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="d3d0d58c-5e67-4352-851d-18b1e9071116" name="namespace" profile="CSharpProfile">

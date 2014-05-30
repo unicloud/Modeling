@@ -234,5 +234,13 @@
         <classShapeMoniker Id="a9417e41-c311-4460-8f91-3a34944b8be6" />
       </nodes>
     </commentConnector>
+    <commentShape Id="bb377aea-4237-44a6-b531-5b6261b036e1" absoluteBounds="1, 1.5, 1.625, 2.125" customColor="Red">
+      <commentMoniker Id="ec85ac09-c704-4d3d-8874-401e3066ae80" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="628dde7a-7ab0-4e94-baaa-3cb01ecce76c" absoluteBounds="1.5, 11.625, 3.75, 2.375" customColor="Red">
+      <commentMoniker Id="8af8010e-9a20-4545-bbdd-e5870eadcf04" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>
