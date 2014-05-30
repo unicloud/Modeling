@@ -23,6 +23,14 @@ TS：技术解决方案</body>
         <classMoniker Id="8df71e92-ecb0-45cd-a86f-cd1025046775" LastKnownName="构型组" />
       </annotatedElements>
     </comment>
+    <comment Id="f89533b9-2b59-4203-b128-e580f8ee5d07">
+      <elementDefinition Id="90e298d1-c26e-46c0-9e97-d8eaf52dc6a1" />
+      <body>包含非拆换的记录
+拆换类型为：拆下、装上、不拆换三种</body>
+      <annotatedElements>
+        <classMoniker Id="9ee70930-9e2b-4952-a244-0905b16f1fe5" LastKnownName="操作记录" />
+      </annotatedElements>
+    </comment>
   </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="b5c65efa-6754-4b81-ae37-6faf769849bd" name="namespace" profile="CSharpProfile">
@@ -102,7 +110,7 @@ TS：技术解决方案</body>
         <elementDefinition Id="6536212b-6c14-4293-bc69-251b4ee686f8" />
         <targetEnds>
           <association Id="118c8cc8-3fa8-476a-9e93-5e2db6c986fc" isDerived="false" sourceEndRoleName="序号" targetEndRoleName="装机历史" isLeaf="false" isAbstract="false">
-            <classMoniker Id="9ee70930-9e2b-4952-a244-0905b16f1fe5" LastKnownName="装机历史" />
+            <classMoniker Id="9ee70930-9e2b-4952-a244-0905b16f1fe5" LastKnownName="操作记录" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="e4fd0ef0-0c69-4a99-91a2-5608c5b36df2" name="序号" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -171,6 +179,12 @@ TS：技术解决方案</body>
           </property>
           <property Id="478275d5-72fa-415e-b857-d954f8a1dcc8" name="当前件号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c59c1913-7fbc-48db-9028-cc526fad15d6" />
+          </property>
+          <property Id="1448f665-6480-431d-bd3c-f30d72f4dd32" name="是否计算在库寿命" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33b74914-7852-4677-a669-b50cf4bc81aa" />
+          </property>
+          <property Id="5eb699a2-0440-4dbf-99c8-efa10d1be9e7" name="折算比率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ead3838-7f89-4dc5-a339-bd026246da76" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -518,36 +532,8 @@ TS：技术解决方案</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="9ee70930-9e2b-4952-a244-0905b16f1fe5" name="装机历史" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="9ee70930-9e2b-4952-a244-0905b16f1fe5" name="操作记录" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="133e7c26-f2fc-4ccb-a732-b0563927b144" />
-        <targetEnds>
-          <association Id="eab8448c-8a62-43a5-b10f-53a025dcd14a" isDerived="false" sourceEndRoleName="装机历史" targetEndRoleName="技术参数历史数据" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7d8c8dac-0378-4685-843b-f22a1a4584f1" LastKnownName="技术参数历史数据" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="263a10a0-084b-4f75-a1c4-05eec0cf9458" name="装机历史" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5bdcc523-b0e6-454a-a3c8-2f68a6bc3f34" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="98dfe9b0-7d9d-41af-9dab-dcb77c1f15f5" name="技术参数历史数据" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="92dc8d65-434d-4129-a5de-a48a9f50ad74" name="Lower" value="*">
-                      <elementDefinition Id="afc31583-7dc6-4ff9-86f9-ba777292fd16" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="6138ea17-8253-4897-938d-14123ae4055b" name="Upper" value="*">
-                      <elementDefinition Id="dc17dc77-a14d-44f5-8e4a-8e04f747dd5f" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="c2506725-3d80-4053-953c-f7fa49423493" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="dc73e7b8-ef05-4563-b4c7-12759bf4d3f5" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="83f78bf0-7271-42b4-94eb-4153623fedc3" name="飞机ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="6bd57a98-2d05-439a-81d0-274b69557140" />
@@ -558,11 +544,35 @@ TS：技术解决方案</body>
           <property Id="8c2fc91c-0e3b-4171-8596-0702783d7199" name="装机件号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="bffb077c-10fc-4945-8663-b5621116f869" />
           </property>
-          <property Id="9d1cbfc1-d249-4c02-8d75-797092d3c7cc" name="拆下记录ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="9d1cbfc1-d249-4c02-8d75-797092d3c7cc" name="拆换记录外键（可空）" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1751bd12-ecc4-430c-87cd-4982878b30c1" />
           </property>
-          <property Id="1e5a925b-0d7b-42f5-8566-ccca7feb223a" name="装上记录ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="78e72c9e-9386-43d6-8665-af93eacae348" />
+          <property Id="bd869fd9-f4ba-47b6-9fc2-2834f75c242a" name="TSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e17f35dc-0558-46c3-b170-dfa972b3b026" />
+          </property>
+          <property Id="8a96a5f8-eccd-4401-8c30-93ab351cda1a" name="CSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a2156e00-bbe2-4034-86c2-e8f29196c35b" />
+          </property>
+          <property Id="4120f21b-d525-4367-b526-1c171856f647" name="拆换时间" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a18cdd22-5673-4e12-be4f-b41c0f22cc2e" />
+          </property>
+          <property Id="7184f5df-7c0d-4fad-b2e5-fc3f4d1ba2b3" name="拆换类型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dacb4601-53dc-4bba-b4b9-7978fdbaac9f" />
+          </property>
+          <property Id="ad09d2ce-8d11-4acc-9677-0903e91ba0c2" name="维修工作ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f50ce0fe-d465-4b5c-bcb3-0c89a181f6cb" />
+          </property>
+          <property Id="70ffeefc-0603-45b7-a1e2-bcc24f65cedd" name="CSN'" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>每次记录操作的时候，根据上一条记录计算的使用循环（可能需要包含在库的时间折算成循环数）</description>
+            <elementDefinition Id="e7b6e420-c2dd-4473-bebe-d74bbe8214ec" />
+          </property>
+          <property Id="3933110a-8f3a-4509-84bc-fb53c2e1a071" name="TSN'" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>每次记录操作的时候，根据上一条记录计算的使用小时（可能需要包含在库的时间）</description>
+            <elementDefinition Id="e5b8362f-5abc-4acb-9c39-264959ddc692" />
+          </property>
+          <property Id="904e7060-8b91-4060-9a07-14c2d650d9a3" name="状态" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>历史节点上序号件的状态</description>
+            <elementDefinition Id="7d062ffa-aeb3-4022-995e-9f2552870e90" />
           </property>
         </ownedAttributesInternal>
       </class>
@@ -1033,7 +1043,7 @@ TS：技术解决方案</body>
         <elementDefinition Id="d3d11fa9-4ade-4fd1-8da0-e514c36f6749" />
         <targetEnds>
           <association Id="e20f95f9-e942-4c72-a752-2236a6c8a57b" isDerived="false" sourceEndRoleName="拆换记录" targetEndRoleName="装机历史" isLeaf="false" isAbstract="false">
-            <classMoniker Id="9ee70930-9e2b-4952-a244-0905b16f1fe5" LastKnownName="装机历史" />
+            <classMoniker Id="9ee70930-9e2b-4952-a244-0905b16f1fe5" LastKnownName="操作记录" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="dac633c0-f365-44a5-89e6-2f6618ebd92b" name="拆换记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -1077,28 +1087,6 @@ TS：技术解决方案</body>
           </property>
           <property Id="72030873-ea10-427f-b61d-ca42c230699b" name="拆装位置" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="b46f3e19-0957-4fbe-ad44-dde1bf47d8b6" />
-          </property>
-          <property Id="7556ee1f-e18f-4fc4-bf04-33d2674b303b" name="维修工作ID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a5ae1e1b-772b-405a-b653-5712f59e60c0" />
-          </property>
-        </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="7d8c8dac-0378-4685-843b-f22a1a4584f1" name="技术参数历史数据" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="c9cf0797-38e1-4679-a3ac-032555db4bbe" />
-        <ownedAttributesInternal>
-          <property Id="df97f257-bb8d-4aa5-a512-91c8ff08e8ee" name="装机历史外键" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="2e5e81d1-2ca7-482c-b2fa-15aa858721b5" />
-          </property>
-          <property Id="7118bb85-8bbf-4c8a-b79c-435975e994bd" name="控制单位外键" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="86cc931c-016e-4ed4-b9a0-c31b4a4be862" />
-          </property>
-          <property Id="b09926bf-7686-4201-8c0f-d85682e5420b" name="值" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f38c3bee-23cb-442d-8de5-f8a952c80c65" />
-          </property>
-          <property Id="379d4127-c4aa-4048-94cd-773b2634893a" name="拆装类型" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="46d815ae-b4cd-4b90-b92c-478892d16158" />
           </property>
         </ownedAttributesInternal>
       </class>

@@ -45,11 +45,11 @@
         <LiteralElementListCompartment Id="a0e3a26e-ca77-4526-8bed-4993b4f2d4df" absoluteBounds="3.265, 0.88999999999999968, 1.4700000000000002, 0.757080078125" name="LiteralsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </enumerationShape>
-    <classShape Id="3e423f59-9e4d-4949-8216-b202e86c8892" absoluteBounds="0.5, 2.125, 1.5, 2.544921875" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+    <classShape Id="3e423f59-9e4d-4949-8216-b202e86c8892" absoluteBounds="0.5, 2.125, 1.5, 2.8987630208333321" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
       <classMoniker Id="974f9de1-46e4-4ab6-9b30-874d81fefe3c" LastKnownName="序号" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="34c5ace7-eed4-4246-9607-5a2a2032cba5" absoluteBounds="0.51500000000000012, 2.515, 1.4700000000000002, 1.818603515625" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="e2ae3cd8-ec7a-407b-a831-d984bc9ff990" absoluteBounds="0.515, 4.343603515625, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="34c5ace7-eed4-4246-9607-5a2a2032cba5" absoluteBounds="0.51500000000000012, 2.515, 1.4700000000000002, 2.172444661458333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="e2ae3cd8-ec7a-407b-a831-d984bc9ff990" absoluteBounds="0.515, 4.6974446614583325, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <generalizationConnector edgePoints="[(3.25 : 3.11669921875); (2 : 3.11669921875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
@@ -60,7 +60,7 @@
         <classShapeMoniker Id="3e423f59-9e4d-4949-8216-b202e86c8892" />
       </nodes>
     </generalizationConnector>
-    <generalizationConnector edgePoints="[(3.25 : 4.5224609375); (2 : 4.5224609375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <generalizationConnector edgePoints="[(3.25 : 4.69938151041667); (2 : 4.69938151041667)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
       <generalizationMoniker Id="0b556c48-b5e8-43dd-ab77-b0f8f7ec9dfe" />
       <relativeChildShapes />
       <nodes>

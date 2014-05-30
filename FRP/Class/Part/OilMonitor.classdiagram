@@ -266,6 +266,12 @@
           <property Id="58df64a6-c823-4ab4-8788-39c844f5ea64" name="当前件号" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c59c1913-7fbc-48db-9028-cc526fad15d6" />
           </property>
+          <property Id="ecee64aa-f799-4099-9ea8-0f0c419e6a5f" name="是否计算在库寿命" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33b74914-7852-4677-a669-b50cf4bc81aa" />
+          </property>
+          <property Id="5a1ac129-2809-4197-83d6-8b4843161ddf" name="折算比率" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ead3838-7f89-4dc5-a339-bd026246da76" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>

@@ -60,10 +60,86 @@ CSO：飞机、发动机或附件自大修后使用的循环
 TSD：飞机自上次D检以来飞行时间
 CSD：飞机自上次D检以来的使用的循环
 </body>
+    </comment>
+    <comment
+      Id="007a6d35-a5f5-4b27-9c3a-d9f7d017f71c">
+      <body>飞行小时
+飞行循环
+日历天
+日历月
+（用户不可维护）</body>
       <annotatedElements>
         <classMoniker
           Id="f1695dff-dbe6-41b4-8894-aea887939f9b"
           LastKnownName="维修控制单位"
+          LastKnownLocation="Part.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="d83772bf-af73-4c11-81d6-abbe08dbd396">
+      <body>将维修控制明细记录为xml格式数据
+可能的xml节点数据如下：
+分三类：
+①XX日期起，XX（控制单位）内；
+②自上次XX（维修工作）后，XX（控制单位）内
+③XX（TSN/CSN）内
+备注:对于周期性的控制
+</body>
+      <annotatedElements>
+        <classMoniker
+          Id="a30f6964-f6dd-4684-8b60-1f5f825c09ae"
+          LastKnownName="维修控制组"
+          LastKnownLocation="Part.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="cc147236-10eb-4443-8581-10633a85c6c8">
+      <body>系统默认：
+装机、
+大修、
+A检、
+C检、
+D检、
+检修或测试、
+……
+（用户可自行维护，用户序号历史、维修控制、到寿监控中记录相应的信息）</body>
+      <annotatedElements>
+        <classMoniker
+          Id="5d07c782-62d2-46d8-af2f-17b1cf813d24"
+          LastKnownName="维修工作"
+          LastKnownLocation="Part.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="ecddc7a8-3cdb-4907-b75c-4b2621b85396">
+      <body>序号件状态
+在库，在位，在修，报废</body>
+      <annotatedElements>
+        <classMoniker
+          Id="6536212b-6c14-4293-bc69-251b4ee686f8"
+          LastKnownName="序号"
+          LastKnownLocation="Part.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="90e298d1-c26e-46c0-9e97-d8eaf52dc6a1">
+      <body>包含非拆换的记录
+拆换类型为：拆下、装上、不拆换三种</body>
+      <annotatedElements>
+        <classMoniker
+          Id="133e7c26-f2fc-4ccb-a732-b0563927b144"
+          LastKnownName="操作记录"
+          LastKnownLocation="Part.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="bd9f018d-0d5a-41b8-8367-e1607cea8210">
+      <body>初次维护序号件到系统时，一定需要有一条操作记录，即使是放在库存中
+</body>
+      <annotatedElements>
+        <classMoniker
+          Id="133e7c26-f2fc-4ccb-a732-b0563927b144"
+          LastKnownName="操作记录"
           LastKnownLocation="Part.uml" />
       </annotatedElements>
     </comment>
@@ -796,7 +872,7 @@ CSD：飞机自上次D检以来的使用的循环
             isAbstract="false">
             <classMoniker
               Id="133e7c26-f2fc-4ccb-a732-b0563927b144"
-              LastKnownName="装机历史"
+              LastKnownName="操作记录"
               LastKnownLocation="Part.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -1076,6 +1152,28 @@ CSD：飞机自上次D检以来的使用的循环
           <property
             Id="c59c1913-7fbc-48db-9028-cc526fad15d6"
             name="当前件号"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="33b74914-7852-4677-a669-b50cf4bc81aa"
+            name="是否计算在库寿命"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0ead3838-7f89-4dc5-a339-bd026246da76"
+            name="折算比率"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1932,7 +2030,7 @@ CSD：飞机自上次D检以来的使用的循环
     <packageHasNamedElement>
       <class
         Id="133e7c26-f2fc-4ccb-a732-b0563927b144"
-        name="装机历史"
+        name="操作记录"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2026,7 +2124,7 @@ CSD：飞机自上次D检以来的使用的循环
             isComposite="false" />
           <property
             Id="1751bd12-ecc4-430c-87cd-4982878b30c1"
-            name="拆下记录ID"
+            name="拆换记录外键（可空）"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2036,8 +2134,8 @@ CSD：飞机自上次D检以来的使用的循环
             aggregation="None"
             isComposite="false" />
           <property
-            Id="78e72c9e-9386-43d6-8665-af93eacae348"
-            name="装上记录ID"
+            Id="e17f35dc-0558-46c3-b170-dfa972b3b026"
+            name="TSN"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2046,6 +2144,89 @@ CSD：飞机自上次D检以来的使用的循环
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="a2156e00-bbe2-4034-86c2-e8f29196c35b"
+            name="CSN"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a18cdd22-5673-4e12-be4f-b41c0f22cc2e"
+            name="拆换时间"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dacb4601-53dc-4bba-b4b9-7978fdbaac9f"
+            name="拆换类型"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f50ce0fe-d465-4b5c-bcb3-0c89a181f6cb"
+            name="维修工作ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e7b6e420-c2dd-4473-bebe-d74bbe8214ec"
+            name="CSN'"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>每次记录操作的时候，根据上一条记录计算的使用循环（可能需要包含在库的时间折算成循环数）</description>
+          </property>
+          <property
+            Id="e5b8362f-5abc-4acb-9c39-264959ddc692"
+            name="TSN'"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>每次记录操作的时候，根据上一条记录计算的使用小时（可能需要包含在库的时间）</description>
+          </property>
+          <property
+            Id="7d062ffa-aeb3-4022-995e-9f2552870e90"
+            name="状态"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <description>历史节点上序号件的状态</description>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -2749,7 +2930,29 @@ CSD：飞机自上次D检以来的使用的循环
             isComposite="false" />
           <property
             Id="ff91e42f-2282-4b6b-aa02-72787c6beb5a"
-            name="维修工作ID"
+            name="维修工作ID（可空）"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3968b167-139c-441a-803a-88cad63c7a6d"
+            name="描述（备注）"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3746ff15-3a28-4517-8f59-b94de629346e"
+            name="维修控制明细（xml）"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2769,11 +2972,11 @@ CSD：飞机自上次D检以来的使用的循环
         isLeaf="false">
         <ownedLiterals>
           <enumerationLiteral
-            Id="d08c2f6e-5330-4b05-8ed7-645b8e997605"
-            name="选取开始时间" />
+            Id="6103f416-25c7-4899-ab38-ff691323d2c8"
+            name="先到为准" />
           <enumerationLiteral
-            Id="26c97fc6-9265-435e-9c50-d5075a3e4708"
-            name="期限" />
+            Id="35566345-673d-4996-8fd5-72c8520ad03b"
+            name="后到为准" />
         </ownedLiterals>
       </enumeration>
     </packageHasNamedElement>
@@ -2798,17 +3001,6 @@ CSD：飞机自上次D检以来的使用的循环
           <property
             Id="ec868ca5-8511-48c7-aca2-23198b01266a"
             name="项号"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="0523cef6-c665-4ab6-911a-de50588923f6"
-            name="构型ID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2981,19 +3173,8 @@ CSD：飞机自上次D检以来的使用的循环
             aggregation="None"
             isComposite="false" />
           <property
-            Id="a7160548-48c3-4532-a2cf-9e77b2ecfa0f"
-            name="工作代码"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="4a47d67f-cceb-403c-bfc6-40874ed7d34c"
-            name="维修工作ID"
+            name="监控项（维修工作名称或维修控制描述）"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -4156,7 +4337,7 @@ CSD：飞机自上次D检以来的使用的循环
             isAbstract="false">
             <classMoniker
               Id="133e7c26-f2fc-4ccb-a732-b0563927b144"
-              LastKnownName="装机历史"
+              LastKnownName="操作记录"
               LastKnownLocation="Part.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -4259,17 +4440,6 @@ CSD：飞机自上次D检以来的使用的循环
           <property
             Id="b46f3e19-0957-4fbe-ad44-dde1bf47d8b6"
             name="拆装位置"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="a5ae1e1b-772b-405a-b653-5712f59e60c0"
-            name="维修工作ID"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
